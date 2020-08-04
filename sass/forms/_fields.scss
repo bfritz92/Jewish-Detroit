@@ -1,0 +1,98 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	-webkit-backface-visibility: hidden;
+	background: $color__background-input;
+	border: solid 1px $color__border;
+	box-sizing: border-box;
+	outline: none;
+	padding: #{.36 * $size__spacing-unit} #{.66 * $size__spacing-unit};
+	-webkit-appearance: none;
+	outline-offset: 0;
+	border-radius: 0;
+
+	&:focus {
+		border-color: $color__link;
+		outline: thin solid rgba( $color__link, 0.15 );
+		outline-offset: -4px;
+	}
+}
+
+input[type="search"] {
+	&::-webkit-search-decoration {
+		display: none;
+	}
+}
+
+select {
+
+}
+
+textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	resize: vertical;
+}
+
+form {
+
+	p {
+		margin: $size__spacing-unit 0;
+	}
+
+}
+
+//Standard Gravity Styling
+#individual-event .entry-content .gform_wrapper{
+	
+	margin:auto;
+	ul.gform_fields{
+		list-style-type:none;
+	}
+
+	.gfield_label{
+		color:$color__jfmd-blue;
+		font-family:gotham-bold;
+	}
+	.gf_page_steps{
+	background-color:$color__jfmd-blue;
+	padding:.5rem;
+	border-bottom:none;
+		& .gf_step{
+		color:#fff;
+		font-family: gotham-bold;
+		
+		& .gf_step_number{
+			color:#fff;
+			font-family:gotham-bold!important;
+			padding-left:1rem;
+			font-size:1rem;
+		}
+		}
+	}
+	& .gfield_calculation{
+		& .ginput_container_number{
+			& input{
+				font-family: gotham-bold;
+				font-size: 3rem;
+				border: none;
+				color:$color__jfmd-cyan;
+			}
+		}
+	}
+}

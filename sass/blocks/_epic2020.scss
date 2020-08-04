@@ -1,0 +1,706 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * agency-fb-compressed:
+ *   - http://typekit.com/eulas/00000000000000003b9ae628
+ * agency-fb-extended:
+ *   - http://typekit.com/eulas/00000000000000003b9ae633
+ * athelas:
+ *   - http://typekit.com/eulas/00000000000000000000d834
+ *   - http://typekit.com/eulas/00000000000000000000d835
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-01-22 14:19:01 UTC"}*/
+
+//--------------------------------------------------------------
+// Responsive Background Images
+//     Just the background image swap, styling is still handled
+//     on the relevant partial. 
+//--------------------------------------------------------------
+
+/* Screen sizes */
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+$color__jfmd-blue: #004b7a;
+$color__jfmd-cyan: #0094D0;
+
+@mixin responsive-bg($img-mobile, $img-tablet, $img-large-tablet, $img-laptop, $img-large, $img-x-large) {
+	background-image:url(#{$img-mobile});
+	@media only screen and (min-width:$tablet){
+		background-image:url(#{$img-tablet});
+	}
+	@media only screen and (min-width:$large-tablet){
+		background-image:url(#{$img-large-tablet});
+	}
+	@media only screen and (min-width:$laptop){
+		background-image:url(#{$img-laptop});
+	}
+	@media only screen and (min-width:$large){
+		background-image:url(#{$img-large});
+	}
+	@media only screen and (min-width:$x-large){
+		background-image:url(#{$img-x-large});
+	}
+}
+
+//Fluid type. Which Actually works. Which is cool.
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  
+  @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      & {
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+        @media screen and (min-width: $max-vw) {
+          font-size: $max-font-size;
+        }
+      }
+    }
+  }
+
+@import url("https://p.typekit.net/p.css?s=1&k=zpv3wkw&ht=tk&f=1692.1693.30689.30700&a=15564535&app=typekit&e=css");
+
+@font-face {
+font-family:"athelas";
+src:url("https://use.typekit.net/af/adf251/00000000000000000000d834/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/adf251/00000000000000000000d834/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/adf251/00000000000000000000d834/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"athelas";
+src:url("https://use.typekit.net/af/c0afc3/00000000000000000000d835/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/c0afc3/00000000000000000000d835/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/c0afc3/00000000000000000000d835/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"agency-fb-compressed";
+src:url("https://use.typekit.net/af/b655b1/00000000000000003b9ae628/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b655b1/00000000000000003b9ae628/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b655b1/00000000000000003b9ae628/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"agency-fb-extended";
+src:url("https://use.typekit.net/af/22256a/00000000000000003b9ae633/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/22256a/00000000000000003b9ae633/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/22256a/00000000000000003b9ae633/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+.athelas { font-family: "athelas",serif; }
+.agency-fb { font-family: "agency-fb-extended",sans-serif; font-weight:700; 
+    text-transform: uppercase;}
+.agency-fb-thin{ font-family: "agency-fb-compressed",sans-serif; font-weight:400; text-transform: uppercase; }
+.gold {
+    background: -webkit-linear-gradient(#eccc9b, #b88c4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+@mixin gold-text{
+    background: -webkit-linear-gradient(#eccc9b, #b88c4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin gold-price{
+    font-family: "agency-fb-extended",sans-serif;
+    font-weight: 700;
+    font-size:1.8rem;
+    padding-left:10px;
+    @include gold-text;
+}
+.page-id-42748{
+    overflow-x:hidden;
+    .site-content .content-area #main{
+        padding:0;
+        margin:0;
+    }
+    #donation-panel, #footer, #masthead, #sideNav{
+        display:none;
+    }
+    #primary{margin-top:0;}
+}
+
+#post-42748 {
+    .entry-content{
+        max-width:inherit;
+        margin:inherit;
+    }
+    .entry-header{
+        display:none;
+    }
+}
+#post-42748 .entry-content section{
+    @media only screen and (min-width: 768px){
+        margin:0;
+    }
+    
+}
+.epic2020{
+    h1, h2, h3, h4, h5{
+        font-family:"agency-fb-extended", sans-serif;
+        font-weight:700;
+    }
+    p{font-family:"athelas", serif;}
+    section{margin-top:0!important;}
+    &--splash{
+        min-height:100vh;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:auto 1fr;
+
+        @include responsive-bg('/wp-content/uploads/2020/01/white-marble-mobile-768x1196.jpg',
+			 '/wp-content/uploads/2020/01/white-marble-mobile-920x1432.jpg',
+			  '/wp-content/uploads/2020/01/white-marble-1300x867.jpg',
+			   '/wp-content/uploads/2020/01/white-marble-1800x1200.jpg',
+				'/wp-content/uploads/2020/01/white-marble-2000x1333.jpg',
+                 '/wp-content/uploads/2020/01/white-marble-2500x1667.jpg');
+                 background-size:cover;
+        &--nav {
+            display: flex;
+            flex-direction:column;
+            justify-content: right;
+            padding: 1rem 20px 0 0;
+            list-style-type: none;
+            align-self: flex-end;
+            justify-self: end;
+            
+            @media only screen and (min-width:$tablet){
+                flex-direction:row;
+            }
+            li a{
+                padding-left:30px;
+                font-family: "agency-fb-extended",sans-serif; 
+                font-weight:700; 
+                text-transform: uppercase;
+                font-size:.8rem;
+                min-height:50px;
+                color:#3d3d3d;
+            }
+        }
+                   
+        &--info{
+            max-width:900px;
+            margin:0 auto;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            text-align:center; 
+            .date{@include fluid-type(320px, 750px, 20px, 30px);}
+            .venue{@include fluid-type(320px, 750px, 20px, 30px);}
+            .kaufman{
+                @include fluid-type(320px, 750px, 20px, 30px);
+                margin-bottom:1rem;
+                }
+            .eyebrow{
+                padding-bottom:1rem;
+                color:#888;
+                @include fluid-type(320px, 750px, 24px, 45px);
+            }
+            p{@include fluid-type(320px, 750px, 20px, 30px);}
+            span.bigger21{@include fluid-type(320px, 750px, 27px, 40px);}
+            h4{@include fluid-type(320px, 750px, 24px, 30px);}
+           
+        }
+        &--logo{
+            display:flex;
+            justify-content: center;
+            max-height:50vw;
+        }
+    }
+    &--intro{
+        @include responsive-bg('/wp-content/uploads/2020/01/gold-bg-768x576.jpg',
+			 '/wp-content/uploads/2020/01/gold-bg-920x690.jpg',
+			  '/wp-content/uploads/2020/01/gold-bg-1300x975.jpg',
+			   '/wp-content/uploads/2020/01/gold-bg-1800x1350.jpg',
+				'/wp-content/uploads/2020/01/gold-bg-2000x1500.jpg',
+                 '/wp-content/uploads/2020/01/gold-bg-2000x1500.jpg');
+        background-size:cover;
+
+        @media only screen and (min-width:$large){
+            display:grid;
+            grid-template-columns: minmax(300px,500px) auto minmax(300px,500px);
+
+            }
+        figure.wp-block-image{
+            display:none;
+            margin-bottom:0;
+            @media only screen and (min-width:$large){
+                display:block;
+            }
+        }
+        &--copy{
+            max-width:900px;
+            margin:auto;
+            padding:2rem 10px;
+            color:#fff;
+            h2{
+                text-align:center;
+                @include fluid-type(320px, 750px, 15px, 26px);
+            }
+            hr.wp-block-separator {
+                background-color: #fff;
+                height: 5px;
+                max-width: 80%;
+                width:80%;
+               }
+               
+            @media only screen and (min-width:$large){
+                align-self:center;
+                justify-content:center;
+                padding:0 10px;
+            }
+        }
+    }
+    &--talent{
+        @include responsive-bg('/wp-content/uploads/2020/01/black-marble-mobile-768x1052.jpg',
+			 '/wp-content/uploads/2020/01/black-marble-mobile-920x1260.jpg',
+			  '/wp-content/uploads/2020/01/black-marble-1300x867.jpg',
+			   '/wp-content/uploads/2020/01/black-marble-1800x1200.jpg',
+				'/wp-content/uploads/2020/01/black-marble-2000x1333.jpg',
+                 '/wp-content/uploads/2020/01/black-marble-2500x1666.jpg');
+        background-size:cover;
+        display:block;
+        @media only screen and (min-width:$large-tablet){
+            display:grid;
+        }
+        &--copy{
+            color:#fff;
+            grid-column:8/14;
+            padding:2rem 10px;
+            h2, h4{
+                text-align:center;
+            }
+            h4{
+                @include fluid-type(320px, 750px, 25px, 30px);
+            }
+            p{
+                max-width:650px;
+                margin:auto;
+                padding-bottom:1rem;
+            }
+            @media only screen and (min-width:$laptop){
+                grid-column:8/14;
+            }
+            @media only screen and (min-width:$large){
+                grid-column:8/12;
+            }
+            &--moshe{
+                letter-spacing:10px;
+                @include fluid-type(320px, 1000px, 80px, 130px);
+                margin:-14px auto -20px auto;
+            }
+        }
+        figure{
+            padding:1rem;
+            grid-column:1/7;
+            align-self:center;
+            max-width:550px;
+            max-height:550px;
+            justify-self:end;
+            display:flex;
+            justify-content: center;
+            @media only screen and (min-width:$laptop){
+                grid-column:2/7;
+                margin:inherit;
+                padding-top:inherit;
+            }
+            @media only screen and (max-width:$mobile){
+                width:330px;
+                height:330px;
+                margin:auto;
+            }
+            img{
+                max-width:450px;
+                width:100%;
+                height:100%;
+                object-fit:contain;
+            }
+        }
+    }
+    &--impact{
+        background-image:url('/wp-content/uploads/2020/01/hypnotize.png');
+        @media only screen and (min-width:$large-tablet){
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        }
+        .impact-logo {
+            margin:auto;
+            @media only screen and (min-width:$large-tablet){
+                max-width:450px;
+                justify-self:right;
+                margin:inherit;
+            }
+            img{
+                margin:auto;
+                padding:3rem 10px 2rem 10px;
+                @media only screen and (min-width:$mobile){
+                    max-width:430px;
+                }
+                @media only screen and (min-width:$large-tablet){
+                    max-width:500px;
+                }
+            }
+        }
+        &--copy{
+            padding:10px 20px;
+            max-width:500px;
+            margin:1rem auto;
+            background-color:rgba(0,0,0,.7);
+            color:#fff;
+            @media only screen and (min-width:$large-tablet){
+               justify-self:left; 
+               margin:1rem 10px;
+            }  
+        }
+        &--3up{
+            grid-column: 1/-1;
+            grid-row: 2;
+            justify-self: center;
+            padding: 0 10px 1rem 10px;
+            
+            @media only screen and (min-width:$tablet){
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 20px;
+                max-width: 1200px;
+                margin:inherit;
+            }
+            .impact-img img{
+                border: 5px #fff solid;
+                margin:auto;
+                @media only screen and (min-width:$tablet){
+                    margin:inherit;
+                }
+            }
+        }
+    }
+    &--registration{
+        @include responsive-bg('/wp-content/uploads/2020/01/sparkleswoosh-768x512.jpg',
+        '/wp-content/uploads/2020/01/sparkleswoosh-920x613.jpg',
+         '/wp-content/uploads/2020/01/sparkleswoosh-1300x866.jpg',
+          '/wp-content/uploads/2020/01/sparkleswoosh-1800x1200.jpg',
+           '/wp-content/uploads/2020/01/sparkleswoosh-2000x1333.jpg',
+            '/wp-content/uploads/2020/01/sparkleswoosh.jpg');
+        background-size:100%;
+        background-color:#000;
+        background-position: center bottom;
+        background-repeat:no-repeat;
+        padding-bottom:7rem;
+        /* ERROR HANDLING */
+        .gform_wrapper{
+            div.validation_error, div.validation_message, li.gfield_error div.ginput_complex span label, .gfield_error label {
+                color:#f04c4c;
+               }
+        
+               
+        }
+        /* GENERAL FORM STYLING */
+        .gform_wrapper form .gform_body{
+            color:#fff;
+            a{
+                color:$color__jfmd-cyan;
+                :hover{color:#fff;}
+            }
+            /* TITLE STYLING AND GOLD */
+            .gform_page .gform_page_fields ul{
+                    .gfield_label {
+                        font-family: "agency-fb-extended",sans-serif;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    .gfield_product_586_155 .ginput_container{
+                    display:flex;
+                    align-items:center;
+                    @media only screen and (min-width:$tablet){
+                        margin-top:-5px !important;
+                        }
+                        #input_586_155{
+                        @include gold-price;
+                        }  
+                    } 
+                    .gfield .ginput_container_radio ul li label{
+                        margin-left:1rem;
+                    }
+                    #gform_submit_button_586 {
+                        float: right;
+                       }
+                    li.gfield_price .ginput_container .ginput_product_price{
+                        @include gold-price;
+                    }
+                    li.pricing_preview .ginput_container input[type="text"]{
+                        @include gold-price;
+                    }
+                    li.gfield_calculation .ginput_container_number input[type="text"]{
+                        @include gold-price;
+                        background-color:transparent;
+                        border:none;
+                    }
+                    #input_586_121{
+                        font-size:2.5rem;
+                    }
+            } 
+        }
+        &--form{
+            
+            .form-body{
+                color:#fff;
+                font-family: "agency-fb-extended",sans-serif; 
+                font-weight:700;
+
+            }
+        }
+        &--form_wrapper{
+            max-width:900px!important;
+            padding:0px 10px;
+            margin:auto!important;
+            background-color:rgba(0,0,0,.7);
+        }
+    }
+    &--parking{
+        &--info{
+            @include responsive-bg('/wp-content/uploads/2020/01/white-marble-mobile-768x1196.jpg',
+            '/wp-content/uploads/2020/01/white-marble-mobile-920x1432.jpg',
+             '/wp-content/uploads/2020/01/white-marble-1300x867.jpg',
+              '/wp-content/uploads/2020/01/white-marble-1800x1200.jpg',
+               '/wp-content/uploads/2020/01/white-marble-2000x1333.jpg',
+                '/wp-content/uploads/2020/01/white-marble-2500x1667.jpg');
+            background-size:cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 2;
+            margin-top:-2rem;
+            @media only screen and (min-width:$mobile){
+                margin-top:-4rem;
+            }
+            h4 {
+                max-width: 900px;
+                margin: auto;
+                padding: 2rem 20px 4rem 20px;
+               }
+               
+        }
+        h2{z-index:2;}
+        &--img {
+            display: flex;
+            justify-content: center;
+            height: 70vw;
+            margin-bottom: 0;
+            z-index: 1;
+            img {
+                object-fit: cover;
+                object-position: center bottom;
+                width: 100%;
+                z-index: 1;
+               }
+        }
+        &--map {
+            border:0;
+            margin: auto;
+            max-width: 900px;
+            width:100%;
+            z-index: 2;
+            height: 300px;
+            @media only screen and (min-width:$tablet){
+                
+                height:500px;
+            }
+           }
+    }
+    &--leadership{
+        background-image:url('/wp-content/uploads/2020/01/beanstalk-dark.png');
+        h2{}
+        &--left{
+            margin:auto;
+            max-width:400px;
+            color:#fff;
+            ul {
+                list-style-type:none;
+                margin:10px 0 1.5rem 0;
+                padding-left:0;
+                
+                li{
+                    text-align:center;
+                }
+            }
+            h4{
+                text-align:center;
+                font-size:1rem;
+            }
+        }
+        &--right{
+            color:#fff;
+            padding:2rem 0 3rem 0;
+            max-width:900px;
+            margin:auto;
+            ul {
+                list-style-type:none;
+                margin-left:0;
+                padding:0;
+                column-count:1;
+                @media only screen and (min-width:$tablet){
+                    column-count:2;
+                }
+                li{
+                    text-align:center;
+                    @media only screen and (min-width:$tablet){
+                        text-align:left;
+                    }
+                }
+            }
+            h4{
+                text-align:center;
+            }
+            
+        }
+        &--staff{
+            display:block;
+            @media only screen and (min-width:$tablet){
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                grid-gap:20px;
+                max-width:1200px;
+                margin:auto;
+            }
+            ul{
+                list-style: none;
+                padding-left:0;
+                li{
+                    color:#fff;
+                    text-align:center;
+                }
+            }
+        }
+
+    }
+    &--sponsors{
+        background-image:url('/wp-content/uploads/2020/01/greek-vase.png');
+        .tier-1{
+            h2{text-align:center;}
+            .sponsor-grid{
+                max-width:900px;
+                margin:auto;
+                @media only screen and (min-width:$tablet){
+                    display:grid;
+                    grid-template-columns:1fr 1fr;
+                    grid-gap:20px;
+                }
+            }
+        }
+        .tier-2{
+            padding-top:2rem;
+            h2{text-align:center;}
+            .sponsor-grid{
+                max-width:900px;
+                margin:auto;
+                display:grid;
+                grid-template-columns:repeat(2, 1fr);
+                grid-gap:20px;
+                @media only screen and (min-width:$tablet){
+                    grid-template-columns:repeat(4, 1fr);
+                }
+            }
+        }
+        .tier-3{
+            padding-top:2rem;
+            h2{text-align:center;}
+            .sponsor-grid{
+                max-width:900px;
+                margin:auto;
+                display:grid; 
+                grid-gap:20px;
+                grid-template-columns:repeat(2, 1fr);
+                @media only screen and (min-width:$tablet){
+                    grid-template-columns:repeat(5, 1fr);
+                }
+            }
+        }
+        .tier-4{
+            padding-top:2rem;
+            h2{text-align:center;}
+            .sponsor-grid{
+                max-width:900px;
+                margin:auto;
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                grid-gap:20px;
+                @media only screen and (min-width:$tablet){
+                    grid-template-columns:3fr 2fr 2fr 3fr;
+                }
+            }
+        }
+    }
+    &--footer{
+        @include responsive-bg('/wp-content/uploads/2020/01/black-marble-mobile-768x1052.jpg',
+			 '/wp-content/uploads/2020/01/black-marble-mobile-920x1260.jpg',
+			  '/wp-content/uploads/2020/01/black-marble-1300x867.jpg',
+			   '/wp-content/uploads/2020/01/black-marble-1800x1200.jpg',
+				'/wp-content/uploads/2020/01/black-marble-2000x1333.jpg',
+                 '/wp-content/uploads/2020/01/black-marble-2500x1666.jpg');
+        background-size:cover;
+        padding:2rem 10px;
+        display:block;
+        @media only screen and (min-width:$tablet){
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            grid-gap:2rem;
+        }
+        &--logo{
+            justify-self:right;
+            color:#fff;
+            text-align:center;
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            max-width:500px;
+            @media only screen and (max-width:$tablet){
+                margin:auto;
+            }
+            .nextgen{@include fluid-type(320px, 500px, 26px, 30px);}
+            .kaufman{font-size:1.136rem;}
+        }
+        &--info{
+            padding:2rem 10px;
+            align-self:center;
+            color:#fff;
+            justify-self:left;
+            text-align:center;
+            @media only screen and (min-width:$tablet){
+                text-align:left;
+            }
+            h3:nth-child(1) {
+                @include fluid-type(320px, $laptop, 19px, 37px);
+            }
+            h3:nth-child(2) {
+                @include fluid-type(320px, $laptop, 13px, 28px);
+               }
+            p span.bigger21{font-size:26px;}
+        }
+    }
+
+}
+
+.ben-gurion-pics .sponsor-grid{
+    display:block;
+    @media only screen and (min-width:$tablet){
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:20px;
+    }
+}

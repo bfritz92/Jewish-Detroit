@@ -1,0 +1,89 @@
+//SUNSHINE FOR A SENIOR
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+@import url("https://use.typekit.net/hln7sqk.css");
+body{overflow-x:hidden;}
+@font-face {
+    font-family:"goodlife-sans-condensed";
+    src:url("https://use.typekit.net/af/7807d3/00000000000000003b9b242b/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/7807d3/00000000000000003b9b242b/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/7807d3/00000000000000003b9b242b/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
+    }
+    
+    .tk-goodlife-sans-condensed { font-family: "goodlife-sans-condensed",sans-serif; }
+    
+p{color:#fff;}
+label{font-family:'gotham-bold'}
+#content{
+    background-image:url('https://s3-us-west-2.amazonaws.com/jfmdorg/wp-content/uploads/2020/05/08111455/purple_textured_paper.jpg');
+    h1, h2, h3, h4, strong, li, a, .gfield_label_before_complex {
+        font-family:"goodlife-sans-condensed";
+        color:#fff;
+    }
+}
+#content label.gfield_label.gfield_label_before_complex{font-size:1.5rem;}
+a:hover{color:#8cb5ce;}
+.entry-header{display:none;}
+.sunshine-header{
+    margin:auto;
+    @media only screen and (min-width:$tablet){
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+    }
+
+}
+.sunshine-step{
+    display:block;
+    padding-top:2rem;
+    @media only screen and (min-width:$tablet){
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:20px;
+    }
+    @media only screen and (min-width:$large-tablet){
+       grid-template-columns:2fr 3fr; 
+    }
+    figure img{
+        @media only screen and (max-width:$tablet){
+            max-width:300px;
+            margin:auto;
+            padding-bottom:2rem;
+        }
+    }
+    &.step-2{
+        @media only screen and (min-width:$tablet){
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        }
+        @media only screen and (min-width:$large-tablet){
+            grid-template-columns:3fr 2fr; 
+         }
+         figure{grid-column:2;}
+         .sunshine-step--copy{grid-column:1; grid-row:1;}
+    }
+    ul{
+        list-style:none;
+        li{
+            font-size:1.5rem;
+            line-height:1;
+        }
+    }
+}
+.sunshine-logos{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    max-width:600px;
+    margin:auto;
+    figure{
+        padding:10px;
+        img {width:240px;}
+        img:last-child{width:140px;}
+    }
+}

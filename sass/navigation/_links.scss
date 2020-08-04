@@ -1,0 +1,135 @@
+a {
+
+	@include link-transition;
+	color: $color__jfmd-blue;
+	font-family:gotham-bold;
+	font-weight:700;
+	&:visited {
+		/* color: $color__link-visited; */
+	}
+
+	&:hover,
+	&:active {
+		color: $color__link-hover;
+		outline: 0;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+		text-decoration: underline;
+	}
+}
+
+.gray-link{
+  color:$color__gray;}
+
+.gray-link:hover{
+    color:$color__dark-gray;
+}
+
+.white-link{
+  color:#fff;}
+
+.white-link:hover{
+    color:$color__gray;
+} 
+
+.gray-link{
+	color:$color__gray;
+	transition: transform 0.5s ease-in-out;
+	&:hover{
+	  color:$color__dark-gray;
+	}
+	&:after{
+	  font-family: "Font Awesome 5 Pro"; 
+	  content:"\f101";
+	  font-weight: 900;
+	  padding-left:10px;
+	}
+	&.back{
+		&:after{display:none;}
+	}
+  }
+  
+  .white-link{
+	transition: transform 0.5s ease-in-out;
+	color:#fff;
+	&:hover{
+	  color:$color__light-gray;
+	}
+	&:after{
+	  font-family: "Font Awesome 5 Pro"; 
+	  content:"\f101";
+	  font-weight: 900;
+	  padding-left:10px;
+	}
+	&.back{
+		&:after{display:none;}
+	}
+  }
+  
+  .blue-link{
+	color:$color__jfmd-blue;
+	transition: transform 0.5s ease-in-out;
+	&:hover{
+	  color:$color__jfmd-cyan;
+	}
+	&:after{
+	  font-family: "Font Awesome 5 Pro"; 
+	  content:"\f101";
+	  font-weight: 900;
+	  padding-left:10px;
+	}
+	&.back{
+		&:after{display:none;}
+	}
+  }
+  
+.striped-list li a[href$=".pdf"]:after {
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f1c1";
+	font-weight: 900;
+	padding-left: 10px;
+}
+a[href$=".docx"]:after {
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f1c2";
+	font-weight: 900;
+	padding-left: 10px;
+}		
+a[href$=".ppt"]:after {
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f1c4";
+	font-weight: 900;
+	padding-left: 10px;
+}
+.white-link:hover:after, .gray-link:hover:after, .blue-link:hover:after {
+	transform: translateX(5px);
+  }
+  .white-link:after, .gray-link:after, .blue-link:after {
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f101";
+	font-weight: 900;
+	padding-left: 10px;
+	padding-right:10px;
+	transition: transform 0.5s ease-in-out;
+  }
+
+.white-link:hover.back:before, .gray-link.back:hover:before, .blue-link.back:hover:before {
+	transform: translateX(-5px);
+  }
+.white-link.back:before, .gray-link.back:before, .blue-link.back:before {
+	display: inline-block;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f100";
+	font-weight: 900;
+	padding-left: 10px;
+	padding-right:10px;
+	transition: transform 0.5s ease-in-out;
+  }
+  

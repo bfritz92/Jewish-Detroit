@@ -1,0 +1,389 @@
+
+@mixin media( $res ) {
+	@if mobile == $res {
+		@media only screen and (min-width: $mobile_width) {
+			@content;
+		}
+	}
+
+	@if tablet == $res {
+		@media only screen and (min-width: $tablet_width) {
+			@content;
+		}
+	}
+
+	@if desktop == $res {
+		@media only screen and (min-width: $desktop_width) {
+			@content;
+		}
+	}
+
+	@if wide == $res {
+		@media only screen and (min-width: $wide_width) {
+			@content;
+		}
+	}
+}
+
+@mixin link-transition( $attr: color ) {
+	transition: $attr $link_transition ease-in-out;
+}
+
+@mixin button-transition() {
+	transition: background $button_transition ease-in-out;
+}
+
+@mixin button-all-transition() {
+	transition: all $button_transition ease-in-out;
+}
+
+@mixin background-transition() {
+	transition: background $background_transition ease-in-out;
+}
+
+@mixin selection {
+	::-moz-selection {
+		@content;
+	}
+	::selection {
+		@content;
+	}
+}
+
+/** === Layout === */
+
+#page {
+	width: 100%;
+}
+
+.site-content {
+	/*overflow: hidden;*/
+}
+
+.grid {
+	display:grid;
+	grid-template-columns: repeat(14, 1fr);
+	grid-column-gap: 15px;
+}
+@mixin the-grid{
+	display:grid;
+	grid-template-columns: repeat(14, 1fr);
+	grid-column-gap: 15px;
+}
+
+.hide{
+	display:none!important;
+}
+.center{
+	text-align:center;
+}
+//--------------------------------------------------------------
+// Typography Setup
+// Mixins
+//--------------------------------------------------------------
+
+@mixin type-body($type-body: regular) {
+
+	@if $type-body == regular {
+		font-size: $type--fontsize-base;
+	}// @include type-body();
+
+	@if $type-body == intro {
+		// font-family: $type--fontfamily;
+		font-size: $type--fontsize-nudge;
+		font-weight: $type--fontweight-regular;
+		letter-spacing: $type-tracking-close;
+		line-height: $type--lineheight-medium;
+	}// @include type-body(intro);
+
+	@if $type-body == note {
+		font-size: $type--fontsize-small;
+	}// @include type-body(note);
+
+	@if $type-body == aside {
+		font-family: $type--fontfamily-mono;
+		font-size: $type--fontsize-xsmall;
+		letter-spacing: $type-tracking-medium;
+	}// @include type-body(aside);
+
+} //@include type-body();
+
+
+
+@mixin type-blockquote($type-blockquote: regular) {
+
+	@extend %type-blockquote;
+
+	@if $type-blockquote == large {
+		font-size: $type--fontsize-xlarge;
+		line-height: $type--lineheight-tight;
+		letter-spacing: $type--letterspacing-tight;
+	}// @include type-blockquote(large);
+
+	@if $type-blockquote == regular {
+		font-size: $type--fontsize-medium;
+		line-height: $type--lineheight-condensed;
+		letter-spacing: $type--letterspacing-reset;
+	}// @include type-blockquote(regular);
+
+	@if $type-blockquote == small {
+		font-size: $type--fontsize-base;
+		line-height: $type--lineheight-regular;
+		letter-spacing: $type--letterspacing-medium;
+	}
+
+}// @include type-blockquote();
+
+
+
+@mixin type-heading($type-heading) {
+
+	@if $type-heading == colossal {
+		font-size: $type--fontsize-colossal;
+		letter-spacing: $type-tracking-medium;
+		line-height: $type--lineheight-tight;
+		font-weight: $type--fontweight-poster;
+	}// @include type-heading(colossal);
+
+	@if $type-heading == huge {
+		font-size: $type--fontsize-huge;
+		letter-spacing: $type-tracking-medium;
+		line-height: $type--lineheight-tight;
+		font-weight: $type--fontweight-poster;
+	}// @include type-heading(huge);
+
+	@if $type-heading == big {
+		font-size: $type--fontsize-xxlarge;
+		letter-spacing: $type-tracking-medium;
+		line-height: $type--lineheight-tight;
+		font-weight: $type--fontweight-poster;
+	}// @include type-heading(big);
+
+	@if $type-heading == extra or $type-heading == extra-poster {
+		font-size: $type--fontsize-xlarge;
+		line-height: $type--lineheight-condensed;
+		@if $type-heading == extra-poster {
+			font-weight: $type--fontweight-poster;
+			letter-spacing: $type-tracking-medium;
+		} @else {
+			font-weight: $type--fontweight-extrabold;
+			letter-spacing: $type-tracking-slight;
+		}
+	}// @include type-heading(extra);
+	// @include type-heading(extra-poster);
+
+	@if $type-heading == large or $type-heading == large-poster {
+		font-size: $type--fontsize-large;
+		line-height: $type--lineheight-condensed;
+		@if $type-heading == large-poster {
+			font-weight: $type--fontweight-poster;
+			letter-spacing: $type-tracking-medium;
+		} @else {
+			font-weight: $type--fontweight-extrabold;
+			letter-spacing: $type-tracking-reset;
+		}
+	}// @include type-heading(large);
+	// @include type-heading(large-poster);
+
+	@if $type-heading == medium or $type-heading == medium-extra {
+		font-size: $type--fontsize-medium;
+		line-height: $type--lineheight-close;
+		@if $type-heading == medium-extra {
+			font-weight: $type--fontweight-extrabold;
+			letter-spacing: $type-tracking-slight;
+		} @else {
+			font-weight: $type--fontweight-bold;
+			letter-spacing: $type-tracking-reset;
+		}
+	}// @include type-heading(medium);
+	// @include type-heading(medium-extra);
+
+	@if $type-heading == modest or $type-heading == modest-extra {
+		font-size: $type--fontsize-base;
+		letter-spacing: $type-tracking-tight;
+		line-height: $type--lineheight-medium;
+		@if $type-heading == modest-extra {
+			font-weight: $type--fontweight-extrabold;
+		} @else {
+			font-weight: $type--fontweight-bold;
+		}
+	}// @include type-heading(modest);
+	// @include type-heading(modest-extra);
+
+} //@include type-heading(x);
+
+
+
+@mixin microtype($microtype-weight: regular, $microtype-size: regular, $microtype-style: uppercase) {
+	font-family: $type--fontfamily-mono;
+
+	@if $microtype-weight == regular {
+		font-weight: $type--fontweight-regular;
+	} @else if $microtype-weight == medium {
+		font-weight: $type--fontweight-medium;
+	} @else if $microtype-weight == bold {
+		font-weight: $type--fontweight-bold;
+	}
+
+	@if $microtype-size == regular {
+		font-size: $type--fontsize-xsmall;
+		letter-spacing: $type-tracking-medium;
+	} @else if $microtype-size == small {
+		font-size: $type--fontsize-xxsmall;
+		letter-spacing: $type-tracking-medium;
+	} @else if $microtype-size == tiny {
+		font-size: $type--fontsize-tiny;
+		letter-spacing: $type-tracking-large;
+	}
+
+	line-height: $type--lineheight-reset;
+
+	@if $microtype-style == uppercase {
+		text-transform: uppercase;
+	}
+
+} //@include microtype(regular, regular);
+
+
+//Fluid type. Which Actually works. Which is cool.
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+
+//--------------------------------------------------------------
+// Responsive Background Images
+//     Just the background image swap, styling is still handled
+//     on the relevant partial. 
+//--------------------------------------------------------------
+
+@mixin responsive-bg($img-mobile, $img-tablet, $img-large-tablet, $img-laptop, $img-large, $img-x-large) {
+	background-image:url(#{$img-mobile});
+	@media only screen and (min-width:$tablet){
+		background-image:url(#{$img-tablet});
+	}
+	@media only screen and (min-width:$large-tablet){
+		background-image:url(#{$img-large-tablet});
+	}
+	@media only screen and (min-width:$laptop){
+		background-image:url(#{$img-laptop});
+	}
+	@media only screen and (min-width:$large){
+		background-image:url(#{$img-large});
+	}
+	@media only screen and (min-width:$x-large){
+		background-image:url(#{$img-x-large});
+	}
+}
+
+@mixin responsive-bg-gradient($img-mobile, $img-tablet, $img-large-tablet, $img-laptop, $img-large, $img-x-large) {
+	background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, .7) 130%), url(#{$img-mobile});
+	@media only screen and (min-width:$tablet){
+		background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, .7) 130%), url(#{$img-tablet});
+	}
+	@media only screen and (min-width:$large-tablet){
+		background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, .7) 130%), url(#{$img-large-tablet});
+	}
+	@media only screen and (min-width:$laptop){
+		background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, .7) 130%), url(#{$img-laptop});
+	}
+	@media only screen and (min-width:$large){
+		background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, .7) 130%), url(#{$img-large});
+	}
+	@media only screen and (min-width:$x-large){
+		background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, .7) 130%), url(#{$img-x-large});
+	}
+}
+
+
+// UTILITY CLASSES //
+.m0{margin:0;}
+.p0{padding:0;}
+
+.mt0{margin-top:0;}
+.mb0{margin-bottom:0;}
+.pt0{padding-top:0;}
+.pb0{padding-bottom:0;}
+
+.mt1{margin-top:1rem;}
+.mb1{margin-bottom:1rem;}
+.pt1{padding-top:1rem;}
+.pb1{padding-bottom:1rem;}
+
+.mt2{margin-top:2rem;}
+.mb2{margin-bottom:2rem;}
+.pt2{padding-top:2rem;}
+.pb2{padding-bottom:2rem;}
+
+.mt3{margin-top:3rem;}
+.mb3{margin-bottom:3rem;}
+.pt3{padding-top:3rem;}
+.pb3{padding-bottom:3rem;}
+
+.mt10{margin-top:10vw;}
+.mb10{margin-bottom:10vw;}
+.pt10{padding-top:10vw;}
+.pb10{padding-bottom:10vw;}
+.pl10{padding-left:10vw;}
+.pr10{padding-right:10vw;}
+
+.ml1{margin-left:1rem;}
+.mr1{margin-right:1rem;}
+
+.left-rule{
+  border-left:3px solid $color__jfmd-cyan;
+  padding-left:1rem;
+  margin:1rem 0 2rem 10px;
+}
+.left{text-align:left;}
+.right{text-align:right;}
+.paragraph-padding{padding-left:10px; padding-right:10px;}
+.limit-900{
+  max-width:$large-tablet;
+  margin:auto;
+  padding-left:10px;
+  padding-right:10px;
+}
+.limit-1200{
+  max-width:1220px;
+  margin:auto;
+  padding-left:10px;
+  padding-right:10px;
+}
+.hide-for-mobile{
+  display:none;
+  @media only screen and (min-width:$tablet){
+    display:block;
+  }
+}
+.mobile-only{
+  display:block;
+  @media only screen and (min-width:$tablet){
+    display:none;
+  }
+}
+.flex{display:flex;}
+.hide{display:none;}
+//END UTILITY CLASSES //
+
+
+
