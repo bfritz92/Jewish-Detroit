@@ -781,6 +781,10 @@ h6:lang(vi), figcaption:lang(vi),
   display: none;
 }
 
+.editor-styles-wrapper.white {
+  color: #000 !important;
+}
+
 /** === Editor Frame === */
 body .wp-block[data-align="full"] {
   width: 100%;
