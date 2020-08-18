@@ -83,6 +83,16 @@
   text-align: center;
 }
 
+.float-right {
+  float: right;
+  padding-left: 20px;
+}
+
+.float-left {
+  float: left;
+  padding-right: 20px;
+}
+
 .m0 {
   margin: 0;
 }
@@ -486,7 +496,7 @@
 
 @media screen and (min-width: 320px) {
   .individual-event--title {
-    font-size: calc(26px + 10 * ((100vw - 320px) / 430));
+    font-size: calc( 26px + 10 * ((100vw - 320px) / 430));
   }
 }
 
@@ -824,7 +834,7 @@ label.gfield_label {
 
 @media screen and (min-width: 320px) {
   .donate-page--intro h2 {
-    font-size: calc(25px + 23 * ((100vw - 320px) / 330));
+    font-size: calc( 25px + 23 * ((100vw - 320px) / 330));
   }
 }
 

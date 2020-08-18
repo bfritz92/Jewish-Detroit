@@ -1572,6 +1572,16 @@ input:lang(vi)[type="submit"], .entry .entry-content .wp-block-button .wp-block-
   text-align: center;
 }
 
+.float-right {
+  float: right;
+  padding-left: 20px;
+}
+
+.float-left {
+  float: left;
+  padding-right: 20px;
+}
+
 .m0 {
   margin: 0;
 }
@@ -5341,7 +5351,7 @@ a[href$=".ppt"]:after {
 
 @media screen and (min-width: 320px) {
   .front-page-splash--headline {
-    font-size: calc(45px + 45 * ((100vw - 320px) / 980));
+    font-size: calc( 45px + 45 * ((100vw - 320px) / 980));
   }
 }
 
@@ -5362,7 +5372,7 @@ a[href$=".ppt"]:after {
 
 @media screen and (min-width: 320px) {
   .front-page-splash--byline {
-    font-size: calc(20px + 15 * ((100vw - 320px) / 980));
+    font-size: calc( 20px + 15 * ((100vw - 320px) / 980));
   }
 }
 
@@ -5500,7 +5510,7 @@ a[href$=".ppt"]:after {
 
 @media screen and (min-width: 320px) {
   .front-page-intro--panel-1--text .heading {
-    font-size: calc(37px + 13 * ((100vw - 320px) / 980));
+    font-size: calc( 37px + 13 * ((100vw - 320px) / 980));
   }
 }
 
@@ -5615,7 +5625,7 @@ a[href$=".ppt"]:after {
 
 @media screen and (min-width: 320px) {
   .front-page-intro--panel-2--text .heading {
-    font-size: calc(37px + 21 * ((100vw - 320px) / 980));
+    font-size: calc( 37px + 21 * ((100vw - 320px) / 980));
   }
 }
 
@@ -5670,7 +5680,7 @@ a[href$=".ppt"]:after {
 
 @media screen and (min-width: 320px) {
   .depts h1 {
-    font-size: calc(46px + 18 * ((100vw - 320px) / 980));
+    font-size: calc( 46px + 18 * ((100vw - 320px) / 980));
   }
 }
 
@@ -5930,7 +5940,7 @@ a[href$=".ppt"]:after {
 
 @media screen and (min-width: 320px) {
   .ways-to-give--copy h1 {
-    font-size: calc(40px + 16 * ((100vw - 320px) / 980));
+    font-size: calc( 40px + 16 * ((100vw - 320px) / 980));
   }
 }
 
@@ -6822,7 +6832,7 @@ a.picture-caption {
 
 @media screen and (min-width: 320px) {
   .dept-intro--title h1 {
-    font-size: calc(25px + 23 * ((100vw - 320px) / 330));
+    font-size: calc( 25px + 23 * ((100vw - 320px) / 330));
   }
 }
 
@@ -6902,7 +6912,7 @@ a.picture-caption {
 
 @media screen and (min-width: 320px) {
   .dept-intro--cta__content p {
-    font-size: calc(15px + 6 * ((100vw - 320px) / 880));
+    font-size: calc( 15px + 6 * ((100vw - 320px) / 880));
   }
 }
 
@@ -7025,7 +7035,7 @@ a.picture-caption {
 
 @media screen and (min-width: 320px) {
   .dept-intro--copy p {
-    font-size: calc(15px + 6 * ((100vw - 320px) / 880));
+    font-size: calc( 15px + 6 * ((100vw - 320px) / 880));
   }
 }
 
@@ -7086,7 +7096,7 @@ a.picture-caption {
 
 @media screen and (min-width: 320px) {
   .dept-intro.nextgen .dept-intro--title h1 {
-    font-size: calc(33px + 27 * ((100vw - 320px) / 330));
+    font-size: calc( 33px + 27 * ((100vw - 320px) / 330));
   }
 }
 
@@ -7731,7 +7741,7 @@ a.picture-caption {
 
 @media screen and (min-width: 320px) {
   .dept-intro.nextgen .dept-intro--title h1 {
-    font-size: calc(33px + 27 * ((100vw - 320px) / 330));
+    font-size: calc( 33px + 27 * ((100vw - 320px) / 330));
   }
 }
 
@@ -7841,7 +7851,7 @@ a.picture-caption {
 
 @media screen and (min-width: 320px) {
   .dept-intro.fed-online .dept-intro--title h1 {
-    font-size: calc(33px + 27 * ((100vw - 320px) / 330));
+    font-size: calc( 33px + 27 * ((100vw - 320px) / 330));
   }
 }
 
@@ -8944,7 +8954,7 @@ ul.social-media-list li a:hover {
 
 @media screen and (min-width: 320px) {
   .accordion-tabs--item p, .accordion-tabs--item li, .accordion-tabs--item a {
-    font-size: calc(18px + 3 * ((100vw - 320px) / 880));
+    font-size: calc( 18px + 3 * ((100vw - 320px) / 880));
   }
 }
 
@@ -10175,7 +10185,7 @@ FEDRADIODETROIT STYLING
 
 @media screen and (min-width: 320px) {
   .fedradiodetroit--intro article .entry-content h2 {
-    font-size: calc(18px + 5 * ((100vw - 320px) / 580));
+    font-size: calc( 18px + 5 * ((100vw - 320px) / 580));
   }
 }
 
@@ -10354,7 +10364,7 @@ FEDRADIODETROIT STYLING
 
 @media screen and (min-width: 320px) {
   .fedradio--intro--title {
-    font-size: calc(25px + 23 * ((100vw - 320px) / 580));
+    font-size: calc( 25px + 23 * ((100vw - 320px) / 580));
   }
 }
 
@@ -10377,7 +10387,7 @@ FEDRADIODETROIT STYLING
 
 @media screen and (min-width: 320px) {
   .fedradio--intro--subtitle {
-    font-size: calc(15px + 6 * ((100vw - 320px) / 880));
+    font-size: calc( 15px + 6 * ((100vw - 320px) / 880));
   }
 }
 

@@ -614,6 +614,16 @@ h6:lang(vi), figcaption:lang(vi),
   text-align: center;
 }
 
+.float-right {
+  float: right;
+  padding-left: 20px;
+}
+
+.float-left {
+  float: left;
+  padding-right: 20px;
+}
+
 .m0 {
   margin: 0;
 }
