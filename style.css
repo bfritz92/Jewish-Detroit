@@ -9641,7 +9641,7 @@ ul.social-media-list li a:hover {
 
 .site-content .events-list--item--info .location {
   font-family: gotham-bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding-top: 10px;
 }
 
@@ -9649,7 +9649,7 @@ ul.social-media-list li a:hover {
   color: #303030;
   padding-top: 10px;
   margin-bottom: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .site-content .events-list--item--info .register {
@@ -9708,11 +9708,11 @@ ul.social-media-list li a:hover {
 
 .site-content .events-list.community-events #wn2t-calevents-int .events-list .events-list--item--info .register {
   text-align: left;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .site-content .events-list.community-events #wn2t-calevents-int .events-list .events-list--item--info .time {
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding-top: 7px;
 }
 
@@ -9730,7 +9730,8 @@ ul.social-media-list li a:hover {
           justify-content: space-between;
 }
 
-.site-content .events-list.community-events .nav-btn-container button:hover, .site-content .events-list.community-events .nav-btn-container button:focus {
+.site-content .events-list.community-events .nav-btn-container button:hover,
+.site-content .events-list.community-events .nav-btn-container button:focus {
   color: #fff;
 }
 
@@ -9811,13 +9812,14 @@ ul.social-media-list li a:hover {
   }
 }
 
-.individual-event--info--li .far, .individual-event--info--li .fas {
+.individual-event--info--li .far,
+.individual-event--info--li .fas {
   color: #004b7a;
   padding-right: 5px;
 }
 
 .individual-event--info .location {
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px 1fr;
@@ -9832,7 +9834,7 @@ ul.social-media-list li a:hover {
 }
 
 .individual-event--info .date {
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px 1fr;
@@ -9847,7 +9849,7 @@ ul.social-media-list li a:hover {
 }
 
 .individual-event--info .price {
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px 1fr;
@@ -9862,7 +9864,7 @@ ul.social-media-list li a:hover {
 }
 
 .individual-event--info .contact {
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40px 1fr;
@@ -9897,7 +9899,7 @@ ul.social-media-list li a:hover {
 }
 
 .individual-event--details .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 700;
   font-family: gotham-bold;
 }
@@ -9980,12 +9982,43 @@ label.gfield_label {
   }
 }
 
-.gfield.coupon-code .ginput_container input[type=button] {
+.gfield.coupon-code .ginput_container input[type="button"] {
   padding: 11px 25px;
 }
 
 .gf_coupon_code {
   max-width: 500px;
+}
+
+/* Donation Box for online events */
+.donate-box .gfield_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 700px) {
+  .donate-box .gfield_description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.donate-box .gfield_description:after {
+  content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-md.jpg");
+}
+
+@media only screen and (min-width: 700px) {
+  .donate-box .gfield_description:after {
+    content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-sm.jpg");
+    padding-left: 10px;
+  }
 }
 
 /* Community Events */
@@ -10019,7 +10052,7 @@ label.gfield_label {
 #field_790_7 div ul li label img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
-  grid-row: 1/span 3;
+  grid-row: 1 / span 3;
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
@@ -10029,7 +10062,7 @@ label.gfield_label {
 
 #field_790_7 div ul li label p {
   line-height: 1;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .donate-page .page .entry-header .entry-title {
