@@ -331,11 +331,11 @@ label.gfield_label {
   .gfield_description {
     display: flex;
     flex-direction: column;
-    @media only screen and (min-width: $tablet) {
+    @media only screen and (min-width: $mobile) {
       flex-direction: row;
     }
     &:after {
-      @media only screen and (min-width: $tablet) {
+      @media only screen and (min-width: $mobile) {
         content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-sm.jpg");
         padding-left: 10px;
       }

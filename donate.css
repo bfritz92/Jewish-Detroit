@@ -708,7 +708,7 @@ label.gfield_label {
           flex-direction: column;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 430px) {
   .donate-box .gfield_description {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -721,7 +721,7 @@ label.gfield_label {
   content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg");
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 430px) {
   .donate-box .gfield_description:after {
     content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-sm.jpg");
     padding-left: 10px;
