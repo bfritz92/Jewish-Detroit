@@ -10011,12 +10011,12 @@ label.gfield_label {
 }
 
 .donate-box:after {
-  content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg");
+  content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg") !important;
 }
 
 @media only screen and (min-width: 430px) {
   .donate-box:after {
-    content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg");
+    content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg") !important;
     -ms-grid-row: 1;
     -ms-grid-row-span: 3;
     grid-row: 1 / span 3;
