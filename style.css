@@ -9999,7 +9999,7 @@ label.gfield_label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 15px;
+  padding: 10px 15px !important;
 }
 
 @media only screen and (min-width: 430px) {
@@ -10036,6 +10036,10 @@ label.gfield_label {
 
 .donate-box .gfield_label {
   padding-top: 5px;
+}
+
+.donate-box .ginput_container_checkbox {
+  margin-top: 6px;
 }
 
 /* Community Events */
