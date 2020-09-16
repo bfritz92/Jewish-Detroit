@@ -9991,7 +9991,7 @@ label.gfield_label {
 }
 
 /* Donation Box for online events */
-.donate-box .gfield_description {
+.donate-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9999,28 +9999,42 @@ label.gfield_label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  line-height: 1.5;
-  padding-top: 15px;
 }
 
 @media only screen and (min-width: 430px) {
-  .donate-box .gfield_description {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  .donate-box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr;
+        grid-template-columns: 3fr 1fr;
   }
 }
 
-.donate-box .gfield_description:after {
+.donate-box:after {
   content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg");
 }
 
 @media only screen and (min-width: 430px) {
-  .donate-box .gfield_description:after {
-    content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-sm.jpg");
-    padding-left: 10px;
+  .donate-box:after {
+    content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg");
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / span 3;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    padding-top: 10px;
   }
+}
+
+.donate-box .ginput_container_checkbox,
+.donate-box .gfield_description,
+.donate-box .gfield_label {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.donate-box .gfield_label {
+  padding-top: 5px;
 }
 
 /* Community Events */
