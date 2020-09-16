@@ -9999,6 +9999,7 @@ label.gfield_label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px 15px;
 }
 
 @media only screen and (min-width: 430px) {
@@ -10022,7 +10023,6 @@ label.gfield_label {
     grid-row: 1 / span 3;
     -ms-grid-column: 2;
     grid-column: 2;
-    padding-top: 10px !important;
     margin: auto !important;
   }
 }
