@@ -1,360 +1,380 @@
 /* EVENTS STYLING */
 
-.events-intro{
-	max-width:1200px;
-	margin:auto;
-	padding-top:4rem;
-	&--title{
-		padding:0 10px 1rem 10px;
-	}
+.events-intro {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 4rem;
+  &--title {
+    padding: 0 10px 1rem 10px;
+  }
 }
 
+.site-content .events-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 10px 2rem 10px;
+  display: flex;
+  flex-direction: column;
+  &--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: $large-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 430px;
+    }
+    &--image {
+    }
+    &--info {
+      list-style-type: none;
+      padding-left: 0;
+      @media only screen and (min-width: $large-tablet) {
+        padding-left: 30px;
+      }
+      li {
+        line-height: 1;
+        color: $color__gray;
+        &.title a h2 {
+          display: block;
+        }
+      }
+      .department {
+        font-family: gotham-bold;
+        font-size: 0.8rem;
+      }
 
-.site-content .events-list{
-	display:flex;
-	flex-direction:column;
-	max-width:1200px;
-	margin:auto;
-	padding:1rem 10px 2rem 10px;
-	display:flex;
-	flex-direction:column;
-	&--item{
-		display:flex;
-		flex-direction:column;
-		align-items:center;
-		margin-bottom:1rem;
-		@media only screen and (min-width:$large-tablet){
-			display:grid;
-			grid-template-columns:1fr 430px;
-		}
-		&--image{
-			
-			
-		}
-		&--info{
-			list-style-type:none;
-			padding-left:0;
-			@media only screen and (min-width:$large-tablet){
-				padding-left:30px;
-			}
-			li{
-				line-height: 1;
-				color:$color__gray;
-				&.title a h2{display:block;}
-			}
-			.department{
-				font-family:gotham-bold;
-				font-size:0.8rem;
+      .title h2 {
+        //border-bottom:3px $color__jfmd-blue solid;
+        padding-top: 10px;
+        line-height: 1;
+        font-size: 1.3 rem;
+        color: $color__jfmd-blue;
+        //font-family:baskerville;
+      }
+      .time {
+        font-family: gotham-bold;
+        padding-top: 10px;
+      }
+      .date {
+      }
+      .location {
+        font-family: gotham-bold;
+        font-size: 0.8rem;
+        padding-top: 10px;
+      }
+      .description {
+        color: $color__dark-gray;
+        padding-top: 10px;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+      }
+      .register {
+        align-self: flex-end;
+        text-align: right;
+        padding-right: 2rem;
+        font-family: gotham-bold;
+        font-weight: 900;
+        padding-top: 1.5rem;
+        & a {
+          color: $color__jfmd-blue;
+          &:hover {
+            color: $color__jfmd-cyan;
+          }
+        }
+      }
+    }
+  }
+  &.community-events {
+    #wn2t-calevents-int {
+      display: block;
+      .events-list {
+        padding: 0;
+        margin: 0;
+        .events-list--item--image img {
+          max-width: 175px;
+          padding-top: 1rem;
+          @media only screen and (min-width: $tablet) {
+            padding-top: 0;
+          }
+        }
+        .events-list--item {
+          display: block;
 
-			}
-			
-			.title h2{
-				//border-bottom:3px $color__jfmd-blue solid;
-				padding-top:10px;
-				line-height:1;
-				font-size:1.3 rem;
-				color:$color__jfmd-blue;
-				//font-family:baskerville;
-			}
-			.time{
-				font-family:gotham-bold;
-				padding-top:10px;
-			}
-			.date{
-			}
-			.location{
-				font-family:gotham-bold;
-				font-size:.8rem;
-				padding-top:10px;
-			}
-			.description{
-				color:$color__dark-gray;
-				padding-top:10px;
-				margin-bottom:1rem;
-				font-size:.8rem;
-			}
-			.register{
-				align-self:flex-end;
-				text-align: right;
-				padding-right: 2rem;
-				font-family:gotham-bold;
-				font-weight:900;
-				padding-top:1.5rem;
-				& a{
-					color:$color__jfmd-blue;
-					&:hover {
-						color:$color__jfmd-cyan;
-					}
-				}
-			}
-		}
-	}
-	&.community-events{
-		#wn2t-calevents-int{
-			display:block;
-			.events-list{
-				padding:0;
-				margin:0;
-				.events-list--item--image img{
-						max-width:175px;
-						padding-top:1rem;
-						@media only screen and (min-width:$tablet){
-							padding-top:0;
-						}
-				}
-				.events-list--item{
-					display:block;
-
-					@media only screen and (min-width:$tablet){
-						display:flex!important;
-						flex-direction:row;
-					}
-					&--info {
-						.register{
-							text-align: left;
-							padding-top:.5rem;
-						}
-						.time{
-							font-size:.8rem;
-							padding-top:7px;
-						}
-						.title a h4{
-							color:$color__jfmd-cyan;
-							&:hover, &:focus{color:$color__jfmd-blue;}
-						}
-					}
-				
-				}	
-			}	
-		}
-		.nav-btn-container{
-			justify-content: space-between;
-			button:hover, button:focus{
-				color:#fff;
-			}
-		}
-	}
-	
+          @media only screen and (min-width: $tablet) {
+            display: flex !important;
+            flex-direction: row;
+          }
+          &--info {
+            .register {
+              text-align: left;
+              padding-top: 0.5rem;
+            }
+            .time {
+              font-size: 0.8rem;
+              padding-top: 7px;
+            }
+            .title a h4 {
+              color: $color__jfmd-cyan;
+              &:hover,
+              &:focus {
+                color: $color__jfmd-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-btn-container {
+      justify-content: space-between;
+      button:hover,
+      button:focus {
+        color: #fff;
+      }
+    }
+  }
 }
 #tribe-events-footer .tribe-events-sub-nav,
 #tribe-events-header .tribe-events-sub-nav {
- list-style-type:none;
- margin:0;
- overflow:hidden;
- line-height:normal;
- text-align:center;
- max-width: 600px;
- display: flex;
- justify-content: space-between;
- margin: auto;
- padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  line-height: normal;
+  text-align: center;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-left: 0;
 }
 
-.tribe-events-ical.tribe-events-button{display:none;}
-.events-page{
-	&--load-more{
-		font-size:1.3rem;
-		margin:2rem 0 3rem 0;
-		order:8;
-	}
+.tribe-events-ical.tribe-events-button {
+  display: none;
+}
+.events-page {
+  &--load-more {
+    font-size: 1.3rem;
+    margin: 2rem 0 3rem 0;
+    order: 8;
+  }
 }
 
-.individual-event{
-	max-width:1000px;
-	margin:auto;
-	padding:3rem 10px;
+.individual-event {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 10px;
 
-	&--img{
-
-	}
-	&--department{
-		
-		color:$color__dark-gray;
-		padding-top:1rem;
-	}
-	&--title{
-		a h2 {display:inline;}
-		color:$color__jfmd-blue;
-		@include fluid-type(320px, 750px, 26px, 36px);
-		
-	}
-	&--info{
-		padding:0 10px;
-		margin:10px 0;
-		list-style-type:none;
-		@media only screen and (min-width:$large-tablet){
-			padding-left:0;
-		}
-		&--li{
-			& .far, .fas{
-				color:$color__jfmd-blue;
-				padding-right:5px;
-				
-			}
-			
-		}
-		& .location{
-			font-size:.9rem;
-			display: grid;
-			grid-template-columns: 40px 1fr;
-			&:before{
-				font-family: "Font Awesome 5 Pro"; 
-				content:"\f3c5";
-				font-weight: 900;
-				padding-left:10px;
-			  }
-		}
-		& .date{
-			font-size:.9rem;
-			display: grid;
-			grid-template-columns: 40px 1fr;
-			&:before{
-				font-family: "Font Awesome 5 Pro"; 
-				content:"\f133";
-				font-weight: 900;
-				padding-left:10px;
-			  }
-		}
-		& .price{
-			font-size:.9rem;
-			display: grid;
-			grid-template-columns: 40px 1fr;
-			&:before{
-				font-family: "Font Awesome 5 Pro"; 
-				content:"\f53a";
-				font-weight: 900;
-				padding-left:10px;
-			  }
-		}
-		& .contact{
-			font-size:.9rem;
-			display: grid;
-			grid-template-columns: 40px 1fr;
-			a{grid-column:2;}
-			&:before{
-				font-family: "Font Awesome 5 Pro"; 
-				content:"\f0e0";
-				font-weight: 900;
-				padding-left:10px;
-			  }
-		}
-	}
-	&--details{
-		display:flex;
-		flex-direction:column;
-		.gform_wrapper form .gf_page_steps {
-			font-weight:700;
-			font-family:gotham-bold;
-			.gf_step .gf_step_number{
-				font-size:.875rem;
-				font-weight:700;
-				font-family:gotham-bold;
-			}
-			.gf_step_active{
-			background-color:$color__jfmd-blue;
-			color:#fff;
-			height:100%;
-			padding:10px 15px;
-			}
-			.gf_step_pending{
-				color:$color__jfmd-blue;
-				padding-left:15px;
-			}
-		}
-		&--copy{
-			max-width:900px;
-			h2 {
-				font-size:1.5rem;
-			}
-			p {
-				line-height:1;
-			}
-			p:nth-child(1){
-				margin: 10px 0 1rem 5px;
-			}
-		}
-		&--leadership{
-			
-			@media only screen and (min-width:$large-tablet){
-				margin-left:1rem;
-			}
-			& ul{
-				background-color:$color__light-gray;
-				list-style-type:none;
-				margin-top:0;
-				padding-top:1rem;
-				margin-bottom:0;
-				padding-bottom:1rem;
-				& li {
-					line-height:1.5;
-				}
-			}
-		}
-	
-	}
-	&--registration{
-
-	}
+  &--img {
+  }
+  &--department {
+    color: $color__dark-gray;
+    padding-top: 1rem;
+  }
+  &--title {
+    a h2 {
+      display: inline;
+    }
+    color: $color__jfmd-blue;
+    @include fluid-type(320px, 750px, 26px, 36px);
+  }
+  &--info {
+    padding: 0 10px;
+    margin: 10px 0;
+    list-style-type: none;
+    @media only screen and (min-width: $large-tablet) {
+      padding-left: 0;
+    }
+    &--li {
+      & .far,
+      .fas {
+        color: $color__jfmd-blue;
+        padding-right: 5px;
+      }
+    }
+    & .location {
+      font-size: 0.9rem;
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      &:before {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f3c5";
+        font-weight: 900;
+        padding-left: 10px;
+      }
+    }
+    & .date {
+      font-size: 0.9rem;
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      &:before {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f133";
+        font-weight: 900;
+        padding-left: 10px;
+      }
+    }
+    & .price {
+      font-size: 0.9rem;
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      &:before {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f53a";
+        font-weight: 900;
+        padding-left: 10px;
+      }
+    }
+    & .contact {
+      font-size: 0.9rem;
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      a {
+        grid-column: 2;
+      }
+      &:before {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f0e0";
+        font-weight: 900;
+        padding-left: 10px;
+      }
+    }
+  }
+  &--details {
+    display: flex;
+    flex-direction: column;
+    .gform_wrapper form .gf_page_steps {
+      font-weight: 700;
+      font-family: gotham-bold;
+      .gf_step .gf_step_number {
+        font-size: 0.875rem;
+        font-weight: 700;
+        font-family: gotham-bold;
+      }
+      .gf_step_active {
+        background-color: $color__jfmd-blue;
+        color: #fff;
+        height: 100%;
+        padding: 10px 15px;
+      }
+      .gf_step_pending {
+        color: $color__jfmd-blue;
+        padding-left: 15px;
+      }
+    }
+    &--copy {
+      max-width: 900px;
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        line-height: 1;
+      }
+      p:nth-child(1) {
+        margin: 10px 0 1rem 5px;
+      }
+    }
+    &--leadership {
+      @media only screen and (min-width: $large-tablet) {
+        margin-left: 1rem;
+      }
+      & ul {
+        background-color: $color__light-gray;
+        list-style-type: none;
+        margin-top: 0;
+        padding-top: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+        & li {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  &--registration {
+  }
 }
-.tribe-related-event-info{
-	font-size:0.7rem;
-	h3{
-		font-size:1.125rem;
-		line-height: 1;
-	}
+.tribe-related-event-info {
+  font-size: 0.7rem;
+  h3 {
+    font-size: 1.125rem;
+    line-height: 1;
+  }
 }
 body.single-tribe_events .tribe-events-cal-links a.tribe-events-gcal {
-	display: none !important;
+  display: none !important;
 }
 body.single-tribe_events .tribe-events-cal-links a.tribe-events-ical {
-	display: none !important;
+  display: none !important;
 }
-label.gfield_label{
-	font-weight:700;
-	font-family:gotham-bold;
+label.gfield_label {
+  font-weight: 700;
+  font-family: gotham-bold;
 }
 
 .gfield.coupon-code .ginput_container {
-	@media only screen and (min-width:tablet){
-		display: flex;
-		flex-drection:row;
-	}
-	input[type=button]{
-		padding:11px 25px;
-	}
+  @media only screen and (min-width: tablet) {
+    display: flex;
+    flex-drection: row;
   }
-  .gf_coupon_code {
-	max-width: 500px;
+  input[type="button"] {
+    padding: 11px 25px;
   }
+}
+.gf_coupon_code {
+  max-width: 500px;
+}
+
+/* Donation Box for online events */
+.donate-box {
+  .gfield_description {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
+    &:after {
+      @media only screen and (min-width: $tablet) {
+        content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-sm.jpg");
+        padding-left: 10px;
+      }
+      content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122818/covid-donate-md.jpg");
+    }
+  }
+}
 
 /* Community Events */
 
 .singleevent .individual-event {
-	padding-top: 0;
-  }
-  
-  .singleevent .individual-event--img {
-	max-width: 500px;
-	width:100%;
-  }
-  
+  padding-top: 0;
+}
+
+.singleevent .individual-event--img {
+  max-width: 500px;
+  width: 100%;
+}
+
 /* But Wait There's More Events! */
-#field_790_7 div ul li label{
-	display:block;
-	@media only screen and (min-width:$tablet){
-		display: grid;
-		grid-gap:0 20px;
-		grid-template-columns: 1fr 2fr;
-		width: 100%;
-		max-width: 100%;
-		border: none;
-		
-	}
-	img{grid-row:1/span 3;
-	    object-fit: contain;
-    	max-width: 100%;
-		width: 100%;
-		max-height:230px;
-		}
-	p{line-height:1; font-size:.8rem;}
+#field_790_7 div ul li label {
+  display: block;
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+  }
+  img {
+    grid-row: 1 / span 3;
+    object-fit: contain;
+    max-width: 100%;
+    width: 100%;
+    max-height: 230px;
+  }
+  p {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
 }
