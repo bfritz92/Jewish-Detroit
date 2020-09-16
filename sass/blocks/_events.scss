@@ -330,7 +330,7 @@ label.gfield_label {
 .donate-box {
   display: flex;
   flex-direction: column;
-  padding: 10px 15px;
+  padding: 10px 15px !important;
   @media only screen and (min-width: $mobile) {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -351,6 +351,9 @@ label.gfield_label {
   }
   .gfield_label {
     padding-top: 5px;
+  }
+  .ginput_container_checkbox {
+    margin-top: 6px;
   }
 }
 
