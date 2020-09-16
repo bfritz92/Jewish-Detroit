@@ -340,7 +340,7 @@ label.gfield_label {
       content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/16122403/covid-donate-md.jpg") !important;
       grid-row: 1 / span 3;
       grid-column: 2;
-      padding-top: 10px;
+      padding-top: 10px !important;
     }
   }
   .ginput_container_checkbox,
