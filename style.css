@@ -9999,6 +9999,8 @@ label.gfield_label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  line-height: 1.5;
+  padding-top: 15px;
 }
 
 @media only screen and (min-width: 430px) {
