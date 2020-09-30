@@ -1,0 +1,949 @@
+//colors
+$color__sky-blue: #d6eef1;
+$color__light-blue: #96dcf8;
+$color__dark-teal: #36abb9;
+$color__light-orange: #fdb913;
+$color__lime-green: #e2e41a;
+$color__magenta: #ef4063;
+$color__med-orange: #f99d1c;
+$color__gray: #707070;
+$color__jfmd-blue: #004b7a;
+$color__jfmd-cyan: #0094d0;
+$color__blue-highlight: #507e9b;
+
+//screen sizes
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+//typography
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap");
+p,
+li {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  line-height: 1.25;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.condensed,
+strong {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.small-text {
+  font-size: 0.7rem;
+}
+.teal-text {
+  color: $color__dark-teal;
+}
+.sky-blue {
+  color: $color__sky-blue;
+}
+.magenta {
+  color: $color__magenta;
+}
+.lime-green {
+  color: $color__lime-green;
+}
+.light-orange {
+  color: $color__light-orange;
+}
+.big-header {
+  font-size: clamp(1.3rem, 10vw, 2.5rem);
+}
+.fade {
+  opacity: 1;
+}
+//sections
+#main {
+  padding: 0;
+}
+.entry-header {
+  display: none;
+}
+.entry .entry-content,
+.entry .entry-summary {
+  max-width: 100%;
+  margin: 0;
+}
+.donation-panel {
+  display: none;
+}
+.annual-report {
+  &--splash {
+    background-color: $color__jfmd-blue;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    @media only screen and (min-width: $large-tablet) {
+      flex-direction: row;
+      height: 80vh;
+      padding-top: 0;
+    }
+    &--img {
+      display: grid;
+      grid-template-columns: 1fr 20px;
+      grid-template-rows: 20px 1fr;
+      img {
+        border-radius: 0 100px 100px 0;
+        padding-right: 50px;
+        grid-row: 2;
+        grid-column: 1;
+        z-index: 2;
+      }
+      &:after {
+        content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/22155203/corner-arrow-orange.svg");
+        height: 225px;
+        width: 250px;
+        z-index: -1;
+        display: block;
+        grid-row: 1;
+        grid-column: 2;
+        z-index: 1;
+        margin-left: -12rem;
+      }
+    }
+    &--copy {
+      .wp-block-group__inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        min-width: 100%;
+        @media only screen and (min-width: $large-tablet) {
+          min-width: 500px;
+          margin-right: 50px;
+        }
+        h2 {
+          font-size: 13vw;
+          @media only screen and (min-width: $large-tablet) {
+            font-size: 5vw;
+          }
+          @media only screen and (min-width: $laptop) {
+            font-size: 4vw;
+          }
+        }
+        h4 {
+          padding: 0 10px;
+        }
+      }
+    }
+    &--years {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      width: 95%;
+      li {
+        font-size: 1.3rem;
+        color: $color__sky-blue;
+        @media only screen and (min-width: $laptop) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  &--intro {
+    background-color: $color__sky-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: $large-tablet) {
+      gap: 20px;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &--copy {
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 700px;
+      line-height: 1.25;
+    }
+    &--blockquotes .wp-block-group__inner-container {
+      max-width: 100%;
+      @media only screen and (min-width: $large-tablet) {
+        min-width: 530px;
+        max-width: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 4rem;
+      }
+    }
+    .blockquote-orange {
+      color: $color__sky-blue;
+      font-size: 4.5vw;
+      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/23105759/orange-blockquote.svg");
+      background-size: 110vw;
+      background-repeat: no-repeat;
+      padding: 35% 20%;
+      max-width: 100%;
+      height: 100vw;
+      background-position: center;
+      text-align: center;
+      @media only screen and (min-width: $tablet) {
+        background-size: 100%;
+      }
+      @media only screen and (min-width: $large-tablet) {
+        background-size: 100%;
+        padding: 24% 23%;
+        height: auto;
+        font-size: 24px;
+        max-height: 438px;
+        margin-bottom: 3rem;
+      }
+    }
+    .blockquote-blue {
+      color: $color__sky-blue;
+      font-size: 4vw;
+      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/23105758/blue-blockquote.svg");
+      background-size: 110vw;
+      background-repeat: no-repeat;
+      padding: 35% 20%;
+      max-width: 100%;
+      height: 100vw;
+      background-position: center;
+      text-align: center;
+      @media only screen and (min-width: $tablet) {
+        background-size: 100%;
+      }
+      @media only screen and (min-width: $large-tablet) {
+        background-size: 100%;
+        padding: 27% 23%;
+        height: auto;
+        font-size: 21px;
+        max-height: 447px;
+      }
+    }
+  }
+  &--leadership {
+    background-color: $color__sky-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+    @media only screen and (min-width: $large-tablet) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  &--allocations {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $color__jfmd-blue;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $tablet) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+    .wp-block-group {
+      width: clamp(320px, 500px, 100%);
+    }
+  }
+  &--mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color__sky-blue;
+    @media only screen and(min-width:$tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    h2,
+    h4 {
+      grid-column: 1/-1;
+    }
+    .right {
+      justify-self: flex-end;
+    }
+    .top {
+      align-self: flex-start;
+    }
+    .speech-bubble:after {
+      z-index: 1;
+    }
+    .our-mission-left div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media only screen and (min-width: $tablet) {
+        align-items: flex-end;
+      }
+    }
+    .speech-bubble p,
+    .speech-bubble li {
+      line-height: 1.25;
+    }
+  }
+  &--core {
+    background-color: $color__sky-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 10px 6rem 10px;
+    @media only screen and (min-width: $tablet) {
+      flex-direction: row;
+      align-items: start;
+      justify-content: center;
+      gap: 20px;
+    }
+    &--cool {
+      .speech-bubble.style-two {
+        color: #fff;
+        border-radius: 100px 100px 0 100px;
+        padding: 2rem 1rem 1rem 2rem;
+        margin-top: 1rem;
+        max-width: 450px;
+        display: grid;
+        grid-template-rows: auto 0px;
+        li {
+          font-family: "Roboto Condensed", sans-serif;
+        }
+        &:after {
+          height: 100px;
+          width: 100px;
+          display: block;
+          align-self: end;
+          justify-self: end;
+          padding-top: 100px;
+          margin-right: -22px;
+          margin-bottom: -22px;
+        }
+        &:nth-child(2) {
+          background-color: $color__dark-teal;
+          padding-top: 1rem;
+          font-size: 1.8rem;
+          padding: 1rem 3rem;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113252/tail-teal.svg");
+            margin-right: -66px;
+          }
+        }
+        &:nth-child(3) {
+          background-color: $color__jfmd-cyan;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113246/tail-cyan.svg");
+          }
+        }
+        &:nth-child(4) {
+          background-color: $color__jfmd-blue;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113244/tail-blue.svg");
+          }
+        }
+      }
+    }
+    &--hot {
+      .speech-bubble.style-two {
+        color: #fff;
+        border-radius: 100px 100px 100px 0;
+        padding: 2rem 1rem 1rem 2rem;
+        margin-top: 1rem;
+        max-width: 450px;
+        display: grid;
+        grid-template-rows: auto 0px;
+        li {
+          font-family: "Roboto Condensed", sans-serif;
+        }
+        &:after {
+          height: 100px;
+          width: 100px;
+          display: block;
+          align-self: end;
+          justify-self: start;
+          padding-top: 100px;
+          margin-left: -44px;
+          margin-bottom: -22px;
+        }
+        &:nth-child(1) {
+          background-color: $color__med-orange;
+          padding-top: 1rem;
+          font-size: 1.8rem;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113250/tail-orange.svg");
+          }
+        }
+        &:nth-child(2) {
+          background-color: $color__light-orange;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113247/tail-lt-orange.svg");
+          }
+        }
+        &:nth-child(3) {
+          background-color: $color__magenta;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113249/tail-magenta.svg");
+          }
+        }
+        &:nth-child(4) {
+          background-color: $color__med-orange;
+          &:after {
+            content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/28113250/tail-orange.svg");
+          }
+        }
+      }
+    }
+  }
+  &--covid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $color__jfmd-blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media only screen and (min-width: $large-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    h2.big-header {
+      grid-column: 1/-1;
+      grid-row: 1;
+    }
+    .wp-block-group.white {
+      justify-self: end;
+      max-width: 650px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    div:last-child {
+      height: 100%;
+      .wp-block-group__inner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .blockquote-blue {
+          padding: 41% 23%;
+          @media only screen and (min-width: $large-tablet) {
+            width: 480px;
+            padding: 140px 120px;
+          }
+        }
+        .wp-block-image {
+          justify-self: center;
+          max-width: 500px;
+          @media only screen and (min-width: $large-tablet) {
+            justify-self: start;
+          }
+          &:nth-child(2) {
+            max-width: 500px;
+          }
+          &.box-shadow.light-orange {
+            box-shadow: 20px -20px 0px 1px rgba(253, 185, 19, 1);
+          }
+          &.box-shadow.sky-blue {
+            box-shadow: 20px -20px 0px 1px $color__sky-blue;
+          }
+        }
+      }
+    }
+    p,
+    li {
+      line-height: 1.25;
+    }
+  }
+  &--agency-impact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    gap: 20px;
+    @media only screen and (min-width: $large-tablet) {
+      flex-direction: row;
+    }
+    .wp-block-group {
+      width: clamp(600px, 750px, 50%);
+      padding-left: 10px;
+    }
+    .accordion {
+      max-width: 750px;
+      .accordion-item {
+        .accordion-body {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+          table.agency-table {
+            grid-column: 1/-1;
+          }
+          p:nth-child(2) {
+            grid-column: 1/-1;
+            grid-row: 1;
+          }
+          ul.stat-list {
+            grid-column: 1/-1;
+            list-style-type: none;
+            li {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              strong {
+                font-family: "Roboto Condensed", sans-serif;
+                font-size: 3rem;
+              }
+            }
+          }
+          p:first-child,
+          p:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &--who-we-are {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-top: solid 5px $color__jfmd-blue;
+    border-bottom: solid 5px $color__jfmd-blue;
+    .agencies {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 150px;
+          max-width: 200px;
+          padding-bottom: 15px;
+        }
+        .feature-panel--copy {
+          padding: 0;
+          align-self: center;
+          margin: 0;
+          h2 {
+            color: $color__jfmd-blue;
+            font-size: 1.2rem;
+            text-align: center;
+          }
+          p {
+            font-size: 0.75rem;
+            text-align: center;
+          }
+          a {
+            font-size: 0.75rem;
+            color: $color__jfmd-cyan;
+          }
+        }
+      }
+    }
+  }
+  &--sponsors {
+    .sponsors-page {
+      .sponsor-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+          max-height: 100px;
+          max-width: 250px;
+          height: 100px;
+          width: auto;
+          min-width: 100px;
+          img {
+            object-fit: contain;
+            max-height: 100px;
+            width: 100%;
+          }
+        }
+      }
+      &:nth-child(1) .sponsor-grid a {
+        max-height: 100px;
+        max-width: 250px;
+        height: 100px;
+        width: auto;
+        min-width: 100px;
+      }
+      &:nth-child(2) .sponsor-grid a {
+        max-height: 100px;
+        max-width: 150px;
+        height: 100px;
+        width: auto;
+        min-width: 100px;
+      }
+      &:nth-child(3) .sponsor-grid a {
+        max-height: 100px;
+        max-width: 2000px;
+        height: 100px;
+        width: auto;
+        min-width: 100px;
+      }
+      &:nth-child(4) .sponsor-grid a {
+        max-height: 75px;
+        max-width: 150px;
+        height: 75px;
+        width: auto;
+        min-width: 100px;
+      }
+      &:last-child .sponsor-grid a {
+        max-height: 75px;
+        max-width: 100px;
+        height: 75px;
+        width: auto;
+        min-width: 100px;
+      }
+    }
+  }
+}
+.blockquote-blue {
+  color: $color__sky-blue;
+  font-size: 4vw;
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/23105758/blue-blockquote.svg");
+  background-size: 110vw;
+  background-repeat: no-repeat;
+  padding: 35% 20%;
+  max-width: 100%;
+  height: 100vw;
+  background-position: center;
+  text-align: center;
+  @media only screen and (min-width: $tablet) {
+    background-size: 100%;
+  }
+  @media only screen and (min-width: $large-tablet) {
+    background-size: 100%;
+    padding: 27% 23%;
+    height: auto;
+    font-size: 21px;
+    max-height: 447px;
+  }
+}
+//BLOCKS
+.accordion-tabs {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $large-tablet) {
+    flex-direction: row;
+  }
+}
+.accordion-tabs--headline {
+  display: none;
+}
+.accordion-tabs--nav {
+  background-color: $color__sky-blue;
+  border-radius: 0 100px 100px 100px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 0px max-content;
+  height: max-content;
+  max-width: 250px;
+  min-width: 350px;
+  border-bottom: none;
+  &:before {
+    content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/24145645/triangle3.svg");
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-top: -20px;
+    margin-left: -120px;
+  }
+  li a {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: left;
+    width: 80%;
+  }
+}
+.accordion-tabs--item {
+  padding-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+  &:not([hidden="hidden"]) {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: max-content max-content;
+    grid-gap: 20px;
+  }
+  h2 {
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 1.2rem;
+    color: $color__jfmd-blue;
+    align-self: center;
+  }
+  img {
+    grid-row: 1;
+    grid-column: 1;
+    max-height: 150px;
+    justify-self: center;
+  }
+  ul {
+    grid-row: 2;
+    grid-column: 1/-1;
+    list-style-type: none;
+    margin-top: 0;
+    background-color: $color__sky-blue;
+    padding: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 10px;
+      color: $color__jfmd-blue;
+      font-family: "Roboto Condensed", sans-serif;
+      &:nth-child(2n + 1) {
+        background-color: $color__light-blue;
+      }
+      &:nth-child(4),
+      &:nth-child(14) {
+        background-color: $color__jfmd-cyan;
+        padding-right: 10px;
+        color: #fff;
+      }
+      &:last-child {
+        background-color: $color__jfmd-blue;
+        font-size: 1rem;
+        color: #fff;
+      }
+    }
+  }
+}
+.speech-bubble {
+  &.style-one {
+    padding: 40px 30px;
+    max-width: 600px;
+    display: grid;
+    z-index: 1;
+    &.top-left {
+      border-radius: 0 100px 100px 100px;
+      &.dark-teal {
+        background-color: $color__dark-teal;
+        color: #fff;
+        &:before {
+          content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/23155717/triangle.svg");
+          height: 100px;
+          width: 100px;
+          display: block;
+          margin-top: -190px;
+          margin-left: -30px;
+        }
+      }
+    }
+    &.bottom-right {
+      border-radius: 100px 100px 0 100px;
+      &.light-orange {
+        background-color: $color__light-orange;
+        color: $color__jfmd-blue;
+        &:after {
+          content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/24094733/triangle2.svg");
+          height: 100px;
+          width: 100px;
+          display: block;
+          margin-bottom: -130px;
+          margin-right: -30px;
+          align-self: end;
+          justify-self: end;
+        }
+      }
+      &.orange {
+        background-color: $color__med-orange;
+        color: #fff;
+        max-width: 1000px;
+        grid-column: 1/-1;
+        justify-self: center;
+        @media only screen and (min-width: $large-tablet) {
+          grid-template-columns: 1fr 1fr;
+        }
+        &:after {
+          content: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/09/29134145/triangle2-orange.svg");
+          height: 100px;
+          width: 100px;
+          display: block;
+          margin-bottom: -130px;
+          margin-right: -30px;
+          align-self: end;
+          justify-self: end;
+          @media only screen and (min-width: $large-tablet) {
+            grid-column: 2;
+          }
+        }
+      }
+    }
+  }
+}
+.matching-lists .wp-block-group__inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      font-size: 0.7rem;
+    }
+    &:first-child {
+      text-align: left;
+      li {
+        font-family: "Roboto Condensed", sans-serif;
+      }
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+.financial-table {
+  table {
+    tbody {
+      background-color: $color__sky-blue;
+      color: $color__jfmd-blue;
+      tr:nth-child(2n + 1) {
+        background-color: $color__light-blue;
+      }
+      tr td {
+        padding: 0;
+        border: none;
+      }
+      tr td:first-child {
+        text-align: left;
+      }
+      tr td:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
+.allocation-table {
+  width: 100%;
+  padding: 1rem 10px;
+  @media only screen and (min-width: $tablet) {
+    padding: 1rem 0;
+    width: clamp(320px, 500px, 100%);
+  }
+  table,
+  .agency-table {
+    tbody {
+      font-size: 0.8rem;
+      tr td {
+        padding: 0;
+        border: none;
+        color: #fff;
+      }
+      tr td:first-child {
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+      }
+      tr td:last-child {
+        text-align: right;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      tr:last-child {
+        border-top: 2px #fff solid;
+        font-weight: 700;
+        td:last-child {
+          color: $color__lime-green;
+        }
+      }
+    }
+  }
+}
+.agency-table {
+  tbody {
+    background-color: $color__sky-blue;
+    color: $color__jfmd-blue;
+    tr:nth-child(2n + 1) {
+      background-color: $color__light-blue;
+    }
+    tr td {
+      padding: 5px 10px;
+      border: none;
+    }
+    tr td:first-child {
+      text-align: left;
+      line-height: 1;
+      font-family: "Roboto", sans-serif;
+      font-size: 0.8rem;
+    }
+    tr td:last-child {
+      text-align: right;
+      min-width: 125px;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+  }
+}
+.sky-blue-bg {
+  background-color: $color__sky-blue;
+  color: $color__jfmd-blue;
+  padding: 10px;
+  .allocation-table table tbody tr td,
+  p {
+    color: $color__jfmd-blue;
+    width: 100%;
+  }
+  .allocation-table table tbody tr:last-child {
+    border-top: 2px solid $color__jfmd-blue;
+    td:last-child {
+      color: $color__jfmd-cyan;
+    }
+  }
+}
+//Pie Chart Stuff
+.chart {
+  width: 100%;
+  height: auto;
+}
+.pieTip {
+  position: absolute;
+  float: left;
+  min-width: 30px;
+  max-width: 300px;
+  padding: 5px 18px 6px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.97);
+  color: #444;
+  font-size: 19px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transform: all 0.3s;
+  -moz-transform: all 0.3s;
+  -ms-transform: all 0.3s;
+  -o-transform: all 0.3s;
+  transform: all 0.3s;
+  pointer-events: none;
+}
+.pieTip:after {
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  content: "";
+  height: 0;
+  margin: 0 0 0 -6px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 6px solid rgba(255, 255, 255, 0.95);
+  line-height: 0;
+}
+.chart path {
+  cursor: pointer;
+}
