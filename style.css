@@ -6772,6 +6772,43 @@ a.picture-caption {
   color: #fff;
 }
 
+.info-block.attention {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 700px) {
+  .info-block.attention {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 10px;
+    gap: 20px;
+  }
+  .info-block.attention img {
+    max-width: 230px;
+  }
+  .info-block.attention figure {
+    margin-bottom: 0;
+  }
+  .info-block.attention div.wp-block-group {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 /* Department Styles */
 .dept-intro {
   -ms-grid-rows: [splash-start] 7rem [title-start] auto [title-end] 50vh [cta-start] 4rem [splash-end] auto [cta-end copy-start] auto [intro-end] 15vw;

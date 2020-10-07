@@ -41,15 +41,23 @@ $fpip = get_field('block_info_content');
 		$copy = get_sub_field('copy'); 
 		$link_text = get_sub_field('link_text'); 
 		$link = get_sub_field('link'); 
+		$image = get_sub_field('image');
 	?>	
 		<section class="<?php the_sub_field('section_css');?> fade fade-in">
-			<div class="<?php the_sub_field('panel_css');?> fade fade-in" style="order: <?php echo $intro_panel_order?>;">
-				<h2 class=" <?php the_sub_field('heading_css');?>"><?php the_sub_field('heading');?></h2>
-				<p class="<?php the_sub_field('copy_css');?>"><?php the_sub_field('copy');?></p>
-				<?php if ( get_sub_field('link_text')) :  ?>
-					<a href="<?php the_sub_field('link');?>" class="gray-link"><?php the_sub_field('link_text');?></a>
+			<div>
+				<div class="<?php the_sub_field('panel_css');?> fade fade-in" style="order: <?php echo $intro_panel_order?>;">
+					<h2 class=" <?php the_sub_field('heading_css');?>"><?php the_sub_field('heading');?></h2>
+					<p class="<?php the_sub_field('copy_css');?>"><?php the_sub_field('copy');?></p>
+					<?php if ( get_sub_field('link_text')) :  ?>
+						<a href="<?php the_sub_field('link');?>" class="gray-link"><?php the_sub_field('link_text');?></a>
+					<?php endif; ?>
+				</div>
+					<?php if ( get_sub_field('image')) :  ?>
+					<img src="<?php echo $image?>">
+					<?php the_sub_field('image');?>
 				<?php endif; ?>
 			</div>
+			
 		</section>	
 					
 	<?php
