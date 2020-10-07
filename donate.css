@@ -165,6 +165,38 @@
   padding-bottom: 3rem;
 }
 
+.mt4 {
+  margin-top: 4rem;
+}
+
+.mb4 {
+  margin-bottom: 4rem;
+}
+
+.pt4 {
+  padding-top: 4rem;
+}
+
+.pb4 {
+  padding-bottom: 4rem;
+}
+
+.mt5 {
+  margin-top: 5rem;
+}
+
+.mb5 {
+  margin-bottom: 5rem;
+}
+
+.pt5 {
+  padding-top: 5rem;
+}
+
+.pb5 {
+  padding-bottom: 5rem;
+}
+
 .mt10 {
   margin-top: 10vw;
 }
@@ -212,6 +244,13 @@
 }
 
 .paragraph-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.limit-700 {
+  max-width: 720px;
+  margin: auto;
   padding-left: 10px;
   padding-right: 10px;
 }
