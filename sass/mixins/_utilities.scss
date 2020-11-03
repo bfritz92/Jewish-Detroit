@@ -478,6 +478,12 @@
 .right {
   text-align: right;
 }
+.blue-bg {
+  background-color: $color__jfmd-blue;
+}
+.cyan-bg {
+  background-color: $color__jfmd-cyan;
+}
 .paragraph-padding {
   padding-left: 10px;
   padding-right: 10px;
@@ -499,6 +505,15 @@
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+.big-headline {
+  font-size: 15vw;
+  @media only screen and (min-width: $tablet) {
+    font-size: 10vw;
+  }
+  @media only screen and (min-width: $large) {
+    font-size: 6.8rem;
+  }
 }
 .hide-for-mobile {
   display: none;

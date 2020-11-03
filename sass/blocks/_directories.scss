@@ -167,6 +167,21 @@ ABOUT PAGE
       @include fluid-type(400px, 1000px, 50px, 66px);
     }
   }
+  &--support {
+    background-color: $color__light-teal;
+    .wp-block-group .wp-block-group__inner-container {
+      @media only screen and (min-width: $large-tablet) {
+        column-count: 2;
+        column-gap: 20px;
+        p:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    strong {
+      color: $color__jfmd-blue;
+    }
+  }
   &--people {
     display: flex;
     flex-direction: column;
@@ -205,6 +220,42 @@ ABOUT PAGE
       }
       @media only screen and (min-width: $large-tablet) {
         z-index: -1;
+      }
+    }
+  }
+  &--future,
+  &--partners {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $large-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-height: max-content;
+      .wp-block-group {
+        max-width: 600px;
+        justify-self: center;
+      }
+      figure img {
+        height: 100%;
+      }
+    }
+    figure {
+      margin-bottom: 0;
+      img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &--get-involved {
+    figure {
+      margin-bottom: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
       }
     }
   }

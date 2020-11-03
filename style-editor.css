@@ -774,6 +774,14 @@ h6:lang(vi), figcaption:lang(vi),
   text-align: right;
 }
 
+.blue-bg {
+  background-color: #004b7a;
+}
+
+.cyan-bg {
+  background-color: #0094D0;
+}
+
 .paragraph-padding {
   padding-left: 10px;
   padding-right: 10px;
@@ -798,6 +806,22 @@ h6:lang(vi), figcaption:lang(vi),
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.big-headline {
+  font-size: 15vw;
+}
+
+@media only screen and (min-width: 700px) {
+  .big-headline {
+    font-size: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .big-headline {
+    font-size: 6.8rem;
+  }
 }
 
 .hide-for-mobile {
