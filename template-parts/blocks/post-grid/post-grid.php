@@ -47,45 +47,41 @@ $standalone = get_field('standalone_page');
 					$count			= 0;
 					$count++;						
 				?>	
-				<section class="directory-item">				
+				<section class="post-grid--item">				
 					<!-- Featured Image -->
-					<a href="#fancyboxID-<?php echo $count ?>" class="fancybox-inline">
-						<img class="directory-item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
+					<a href="#fancyboxID-<?php echo $post_id ?>" class="fancybox-inline">
+						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
 					</a>
-					<ul class="directory-item--info">
+					<ul class="post-grid--item--info">
 						<?php if ($full_name) : ?>
-						<li class="directory-item--info--title"><h3><?php echo $full_name ?></p></li>
+						<li class="post-grid--item--info--title"><h3><?php echo $full_name ?></p></li>
 						<?php endif; ?>
 					</ul>											
-					<div style="display:none" class="fancybox-hidden"><div id="fancyboxID-<?php echo $count ?>" class="hentry" style="width:460px;max-width:100%;">
-						<img class="directory-item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
-						<ul class="directory-item--info">
+					<div style="display:none" class="fancybox-hidden"><div id="fancyboxID-<?php echo $post_id ?>" class="hentry">
+						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
+						<ul class="post-grid--item--info">
 							<?php if ($full_name) : ?>
-							<li class="directory-item--info--title"><h3><?php echo $full_name ?></p></li>
+							<li class="post-grid--item--title"><h3><?php echo $full_name ?></h3></li>
 							<?php endif; ?>
 							<?php if ($occupation) : ?>
-							<li class="directory-item--info--excerpt"><p><strong>Occupation and Employer:</strong> <span style="font-style: normal;"><?php echo $occupation ?></span></p></li>
+							<li class="post-grid--item--excerpt"><p><strong>Occupation and Employer:</strong> <span style="font-style: normal;"><?php echo $occupation ?></span></p></li>
+							<?php endif; ?>
+							<?php if ($summary) : ?>
+							<li class="post-grid--item--title"><p><?php echo $summary ?></p></li>
 							<?php endif; ?>
 							<?php if ($favorites) : ?>
-							<li class="directory-item--info--excerpt"><p><strong>Favorite Things to Do:</strong> <span style="font-style: normal;"><?php echo $favorites ?></span></p></li>
+							<li class="post-grid--item--excerpt"><p><strong>Favorite Things to Do:</strong> <span style="font-style: normal;"><?php echo $favorites ?></span></p></li>
 							<?php endif; ?>
 							<?php if ($favfood) : ?>
-							<li class="directory-item--info--excerpt"><p><strong>Favorite Food:</strong> <span style="font-style: normal;"><?php echo $favfood ?></span></p></li>
+							<li class="post-grid--item--excerpt"><p><strong>Favorite Food:</strong> <span style="font-style: normal;"><?php echo $favfood ?></span></p></li>
 							<?php endif; ?>
 							<?php if ($dreamjob) : ?>
-							<li class="directory-item--info--excerpt"><p><strong>Dream Job:</strong> <span style="font-style: normal;"><?php echo $dreamjob ?></span></p></li>
+							<li class="post-grid--item--excerpt"><p><strong>Dream Job:</strong> <span style="font-style: normal;"><?php echo $dreamjob ?></span></p></li>
 							<?php endif; ?>
 							<?php if ($favorite_show) : ?>
-							<li class="directory-item--info--excerpt"><p><strong>Favorite Show:</strong> <span style="font-style: normal;"><?php echo $favorite_show ?></span></p></li>
+							<li class="post-grid--item--excerpt"><p><strong>Favorite Show:</strong> <span style="font-style: normal;"><?php echo $favorite_show ?></span></p></li>
 							<?php endif; ?>
-							<!-- Full Text -->	
-							<?php if ($summary) : ?>
-							<div id="<?php echo esc_attr($id); ?>" class="accordion-item <?php echo esc_attr($className); ?>">
-								<div class="accordion-header">
-									<h2>Read More</h2></div>
-								<div class="accordion-body"><li class="directory-item--info--full-text"><p><?php echo $summary ?></p></li></div>
-							</div>
-							<?php endif; ?>								
+							<!-- Full Text -->								
 						</ul>
 					</div>
 					</div>

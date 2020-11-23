@@ -530,6 +530,17 @@
 .flex {
   display: flex;
 }
+.wp-block-group.flex {
+  display: block;
+  .wp-block-group__inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media only screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
+  }
+}
 .hide {
   display: none;
 }

@@ -850,6 +850,30 @@ h6:lang(vi), figcaption:lang(vi),
   display: flex;
 }
 
+.wp-block-group.flex {
+  display: block;
+}
+
+.wp-block-group.flex .wp-block-group__inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+  .wp-block-group.flex .wp-block-group__inner-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .hide {
   display: none;
 }
