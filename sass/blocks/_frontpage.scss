@@ -983,6 +983,7 @@ a.picture-caption {
     }
   }
   &.attention {
+    background-color: $color__jfmd-blue;
     display: flex;
     flex-direction: column-reverse;
     @media only screen and (min-width: $tablet) {

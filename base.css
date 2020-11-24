@@ -6846,6 +6846,7 @@ a.picture-caption {
 }
 
 .info-block.attention {
+  background-color: #004b7a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
