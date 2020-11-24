@@ -529,6 +529,11 @@
 }
 .flex {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @media only screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 .wp-block-group.flex {
   display: block;
