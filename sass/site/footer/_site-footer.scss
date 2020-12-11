@@ -1,123 +1,118 @@
 /* Site footer */
 
-
 .footer {
-	background-color:$color__jfmd-blue;
-	color:#fff;
-	padding-top:2rem;
-	display:block;
-	
-	&--container{
-		display:block;
-		@media only screen and (min-width:$tablet){
-		display:grid;
-		grid-template-columns:auto auto;
-		max-width:1000px;
-		margin:auto;
-		}
-	}
-	&--list-container{
-		display:block;
-		@media only screen and (min-width:$tablet){
-			display:grid;
-		grid-template-columns:1fr 1fr;
-		align-self: start;
-		}
-	}
-	&-logo{
-		max-width:300px;
-		padding-left:15px;
-	}
-	& ul {
-		list-style-type: none;
-	}
-	& ul li {
-		line-height: 1;
-	}
-	& ul li a{
-		color:#fff;
-		font-size:.7rem;
-		&:hover{
-			color:$color__light-teal;
-		}
-	& ul li:first-of-type a{
-		color:$color__light-teal;
-		font-weight: 700;
-		&:hover{
-			color:$color__jfmd-cyan;
-		}
-	}
-	&--about-us{
-		margin-top:0;
-	}
-	&--list--learn-more{
-		margin-top:0;
-	}
-	
-}
-	&--id {
-		justify-self:end;
-		max-width:400px;
-		.footer--contact li {
-			font-size:15px;
-			font-weight:700;
-			line-height:1.25;
-		}
-		.footer--copyright {
-			font-size:.6rem;
-			margin-left:1rem
-		}
-		.footer--legal {
-			font-size:.8rem;
-			font-weight:700;
-		}
-		.footer--social {
-			display: flex;
-    		max-width: 250px;
-    		justify-content: space-between;
-		}
-		@media only screen and (min-width: $tablet){
-			
-		}
-		@media only screen and (min-width: $laptop){
-			
-		}
-	}
-	&--list-1{
-		justify-self:start;
-		@media only screen and (min-width: $tablet){
-			
-		}
-		ul li{
-			@media (pointer: coarse){
-			line-height:2;
-		}
-		}
-		
-	}
-	&--list-2{
-		justify-self:start;
-		@media only screen and (min-width: $tablet){
-			
-		}
-		ul li{
-			@media (pointer: coarse){
-			line-height:2;
-		}
-	}
-	}
+  background-color: $color__jfmd-blue;
+  color: #fff;
+  padding-top: 2rem;
+  display: block;
+
+  &--container {
+    display: block;
+    @media only screen and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: auto auto;
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
+  &--list-container {
+    display: block;
+    @media only screen and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-self: start;
+    }
+  }
+  &-logo {
+    max-width: 300px;
+    padding-left: 15px;
+  }
+  & ul {
+    list-style-type: none;
+  }
+  & ul li {
+    line-height: 1;
+  }
+  & ul li a {
+    color: #fff;
+    font-size: 0.7rem;
+    &:hover {
+      color: $color__light-teal;
+    }
+    & ul li:first-of-type a {
+      color: $color__light-teal;
+      font-weight: 700;
+      &:hover {
+        color: $color__jfmd-cyan;
+      }
+    }
+    &--about-us {
+      margin-top: 0;
+    }
+    &--list--learn-more {
+      margin-top: 0;
+    }
+  }
+  &--id {
+    justify-self: end;
+    max-width: 400px;
+    .footer--contact li {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .footer--copyright {
+      font-size: 0.6rem;
+      margin-left: 1rem;
+    }
+    .footer--legal {
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .footer--social {
+      display: flex;
+      max-width: 250px;
+      justify-content: space-between;
+    }
+    @media only screen and (min-width: $tablet) {
+    }
+    @media only screen and (min-width: $laptop) {
+    }
+  }
+  &--list-1 {
+    justify-self: start;
+    @media only screen and (min-width: $tablet) {
+    }
+    ul li {
+      @media (pointer: coarse) {
+        line-height: 2;
+      }
+    }
+  }
+  &--list-2 {
+    justify-self: start;
+    @media only screen and (min-width: $tablet) {
+    }
+    ul li {
+      @media (pointer: coarse) {
+        line-height: 2;
+      }
+    }
+  }
 }
 
-.footer--list-1 ul li:first-of-type, .footer--list-2 ul li:first-of-type {
-	border-bottom: 3px $color__light-teal solid;
-	& a {
-		color:$color__light-teal;
-		font-weight: 700;
-		font-size: .9rem;
-		line-height: 2;
-		
-		&:hover{
-			color:$color__jfmd-cyan;
-		}
-	}
-} 
+.footer--list-1 ul li:first-of-type,
+.footer--list-2 ul li:first-of-type,
+.footer--list-1 {
+  border-bottom: 3px $color__light-teal solid;
+  & a {
+    color: $color__light-teal;
+    font-weight: 700;
+    font-size: 0.9rem;
+    line-height: 2;
+    font-family: gotham-bold;
+    &:hover {
+      color: $color__jfmd-cyan;
+    }
+  }
+}

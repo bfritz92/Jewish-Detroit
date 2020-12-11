@@ -4317,7 +4317,7 @@ a[href$=".ppt"]:after {
 
 .footer ul li a {
   color: #fff;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .footer ul li a:hover {
@@ -4354,12 +4354,12 @@ a[href$=".ppt"]:after {
 }
 
 .footer--id .footer--copyright {
-  font-size: .6rem;
+  font-size: 0.6rem;
   margin-left: 1rem;
 }
 
 .footer--id .footer--legal {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
 }
 
@@ -4395,18 +4395,25 @@ a[href$=".ppt"]:after {
   }
 }
 
-.footer--list-1 ul li:first-of-type, .footer--list-2 ul li:first-of-type {
+.footer--list-1 ul li:first-of-type,
+.footer--list-2 ul li:first-of-type,
+.footer--list-1 {
   border-bottom: 3px #C4E5F4 solid;
 }
 
-.footer--list-1 ul li:first-of-type a, .footer--list-2 ul li:first-of-type a {
+.footer--list-1 ul li:first-of-type a,
+.footer--list-2 ul li:first-of-type a,
+.footer--list-1 a {
   color: #C4E5F4;
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 2;
+  font-family: gotham-bold;
 }
 
-.footer--list-1 ul li:first-of-type a:hover, .footer--list-2 ul li:first-of-type a:hover {
+.footer--list-1 ul li:first-of-type a:hover,
+.footer--list-2 ul li:first-of-type a:hover,
+.footer--list-1 a:hover {
   color: #0094D0;
 }
 
