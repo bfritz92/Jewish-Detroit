@@ -549,4 +549,49 @@
 .hide {
   display: none;
 }
+
+.one-three-grid {
+  display: block;
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.three-one-grid {
+  display: block;
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.one-two-grid {
+  display: block;
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.two-one-grid {
+  display: block;
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.one-one-grid {
+  display: block;
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 //END UTILITY CLASSES //

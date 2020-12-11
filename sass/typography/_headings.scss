@@ -1,5 +1,3 @@
-
-
 .author-description .author-link,
 .comment-metadata,
 .comment-reply-link,
@@ -26,8 +24,8 @@ h3,
 h4,
 h5,
 h6 {
-	@include font-family( $font__heading );
-	margin:0;
+  @include font-family($font__heading);
+  margin: 0;
 }
 
 .main-navigation,
@@ -47,15 +45,15 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
-	letter-spacing: -0.02em;
-	line-height: $font__line-height-heading;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: $font__line-height-heading;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .page-title {
-	@include font-family( $font__body );
+  @include font-family($font__body);
 }
 
 .site-branding,
@@ -63,15 +61,16 @@ h6 {
 .social-navigation,
 .author-description .author-bio,
 .nav-links {
-	line-height: 1.25;
+  line-height: 1.25;
 }
 
-h1 {
-	font-size: 1.5rem;
+h1,
+.h1 {
+  font-size: 1.5rem;
 
-	@include media(tablet) {
-		font-size: 2rem;
-	}
+  @include media(tablet) {
+    font-size: 2rem;
+  }
 }
 
 .entry-title,
@@ -79,11 +78,11 @@ h1 {
 .error-404 .page-title,
 .has-larger-font-size,
 h2 {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 
-	@include media(tablet) {
-		font-size: 1.5rem;
-	}
+  @include media(tablet) {
+    font-size: 1.5rem;
+  }
 }
 
 /* .has-regular-font-size,
@@ -104,13 +103,13 @@ h3 {
 h2.author-title,
 p.author-bio,
 h4 {
-	font-size: $font__size-md;
+  font-size: $font__size-md;
 }
 
 .pagination .nav-links,
 .comment-content,
 h5 {
-	font-size: $font__size-sm;
+  font-size: $font__size-sm;
 }
 
 .entry-meta,
@@ -125,21 +124,21 @@ h5 {
 #cancel-comment-reply-link,
 img:after,
 h6 {
-	font-size: $font__size-xs;
+  font-size: $font__size-xs;
 }
 
 .site-title,
 .page-title {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .page-description,
 .page-links a {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .site-description {
-	letter-spacing: -0.01em;
+  letter-spacing: -0.01em;
 }
 
 .post-navigation .post-title,
@@ -148,18 +147,24 @@ h6 {
 .error-404 .page-title,
 .comments-title,
 blockquote {
-	hyphens: auto;
-	word-break: break-word;
+  hyphens: auto;
+  word-break: break-word;
 }
 
 /* Do not hyphenate entry title on tablet view and bigger. */
 .entry-title {
-	@include media(tablet) {
-		hyphens: none;
-	}
+  @include media(tablet) {
+    hyphens: none;
+  }
 }
 
-.bold {font-family:gotham-bold;}
-.light {font-family:gotham-book;}
+.bold {
+  font-family: gotham-bold;
+}
+.light {
+  font-family: gotham-book;
+}
 //.baskerville {font-family:baskerville; font-weight:700;}
-strong {font-family:gotham-bold;}
+strong {
+  font-family: gotham-bold;
+}

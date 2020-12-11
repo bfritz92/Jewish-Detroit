@@ -25,7 +25,6 @@ $fpip = get_field('block_postgrid');
 $standalone = get_field('standalone_page'); 
 ?>
 <!--Markup for Expand/Collapse-->
-<?php if( in_array('yes', $standalone) ) : ?>
 	<?php
 		// check if the flexible content field has rows of data
 		if( have_rows('block_postgrid') ):		
@@ -36,8 +35,10 @@ $standalone = get_field('standalone_page');
 					$post 			= get_sub_field('post_name');
 					$post_id		= $post->ID;
 					$title			= get_the_title( $post_id );
+					$link			= get_the_permalink( $post_id );	
 					$headshot 		= get_the_post_thumbnail_url($post_id); 
-        			$full_name		= get_field( 'full_name', $post_id );				
+        			$full_name		= get_field( 'full_name', $post_id );	
+					$position		= get_field( 'position', $post_id );
 					$occupation		= get_field( 'occupation', $post_id );	
 					$favorites		= get_field( 'favorites', $post_id );	
 					$favfood		= get_field( 'favfood', $post_id );	
@@ -47,21 +48,42 @@ $standalone = get_field('standalone_page');
 					$count			= 0;
 					$count++;						
 				?>	
-				<section class="post-grid--item">				
+				<section class="post-grid--item">
+					<?php if( in_array('yes', $standalone) ) : ?>
+					<!-- Featured Image -->
+					<a href="<?php echo $link ?>">
+						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
+					</a>					
+					<?php else : ?>
 					<!-- Featured Image -->
 					<a href="#fancyboxID-<?php echo $post_id ?>" class="fancybox-inline">
 						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
 					</a>
+					<?php endif; ?>
 					<ul class="post-grid--item--info">
 						<?php if ($full_name) : ?>
-						<li class="post-grid--item--info--title"><h3><?php echo $full_name ?></p></li>
-						<?php endif; ?>
+							<li class="post-grid--item--info--title">
+								<h3>
+									<?php if( in_array('yes', $standalone) ) : ?>
+									<a href="<?php echo $link ?>"><?php echo $full_name ?></a>
+									<?php else : ?>
+										<?php echo $full_name ?>
+									<?php endif; ?>
+									<?php if ($position) : ?>
+										<br /><span class="cyan" style="font-size:0.875em;"><?php echo $position ?></span>
+									<?php endif; ?>										
+								</h3>
+							</li>
+						<?php endif; ?>																
 					</ul>											
 					<div style="display:none" class="fancybox-hidden"><div id="fancyboxID-<?php echo $post_id ?>" class="hentry">
 						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
 						<ul class="post-grid--item--info">
 							<?php if ($full_name) : ?>
 							<li class="post-grid--item--title"><h3><?php echo $full_name ?></h3></li>
+							<?php endif; ?>
+							<?php if ($position) : ?>
+							<li class="post-grid--item--excerpt"><h3><?php echo $position ?></h3></li>
 							<?php endif; ?>
 							<?php if ($occupation) : ?>
 							<li class="post-grid--item--excerpt"><p><strong>Occupation and Employer:</strong> <span style="font-style: normal;"><?php echo $occupation ?></span></p></li>
@@ -87,5 +109,4 @@ $standalone = get_field('standalone_page');
 					</div>
 				</section>
 				<?php endwhile;	?>
-	<?php endif; ?>	
 <?php endif; ?>
