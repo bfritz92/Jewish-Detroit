@@ -65,12 +65,12 @@ $description	 = get_field('product_description');
 	<section class="<?php echo $description_css; ?>">
 		<?php echo $description; ?>
 		<div>
-			<h2 class="<?php echo $price_css; ?>">$<?php echo $product_price; ?></h3>
+			<h2 class="<?php echo $price_css; ?> pb1">$<?php echo $product_price; ?></h3>
 			<a href="#buy" class="<?php echo $buy_header_css; ?>">Buy Now</a>		
 		</div>
 	</section>
 </section>
-<div class="order-product"><a id="buy"></a>
+<div class="order-product pt1"><a id="buy"></a>
 	<hr />
 	<h3 class="cyan">Order Form</h3>
 	<?php echo do_shortcode('[gravityform id="873" title="false" description="false" ajax="true" tabindex="49" field_values="product_name='.$product_name.'&product_price='.$product_price.'"]'); ?>
