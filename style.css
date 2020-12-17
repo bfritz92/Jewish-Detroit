@@ -4397,14 +4397,12 @@ a[href$=".ppt"]:after {
 
 .footer--list-1 ul li:first-of-type,
 .footer--list-2 ul li:first-of-type,
-.footer--list-1,
 .sidenav-dropdown {
   border-bottom: 3px #C4E5F4 solid;
 }
 
 .footer--list-1 ul li:first-of-type a,
 .footer--list-2 ul li:first-of-type a,
-.footer--list-1 a,
 .sidenav-dropdown a {
   color: #C4E5F4;
   font-weight: 700;
@@ -4415,7 +4413,6 @@ a[href$=".ppt"]:after {
 
 .footer--list-1 ul li:first-of-type a:hover,
 .footer--list-2 ul li:first-of-type a:hover,
-.footer--list-1 a:hover,
 .sidenav-dropdown a:hover {
   color: #0094D0;
 }
