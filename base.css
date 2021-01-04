@@ -40,7 +40,7 @@
 }
 
 .cyan {
-  color: #000;
+  color: #0094d0;
 }
 
 .teal {
@@ -1719,7 +1719,7 @@ input:lang(vi)[type="submit"], .entry .entry-content .wp-block-button .wp-block-
 }
 
 .left-rule {
-  border-left: 3px solid #000;
+  border-left: 3px solid #0094d0;
   padding-left: 1rem;
   margin: 1rem 0 2rem 10px;
 }
@@ -1737,7 +1737,7 @@ input:lang(vi)[type="submit"], .entry .entry-content .wp-block-button .wp-block-
 }
 
 .cyan-bg {
-  background-color: #000;
+  background-color: #0094d0;
 }
 
 .paragraph-padding {
@@ -2543,11 +2543,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #000;
+  background-color: #0094d0;
 }
 
 ::selection {
-  background-color: #000;
+  background-color: #0094d0;
 }
 
 *,
@@ -2846,7 +2846,7 @@ https://flickity.metafizzy.co
 }
 
 .carousel-cell:hover .depts--item--title h5 {
-  color: #000;
+  color: #0094d0;
 }
 
 /* cell number
@@ -3039,7 +3039,7 @@ form p {
   font-family: gotham-bold;
   font-size: 3rem;
   border: none;
-  color: #000;
+  color: #0094d0;
 }
 
 /* Navigation */
@@ -3141,7 +3141,7 @@ a:focus {
 }
 
 .blue-link:hover {
-  color: #000;
+  color: #0094d0;
 }
 
 .blue-link:after {
@@ -3240,7 +3240,7 @@ a[href$=".ppt"]:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000;
+  background-color: #0094d0;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -3644,7 +3644,7 @@ a[href$=".ppt"]:after {
 }
 
 .sidenav a:hover, .sidenav a:focus, .sidenav span:hover, .sidenav span:focus {
-  color: #000;
+  color: #0094d0;
 }
 
 .sidenav .donate {
@@ -4305,7 +4305,7 @@ a[href$=".ppt"]:after {
 }
 
 .footer ul li a ul li:first-of-type a:hover {
-  color: #000;
+  color: #0094d0;
 }
 
 .footer ul li a--about-us {
@@ -4389,7 +4389,7 @@ a[href$=".ppt"]:after {
 .footer--list-1 ul li:first-of-type a:hover,
 .footer--list-2 ul li:first-of-type a:hover,
 .sidenav-dropdown a:hover {
-  color: #000;
+  color: #0094d0;
 }
 
 /* Widgets */
@@ -5531,7 +5531,7 @@ a[href$=".ppt"]:after {
 }
 
 .sticky-nav--nav li.active {
-  background-color: #000;
+  background-color: #0094d0;
 }
 
 .sticky-nav--nav li.active ~ li.active {
@@ -5539,7 +5539,7 @@ a[href$=".ppt"]:after {
 }
 
 .sticky-nav--nav li.active ~ li.active a {
-  color: #000;
+  color: #0094d0;
 }
 
 .sticky-nav--nav li:hover a,
@@ -5551,7 +5551,7 @@ a[href$=".ppt"]:after {
 
 .sticky-nav--nav li a {
   width: 100%;
-  color: #000;
+  color: #0094d0;
 }
 
 .sticky-nav--item h2,
@@ -5564,7 +5564,7 @@ a[href$=".ppt"]:after {
 }
 
 .sticky-nav--item a:hover {
-  color: #000;
+  color: #0094d0;
 }
 
 /* !Frontpage styles */
@@ -6609,7 +6609,7 @@ button.more-trigger {
 }
 
 .events-page--load-more :hover {
-  color: #000;
+  color: #0094d0;
 }
 
 .event-details {
@@ -6899,7 +6899,7 @@ button.more-trigger {
 
 .donation-panel--form .gfield_radio li input:checked + label,
 .donation-panel--form .gfield_radio li input:hover + label {
-  background-color: #000;
+  background-color: #0094d0;
   color: #004b7a;
 }
 
@@ -7002,13 +7002,13 @@ a.picture-caption {
 }
 
 .info-block div a {
-  color: #000;
+  color: #0094d0;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
 .info-block.emergency {
-  background-color: #000;
+  background-color: #0094d0;
   color: #303030;
 }
 
@@ -8383,7 +8383,7 @@ ul.social-media-list li a {
 }
 
 ul.social-media-list li a:hover {
-  color: #000;
+  color: #0094d0;
 }
 
 /*******************************************************************
@@ -8749,7 +8749,7 @@ ul.social-media-list li a:hover {
 }
 
 .archives--timeline--copy {
-  background-color: #000;
+  background-color: #0094d0;
   padding: 10px;
 }
 
@@ -9250,7 +9250,7 @@ ul.social-media-list li a:hover {
 }
 
 .accordion-tabs--nav li a:hover {
-  background-color: #000;
+  background-color: #0094d0;
   color: #fff;
 }
 
@@ -9999,7 +9999,7 @@ BRAND GUIDE
 
 .brand-guide--section h3 {
   font-size: 1.3rem;
-  color: #000;
+  color: #0094d0;
 }
 
 .brand-guide--section p {
@@ -10307,7 +10307,7 @@ SEARCH RESULTS
 }
 
 .search-results .site-content .content-area .site-main article .entry-header .entry-title a:hover, .search-results .site-content .content-area .site-main article .entry-header .entry-title a:focus {
-  color: #000;
+  color: #0094d0;
 }
 
 /*************************
@@ -10848,7 +10848,7 @@ FEDRADIODETROIT STYLING
 }
 
 .fedradiodetroit--episode--date {
-  color: #000;
+  color: #0094d0;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
