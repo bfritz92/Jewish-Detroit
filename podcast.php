@@ -38,6 +38,11 @@ get_header();
 		</div>
 </section>
 
+<section class="info-block attention">
+    <h3 class="white">New for 2021: Introducing FedRadioDetroit's Mitzvah Makers!</h3>
+    <p class="white">Our new segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them. Learn more and nominate someone here.</p>
+</section>
+
 <section class="fedradiodetroit--grid">
 
 
