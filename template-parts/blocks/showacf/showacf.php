@@ -1,6 +1,6 @@
 <?php
 /**
- * Section Open Template.
+ * Accordion Tabs Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -8,12 +8,12 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 // Create id attribute allowing for custom "anchor" value.
-$id = 'section-open-' . $block['id'];
+$id = 'showacf-' . $block['id'];
 if( !empty($block['anchor']) ) {
    $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'section-open';
+$className = 'showacf';
 if( !empty($block['className']) ) {
    $className .= ' ' . $block['className'];
 }
@@ -21,9 +21,17 @@ if( !empty($block['align']) ) {
    $className .= ' align' . $block['align'];
 }
 // Load values and assing defaults.
-$container_type = get_field('container_type');
-$section_css = get_field('section_css');
-$section_id = get_field('section_id');
-$section_order = get_field('section_order');
+$fpip = get_field('block_showacf');
 ?>
-<<?php echo the_field('container_type'); ?> id="<?php echo the_field('section_id'); ?>" class="<?php echo the_field('section_class'); ?>" style="order:<?php echo the_field('section_order'); ?>;">
+<!--Markup for Expand/Collapse-->
+<?php 
+$post_id = get_the_ID();
+$fields = get_field_objects($post_id);
+
+if( $fields ): ?>
+	<?php foreach( $fields as $name ): ?>
+		<?php if ($name['value']) : ?>
+		<p class="hide-<?php echo $name['ID'] ?>"><strong><?php echo $name['label']; ?>:</strong> <?php echo $name['value']; ?></p>
+		<?php endif; ?>
+  	<?php endforeach; ?>   
+<?php endif; ?>

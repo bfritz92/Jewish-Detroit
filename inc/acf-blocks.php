@@ -109,6 +109,26 @@ function register_acf_block_types() {
       'keywords'          => array( 'staff', 'staff' )
    ));
 	acf_register_block_type(array(
+      'name'              => 'postgrid',
+      'title'             => __('Post Grid'),
+      'description'       => __('A custom block displaying Custom Posts in Grid.'),
+      'render_template'   => 'template-parts/blocks/post-grid/post-grid.php',
+      'category'          => 'common',
+      'icon'              => 'admin-users',
+	  'mode'			  => 'edit',
+      'keywords'          => array( 'post', 'post' )
+   ));	
+	acf_register_block_type(array(
+      'name'              => 'showacf',
+      'title'             => __('Show ACF Custom Fields'),
+      'description'       => __('A custom block showing ACF Fields in Body'),
+      'render_template'   => 'template-parts/blocks/showacf/showacf.php',
+      'category'          => 'common',
+      'icon'              => 'admin-users',
+	  'mode'			  => 'edit',
+      'keywords'          => array( 'acf', 'custom' )
+   ));	
+	acf_register_block_type(array(
       'name'              => 'event-chairs',
       'title'             => __('Event Chairs'),
       'description'       => __('An event chair block for events.'),
@@ -178,6 +198,16 @@ function register_acf_block_types() {
       'icon'              => 'buddicons-groups',
 	  'mode'			  => 'edit',
       'keywords'          => array( 'staff', 'campaign', 'prizes' )
+   ));
+	acf_register_block_type(array(
+      'name'              => 'product-page',
+      'title'             => __('Single Product Block'),
+      'description'       => __('A product block to go within a WordPress page.'),
+      'render_template'   => get_template_directory() . '/template-parts/blocks/product-page/product-page.php',
+      'category'          => 'common',
+      'icon'              => 'cart',
+	  'mode'			  => 'edit',
+      'keywords'          => array( 'product', 'shop', 'commerce' )
    ));
 }
 // Check if function exists and hook into setup.

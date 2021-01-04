@@ -959,3 +959,70 @@
 .page-template.page-template-blank .site-content .content-area #main {
   padding: 0;
 }
+
+// STICKY NAV
+
+.sticky-nav {
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+  &--nav {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    @media only screen and (min-width: $tablet) {
+      text-align: left;
+      min-width: 250px;
+      position: sticky;
+      top: 80px;
+      height: 100%;
+      padding-right: 15px;
+    }
+    li {
+      width: 100%;
+      color: $color__jfmd-blue;
+      transition: (background-color, 0.5s, ease-in-out);
+      padding: 10px 15px 10px 15px;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color__jfmd-blue;
+      }
+      &.active {
+        background-color: $color__jfmd-cyan;
+      }
+      &.active ~ li.active {
+        background-color: #fff;
+        a {
+          color: $color__jfmd-cyan;
+        }
+      }
+      &:hover a,
+      &:focus a,
+      &:active a,
+      &.active a {
+        color: #fff;
+      }
+      a {
+        width: 100%;
+        color: $color__jfmd-cyan;
+      }
+    }
+  }
+
+  &--item {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+      color: $color__jfmd-blue;
+    }
+    a:hover {
+      color: $color__jfmd-cyan;
+    }
+  }
+}

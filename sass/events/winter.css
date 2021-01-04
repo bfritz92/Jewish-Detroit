@@ -290,6 +290,11 @@ section.splash .date {
           align-items: center;
 }
 
+.leadership {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2020/12/18153327/dark-tree-bg.jpg");
+  background-size: cover;
+}
+
 .gform_wrapper form .gf_page_steps .gf_step_active {
   background-color: transparent;
   font-weight: 700;
@@ -312,6 +317,7 @@ section.splash .date {
 
 #input_879_55 {
   background-color: #fff;
+  font-weight: 700;
 }
 
 /* ----------------------------------------------
@@ -615,4 +621,4 @@ section.splash .date {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=winter-fundraiser.css.map */
+/*# sourceMappingURL=winter.css.map */
