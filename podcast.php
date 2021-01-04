@@ -40,8 +40,8 @@ get_header();
 
 <section class="info-block">
     <div class="limit-900">
-    <h3 class="">New for 2021: Introducing FedRadioDetroit's Mitzvah Makers!</h3>
-    <p class="">Our new segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them. Learn more and nominate someone here.</p>
+    <h3 class="blue">New for 2021: Introducing FedRadioDetroit's Mitzvah Makers!</h3>
+    <p class="mb0">Our new segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them. <a href="https://jewishdetroit.org/podcast/mitzvah-makers/" class="blue-link">Learn more and nominate someone here.</a></p>
     </div>
 </section>
 
