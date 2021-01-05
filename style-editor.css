@@ -12,11 +12,11 @@ Twenty Nineteen Editor Styles
 }
 
 .cyan {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .teal {
-  color: #C4E5F4;
+  color: #c4e5f4;
 }
 
 .light-gray {
@@ -761,7 +761,7 @@ h6:lang(vi), figcaption:lang(vi),
 }
 
 .left-rule {
-  border-left: 3px solid #0094D0;
+  border-left: 3px solid #0094d0;
   padding-left: 1rem;
   margin: 1rem 0 2rem 10px;
 }
@@ -774,12 +774,17 @@ h6:lang(vi), figcaption:lang(vi),
   text-align: right;
 }
 
+.smaller-text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .blue-bg {
   background-color: #004b7a;
 }
 
 .cyan-bg {
-  background-color: #0094D0;
+  background-color: #0094d0;
 }
 
 .paragraph-padding {

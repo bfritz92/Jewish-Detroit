@@ -8,11 +8,11 @@
 }
 
 .cyan {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .teal {
-  color: #C4E5F4;
+  color: #c4e5f4;
 }
 
 .light-gray {
@@ -230,7 +230,7 @@
 }
 
 .left-rule {
-  border-left: 3px solid #0094D0;
+  border-left: 3px solid #0094d0;
   padding-left: 1rem;
   margin: 1rem 0 2rem 10px;
 }
@@ -243,12 +243,17 @@
   text-align: right;
 }
 
+.smaller-text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .blue-bg {
   background-color: #004b7a;
 }
 
 .cyan-bg {
-  background-color: #0094D0;
+  background-color: #0094d0;
 }
 
 .paragraph-padding {
@@ -545,7 +550,7 @@
 }
 
 .site-content .events-list--item--info .register a:hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .site-content .events-list.community-events #wn2t-calevents-int {
@@ -595,7 +600,7 @@
 }
 
 .site-content .events-list.community-events #wn2t-calevents-int .events-list .events-list--item--info .title a h4 {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .site-content .events-list.community-events #wn2t-calevents-int .events-list .events-list--item--info .title a h4:hover, .site-content .events-list.community-events #wn2t-calevents-int .events-list .events-list--item--info .title a h4:focus {
@@ -1306,7 +1311,7 @@ label.gfield_label {
 }
 
 .donation-form--donation-type .ginput_container_radio .gfield_radio li input[type="radio"] + label:hover, .donation-form--donation-type .ginput_container_radio .gfield_radio li input[type="radio"] + label:focus {
-  background-color: #0094D0;
+  background-color: #0094d0;
   color: #fff;
 }
 
@@ -1493,7 +1498,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 
 .pricing-preview .ginput_container.ginput_container_number input[type="text"] {
   border: none;
-  color: #0094D0;
+  color: #0094d0;
   background-color: transparent;
   width: 100%;
 }
@@ -1609,7 +1614,7 @@ input[type="checkbox"]:not(:checked)
 input[type="checkbox"]:not(:checked)
 + label:before {
   content: "+ ";
-  color: #0094D0;
+  color: #0094d0;
   font-family: gotham-bold;
 }
 
@@ -1617,7 +1622,7 @@ input[type="checkbox"]:not(:checked)
 #field_456_47 .ginput_container_checkbox input[type="checkbox"]:checked + label:before,
 #field_456_48 .ginput_container_checkbox input[type="checkbox"]:checked + label:before {
   content: "- ";
-  color: #0094D0;
+  color: #0094d0;
   font-family: gotham-bold;
 }
 

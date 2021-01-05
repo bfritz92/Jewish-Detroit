@@ -40,11 +40,11 @@
 }
 
 .cyan {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .teal {
-  color: #C4E5F4;
+  color: #c4e5f4;
 }
 
 .light-gray {
@@ -1719,7 +1719,7 @@ input:lang(vi)[type="submit"], .entry .entry-content .wp-block-button .wp-block-
 }
 
 .left-rule {
-  border-left: 3px solid #0094D0;
+  border-left: 3px solid #0094d0;
   padding-left: 1rem;
   margin: 1rem 0 2rem 10px;
 }
@@ -1732,12 +1732,17 @@ input:lang(vi)[type="submit"], .entry .entry-content .wp-block-button .wp-block-
   text-align: right;
 }
 
+.smaller-text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .blue-bg {
   background-color: #004b7a;
 }
 
 .cyan-bg {
-  background-color: #0094D0;
+  background-color: #0094d0;
 }
 
 .paragraph-padding {
@@ -2543,11 +2548,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #0094D0;
+  background-color: #0094d0;
 }
 
 ::selection {
-  background-color: #0094D0;
+  background-color: #0094d0;
 }
 
 *,
@@ -2846,7 +2851,7 @@ https://flickity.metafizzy.co
 }
 
 .carousel-cell:hover .depts--item--title h5 {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 /* cell number
@@ -3039,7 +3044,7 @@ form p {
   font-family: gotham-bold;
   font-size: 3rem;
   border: none;
-  color: #0094D0;
+  color: #0094d0;
 }
 
 /* Navigation */
@@ -3141,7 +3146,7 @@ a:focus {
 }
 
 .blue-link:hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .blue-link:after {
@@ -3240,7 +3245,7 @@ a[href$=".ppt"]:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0094D0;
+  background-color: #0094d0;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -3644,7 +3649,7 @@ a[href$=".ppt"]:after {
 }
 
 .sidenav a:hover, .sidenav a:focus, .sidenav span:hover, .sidenav span:focus {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .sidenav .donate {
@@ -4296,16 +4301,16 @@ a[href$=".ppt"]:after {
 }
 
 .footer ul li a:hover {
-  color: #C4E5F4;
+  color: #c4e5f4;
 }
 
 .footer ul li a ul li:first-of-type a {
-  color: #C4E5F4;
+  color: #c4e5f4;
   font-weight: 700;
 }
 
 .footer ul li a ul li:first-of-type a:hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .footer ul li a--about-us {
@@ -4373,13 +4378,13 @@ a[href$=".ppt"]:after {
 .footer--list-1 ul li:first-of-type,
 .footer--list-2 ul li:first-of-type,
 .sidenav-dropdown {
-  border-bottom: 3px #C4E5F4 solid;
+  border-bottom: 3px #c4e5f4 solid;
 }
 
 .footer--list-1 ul li:first-of-type a,
 .footer--list-2 ul li:first-of-type a,
 .sidenav-dropdown a {
-  color: #C4E5F4;
+  color: #c4e5f4;
   font-weight: 700;
   font-size: 0.9rem;
   line-height: 2;
@@ -4389,7 +4394,7 @@ a[href$=".ppt"]:after {
 .footer--list-1 ul li:first-of-type a:hover,
 .footer--list-2 ul li:first-of-type a:hover,
 .sidenav-dropdown a:hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 /* Widgets */
@@ -5531,7 +5536,7 @@ a[href$=".ppt"]:after {
 }
 
 .sticky-nav--nav li.active {
-  background-color: #0094D0;
+  background-color: #0094d0;
 }
 
 .sticky-nav--nav li.active ~ li.active {
@@ -5539,7 +5544,7 @@ a[href$=".ppt"]:after {
 }
 
 .sticky-nav--nav li.active ~ li.active a {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .sticky-nav--nav li:hover a,
@@ -5551,7 +5556,7 @@ a[href$=".ppt"]:after {
 
 .sticky-nav--nav li a {
   width: 100%;
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .sticky-nav--item h2,
@@ -5564,7 +5569,7 @@ a[href$=".ppt"]:after {
 }
 
 .sticky-nav--item a:hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 /* !Frontpage styles */
@@ -6609,7 +6614,7 @@ button.more-trigger {
 }
 
 .events-page--load-more :hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .event-details {
@@ -6899,7 +6904,7 @@ button.more-trigger {
 
 .donation-panel--form .gfield_radio li input:checked + label,
 .donation-panel--form .gfield_radio li input:hover + label {
-  background-color: #0094D0;
+  background-color: #0094d0;
   color: #004b7a;
 }
 
@@ -6973,7 +6978,7 @@ a.picture-caption {
 }
 
 .info-block {
-  background-color: #C4E5F4;
+  background-color: #c4e5f4;
 }
 
 .info-block div {
@@ -7002,13 +7007,13 @@ a.picture-caption {
 }
 
 .info-block div a {
-  color: #0094D0;
+  color: #0094d0;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
 .info-block.emergency {
-  background-color: #0094D0;
+  background-color: #0094d0;
   color: #303030;
 }
 
@@ -8383,7 +8388,7 @@ ul.social-media-list li a {
 }
 
 ul.social-media-list li a:hover {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 /*******************************************************************
@@ -8749,7 +8754,7 @@ ul.social-media-list li a:hover {
 }
 
 .archives--timeline--copy {
-  background-color: #0094D0;
+  background-color: #0094d0;
   padding: 10px;
 }
 
@@ -9250,7 +9255,7 @@ ul.social-media-list li a:hover {
 }
 
 .accordion-tabs--nav li a:hover {
-  background-color: #0094D0;
+  background-color: #0094d0;
   color: #fff;
 }
 
@@ -9999,7 +10004,7 @@ BRAND GUIDE
 
 .brand-guide--section h3 {
   font-size: 1.3rem;
-  color: #0094D0;
+  color: #0094d0;
 }
 
 .brand-guide--section p {
@@ -10074,7 +10079,7 @@ ABOUT PAGE
 }
 
 .about-page--support {
-  background-color: #C4E5F4;
+  background-color: #c4e5f4;
 }
 
 @media only screen and (min-width: 920px) {
@@ -10307,7 +10312,7 @@ SEARCH RESULTS
 }
 
 .search-results .site-content .content-area .site-main article .entry-header .entry-title a:hover, .search-results .site-content .content-area .site-main article .entry-header .entry-title a:focus {
-  color: #0094D0;
+  color: #0094d0;
 }
 
 /*************************
@@ -10839,16 +10844,15 @@ FEDRADIODETROIT STYLING
           align-items: center;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 2rem auto minmax(min-content, 1fr) auto;
-      grid-template-rows: 2rem auto minmax(-webkit-min-content, 1fr) auto;
-      grid-template-rows: 2rem auto minmax(min-content, 1fr) auto;
+  -ms-grid-rows: 2rem auto auto auto;
+      grid-template-rows: 2rem auto auto auto;
   overflow-y: hidden;
   margin-bottom: 2rem;
   padding: 10px;
 }
 
 .fedradiodetroit--episode--date {
-  color: #0094D0;
+  color: #0094d0;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
