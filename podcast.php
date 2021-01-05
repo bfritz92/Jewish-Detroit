@@ -42,7 +42,7 @@ get_header();
     <div class="limit-900">
     <h3 class="blue">New for 2021: Introducing FedRadioDetroit's Mitzvah Makers!</h3>
     <p class="mt0 mb0">Our new segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them. </p>
-    <a href="https://jewishdetroit.org/podcast/mitzvah-makers/" class="blue-link mt0 mb0">Learn more and nominate someone here.</a>
+    <a href="https://jewishdetroit.org/podcast/mitzvah-makers/" class="blue-link mt0 mb0"><em>Learn more and nominate someone here.</em></a>
     </div>
 </section>
 
