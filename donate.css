@@ -243,6 +243,11 @@
   text-align: right;
 }
 
+.smaller-text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .blue-bg {
   background-color: #004b7a;
 }
