@@ -65,14 +65,16 @@ get_header();
 		if( $main_posts->have_posts() ):
 			while( $main_posts->have_posts() ) : $main_posts->the_post(); ?>
 				<div class="fedradiodetroit--episode">
+                <a class="fedradiodetroit--episode--image" href="<?php the_permalink(); ?>">
+                    <picture class="" alt="">
+                    <?php the_post_thumbnail('full'); ?>
+                    </picture></a>
                     <p class="fedradiodetroit--episode--date"><?php echo get_the_date(); ?></p>
                     <p class="fedradiodetroit--episode--number">Episode <?php the_field ('episode'); ?></p>	
 					<a class="fedradiodetroit--episode--title" href="<?php the_permalink(); ?>"><h3 class=""><?php the_title(); ?></h3></a>
 						
 					<div class="fedradiodetroit--episode--description"><?php the_excerpt(); ?></div>
-                    <a class="fedradiodetroit--episode--image" href="<?php the_permalink(); ?>"><picture class="" alt="">
-                    <?php the_post_thumbnail('full'); ?></a>
-                    </picture>
+                    
 						
 				</div>
 			<?php endwhile; ?>			
