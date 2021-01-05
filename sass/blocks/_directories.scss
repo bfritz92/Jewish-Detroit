@@ -671,7 +671,7 @@ FEDRADIODETROIT STYLING
     display: grid;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 2rem auto minmax(min-content, 1fr) auto;
+    grid-template-rows: 2rem auto auto auto;
     overflow-y: hidden;
     margin-bottom: 2rem;
     padding: 10px;

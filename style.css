@@ -12050,9 +12050,8 @@ FEDRADIODETROIT STYLING
           align-items: center;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 2rem auto minmax(min-content, 1fr) auto;
-      grid-template-rows: 2rem auto minmax(-webkit-min-content, 1fr) auto;
-      grid-template-rows: 2rem auto minmax(min-content, 1fr) auto;
+  -ms-grid-rows: 2rem auto auto auto;
+      grid-template-rows: 2rem auto auto auto;
   overflow-y: hidden;
   margin-bottom: 2rem;
   padding: 10px;
