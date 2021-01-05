@@ -42,7 +42,7 @@ get_header();
     <div class="limit-1200">
     <h3 class="blue">New for 2021: Introducing FedRadioDetroit's Mitzvah Makers!</h3>
     <p class="mt0 mb0 smaller-text">Our new segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them. </p>
-    <a href="https://jewishdetroit.org/podcast/mitzvah-makers/" class="blue-link mt0 mb0"><em>Learn more and nominate someone here.</em></a>
+    <a href="https://jewishdetroit.org/podcast/mitzvah-makers/" class="blue-link mt0 mb0"><em>Learn more and nominate someone here</em></a>
     </div>
 </section>
 
@@ -71,7 +71,7 @@ get_header();
                     </picture></a>
                     <p class="fedradiodetroit--episode--date"><?php echo get_the_date(); ?></p>
                     <p class="fedradiodetroit--episode--number">Episode <?php the_field ('episode'); ?></p>	
-					<a class="fedradiodetroit--episode--title" href="<?php the_permalink(); ?>"><h3 class=""><?php the_title(); ?></h3></a>
+					<a class="fedradiodetroit--episode--title" href="<?php the_permalink(); ?>"><h3 class="mt1"><?php the_title(); ?></h3></a>
 						
 					<div class="fedradiodetroit--episode--description"><?php the_excerpt(); ?></div>
                     
