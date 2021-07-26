@@ -1,0 +1,42 @@
+/* YOMS 2021 */
+
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 600;
+}
+p,
+a {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
+}
+
+.yom--intro {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/03/18142931/yom-bg-gold.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.yom--day-1 {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/03/18142938/yom-bg-black.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.yom--day-2 {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/03/18142922/yom-bg-red.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.yom--day-3 {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/03/18142916/yom-bg-blue.jpg");
+  background-position: center;
+  background-size: cover;
+}

@@ -510,11 +510,8 @@ GET INVOLVED
 *************************/
 .get-involved {
   display: grid;
-  grid-template-rows: minmax(300px, 60vh) auto;
+  grid-template-rows: auto auto;
   grid-template-columns: 1fr;
-  @media only screen and (min-width: $large) {
-    grid-template-rows: minmax(750px, 40vh) auto;
-  }
   h1.white {
     z-index: 3;
     grid-row: 1;

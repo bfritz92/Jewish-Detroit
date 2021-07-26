@@ -1,5 +1,70 @@
 //Signature 2020
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
 
+//--------------------------------------------------------------
+// Responsive Background Images
+//     Just the background image swap, styling is still handled
+//     on the relevant partial.
+//--------------------------------------------------------------
+
+@mixin responsive-bg(
+  $img-mobile,
+  $img-tablet,
+  $img-large-tablet,
+  $img-laptop,
+  $img-large,
+  $img-x-large
+) {
+  background-image: url(#{$img-mobile});
+  @media only screen and (min-width: $tablet) {
+    background-image: url(#{$img-tablet});
+  }
+  @media only screen and (min-width: $large-tablet) {
+    background-image: url(#{$img-large-tablet});
+  }
+  @media only screen and (min-width: $laptop) {
+    background-image: url(#{$img-laptop});
+  }
+  @media only screen and (min-width: $large) {
+    background-image: url(#{$img-large});
+  }
+  @media only screen and (min-width: $x-large) {
+    background-image: url(#{$img-x-large});
+  }
+}
+
+//Fluid type. Which Actually works. Which is cool.
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
 //Template reset to full width
 .page-id-52386 {
   overflow-x: hidden;
@@ -133,14 +198,22 @@ $roboto: "Roboto Condensed", sans-serif;
         }
       }
       .ehim {
-        max-width: 400px !important;
-        margin: auto;
+        height: 400px;
         padding-bottom: 2rem;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
       }
       .ajm {
-        max-width: 200px !important;
+        min-width: 300px;
         margin: auto;
         padding-bottom: 2rem;
+        a {
+          min-width: 100%;
+          object-fit: contain;
+        }
       }
     }
     &--logo img {
@@ -282,5 +355,16 @@ $roboto: "Roboto Condensed", sans-serif;
   }
   &--sponsors {
     background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/19134003/triangle-mosaic.png");
+    .tier-2 {
+      max-width: 900px;
+      .sponsor-grid {
+        display: block;
+        @media only screen and (min-width: $tablet) {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+      }
+    }
   }
 }

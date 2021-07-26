@@ -7006,7 +7006,7 @@ a.picture-caption {
   background-color: #c4e5f4;
 }
 
-.info-block div {
+.info-block div.limit-1200 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7017,24 +7017,61 @@ a.picture-caption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   padding: 2rem 10px;
 }
 
-.info-block div h2 {
+@media only screen and (min-width: 700px) {
+  .info-block div.limit-1200 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.info-block div.limit-1200 h2 {
   color: #004b7a;
 }
 
-.info-block div p {
+.info-block div.limit-1200 p {
   font-family: gotham-bold;
   color: #303030;
 }
 
-.info-block div a {
+.info-block div.limit-1200 a {
   color: #0094d0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.info-block--img {
+  max-width: 400px;
+  margin: auto;
+  height: auto;
+  padding-bottom: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (min-width: 700px) {
+  .info-block--img {
+    max-width: 30%;
+    margin: 0;
+    padding-right: 15px;
+    padding-bottom: 0;
+  }
+}
+
+.info-block--copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .info-block.emergency {
@@ -7159,7 +7196,7 @@ a.picture-caption {
   .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 8;
-    grid-column: 1/span 8;
+    grid-column: 1 / span 8;
     padding: 1.5rem 2rem 1rem 10vw;
   }
 }
@@ -7167,7 +7204,7 @@ a.picture-caption {
 .dept-intro--title h1 {
   margin-bottom: 0;
   font-family: gotham-bold;
-  line-height: .8;
+  line-height: 0.8;
   color: #004b7a;
 }
 
@@ -7214,7 +7251,7 @@ a.picture-caption {
 @media only screen and (min-width: 920px) {
   .dept-intro--cta {
     grid-column: 2/-2;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
   }
 }
 
@@ -7322,7 +7359,7 @@ a.picture-caption {
 }
 
 .dept-intro--cta--signup .gform_wrapper form .gform_body ul.gform_fields .gfield_label {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-family: gotham-bold;
   font-weight: 700;
   color: #666;
@@ -7431,7 +7468,7 @@ a.picture-caption {
   .dept-intro.nextgen .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
-    grid-column: 1/span 9;
+    grid-column: 1 / span 9;
   }
 }
 
@@ -7712,7 +7749,7 @@ a.picture-caption {
   .dept-intro.israel .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 7;
-    grid-column: 1/span 7;
+    grid-column: 1 / span 7;
     padding: 1.5rem 2rem 1rem 5vw;
     max-width: 640px;
   }
@@ -7722,7 +7759,7 @@ a.picture-caption {
   .dept-intro.israel .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
-    grid-column: 1/span 6;
+    grid-column: 1 / span 6;
     max-width: inherit;
   }
 }
@@ -7846,7 +7883,7 @@ a.picture-caption {
   .dept-intro.archives .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 10;
-    grid-column: 1/span 10;
+    grid-column: 1 / span 10;
     padding: 1.5rem 2rem 1rem 10vw;
   }
 }
@@ -7952,7 +7989,7 @@ a.picture-caption {
   .dept-intro.affinities .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 13;
-    grid-column: 1/span 13;
+    grid-column: 1 / span 13;
   }
 }
 
@@ -7960,7 +7997,7 @@ a.picture-caption {
   .dept-intro.affinities .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
+    grid-column: 1 / span 12;
   }
 }
 
@@ -7968,7 +8005,7 @@ a.picture-caption {
   .dept-intro.affinities .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 8;
-    grid-column: 1/span 8;
+    grid-column: 1 / span 8;
   }
 }
 
@@ -8076,7 +8113,7 @@ a.picture-caption {
   .dept-intro.nextgen .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
-    grid-column: 1/span 9;
+    grid-column: 1 / span 9;
   }
 }
 
@@ -8186,7 +8223,7 @@ a.picture-caption {
   .dept-intro.fed-online .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
-    grid-column: 1/span 9;
+    grid-column: 1 / span 9;
   }
 }
 
@@ -8292,7 +8329,7 @@ a.picture-caption {
   .dept-intro.covid19 .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 13;
-    grid-column: 1/span 13;
+    grid-column: 1 / span 13;
   }
 }
 
@@ -8300,7 +8337,7 @@ a.picture-caption {
   .dept-intro.covid19 .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
-    grid-column: 1/span 12;
+    grid-column: 1 / span 12;
   }
 }
 
@@ -8308,7 +8345,7 @@ a.picture-caption {
   .dept-intro.covid19 .dept-intro--title {
     -ms-grid-column: 1;
     -ms-grid-column-span: 8;
-    grid-column: 1/span 8;
+    grid-column: 1 / span 8;
   }
 }
 
@@ -8487,7 +8524,8 @@ ul.social-media-list li a:hover {
   padding-top: 1rem;
 }
 
-.archives--finding-aids--copy p, .archives--finding-aids--copy ul li {
+.archives--finding-aids--copy p,
+.archives--finding-aids--copy ul li {
   color: #303030;
 }
 
@@ -8972,9 +9010,11 @@ ul.social-media-list li a:hover {
   color: #004b7a;
 }
 
-.dept-events--detail__info .location, .dept-events--detail__info .date, .dept-events--detail__info .time {
+.dept-events--detail__info .location,
+.dept-events--detail__info .date,
+.dept-events--detail__info .time {
   color: #303030;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .dept-events--detail__info .register {
@@ -8983,7 +9023,7 @@ ul.social-media-list li a:hover {
   color: #666;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .dept-events--detail__info i {
@@ -9293,18 +9333,24 @@ ul.social-media-list li a:hover {
   padding-top: 2rem;
 }
 
-.accordion-tabs--item p, .accordion-tabs--item li, .accordion-tabs--item a {
+.accordion-tabs--item p,
+.accordion-tabs--item li,
+.accordion-tabs--item a {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
-  .accordion-tabs--item p, .accordion-tabs--item li, .accordion-tabs--item a {
+  .accordion-tabs--item p,
+  .accordion-tabs--item li,
+  .accordion-tabs--item a {
     font-size: calc( 18px + 3 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .accordion-tabs--item p, .accordion-tabs--item li, .accordion-tabs--item a {
+  .accordion-tabs--item p,
+  .accordion-tabs--item li,
+  .accordion-tabs--item a {
     font-size: 21px;
   }
 }
@@ -9383,7 +9429,8 @@ ul.social-media-list li a:hover {
   margin-bottom: 1rem;
 }
 
-.page-id-51489 .site-content .content-area, .page-id-53900 .site-content .content-area {
+.page-id-51489 .site-content .content-area,
+.page-id-53900 .site-content .content-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9393,7 +9440,8 @@ ul.social-media-list li a:hover {
           flex-direction: column;
 }
 
-.page-id-51489 .site-content .content-area img, .page-id-53900 .site-content .content-area img {
+.page-id-51489 .site-content .content-area img,
+.page-id-53900 .site-content .content-area img {
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center top;
@@ -9477,14 +9525,14 @@ ul.social-media-list li a:hover {
 .staff-grid--profile--info .title {
   color: #666;
   font-style: italic;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 1.2;
 }
 
 .staff-grid--profile--info .email a {
   color: #004b7a;
   font-weight: 700;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-decoration: underline;
 }
 
@@ -9495,12 +9543,12 @@ ul.social-media-list li a:hover {
 .staff-grid--profile--info .phone {
   color: #004b7a;
   font-weight: 700;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .staff-grid--profile--info .description {
   color: #666;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 1.3;
   max-width: 450px;
 }
@@ -9511,10 +9559,10 @@ ul.social-media-list li a:hover {
       align-self: center;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  -webkit-transition: -webkit-filter .25s ease-in-out;
-  transition: -webkit-filter .25s ease-in-out;
-  transition: filter .25s ease-in-out;
-  transition: filter .25s ease-in-out, -webkit-filter .25s ease-in-out;
+  -webkit-transition: -webkit-filter 0.25s ease-in-out;
+  transition: -webkit-filter 0.25s ease-in-out;
+  transition: filter 0.25s ease-in-out;
+  transition: filter 0.25s ease-in-out, -webkit-filter 0.25s ease-in-out;
 }
 
 .resources--splash {
@@ -9572,7 +9620,7 @@ ul.social-media-list li a:hover {
 }
 
 .resources--splash--copy p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .resources--directories {
@@ -9649,7 +9697,7 @@ ul.social-media-list li a:hover {
 }
 
 .resources--directories--copy p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -9788,21 +9836,21 @@ ul.social-media-list li a:hover {
 }
 
 .resources--calendar--events #rest-events .event ul .time {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .resources--calendar--events #rest-events .event ul .date {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .resources--calendar--events #rest-events .event ul .location {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .resources--calendar--events #rest-events .event ul .link {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding-right: 15px;
 }
 
@@ -9855,7 +9903,7 @@ ul.social-media-list li a:hover {
 }
 
 .resources--mjc--copy p {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .resources--mjc--copy h2 {
@@ -11774,17 +11822,10 @@ GET INVOLVED
 .get-involved {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: minmax(300px, 60vh) auto;
-      grid-template-rows: minmax(300px, 60vh) auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-}
-
-@media only screen and (min-width: 1600px) {
-  .get-involved {
-    -ms-grid-rows: minmax(750px, 40vh) auto;
-        grid-template-rows: minmax(750px, 40vh) auto;
-  }
 }
 
 .get-involved h1.white {
