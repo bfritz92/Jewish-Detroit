@@ -66,9 +66,10 @@ $mobile: 430px;
 			font-size:.65rem;
 			font-weight:700;
 			font-family:gotham-bold;
-			& .fa-search {
+			& .fa-search, & .fa-key {
 				font-size:.8rem;
 				padding-top:12px;
+				color:#fff;
 			}
 		}
 		& li.top-level-nav > a:before{

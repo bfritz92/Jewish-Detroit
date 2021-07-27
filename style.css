@@ -3348,9 +3348,10 @@ a[href$=".ppt"]:after {
   font-family: gotham-bold;
 }
 
-.main-nav .nav-list li.top-level-nav a .fa-search {
+.main-nav .nav-list li.top-level-nav a .fa-search, .main-nav .nav-list li.top-level-nav a .fa-key {
   font-size: .8rem;
   padding-top: 12px;
+  color: #fff;
 }
 
 .main-nav .nav-list li.top-level-nav > a:before {
