@@ -12,35 +12,58 @@
   max-width: 100%;
 }
 
+p,
+h4,
+h5,
+h6 {
+  font-family: "proxima-nova";
+}
+
+.gold {
+  color: #f8e2a9;
+}
+
 .epic2021--splash {
-  background-color: #0f0f0f;
+  background-color: #010101;
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13125800/splash-bg-mobile-scaled.jpg");
   background-size: 100%;
   background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 110vw;
 }
 
 @media only screen and (min-width: 700px) {
   .epic2021--splash {
     background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13125812/splash-bg-scaled.jpg");
-    background-size: 120%;
-    background-position: center right;
+    background-size: 130%;
+    background-position: 100% 100%;
   }
 }
 
-.epic2021--splash figure.wp-block-image {
+.epic2021--splash--img {
   max-width: 100%;
   margin: auto;
   padding-top: 15vh;
+  padding-bottom: 40vw;
 }
 
 @media only screen and (min-width: 700px) {
-  .epic2021--splash figure.wp-block-image {
-    max-width: 60vw;
+  .epic2021--splash--img {
+    max-width: 50vw !important;
     margin-left: auto;
+    margin-right: 5vw;
   }
 }
 
+.epic2021--splash--img figcaption {
+  display: none;
+}
+
+.epic2021--splash--info {
+  padding-bottom: 3rem;
+}
+
 .epic2021--intro {
-  background-color: #0f0f0f;
+  background-color: #010101;
 }
 /*# sourceMappingURL=epic-2021.css.map */
