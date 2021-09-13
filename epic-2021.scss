@@ -21,7 +21,8 @@ $widescreen: 2000px;
 p,
 h4,
 h5,
-h6 {
+h6,
+strong {
   font-family: "proxima-nova";
 }
 .gold {
@@ -35,11 +36,11 @@ h6 {
     background-size: 100%;
     background-position: center top;
     background-repeat: no-repeat;
-    min-height: 110vw;
+    padding-bottom: 2rem;
     @media only screen and (min-width: $tablet) {
-      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13125812/splash-bg-scaled.jpg");
+      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13143021/splash-bg-scaled.jpg");
       background-size: 130%;
-      background-position: 100% 100%;
+      background-position: top right;
     }
     &--img {
       max-width: 100%;
@@ -55,11 +56,65 @@ h6 {
         display: none;
       }
     }
-    &--info {
-      padding-bottom: 3rem;
+  }
+  &--impact {
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13151109/impact-bg-scaled.jpg");
+    background-color: #0f1318;
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #fff;
+    &--img {
+      max-width: 510px !important;
+      margin: auto;
+      padding: 4rem 10px 2rem 10px;
+      figcaption {
+        display: none;
+      }
+    }
+    &--pics {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      figure {
+        max-width: 350px;
+      }
     }
   }
-  &--intro {
-    background-color: #010101;
+}
+$covid-block-color: #fff;
+article.covid-block {
+  border: 5px solid $covid-block-color;
+  h3 {
+    color: $covid-block-color;
+    padding-top: 1rem;
+  }
+  svg {
+    fill: $covid-block-color;
+    height: 75px;
+    width: 75px;
+  }
+  ul.covid-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 5px solid $covid-block-color;
+    padding-left: 0;
+    width: 100%;
+    li {
+      color: $covid-block-color;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 1rem;
+      text-align: center;
+      align-items: center;
+      label {
+        font-size: 0.8rem;
+        margin: 0 10px;
+      }
+    }
   }
 }
