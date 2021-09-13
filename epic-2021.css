@@ -16,7 +16,8 @@ p,
 h4,
 h5,
 h6,
-strong {
+strong,
+label {
   font-family: "proxima-nova";
 }
 
@@ -67,6 +68,7 @@ strong {
   background-position: center top;
   background-repeat: no-repeat;
   color: #fff;
+  padding-bottom: 2rem;
 }
 
 .epic2021--impact--img {
@@ -79,7 +81,7 @@ strong {
   display: none;
 }
 
-.epic2021--impact--pics {
+.epic2021--impact--pics .wp-block-group__inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +91,55 @@ strong {
       flex-wrap: wrap;
 }
 
-.epic2021--impact--pics figure {
-  max-width: 350px;
+.epic2021--impact--pics .wp-block-group__inner-container figure {
+  max-width: 270px !important;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  aspect-ratio: 3 / 2;
+}
+
+.epic2021--impact--pics .wp-block-group__inner-container figure img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.epic2021--impact--pics .wp-block-group__inner-container figure figcaption {
+  display: none;
+}
+
+.epic2021--registration {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13154157/registration-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+
+.epic2021--registration label,
+.epic2021--registration .gfield_description,
+.epic2021--registration strong,
+.epic2021--registration .instruction,
+.epic2021--registration .gform_submission_error {
+  color: #fff;
+}
+
+.epic2021--registration .gform_legacy_markup_wrapper div.validation_error,
+.epic2021--registration .gform_validation_errors,
+.epic2021--registration .gform_legacy_markup_wrapper .gfield_error .gfield_label,
+.epic2021--registration .gform_legacy_markup_wrapper .validation_message {
+  color: #fff;
+}
+
+.epic2021--registration .gform_legacy_markup_wrapper input.ginput_product_price,
+.epic2021--registration .gform_legacy_markup_wrapper span.ginput_product_price {
+  font-family: "rosewood-std-fill", serif !important;
+  color: #f8e2a9;
+  font-size: 1.8rem !important;
+}
+
+.epic2021--registration label em a {
+  color: #f8e2a9;
 }
 
 article.covid-block {
