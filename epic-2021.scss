@@ -1,0 +1,46 @@
+//breakpoints
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+@import url("https://use.typekit.net/yvb2tlz.css");
+.rosewood {
+  font-family: "rosewood-std-fill", serif;
+}
+#main {
+  padding: 0;
+  .entry-content {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.epic2021 {
+  &--splash {
+    background-color: #0f0f0f;
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13125800/splash-bg-mobile-scaled.jpg");
+    background-size: 100%;
+    background-position: center top;
+    @media only screen and (min-width: $tablet) {
+      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13125812/splash-bg-scaled.jpg");
+      background-size: 120%;
+      background-position: center right;
+    }
+    figure.wp-block-image {
+      max-width: 100%;
+      margin: auto;
+      padding-top: 15vh;
+      @media only screen and (min-width: $tablet) {
+        max-width: 60vw;
+        margin-left: auto;
+      }
+    }
+  }
+  &--intro {
+    background-color: #0f0f0f;
+  }
+}
