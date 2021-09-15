@@ -3,6 +3,10 @@
   font-family: "rosewood-std-fill", serif;
 }
 
+.title.rosewood {
+  font-size: 3.7rem;
+}
+
 #main {
   padding: 0;
 }
@@ -17,12 +21,17 @@ h4,
 h5,
 h6,
 strong,
-label {
+label,
+ul li {
   font-family: "proxima-nova";
 }
 
 .gold {
   color: #f8e2a9;
+}
+
+.red {
+  color: #8c0d18;
 }
 
 .epic2021--splash {
@@ -120,7 +129,12 @@ label {
 .epic2021--registration .gfield_description,
 .epic2021--registration strong,
 .epic2021--registration .instruction,
-.epic2021--registration .gform_submission_error {
+.epic2021--registration .gform_submission_error,
+.epic2021--registration .gsection_title,
+.epic2021--registration h2,
+.epic2021--registration h3,
+.epic2021--registration h4,
+.epic2021--registration .gform_body {
   color: #fff;
 }
 
@@ -140,6 +154,59 @@ label {
 
 .epic2021--registration label em a {
   color: #f8e2a9;
+}
+
+.epic2021--registration .pricing-preview
+.ginput_container.ginput_container_number
+input[type="text"] {
+  font-family: "rosewood-std-fill", serif;
+  color: #f8e2a9;
+}
+
+.epic2021--sponsors {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14104623/GettyImages-1083383864-scaled.jpg");
+  background-size: cover;
+}
+
+.epic2021--leadership {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+}
+
+.epic2021--leadership ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.epic2021--leadership strong {
+  color: #f8e2a9;
+}
+
+.epic2021--footer {
+  background-color: #000;
+}
+
+.epic2021--footer--carousel {
+  height: 100%;
+}
+
+.epic2021--footer--carousel img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.epic2021--footer--logo {
+  width: 80%;
+  margin: auto;
+}
+
+#donation-panel,
+#footer {
+  display: none;
 }
 
 article.covid-block {
