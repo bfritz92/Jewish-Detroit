@@ -1,0 +1,524 @@
+//breakpoints
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+//fonts
+@import url("https://use.typekit.net/wvn5lzt.css");
+p,
+ul li,
+a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+//colors
+$navy: #003c5a;
+$text-color: #fff;
+
+$mid-blue-1: #006ca2;
+$mid-blue-2: #0093d0;
+$mid-blue-3: #43bcef;
+$sky-blue-1: #96dcf8;
+$sky-blue-2: #d6eef1;
+$sky-blue-3: #e7f8fa;
+
+//clear padding
+#main {
+  padding: 0;
+}
+.entry .entry-content,
+.entry .entry-summary {
+  max-width: 100%;
+}
+.entry .entry-content > .alignfull,
+.entry .entry-summary > .alignfull {
+  margin: 0;
+  width: 100%;
+}
+
+//splash
+.entry .entry-content {
+  .ap2021 {
+    &--nav {
+      list-style: none;
+      padding-left: 0;
+      column-count: 1;
+      z-index: 5;
+      grid-row: 3;
+      grid-column: 1/-1;
+      line-height: 1.3;
+      @media only screen and (min-width: $tablet) {
+        column-count: 2;
+      }
+      @media only screen and (min-width: $large-tablet) {
+        grid-row: 2;
+      }
+      li {
+        width: 100%;
+        text-align: center;
+
+        padding: 10px 15px;
+
+        @media only screen and (min-width: $tablet) {
+          width: auto;
+        }
+        a {
+          font-weight: 700;
+          color: #fff;
+          text-underline-offset: 6px;
+        }
+      }
+    }
+    &--splash {
+      $text-color: #fff;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      grid-template-rows: 60vh auto auto;
+      @media only screen and (min-width: $large-tablet) {
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 15px;
+        grid-template-rows: clamp(500px, 70vw, 900px) auto;
+        overflow: hidden;
+      }
+      background-color: $navy;
+      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png");
+      background-size: 120%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      &--lockup {
+        width: 100%;
+        max-width: 450px;
+        grid-column: 1/-1;
+        z-index: 5;
+        grid-row: 1;
+        padding-top: 3rem;
+        place-self: start center;
+        @media only screen and (min-width: $large-tablet) {
+          grid-column: 2 / span 4;
+        }
+      }
+      &--img {
+        grid-column: 1/-1;
+        z-index: 1;
+        grid-row: 2;
+        place-self: end;
+        clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%, 0% 60%);
+        margin-bottom: 0;
+        @media only screen and (min-width: $large-tablet) {
+          grid-column: 5 / -1;
+          grid-row: 1;
+        }
+      }
+      &--orange-bars {
+        grid-column: 1/-1;
+        z-index: 4;
+        grid-row: 1;
+        transform: translateY(11rem);
+        @media only screen and (min-width: $large-tablet) {
+          grid-column: 2 / span 6;
+        }
+      }
+      &--blue-bars {
+        grid-column: 1/-1;
+        z-index: 3;
+        transform: translateY(-4rem);
+        grid-row: 1;
+        @media only screen and (min-width: $large-tablet) {
+          grid-column: 7/-1;
+        }
+      }
+      &--orange-slash {
+        grid-column: 3/-1;
+        z-index: 2;
+        grid-row: 2;
+        place-self: end;
+        width: 100%;
+        margin-bottom: 0;
+        transform: translateY(3rem);
+
+        @media only screen and (min-width: $large-tablet) {
+          grid-column: 10/-1;
+          grid-row: 1;
+        }
+      }
+      &--letter {
+        grid-column: 1/-1;
+        max-width: 750px;
+        margin: auto;
+        padding-top: 1rem;
+        z-index: 5;
+        h2 {
+          text-align: center;
+          font-size: 2rem;
+        }
+        ul {
+          list-style: none;
+
+          li {
+            line-height: 1.1;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+    &--executive {
+      $text-color: #fff;
+      color: #fff;
+      background: $navy;
+      background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png"),
+        linear-gradient(180deg, $navy 3%, $mid-blue-1 97%);
+      background-size: 120%;
+      background-position: center 50%;
+      background-repeat: no-repeat;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      ul {
+        list-style: none;
+        padding-left: 0;
+        column-count: 2;
+        column-width: 200px;
+        max-width: 500px;
+        margin: auto;
+        @media only screen and (min-width: large-tablet) {
+          padding-left: clamp(0px, 15vw, 190px);
+        }
+        li {
+          line-height: 1.1;
+          padding-bottom: 1rem;
+          width: 200px;
+          break-inside: avoid-column;
+          strong:last-child {
+            font-weight: 400;
+          }
+        }
+      }
+      &--img {
+      }
+    }
+    &--allocations {
+      $text-color: #fff;
+      color: #fff;
+      background: $mid-blue-2;
+      background-image: linear-gradient(
+        180deg,
+        $mid-blue-2 3%,
+        $mid-blue-3 97%
+      );
+      background-repeat: no-repeat;
+      background-size: 110%;
+      background-position: center top;
+
+      padding: 3rem 0;
+      .underline:after {
+        background: #fff;
+      }
+    }
+    &--agency-support {
+      $text-color: $navy;
+      color: $navy;
+      background: $sky-blue-1;
+      background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29104933/white-stripes.svg"),
+        linear-gradient(180deg, $sky-blue-1 3%, $sky-blue-2 97%);
+      background-position: 90% 30%;
+      background-repeat: no-repeat;
+      h1 {
+        display: none;
+      }
+      .accordion-tabs {
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+        max-width: 900px !important;
+        h4 {
+          border-bottom: 2px solid $navy;
+        }
+        &--nav {
+          li {
+            a[aria-selected*="true"] {
+              background-color: $navy;
+              font-weight: 700;
+            }
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    &--mission {
+      background: $sky-blue-2;
+      $text-color: $navy;
+      color: $navy;
+      background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29105401/mission-bg.svg"),
+        linear-gradient(180deg, $sky-blue-2 3%, #fff 97%);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0% 15%;
+      .accordion {
+        .accordion-item {
+          .accordion-header {
+            background-color: transparent;
+          }
+          .accordion-body {
+            .wp-block-columns:first-child {
+              font-weight: 700;
+              align-items: center;
+              .wp-block-column:last-child {
+                height: max-content;
+              }
+            }
+            ul {
+              list-style-type: none;
+              padding-left: 0;
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              max-width: 415px;
+              margin: auto;
+              justify-content: space-between;
+              padding-bottom: 1rem;
+              li:first-child {
+              }
+              li:last-child {
+                font-size: 3rem;
+                font-weight: 700;
+                min-width: max-content;
+              }
+            }
+            .orange-bg {
+              padding: 15px;
+              background-color: #f58220;
+              color: #fff;
+              margin: 1rem 0;
+            }
+            .blue-bg {
+              padding: 15px;
+              background-color: $navy;
+              color: #fff;
+              margin: 1rem 0;
+            }
+            .teal-bg {
+              padding: 15px;
+              background-color: #1380b9;
+              color: #fff;
+              margin: 1rem 0;
+            }
+            .wp-block-table {
+              max-width: 700px;
+              margin: 0 auto 3rem auto;
+            }
+          }
+        }
+      }
+    }
+    &--impact {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+        }
+      }
+      .identity {
+        max-width: 563px;
+        margin: auto;
+        margin-top: 2rem;
+      }
+    }
+    &--agencies {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      grid-gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 150px;
+          max-width: 200px;
+          padding-bottom: 15px;
+        }
+        .feature-panel--copy {
+          padding: 0;
+          align-self: center;
+          margin: 0;
+          h2 {
+            color: $navy;
+            font-size: 1.2rem;
+            text-align: center;
+          }
+          p {
+            font-size: 0.75rem;
+            text-align: center;
+            line-height: 1.3;
+          }
+          a {
+            font-size: 0.75rem;
+            color: $navy;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    &--sponsors {
+      .sponsors {
+        .sponsor-grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          a {
+            width: clamp(100px, 15%, 125px);
+            h4 {
+              display: none;
+            }
+          }
+        }
+      }
+      .sponsors:nth-child(1) {
+        .sponsor-grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          a {
+            width: clamp(200px, 50%, 400px);
+          }
+        }
+      }
+      .sponsors:nth-child(2) {
+        .sponsor-grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          a {
+            width: clamp(200px, 50%, 400px);
+          }
+        }
+      }
+      .sponsors:nth-child(3) {
+        .sponsor-grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          a {
+            width: clamp(150px, 25%, 200px);
+          }
+        }
+      }
+      .sponsors:nth-child(4) {
+        .sponsor-grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          a {
+            width: clamp(125px, 17%, 150px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.underline {
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  position: relative;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  &:after {
+    content: "";
+    background: $navy;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 80%;
+  }
+}
+.entry .entry-content .wp-block-table th,
+.entry .entry-content figure.wp-block-table table tbody {
+  tr {
+    &:last-child {
+      background-color: #ffffff9c;
+      color: $navy;
+    }
+    td {
+      border-collapse: collapse;
+      border: none;
+      font-size: 0.7rem;
+      line-height: 1.1;
+      &:last-child {
+        text-align: right;
+        width: 5.7rem;
+      }
+      &.heading {
+        color: $navy;
+      }
+    }
+  }
+}
+.entry .entry-content figure.wp-block-table.plain table tbody tr:last-child {
+  background-color: transparent;
+  color: inherit;
+}
+.boxed,
+.accordion-tabs--item h2 {
+  padding: 10px;
+  letter-spacing: 0.4rem;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  max-width: 900px !important;
+  text-align: center;
+  border: $navy 3px solid;
+  &.navy {
+    border: $navy 3px solid;
+  }
+  &.white {
+    border: #fff 2px solid;
+  }
+}
+.boxed {
+  &.israel {
+    background-color: #98dbf7;
+    color: $navy;
+  }
+  &.identity {
+    background-color: #fcb817;
+  }
+  &.community {
+    background-color: #f99e1e;
+  }
+  &.local {
+    background-color: #f04e23;
+  }
+  &.national {
+    background-color: #c90917;
+  }
+}
+.accordion-tabs--item h2 {
+  font-size: 1rem;
+  margin: 0 auto 2rem auto;
+}
+h3.boxed {
+  border-width: 1px;
+}

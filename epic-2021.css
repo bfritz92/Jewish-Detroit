@@ -4,7 +4,13 @@
 }
 
 .title.rosewood {
-  font-size: 3.7rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .title.rosewood {
+    font-size: 3.5rem;
+  }
 }
 
 #main {
@@ -56,6 +62,8 @@ ul li {
   margin: auto;
   padding-top: 15vh;
   padding-bottom: 40vw;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -119,7 +127,7 @@ ul li {
 }
 
 .epic2021--registration {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13154157/registration-bg.jpg");
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/04125858/red-paint-wall-background-texture-WEB-copy-scaled.jpg");
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
@@ -149,7 +157,7 @@ ul li {
 .epic2021--registration .gform_legacy_markup_wrapper span.ginput_product_price {
   font-family: "rosewood-std-fill", serif !important;
   color: #f8e2a9;
-  font-size: 1.8rem !important;
+  font-size: 2.3rem !important;
 }
 
 .epic2021--registration label em a {
@@ -259,5 +267,85 @@ article.covid-block ul.covid-icons li {
 article.covid-block ul.covid-icons li label {
   font-size: 0.8rem;
   margin: 0 10px;
+}
+
+.sponsors--tier-one h2 {
+  display: none;
+}
+
+.sponsors--tier-one .sponsor-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sponsors--tier-one .sponsor-grid a {
+  width: clamp(200px, 50%, 400px);
+}
+
+.sponsors--tier-two h2 {
+  display: none;
+}
+
+.sponsors--tier-two .sponsor-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sponsors--tier-two .sponsor-grid a {
+  width: clamp(150px, 25%, 200px);
+}
+
+.sponsors--tier-three h2 {
+  display: none;
+}
+
+.sponsors--tier-three .sponsor-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sponsors--tier-three .sponsor-grid a {
+  width: clamp(100px, 15%, 125px);
+}
+
+.sponsors--tier-four h2 {
+  display: none;
+}
+
+.sponsors--tier-four .sponsor-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.sponsors--tier-four .sponsor-grid a {
+  width: clamp(75px, 10%, 100px);
 }
 /*# sourceMappingURL=epic-2021.css.map */

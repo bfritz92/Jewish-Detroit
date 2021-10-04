@@ -13,7 +13,10 @@ $widescreen: 2000px;
 }
 $rosewood: "rosewood-std-fill", serif;
 .title.rosewood {
-  font-size: 3.7rem;
+  font-size: 2rem;
+  @media only screen and (min-width: $tablet) {
+    font-size: 3.5rem;
+  }
 }
 #main {
   padding: 0;
@@ -58,6 +61,8 @@ $red-color: #8c0d18;
       margin: auto;
       padding-top: 15vh;
       padding-bottom: 40vw;
+      padding-right: 15px;
+      padding-left: 15px;
       @media only screen and (min-width: $tablet) {
         max-width: 50vw !important;
         margin-left: auto;
@@ -105,7 +110,7 @@ $red-color: #8c0d18;
     }
   }
   &--registration {
-    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13154157/registration-bg.jpg");
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/04125858/red-paint-wall-background-texture-WEB-copy-scaled.jpg");
     background-size: cover;
     color: #fff;
     padding-bottom: 5rem;
@@ -134,7 +139,7 @@ $red-color: #8c0d18;
     .gform_legacy_markup_wrapper span.ginput_product_price {
       font-family: "rosewood-std-fill", serif !important;
       color: $gold-color;
-      font-size: 1.8rem !important;
+      font-size: 2.3rem !important;
     }
     label em a {
       color: $gold-color;
@@ -217,6 +222,64 @@ article.covid-block {
       label {
         font-size: 0.8rem;
         margin: 0 10px;
+      }
+    }
+  }
+}
+.sponsors {
+  &--tier-one {
+    h2 {
+      display: none;
+    }
+    .sponsor-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      a {
+        width: clamp(200px, 50%, 400px);
+      }
+    }
+  }
+  &--tier-two {
+    h2 {
+      display: none;
+    }
+    .sponsor-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      a {
+        width: clamp(150px, 25%, 200px);
+      }
+    }
+  }
+  &--tier-three {
+    h2 {
+      display: none;
+    }
+    .sponsor-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      a {
+        width: clamp(100px, 15%, 125px);
+      }
+    }
+  }
+  &--tier-four {
+    h2 {
+      display: none;
+    }
+    .sponsor-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      a {
+        width: clamp(75px, 10%, 100px);
       }
     }
   }
