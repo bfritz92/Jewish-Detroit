@@ -384,7 +384,7 @@ $sky-blue-3: #e7f8fa;
           justify-content: center;
           gap: 10px;
           a {
-            width: clamp(100px, 15%, 125px);
+            width: clamp(150px, 20%, 125px);
             h4 {
               display: none;
             }
@@ -431,7 +431,7 @@ $sky-blue-3: #e7f8fa;
           justify-content: center;
           gap: 10px;
           a {
-            width: clamp(125px, 17%, 150px);
+            width: clamp(150px, 20%, 150px);
           }
         }
       }

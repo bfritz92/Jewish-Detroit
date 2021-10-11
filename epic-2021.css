@@ -326,7 +326,7 @@ article.covid-block ul.covid-icons li label {
 }
 
 .sponsors--tier-three .sponsor-grid a {
-  width: clamp(100px, 15%, 125px);
+  width: clamp(100px, 20%, 150px);
 }
 
 .sponsors--tier-four h2 {
@@ -346,6 +346,6 @@ article.covid-block ul.covid-icons li label {
 }
 
 .sponsors--tier-four .sponsor-grid a {
-  width: clamp(75px, 10%, 100px);
+  width: clamp(100px, 20%, 150px);
 }
 /*# sourceMappingURL=epic-2021.css.map */
