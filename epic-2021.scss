@@ -235,7 +235,7 @@ article.covid-block {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
       a {
         width: clamp(200px, 50%, 400px);
       }
@@ -249,7 +249,7 @@ article.covid-block {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
       a {
         width: clamp(150px, 25%, 200px);
       }
@@ -263,7 +263,7 @@ article.covid-block {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
       a {
         width: clamp(100px, 20%, 150px);
       }
@@ -277,9 +277,20 @@ article.covid-block {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 20px;
       a {
         width: clamp(100px, 20%, 150px);
+        &[href="https://www.theforbescompany.com/"],
+        &[href="https://www.shaareyzedek.org/"],
+        &[href="https://maddinhauser.com/"]
+        {
+          width: clamp(100px, 25%, 200px);
+        }
+        &[href="https://adatshalom.org/"],
+        &[href="https://www.civiccompanies.com/"]
+        {
+          width: clamp(100px, 15%, 150px);
+        }
       }
     }
   }

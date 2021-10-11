@@ -282,7 +282,7 @@ article.covid-block ul.covid-icons li label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .sponsors--tier-one .sponsor-grid a {
@@ -302,7 +302,7 @@ article.covid-block ul.covid-icons li label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .sponsors--tier-two .sponsor-grid a {
@@ -322,7 +322,7 @@ article.covid-block ul.covid-icons li label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .sponsors--tier-three .sponsor-grid a {
@@ -342,10 +342,18 @@ article.covid-block ul.covid-icons li label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .sponsors--tier-four .sponsor-grid a {
   width: clamp(100px, 20%, 150px);
+}
+
+.sponsors--tier-four .sponsor-grid a[href="https://www.theforbescompany.com/"], .sponsors--tier-four .sponsor-grid a[href="https://www.shaareyzedek.org/"], .sponsors--tier-four .sponsor-grid a[href="https://maddinhauser.com/"] {
+  width: clamp(100px, 25%, 200px);
+}
+
+.sponsors--tier-four .sponsor-grid a[href="https://adatshalom.org/"], .sponsors--tier-four .sponsor-grid a[href="https://www.civiccompanies.com/"] {
+  width: clamp(100px, 15%, 150px);
 }
 /*# sourceMappingURL=epic-2021.css.map */
