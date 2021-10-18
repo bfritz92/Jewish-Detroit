@@ -463,7 +463,7 @@ $sky-blue-3: #e7f8fa;
       background-color: #ffffff9c;
       color: $navy;
     }
-    &.indent {
+    &.indent td:first-child {
       padding-left: 20px;
     }
     td {

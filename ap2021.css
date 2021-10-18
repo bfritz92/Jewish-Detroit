@@ -557,8 +557,8 @@ strong {
   color: #003c5a;
 }
 
-.entry .entry-content .wp-block-table th tr.indent,
-.entry .entry-content figure.wp-block-table table tbody tr.indent {
+.entry .entry-content .wp-block-table th tr.indent td:first-child,
+.entry .entry-content figure.wp-block-table table tbody tr.indent td:first-child {
   padding-left: 20px;
 }
 
