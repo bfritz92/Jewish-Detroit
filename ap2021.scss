@@ -458,9 +458,13 @@ $sky-blue-3: #e7f8fa;
 .entry .entry-content .wp-block-table th,
 .entry .entry-content figure.wp-block-table table tbody {
   tr {
-    &:last-child {
+    &:last-child,
+    &.heading {
       background-color: #ffffff9c;
       color: $navy;
+    }
+    &.indent {
+      padding-left: 20px;
     }
     td {
       border-collapse: collapse;
