@@ -37,7 +37,7 @@ strong {
   list-style: none;
   padding-left: 0;
   -webkit-column-count: 1;
-  column-count: 1;
+          column-count: 1;
   z-index: 5;
   -ms-grid-row: 3;
   grid-row: 3;
@@ -48,7 +48,7 @@ strong {
 @media only screen and (min-width: 700px) {
   .entry .entry-content .ap2021--nav {
     -webkit-column-count: 2;
-    column-count: 2;
+            column-count: 2;
   }
 }
 
@@ -80,11 +80,11 @@ strong {
 .entry .entry-content .ap2021--splash {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [4];
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   -ms-grid-rows: 60vh auto auto;
-  grid-template-rows: 60vh auto auto;
+      grid-template-rows: 60vh auto auto;
   background-color: #003c5a;
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png");
   background-size: 120%;
@@ -94,11 +94,11 @@ strong {
 
 @media only screen and (min-width: 920px) {
   .entry .entry-content .ap2021--splash {
-    -ms-grid-columns: (1fr) [12];
-    grid-template-columns: repeat(12, 1fr);
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
     grid-gap: 15px;
     -ms-grid-rows: clamp(500px, 70vw, 900px) auto;
-    grid-template-rows: clamp(500px, 70vw, 900px) auto;
+        grid-template-rows: clamp(500px, 70vw, 900px) auto;
     overflow: hidden;
   }
 }
@@ -129,7 +129,7 @@ strong {
   grid-row: 2;
   place-self: end;
   -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%, 0% 60%);
-  clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%, 0% 60%);
+          clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%, 0% 60%);
   margin-bottom: 0;
 }
 
@@ -147,7 +147,7 @@ strong {
   -ms-grid-row: 1;
   grid-row: 1;
   -webkit-transform: translateY(11rem);
-  transform: translateY(11rem);
+          transform: translateY(11rem);
 }
 
 @media only screen and (min-width: 920px) {
@@ -162,7 +162,7 @@ strong {
   grid-column: 1/-1;
   z-index: 3;
   -webkit-transform: translateY(-4rem);
-  transform: translateY(-4rem);
+          transform: translateY(-4rem);
   -ms-grid-row: 1;
   grid-row: 1;
 }
@@ -182,7 +182,7 @@ strong {
   width: 100%;
   margin-bottom: 0;
   -webkit-transform: translateY(3rem);
-  transform: translateY(3rem);
+          transform: translateY(3rem);
 }
 
 @media only screen and (min-width: 920px) {
@@ -218,10 +218,8 @@ strong {
 .entry .entry-content .ap2021--executive {
   color: #fff;
   background: #003c5a;
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png"),
-    -webkit-gradient(linear, left top, left bottom, color-stop(3%, #003c5a), color-stop(97%, #006ca2));
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png"),
-    linear-gradient(180deg, #003c5a 3%, #006ca2 97%);
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png"), -webkit-gradient(linear, left top, left bottom, color-stop(3%, #003c5a), color-stop(97%, #006ca2));
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29103120/splash-bg.png"), linear-gradient(180deg, #003c5a 3%, #006ca2 97%);
   background-size: 120%;
   background-position: center 50%;
   background-repeat: no-repeat;
@@ -233,9 +231,9 @@ strong {
   list-style: none;
   padding-left: 0;
   -webkit-column-count: 2;
-  column-count: 2;
+          column-count: 2;
   -webkit-column-width: 200px;
-  column-width: 200px;
+          column-width: 200px;
   max-width: 500px;
   margin: auto;
 }
@@ -251,7 +249,7 @@ strong {
   padding-bottom: 1rem;
   width: 200px;
   -webkit-column-break-inside: avoid;
-  break-inside: avoid-column;
+          break-inside: avoid-column;
 }
 
 .entry .entry-content .ap2021--executive ul li strong:last-child {
@@ -261,13 +259,7 @@ strong {
 .entry .entry-content .ap2021--allocations {
   color: #fff;
   background: #0093d0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(3%, #0093d0),
-    color-stop(97%, #43bcef)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, #0093d0), color-stop(97%, #43bcef));
   background-image: linear-gradient(180deg, #0093d0 3%, #43bcef 97%);
   background-repeat: no-repeat;
   background-size: 110%;
@@ -282,10 +274,8 @@ strong {
 .entry .entry-content .ap2021--agency-support {
   color: #003c5a;
   background: #96dcf8;
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29104933/white-stripes.svg"),
-    -webkit-gradient(linear, left top, left bottom, color-stop(3%, #96dcf8), color-stop(97%, #d6eef1));
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29104933/white-stripes.svg"),
-    linear-gradient(180deg, #96dcf8 3%, #d6eef1 97%);
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29104933/white-stripes.svg"), -webkit-gradient(linear, left top, left bottom, color-stop(3%, #96dcf8), color-stop(97%, #d6eef1));
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29104933/white-stripes.svg"), linear-gradient(180deg, #96dcf8 3%, #d6eef1 97%);
   background-position: 90% 30%;
   background-repeat: no-repeat;
 }
@@ -304,12 +294,7 @@ strong {
   border-bottom: 2px solid #003c5a;
 }
 
-.entry
-  .entry-content
-  .ap2021--agency-support
-  .accordion-tabs--nav
-  li
-  a[aria-selected*="true"] {
+.entry .entry-content .ap2021--agency-support .accordion-tabs--nav li a[aria-selected*="true"] {
   background-color: #003c5a;
   font-weight: 700;
 }
@@ -321,82 +306,49 @@ strong {
 .entry .entry-content .ap2021--mission {
   background: #d6eef1;
   color: #003c5a;
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29105401/mission-bg.svg"),
-    -webkit-gradient(linear, left top, left bottom, color-stop(3%, #d6eef1), color-stop(97%, #fff));
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29105401/mission-bg.svg"),
-    linear-gradient(180deg, #d6eef1 3%, #fff 97%);
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29105401/mission-bg.svg"), -webkit-gradient(linear, left top, left bottom, color-stop(3%, #d6eef1), color-stop(97%, #fff));
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/29105401/mission-bg.svg"), linear-gradient(180deg, #d6eef1 3%, #fff 97%);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0% 15%;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-header {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-header {
   background-color: transparent;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  .wp-block-columns:first-child {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body .wp-block-columns:first-child {
   font-weight: 700;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  .wp-block-columns:first-child
-  .wp-block-column:last-child {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body .wp-block-columns:first-child .wp-block-column:last-child {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  ul {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body ul {
   list-style-type: none;
   padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
   max-width: 415px;
   margin: auto;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 1rem;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  ul
-  li:last-child {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body ul li:last-child {
   font-size: 3rem;
   font-weight: 700;
   min-width: -webkit-max-content;
@@ -404,52 +356,28 @@ strong {
   min-width: max-content;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  .orange-bg {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body .orange-bg {
   padding: 15px;
   background-color: #f58220;
   color: #fff;
   margin: 1rem 0;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  .blue-bg {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body .blue-bg {
   padding: 15px;
   background-color: #003c5a;
   color: #fff;
   margin: 1rem 0;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  .teal-bg {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body .teal-bg {
   padding: 15px;
   background-color: #1380b9;
   color: #fff;
   margin: 1rem 0;
 }
 
-.entry
-  .entry-content
-  .ap2021--mission
-  .accordion
-  .accordion-item
-  .accordion-body
-  .wp-block-table {
+.entry .entry-content .ap2021--mission .accordion .accordion-item .accordion-body .wp-block-table {
   max-width: 700px;
   margin: 0 auto 3rem auto;
 }
@@ -468,8 +396,8 @@ strong {
 .entry .entry-content .ap2021--agencies {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(240px, 1fr)) [auto-fill];
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 25px;
   max-width: 1200px;
   margin: auto;
@@ -481,11 +409,11 @@ strong {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .entry .entry-content .ap2021--agencies section img {
@@ -497,8 +425,8 @@ strong {
 .entry .entry-content .ap2021--agencies section .feature-panel--copy {
   padding: 0;
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: 0;
 }
 
@@ -525,15 +453,15 @@ strong {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
 .entry .entry-content .ap2021--sponsors .sponsors .sponsor-grid a {
-  width: clamp(100px, 15%, 125px);
+  width: clamp(150px, 20%, 125px);
 }
 
 .entry .entry-content .ap2021--sponsors .sponsors .sponsor-grid a h4 {
@@ -545,10 +473,10 @@ strong {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -561,10 +489,10 @@ strong {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -577,10 +505,10 @@ strong {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -593,15 +521,15 @@ strong {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
 .entry .entry-content .ap2021--sponsors .sponsors:nth-child(4) .sponsor-grid a {
-  width: clamp(125px, 17%, 150px);
+  width: clamp(150px, 20%, 150px);
 }
 
 .underline {

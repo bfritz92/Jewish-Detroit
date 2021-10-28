@@ -356,4 +356,26 @@ article.covid-block ul.covid-icons li label {
 .sponsors--tier-four .sponsor-grid a[href="https://adatshalom.org/"], .sponsors--tier-four .sponsor-grid a[href="https://www.civiccompanies.com/"] {
   width: clamp(100px, 15%, 150px);
 }
+
+body.page-template-page-donometer .site-content {
+  min-height: 100vh;
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
+  background-size: cover;
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#thermometer .track .goal .progress {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bf953f), color-stop(#fcf6ba), color-stop(#b38728), color-stop(#fbf5b7), to(#aa771c));
+  background: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  height: 100%;
+}
 /*# sourceMappingURL=epic-2021.css.map */
