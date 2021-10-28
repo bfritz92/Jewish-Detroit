@@ -376,9 +376,36 @@ body.page-template-page-donometer .site-content {
           justify-content: center;
 }
 
-body.page-template-page-donometer #thermometer .track .goal .progress {
+body.page-template-page-donometer #thermometer {
+  background: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  color: #fff;
+  -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+  font-family: "rosewood-std-fill", serif;
+}
+
+body.page-template-page-donometer #thermometer .track {
+  border: 1px solid #aaa;
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, white));
+  background: linear-gradient(to bottom, black 0%, white 10%);
+  background-position: 0 -1px;
+  background-size: 100% 5%;
+}
+
+body.page-template-page-donometer #thermometer .track .progress {
   background: -webkit-gradient(linear, left top, left bottom, from(#bf953f), color-stop(#fcf6ba), color-stop(#b38728), color-stop(#fbf5b7), to(#aa771c));
   background: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
   height: 100%;
+}
+
+body.page-template-page-donometer #thermometer .track .progress .amount {
+  color: #fff;
 }
 /*# sourceMappingURL=epic-2021.css.map */

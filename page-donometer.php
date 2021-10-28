@@ -14,55 +14,31 @@
     width:70px;
     height:800px;
     position: relative;
-    background: #ddd;
-    border:1px solid #aaa;
-    -webkit-border-radius: 12px;
-       -moz-border-radius: 12px;
-        -ms-border-radius: 12px;
-         -o-border-radius: 12px;
-            border-radius: 12px;
-
-    -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
-       -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
-        -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
-         -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
-            box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+    
 }
 
 #thermometer .track {
     height:780px;
     top:10px;
     width:40px;
-    border: 1px solid #aaa;
-    position: relative;
-    margin:0 auto;
-    background: rgb(255,255,255);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(0,0,0)), color-stop(1%,rgb(255,255,255)));
-    background: -webkit-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
-    background:      -o-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
-    background:     -ms-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
-    background:    -moz-linear-gradient(top, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
-    background:   linear-gradient(to bottom, rgb(0,0,0) 0%,rgb(255,255,255) 10%);
-    background-position: 0 -1px;
-    background-size: 100% 5%;
+    
 }
 
 #thermometer .progress {
     height:0%;
     width:100%;
-    background: rgb(20,100,20);
-    background: rgba(20,100,20,0.6);
     position: absolute;
     bottom:0;
     left:0;
 }
 
 #thermometer .progress img {
-	max-width: 200%;
-	position: absolute;
-	margin-left: -20px;
-	margin-top: -40px;
-	z-index: 1000;
+	max-width: 300px;
+position: absolute;
+margin-left: -55px;
+margin-top: -81px;
+z-index: 1000;
+width: 150px;
 }
 	
 #thermometer .goal {
@@ -92,18 +68,15 @@
 
 #thermometer .amount {
     display: inline-block;
-    padding:0 5px 0 60px;
-    border-top:1px solid black;
-    font-family: Trebuchet MS;
+    padding:0 5px 0 100px;
+    border-top:3px solid #fff;
     font-weight: bold;
-    color:#333;
 }
 
 #thermometer .progress .amount {
-    padding:0 60px 0 5px;
+    padding:0 100px 0 5px;
     position: absolute;
-    border-top:1px solid #060;
-    color:#060;
+    border-top:3px solid #fff;
     right:0;
 }
 
@@ -121,22 +94,22 @@
 				<div id="thermometer">
 					<div class="track">
 						<div class="goal">
-							<div class="amount"><?php echo $gf_goal; ?></div>
+							<h2 class="amount"><?php echo $gf_goal; ?></h2>
 						</div>
-						<div class="progress"><img src="https://www.freeiconspng.com/uploads/turkey-png-14.png" style="">
-							<div class="amount"><?php echo $donototal; ?></div>
+						<div class="progress"><img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/28145933/horse.svg" height="150px" style="">
+							<h3 class="amount"><?php echo $donototal; ?></h3>
 						</div>
 						<div class="stop1">
-							<div class="amount">$0 </div>
+							<h4 class="amount">$0 </h4>
 						</div>
 						<div class="stop2">
-							<div class="amount">$75000 </div>
+							<h4 class="amount">$75000 </h4>
 						</div>
 						<div class="stop3">
-							<div class="amount">$150000 </div>
+							<h4 class="amount">$150000 </h4>
 						</div>
 						<div class="stop4">
-							<div class="amount">$225000 </div>
+							<h4 class="amount">$225000 </h4>
 						</div>
 					</div>
 				</div>
