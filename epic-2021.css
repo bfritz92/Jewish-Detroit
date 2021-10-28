@@ -357,11 +357,14 @@ article.covid-block ul.covid-icons li label {
   width: clamp(100px, 15%, 150px);
 }
 
-body.page-template-page-donometer .site-content {
-  min-height: 100vh;
+body.page-template-page-donometer {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
   background-size: cover;
   background-position: center top;
+}
+
+body.page-template-page-donometer .site-content {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +376,7 @@ body.page-template-page-donometer .site-content {
           justify-content: center;
 }
 
-#thermometer .track .goal .progress {
+body.page-template-page-donometer #thermometer .track .goal .progress {
   background: -webkit-gradient(linear, left top, left bottom, from(#bf953f), color-stop(#fcf6ba), color-stop(#b38728), color-stop(#fbf5b7), to(#aa771c));
   background: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
   height: 100%;

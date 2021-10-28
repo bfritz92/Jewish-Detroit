@@ -298,28 +298,32 @@ article.covid-block {
 
 //donometer
 
-body.page-template-page-donometer .site-content {
-  min-height: 100vh;
+body.page-template-page-donometer {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
   background-size: cover;
   background-position: center top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#thermometer {
-  .track {
-    .goal {
-      .progress {
-        background: linear-gradient(
-          to bottom,
-          #bf953f,
-          #fcf6ba,
-          #b38728,
-          #fbf5b7,
-          #aa771c
-        );
-        height: 100%;
+
+  .site-content {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #thermometer {
+    .track {
+      .goal {
+        .progress {
+          background: linear-gradient(
+            to bottom,
+            #bf953f,
+            #fcf6ba,
+            #b38728,
+            #fbf5b7,
+            #aa771c
+          );
+          height: 100%;
+        }
       }
     }
   }
