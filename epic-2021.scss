@@ -302,12 +302,17 @@ body.page-template-page-donometer {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
   background-size: cover;
   background-position: center top;
-  #masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  #masthead,
+  #sideNav {
     display: none;
   }
   .site-content {
     min-height: 100vh;
-
+    padding-left: 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
