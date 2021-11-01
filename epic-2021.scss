@@ -295,3 +295,96 @@ article.covid-block {
     }
   }
 }
+
+//donometer
+
+body.page-template-page-donometer {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
+  background-size: cover;
+  background-position: center top;
+
+  .site-content {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #thermometer {
+    background: #ddd;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    color: #fff;
+    -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+    -moz-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+    -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+    -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+    box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
+    font-family: $rosewood;
+    .track {
+      border: 1px solid #aaa;
+      position: relative;
+      margin: 0 auto;
+      background: rgb(255, 255, 255);
+      background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, rgb(0, 0, 0)),
+        color-stop(1%, rgb(255, 255, 255))
+      );
+      background: -webkit-linear-gradient(
+        top,
+        rgb(0, 0, 0) 0%,
+        rgb(255, 255, 255) 10%
+      );
+      background: -o-linear-gradient(
+        top,
+        rgb(0, 0, 0) 0%,
+        rgb(255, 255, 255) 10%
+      );
+      background: -ms-linear-gradient(
+        top,
+        rgb(0, 0, 0) 0%,
+        rgb(255, 255, 255) 10%
+      );
+      background: -moz-linear-gradient(
+        top,
+        rgb(0, 0, 0) 0%,
+        rgb(255, 255, 255) 10%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0) 0%,
+        rgb(255, 255, 255) 10%
+      );
+      background-position: 0 -1px;
+      background-size: 100% 5%;
+
+      .progress {
+        background: linear-gradient(
+          to bottom,
+          #bf953f,
+          #fcf6ba,
+          #b38728,
+          #fbf5b7,
+          #aa771c
+        );
+        height: 100%;
+        .amount {
+          color: #fff;
+        }
+      }
+      .stop1,
+      .stop2,
+      .stop3,
+      .stop4 
+        font-family: $rosewood;
+      }
+    }
+  }
+}
