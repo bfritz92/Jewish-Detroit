@@ -558,7 +558,9 @@ strong {
 }
 
 .entry .entry-content .wp-block-table th tr.indent td:first-child,
-.entry .entry-content figure.wp-block-table table tbody tr.indent td:first-child {
+.entry .entry-content .wp-block-table th tr td.indent,
+.entry .entry-content figure.wp-block-table table tbody tr.indent td:first-child,
+.entry .entry-content figure.wp-block-table table tbody tr td.indent {
   padding-left: 20px;
 }
 
