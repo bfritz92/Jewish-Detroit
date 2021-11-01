@@ -94,7 +94,7 @@ width: 150px;
 				<div id="thermometer">
 					<div class="track">
 						<div class="goal">
-							<h2 class="amount"><?php echo $gf_goal; ?></h2>
+							<h2 class="amount gold"><?php echo $gf_goal; ?></h2>
 						</div>
 						<div class="progress"><img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/28145933/horse.svg" height="150px" style="">
 							<h3 class="amount"><?php echo $donototal; ?></h3>
@@ -103,13 +103,13 @@ width: 150px;
 							<h4 class="amount">$0 </h4>
 						</div>
 						<div class="stop2">
-							<h4 class="amount">$75000 </h4>
+							<h4 class="amount">$75,000 </h4>
 						</div>
 						<div class="stop3">
-							<h4 class="amount">$150000 </h4>
+							<h4 class="amount">$150,000 </h4>
 						</div>
 						<div class="stop4">
-							<h4 class="amount">$225000 </h4>
+							<h4 class="amount">$225,000 </h4>
 						</div>
 					</div>
 				</div>
