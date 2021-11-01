@@ -363,6 +363,10 @@ body.page-template-page-donometer {
   background-position: center top;
 }
 
+body.page-template-page-donometer #masthead {
+  display: none;
+}
+
 body.page-template-page-donometer .site-content {
   min-height: 100vh;
   display: -webkit-box;
@@ -393,10 +397,6 @@ body.page-template-page-donometer #thermometer .track {
   position: relative;
   margin: 0 auto;
   background: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, white));
-  background: linear-gradient(to bottom, black 0%, white 10%);
-  background-position: 0 -1px;
-  background-size: 100% 5%;
 }
 
 body.page-template-page-donometer #thermometer .track .progress {
@@ -407,5 +407,26 @@ body.page-template-page-donometer #thermometer .track .progress {
 
 body.page-template-page-donometer #thermometer .track .progress .amount {
   color: #fff;
+}
+
+body.page-template-page-donometer #thermometer .track .stop1 h2,
+body.page-template-page-donometer #thermometer .track .stop1 h3,
+body.page-template-page-donometer #thermometer .track .stop1 h4,
+body.page-template-page-donometer #thermometer .track .stop2 h2,
+body.page-template-page-donometer #thermometer .track .stop2 h3,
+body.page-template-page-donometer #thermometer .track .stop2 h4,
+body.page-template-page-donometer #thermometer .track .stop3 h2,
+body.page-template-page-donometer #thermometer .track .stop3 h3,
+body.page-template-page-donometer #thermometer .track .stop3 h4,
+body.page-template-page-donometer #thermometer .track .stop4 h2,
+body.page-template-page-donometer #thermometer .track .stop4 h3,
+body.page-template-page-donometer #thermometer .track .stop4 h4,
+body.page-template-page-donometer #thermometer .track .goal h2,
+body.page-template-page-donometer #thermometer .track .goal h3,
+body.page-template-page-donometer #thermometer .track .goal h4,
+body.page-template-page-donometer #thermometer .track .progress h2,
+body.page-template-page-donometer #thermometer .track .progress h3,
+body.page-template-page-donometer #thermometer .track .progress h4 {
+  font-family: "rosewood-std-fill", serif;
 }
 /*# sourceMappingURL=epic-2021.css.map */
