@@ -102,7 +102,7 @@ width: 150px;
 						<div class="goal">
 							<h2 class="amount gold"><?php echo $gf_goal; ?></h2>
 						</div>
-						<div class="progress"><img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/28145933/horse.svg" height="150px" style="">
+						<div class="progress"><img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/11/02093404/carousel-horse-cutout.png" height="150px" style="">
 							<h3 class="amount"><span style="display:none;"><?php echo $donototal; ?></span></h3>
 						</div>
 						<div class="stop1">
