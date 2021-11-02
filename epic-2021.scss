@@ -299,13 +299,20 @@ article.covid-block {
 //donometer
 
 body.page-template-page-donometer {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/11/01144234/GettyImages-886541926-scaled.jpg");
   background-size: cover;
-  background-position: center top;
-
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  #masthead,
+  #sideNav {
+    display: none;
+  }
   .site-content {
     min-height: 100vh;
-
+    padding-left: 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,46 +331,12 @@ body.page-template-page-donometer {
     -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
     -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
     box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
-    font-family: $rosewood;
+    font-family: "rosewood-std-fill", serif;
     .track {
       border: 1px solid #aaa;
       position: relative;
       margin: 0 auto;
-      background: rgb(255, 255, 255);
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0%, rgb(0, 0, 0)),
-        color-stop(1%, rgb(255, 255, 255))
-      );
-      background: -webkit-linear-gradient(
-        top,
-        rgb(0, 0, 0) 0%,
-        rgb(255, 255, 255) 10%
-      );
-      background: -o-linear-gradient(
-        top,
-        rgb(0, 0, 0) 0%,
-        rgb(255, 255, 255) 10%
-      );
-      background: -ms-linear-gradient(
-        top,
-        rgb(0, 0, 0) 0%,
-        rgb(255, 255, 255) 10%
-      );
-      background: -moz-linear-gradient(
-        top,
-        rgb(0, 0, 0) 0%,
-        rgb(255, 255, 255) 10%
-      );
-      background: linear-gradient(
-        to bottom,
-        rgb(0, 0, 0) 0%,
-        rgb(255, 255, 255) 10%
-      );
-      background-position: 0 -1px;
-      background-size: 100% 5%;
+      background: #1b1b1b;
 
       .progress {
         background: linear-gradient(
@@ -382,8 +355,14 @@ body.page-template-page-donometer {
       .stop1,
       .stop2,
       .stop3,
-      .stop4 
-        font-family: $rosewood;
+      .stop4,
+      .goal,
+      .progress {
+        h2,
+        h3,
+        h4 {
+          font-family: "rosewood-std-fill", serif;
+        }
       }
     }
   }
