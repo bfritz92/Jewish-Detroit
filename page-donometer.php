@@ -4,6 +4,14 @@
 	header("Refresh: 60; URL=$url1");*/
 	get_header(); 	
 ?>
+<?php 
+	global $wpdb;
+	/* Campaign Numbers */
+	$gf_gifts = do_shortcode('[gravityforms action="entry_count" id="156"]');
+	$gf_goal = 300000;
+	$donototal = 175000; 
+	$english_format_donototal = number_format($donototal);
+?>
 <style>
 #content {
     width:300px;
@@ -80,57 +88,52 @@ width: 150px;
     right:0;
 }
 
+	/*h3.amount::before {
+	content:'$<?php echo $english_format_donototal; ?>';		
+}*/
+	
 </style>
-<?php 
-	global $wpdb;
-	/* Campaign Numbers */
-	$gf_gifts = do_shortcode('[gravityforms action="entry_count" id="156"]');
-	$gf_goal = 300000;
-	$donototal = 300000; 
-?>
+
 <section id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div id="content">
 				<div id="thermometer">
 					<div class="track">
 						<div class="goal">
-							<h2 class="amount"><?php echo $gf_goal; ?></h2>
+							<h2 class="amount gold"><?php echo $gf_goal; ?></h2>
 						</div>
 						<div class="progress"><img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/28145933/horse.svg" height="150px" style="">
-							<h3 class="amount"><?php echo $donototal; ?></h3>
+							<h3 class="amount"><span style="display:none;"><?php echo $donototal; ?></span></h3>
 						</div>
 						<div class="stop1">
 							<h4 class="amount">$0 </h4>
 						</div>
 						<div class="stop2">
-							<h4 class="amount">$75000 </h4>
+							<h4 class="amount">$75,000 </h4>
 						</div>
 						<div class="stop3">
-							<h4 class="amount">$150000 </h4>
+							<h4 class="amount">$150,000 </h4>
 						</div>
 						<div class="stop4">
-							<h4 class="amount">$225000 </h4>
+							<h4 class="amount">$225,000 </h4>
 						</div>
 					</div>
 				</div>
 			</div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 	<script>
-		function formatCurrency(n, c, d, t) {
-			"use strict";
-
-			var s, i, j;
-
-			c = isNaN(c = Math.abs(c)) ? 2 : c;
-			d = d === undefined ? "." : d;
-			t = t === undefined ? "," : t;
-
-			s = n < 0 ? "-" : "";
-			i = parseInt(n = Math.abs(+n || 0).toFixed(c), 10) + "";
-			j = (j = i.length) > 3 ? j % 3 : 0;
-
-			return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
-		}
+		function formatCurrency(nStr)
+{
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
 
 		/**
 		 * Thermometer Progress meter.
@@ -157,11 +160,11 @@ width: 150px;
 
 			//let's format the numbers and put them back in the DOM
 			//show currency with decimal places
-			//$goal.find(".amount").text( "$" + formatCurrency( goalAmount ) );
-			//$progress.find(".amount").text( "$" + formatCurrency( progressAmount ) );
+			$goal.find(".amount").text( "$" + formatCurrency( goalAmount ) );
+			$progress.find(".amount").text( "$" + formatCurrency( progressAmount ) );
 			//show currency without decimnal places
-			$goal.find(".amount").text( "$" + ( goalAmount ) );
-			$progress.find(".amount").text( "$" + ( progressAmount ) );
+			//$goal.find(".amount").text( "$" + ( goalAmount ) );
+			//$progress.find(".amount").text( "$" + ( progressAmount ) );
 			//show not as curency
 			//$goal.find(".amount").text( goalAmount  );
 			//$progress.find(".amount").text( progressAmount  );
@@ -191,7 +194,7 @@ width: 150px;
 			// or with parameters if you want to update it using JavaScript.
 			// you can update it live, and choose whether to show the animation
 			// (which you might not if the updates are relatively small)
-			//thermometer( 1000000, 425610, false );
+			//thermometer( 300000, 250000, false );
 
 		});
 	  </script>
