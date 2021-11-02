@@ -41,12 +41,13 @@
 }
 
 #thermometer .progress img {
-	max-width: 300px;
-position: absolute;
-margin-left: -55px;
-margin-top: -81px;
-z-index: 1000;
-width: 150px;
+    max-width: 300px;
+    position: absolute;
+    margin-left: -82px;
+    margin-top: -65px;
+    z-index: 1000;
+    width: 200px;
+}
 }
 	
 #thermometer .goal {
