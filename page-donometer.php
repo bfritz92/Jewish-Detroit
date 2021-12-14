@@ -4,14 +4,7 @@
 	header("Refresh: 60; URL=$url1");*/
 	get_header(); 	
 ?>
-<?php 
-	global $wpdb;
-	/* Campaign Numbers */
-	$gf_gifts = do_shortcode('[gravityforms action="entry_count" id="156"]');
-	$gf_goal = 300000;
-	$donototal = 175000; 
-	$english_format_donototal = number_format($donototal);
-?>
+
 <style>
 #content {
     width:300px;
@@ -29,7 +22,7 @@
     height:780px;
     top:10px;
     width:40px;
-    
+ 
 }
 
 #thermometer .progress {
@@ -48,7 +41,7 @@
     z-index: 1000;
     width: 200px;
 }
-}
+
 	
 #thermometer .goal {
     position:absolute;
@@ -89,12 +82,15 @@
     right:0;
 }
 
-	/*h3.amount::before {
-	content:'$<?php echo $english_format_donototal; ?>';		
-}*/
-	
 </style>
-
+<?php 
+	global $wpdb;
+	/* Campaign Numbers */
+	$gf_gifts = do_shortcode('[gravityforms action="entry_count" id="156"]');
+	$gf_goal = 3000;
+	$donototal = 1750; 
+	$english_format_donototal = number_format($donototal);
+?>
 <section id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div id="content">
@@ -110,13 +106,13 @@
 							<h4 class="amount">$0 </h4>
 						</div>
 						<div class="stop2">
-							<h4 class="amount">$75,000 </h4>
+							<h4 class="amount">$750 </h4>
 						</div>
 						<div class="stop3">
-							<h4 class="amount">$150,000 </h4>
+							<h4 class="amount">$1,500 </h4>
 						</div>
 						<div class="stop4">
-							<h4 class="amount">$225,000 </h4>
+							<h4 class="amount">$2,250 </h4>
 						</div>
 					</div>
 				</div>
