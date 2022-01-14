@@ -43,8 +43,8 @@ get_header();
     <div class="limit-1200">
         <img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/02/01104550/FedRadioDet-MitzvahMakers.jpg" class="info-block--img">
         <div class="info-block--copy">
-            <h3 class="blue">New for 2021: Introducing FedRadioDetroit's Mitzvah Makers!</h3>
-            <p class="mt0 mb0 smaller-text">Our new segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them. </p>
+            <h3 class="blue">Nominate the hero in your life for FedRadioDetroit Mitzvah Makers!</h3>
+            <p class="mt0 mb0 smaller-text">This extra special podcast segment shines a spotlight on some of our community's unsung heroes. You nominate them. We celebrate them.</p>
             <a href="https://jewishdetroit.org/podcast/mitzvah-makers/" class="blue-link mt0 mb0"><em>Learn more and nominate someone here</em></a>
         </div>
     </div>
@@ -63,6 +63,8 @@ get_header();
 			'order'			    => 'ASC',
 			'orderby'		    => 'episode_number',*/									
 			'posts_per_page'=> 12,
+			
+        	'paged' => $paged
 		);		
 		$main_posts = new WP_Query( $args );
 		$count = 0;
@@ -81,7 +83,26 @@ get_header();
                     
 						
 				</div>
-			<?php endwhile; ?>			
+			<?php endwhile; ?>
+	<div class="pagination">
+    <?php 
+        echo paginate_links( array(
+            'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+            'total'        => $main_posts->max_num_pages,
+            'current'      => max( 1, get_query_var( 'paged' ) ),
+            'format'       => '?paged=%#%',
+            'show_all'     => false,
+            'type'         => 'plain',
+            'end_size'     => 2,
+            'mid_size'     => 1,
+            'prev_next'    => true,
+            'prev_text'    => sprintf( '<i></i> %1$s', __( '&lsaquo; Newer Posts', 'text-domain' ) ),
+            'next_text'    => sprintf( '%1$s <i></i>', __( 'Older Posts &rsaquo;', 'text-domain' ) ),
+            'add_args'     => false,
+            'add_fragment' => '',
+        ) );
+    ?>
+</div>
 		<?php endif;  ?>
 	<?php wp_reset_query();?>	
 

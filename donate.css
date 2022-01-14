@@ -436,6 +436,16 @@
   }
 }
 
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-bullets li {
+  line-height: 1;
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
 /* EVENTS STYLING */
 .events-intro {
   max-width: 1200px;

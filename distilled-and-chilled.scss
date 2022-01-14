@@ -1,0 +1,100 @@
+//breakpoints
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+//fonts and colors
+@import url("https://use.typekit.net/tuj7ffx.css");
+.new-spirit {
+  font-family: "new-spirit", serif;
+}
+$rosewood: "rnew-spirit", serif;
+.title.new-spirit {
+  font-size: 2rem;
+  @media only screen and (min-width: $tablet) {
+    font-size: 3.5rem;
+  }
+}
+#main {
+  //padding: 0;
+  .entry-content {
+    //margin: 0;
+    //max-width: 100%;
+  }
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"),
+    100%, repeat-y;
+}
+p,
+strong,
+label,
+ul li {
+  font-family: "new-spirit";
+  color: #f4f4f4;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "new-spirit-condensed";
+  color: #f4f4f4;
+}
+$teal-color: #62b39d;
+$red-color: #f0515f;
+$yellow-color: #fbae48;
+.yellow {
+  color: $yellow-color;
+}
+.red {
+  color: $red-color;
+}
+.teal {
+  color: $teal-color;
+}
+
+//covid block
+$covid-block-color: #fff;
+article.covid-block {
+  border: 5px solid $covid-block-color;
+  h3 {
+    color: $covid-block-color;
+    padding-top: 1rem;
+  }
+  svg {
+    fill: $covid-block-color;
+    height: 75px;
+    width: 75px;
+  }
+  ul.covid-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 5px solid $covid-block-color;
+    padding-left: 0;
+    width: 100%;
+    li {
+      color: $covid-block-color;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      gap: 1rem;
+      text-align: center;
+      align-items: center;
+      label {
+        font-size: 0.8rem;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+//no footer
+#donation-panel,
+#footer {
+  display: none;
+}

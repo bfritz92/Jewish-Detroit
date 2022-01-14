@@ -967,6 +967,16 @@ h6:lang(vi), figcaption:lang(vi),
   }
 }
 
+.no-bullets {
+  list-style-type: none;
+}
+
+.no-bullets li {
+  line-height: 1;
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
 .editor-styles-wrapper.white {
   color: #000 !important;
 }
