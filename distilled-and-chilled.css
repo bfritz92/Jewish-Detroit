@@ -2,7 +2,9 @@
 #main {
   padding: 0;
 }
-
+body {
+  overflow-x: hidden;
+}
 #main .entry-content {
   margin: 0;
   max-width: 100%;
