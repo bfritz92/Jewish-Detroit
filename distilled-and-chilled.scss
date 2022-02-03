@@ -6,7 +6,22 @@ $laptop: 1300px;
 $large: 1600px;
 $x-large: 1800px;
 $widescreen: 2000px;
+#main {
+  padding: 0;
+}
 
+#main .entry-content {
+  margin: 0;
+  max-width: 100%;
+}
+#post-64601 .entry-content .limit-900 {
+  max-width: 920px;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 //fonts and colors
 @import url("https://use.typekit.net/tuj7ffx.css");
 .new-spirit {
@@ -19,7 +34,23 @@ $rosewood: "rnew-spirit", serif;
     font-size: 3.5rem;
   }
 }
-#main {
+$teal-color: #62b39d;
+$red-color: #f0515f;
+$yellow-color: #fbae48;
+$black-color: #161b1e;
+.yellow {
+  color: $yellow-color !important;
+}
+.red {
+  color: $red-color !important;
+}
+.teal {
+  color: $teal-color !important;
+}
+.black {
+  color: $black-color !important;
+}
+#primary {
   //padding: 0;
   .entry-content {
     //margin: 0;
@@ -27,11 +58,12 @@ $rosewood: "rnew-spirit", serif;
   }
   background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"),
     100%, repeat-y;
+  background-color: #151412;
 }
 p,
-strong,
 label,
-ul li {
+ul li,
+a {
   font-family: "new-spirit";
   color: #f4f4f4;
 }
@@ -39,23 +71,33 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+strong {
   font-family: "new-spirit-condensed";
   color: #f4f4f4;
 }
-$teal-color: #62b39d;
-$red-color: #f0515f;
-$yellow-color: #fbae48;
-.yellow {
-  color: $yellow-color;
-}
-.red {
-  color: $red-color;
-}
-.teal {
-  color: $teal-color;
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-left: 0;
+  }
 }
 
+//event-info
+ul.event-info {
+  text-align: center;
+  li h4 {
+    color: $red-color;
+  }
+  li:first-child h4 {
+    color: $yellow-color;
+  }
+  li:last-child a {
+    color: $teal-color;
+  }
+}
 //covid block
 $covid-block-color: #fff;
 article.covid-block {
@@ -92,6 +134,67 @@ article.covid-block {
       }
     }
   }
+}
+
+//buttons
+.wp-block-buttons .wp-block-button.is-style-fill {
+  a.wp-block-button__link {
+    font-family: "new-spirit-condensed";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  &.btn-yellow {
+    a.wp-block-button__link {
+      background-color: $yellow-color;
+    }
+  }
+  &.btn-red {
+    a.wp-block-button__link {
+      background-color: $red-color;
+    }
+  }
+}
+
+.distilled--sponsors {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18152205/creative-hina-by-quileen-zt7Zk3lXLps-unsplash.jpg");
+  background-position: 20% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10vw;
+}
+.sponsors--tier-two {
+  .sponsor-grid a img {
+    max-width: 350px !important;
+  }
+}
+.distilled--leadership {
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18163551/barrels-2.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+.leadership-list {
+  li {
+    color: $yellow-color;
+    font-family: "new-spirit-condensed";
+  }
+  li:first-child {
+    color: $red-color;
+    border-bottom: 3px solid $red-color;
+    line-height: 1.2;
+  }
+}
+.staff-list {
+  text-align: center;
+  li {
+    color: $yellow-color;
+    font-family: "new-spirit-condensed";
+  }
+}
+
+.divider img {
+  max-width: 500px;
+  margin: auto;
 }
 //no footer
 #donation-panel,

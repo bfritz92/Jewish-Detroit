@@ -1,4 +1,22 @@
 @import url("https://use.typekit.net/tuj7ffx.css");
+#main {
+  padding: 0;
+}
+
+#main .entry-content {
+  margin: 0;
+  max-width: 100%;
+}
+
+#post-64601 .entry-content .limit-900 {
+  max-width: 920px;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .new-spirit {
   font-family: "new-spirit", serif;
 }
@@ -13,14 +31,32 @@
   }
 }
 
-#main {
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"), 100%, repeat-y;
+.yellow {
+  color: #fbae48 !important;
+}
+
+.red {
+  color: #f0515f !important;
+}
+
+.teal {
+  color: #62b39d !important;
+}
+
+.black {
+  color: #161b1e !important;
+}
+
+#primary {
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"),
+    100%, repeat-y;
+  background-color: #151412;
 }
 
 p,
-strong,
 label,
-ul li {
+ul li,
+a {
   font-family: "new-spirit";
   color: #f4f4f4;
 }
@@ -29,20 +65,34 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+strong {
   font-family: "new-spirit-condensed";
   color: #f4f4f4;
 }
 
-.yellow {
-  color: #fbae48;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.red {
+ul li {
+  margin-left: 0;
+}
+
+ul.event-info {
+  text-align: center;
+}
+
+ul.event-info li h4 {
   color: #f0515f;
 }
 
-.teal {
+ul.event-info li:first-child h4 {
+  color: #fbae48;
+}
+
+ul.event-info li:last-child a {
   color: #62b39d;
 }
 
@@ -67,9 +117,9 @@ article.covid-block ul.covid-icons {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border-top: 5px solid #fff;
   padding-left: 0;
   width: 100%;
@@ -83,14 +133,14 @@ article.covid-block ul.covid-icons li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   line-height: 1;
   gap: 1rem;
   text-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 article.covid-block ul.covid-icons li label {
@@ -98,8 +148,77 @@ article.covid-block ul.covid-icons li label {
   margin: 0 10px;
 }
 
+.wp-block-buttons .wp-block-button.is-style-fill a.wp-block-button__link {
+  font-family: "new-spirit-condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.wp-block-buttons
+  .wp-block-button.is-style-fill.btn-yellow
+  a.wp-block-button__link {
+  background-color: #fbae48;
+}
+
+.wp-block-buttons
+  .wp-block-button.is-style-fill.btn-red
+  a.wp-block-button__link {
+  background-color: #f0515f;
+}
+
+.distilled--sponsors {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18152205/creative-hina-by-quileen-zt7Zk3lXLps-unsplash.jpg");
+  background-position: 20% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10vw;
+}
+
+.sponsors--tier-two .sponsor-grid a img {
+  max-width: 350px !important;
+}
+
+.distilled--leadership {
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18163551/barrels-2.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.leadership-list li {
+  color: #fbae48;
+  font-family: "new-spirit-condensed";
+}
+
+.leadership-list li:first-child {
+  color: #f0515f;
+  border-bottom: 3px solid #f0515f;
+  line-height: 1.2;
+}
+
+.staff-list {
+  text-align: center;
+}
+
+.staff-list li {
+  color: #fbae48;
+  font-family: "new-spirit-condensed";
+}
+
+.divider img {
+  max-width: 500px;
+  margin: auto;
+}
+
 #donation-panel,
 #footer {
   display: none;
 }
 /*# sourceMappingURL=distilled-and-chilled.css.map */
+
+.front-page--bottle img {
+  max-height: 635px;
+}
+strong a {
+  font-family: "new-spirit-condensed";
+}
