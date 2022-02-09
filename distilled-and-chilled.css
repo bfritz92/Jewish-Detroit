@@ -170,11 +170,11 @@ article.covid-block ul.covid-icons li label {
 }
 
 .distilled--sponsors {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18152205/creative-hina-by-quileen-zt7Zk3lXLps-unsplash.jpg");
-  background-position: 20% center;
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/09131856/davies-designs-studio-G-6kwVnClsE-unsplash.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10vw;
+  padding-bottom: 3rem;
 }
 
 .sponsors--tier-two .sponsor-grid a img {
@@ -223,4 +223,8 @@ article.covid-block ul.covid-icons li label {
 }
 strong a {
   font-family: "new-spirit-condensed";
+}
+
+#franklin-cider-mill a {
+  color: #161b1e;
 }
