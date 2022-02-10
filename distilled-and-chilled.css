@@ -8,6 +8,10 @@
   max-width: 100%;
 }
 
+.site-content {
+  overflow-y: hidden;
+}
+
 #post-64601 .entry-content .limit-900 {
   max-width: 920px;
   margin: auto;
