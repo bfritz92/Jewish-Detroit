@@ -201,3 +201,12 @@ article.covid-block {
 #footer {
   display: none;
 }
+
+.wp-block-post-featured-image {
+  margin-bottom: 2rem;
+  img.attachment-post-thumbnail {
+    max-height: 40vh;
+    object-fit: cover;
+    object-position: center 80%;
+  }
+}

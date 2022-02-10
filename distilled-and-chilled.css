@@ -2,9 +2,7 @@
 #main {
   padding: 0;
 }
-body.page-template-default.page.page-id-64601 {
-  overflow-x: hidden;
-}
+
 #main .entry-content {
   margin: 0;
   max-width: 100%;
@@ -50,8 +48,7 @@ body.page-template-default.page.page-id-64601 {
 }
 
 #primary {
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"),
-    100%, repeat-y;
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"), 100%, repeat-y;
   background-color: #151412;
 }
 
@@ -119,9 +116,9 @@ article.covid-block ul.covid-icons {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   border-top: 5px solid #fff;
   padding-left: 0;
   width: 100%;
@@ -135,14 +132,14 @@ article.covid-block ul.covid-icons li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   line-height: 1;
   gap: 1rem;
   text-align: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 article.covid-block ul.covid-icons li label {
@@ -157,15 +154,11 @@ article.covid-block ul.covid-icons li label {
   font-size: 1.5rem;
 }
 
-.wp-block-buttons
-  .wp-block-button.is-style-fill.btn-yellow
-  a.wp-block-button__link {
+.wp-block-buttons .wp-block-button.is-style-fill.btn-yellow a.wp-block-button__link {
   background-color: #fbae48;
 }
 
-.wp-block-buttons
-  .wp-block-button.is-style-fill.btn-red
-  a.wp-block-button__link {
+.wp-block-buttons .wp-block-button.is-style-fill.btn-red a.wp-block-button__link {
   background-color: #f0515f;
 }
 
@@ -216,11 +209,16 @@ article.covid-block ul.covid-icons li label {
 #footer {
   display: none;
 }
-/*# sourceMappingURL=distilled-and-chilled.css.map */
 
-.front-page--bottle img {
-  max-height: 635px;
+.wp-block-post-featured-image {
+  margin-bottom: 2rem;
 }
-strong a {
-  font-family: "new-spirit-condensed";
+
+.wp-block-post-featured-image img.attachment-post-thumbnail {
+  max-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 80%;
+     object-position: center 80%;
 }
+/*# sourceMappingURL=distilled-and-chilled.css.map */
