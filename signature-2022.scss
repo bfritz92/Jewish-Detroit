@@ -1,0 +1,103 @@
+//breakpoints
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+//fonts and colors
+@import url("https://use.typekit.net/ium3jpl.css");
+.ainsdale {
+  font-family: "ainsdale", sans-serif;
+}
+.roboto {
+  font-family: "roboto", sans-serif;
+}
+.roboto-cond {
+  font-family: "roboto-condensed", sans-serif;
+}
+$blue-color: #3f4050;
+$black-color: #161b1e;
+$gold-color: #dabf74;
+
+.blue {
+  color: $blue-color !important;
+}
+.black {
+  color: $black-color !important;
+}
+.gold {
+  color: $gold-color;
+}
+
+p,
+label,
+label.gfield_label,
+ul li,
+a {
+  font-family: "roboto-condensed";
+  color: #f4f4f4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: "roboto-condensed";
+  color: #f4f4f4;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  li {
+    margin-left: 0;
+  }
+}
+body {
+  background-color: $blue-color;
+}
+
+.content-area {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/21135420/wallpaper.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: 80%;
+}
+
+//FORMS
+#gform_wrapper_770 {
+  background-color: transparent;
+}
+
+.signature {
+  &--splash {
+    &--headline.wp-block-group .wp-block-group__inner-container {
+      width: max-content;
+      margin: auto;
+      .eyebrow {
+      }
+      .title {
+        font-size: clamp(5rem, 28vw, 13.8rem);
+        width: max-content;
+      }
+      .subhead {
+      }
+      .an-evening-with {
+      }
+      .monica {
+      }
+      .event-title {
+      }
+    }
+  }
+  &--registration {
+  }
+  &--impact {
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/21101433/GettyImages-1295540007.jpg");
+    background-size: clamp(310px, 80%, 1000px);
+  }
+}
