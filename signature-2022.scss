@@ -7,10 +7,29 @@ $large: 1600px;
 $x-large: 1800px;
 $widescreen: 2000px;
 
+#main .entry-content {
+  margin: 0;
+  max-width: 100%;
+}
+
+.site-content {
+  overflow-x: hidden;
+}
+
+#post-65342 .entry-content .limit-900 {
+  max-width: 920px;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 //fonts and colors
 @import url("https://use.typekit.net/ium3jpl.css");
-.ainsdale {
+.ainsdale,
+.tk-ainsdale {
   font-family: "ainsdale", sans-serif;
+  letter-spacing: 0.005rem;
 }
 .roboto {
   font-family: "roboto", sans-serif;
@@ -18,6 +37,15 @@ $widescreen: 2000px;
 .roboto-cond {
   font-family: "roboto-condensed", sans-serif;
 }
+h3.ainsdale,
+h3.tk-ainsdale {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+h2.ainsdale,
+h2.tk-ainsdale {
+  font-size: clamp(3rem, 6vw, 4rem);
+}
+
 $blue-color: #3f4050;
 $black-color: #161b1e;
 $gold-color: #dabf74;
@@ -28,10 +56,17 @@ $gold-color: #dabf74;
 .black {
   color: $black-color !important;
 }
-.gold {
+.gold,
+a.gold,
+strong.gold a {
   color: $gold-color;
 }
-
+.mt0 {
+  margin-top: 0 !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
 p,
 label,
 label.gfield_label,
@@ -62,42 +97,232 @@ body {
 }
 
 .content-area {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/21135420/wallpaper.jpg");
-  background-position: center;
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/23110848/floral-bg.jpg");
+  background-position: center top;
   background-repeat: repeat-y;
-  background-size: 80%;
+  background-size: clamp(300px, 80%, 950px);
+}
+
+.limit-1200 {
+  max-width: 1220px !important;
+}
+
+.boxed {
+  outline: 2px solid #fff;
+  max-width: clamp(300px, 80%, 950px);
+  text-align: center;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 //FORMS
 #gform_wrapper_770 {
   background-color: transparent;
 }
-
+#ginput_base_price_770_155 {
+  font-family: "ainsdale", sans-serif;
+  color: $gold-color;
+  font-size: 2rem;
+}
+.pricing-preview .ginput_container.ginput_container_number input[type="text"],
+.gform_legacy_markup_wrapper input.ginput_product_price,
+.gform_legacy_markup_wrapper span.ginput_product_price {
+  font-family: "ainsdale", sans-serif !important;
+  color: $gold-color !important;
+  font-size: 5rem;
+}
+#choice_770_202_4 {
+  display: none;
+}
+li.gfield.gfield_error {
+  background-color: rgba(255, 223, 224, 0.75) !important;
+}
 .signature {
   &--splash {
     &--headline.wp-block-group .wp-block-group__inner-container {
-      width: max-content;
-      margin: auto;
       .eyebrow {
+        font-size: clamp(1rem, 5.15vw, 2.47rem);
+        line-height: 1;
+        margin-bottom: -2%;
       }
       .title {
-        font-size: clamp(5rem, 28vw, 13.8rem);
-        width: max-content;
-      }
-      .subhead {
+        font-size: clamp(4.2rem, 25vw, 12.7rem);
+        line-height: 1;
+        letter-spacing: -0.09rem;
       }
       .an-evening-with {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+        line-height: 1;
+        letter-spacing: 3px;
       }
       .monica {
+        font-size: clamp(1rem, 5vw, 3rem);
+        line-height: 1;
       }
       .event-title {
+        font-size: clamp(1rem, 5vw, 1.8rem);
+        line-height: 1;
+        letter-spacing: 3px;
+        margin-top: 10px;
+      }
+    }
+    &--presented-by {
+      .wp-block-columns {
+        .wp-block-column {
+          .wp-block-image {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+    &--schedule {
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      li {
+        display: flex;
+        justify-content: space-between;
+        .right-side {
+          text-align: right;
+          color: $gold-color;
+          font-size: 1.2rem;
+          line-height: 1.5;
+        }
+        .left-side {
+          text-align: left;
+        }
+      }
+      .doors {
+      }
+      .reception {
+        display: flex;
+        flex-direction: row;
+        .left-side {
+          span.smaller {
+            display: block;
+            font-size: 0.8rem;
+            line-height: 1;
+            margin-left: 15px;
+          }
+          .reception-info {
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            margin-left: 15px;
+            margin-top: 5px;
+            .sponsored-by {
+              padding-bottom: 20px;
+            }
+          }
+        }
+      }
+      .program {
+      }
+    }
+    &--event-info {
+      .price strong {
+        color: $gold-color;
+        font-size: 1.5rem;
+      }
+    }
+    &--talent {
+      .wp-block-group__inner-container {
+        .wp-block-image {
+          margin: auto;
+          width: max-content;
+        }
+        p {
+          line-height: 1.2;
+        }
+        @media only screen and (min-width: $large-tablet) {
+          display: grid;
+          grid-template-columns: 3fr 2rem 3fr;
+          .signature--splash--talent--info {
+            grid-column: 1 / span 2;
+            z-index: 2;
+            grid-row: 1;
+
+            max-width: 700px;
+            justify-self: end;
+            .wp-block-group__inner-container {
+              display: block;
+            }
+          }
+          .wp-block-image {
+            grid-column: 2 / -1;
+            z-index: 1;
+            grid-row: 1;
+            margin: 0;
+            margin-top: 2rem;
+            width: 100%;
+          }
+        }
       }
     }
   }
-  &--registration {
-  }
+
   &--impact {
     background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/21101433/GettyImages-1295540007.jpg");
-    background-size: clamp(310px, 80%, 1000px);
+    background-size: cover;
   }
+  &--registration {
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/23132950/registration-bg-scaled.jpg");
+    background-size: cover;
+    #gform_wrapper_770 {
+      padding-bottom: 6rem;
+      margin-bottom: 0;
+    }
+  }
+  &--sponsors {
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/23133137/sponsor-bg-scaled.jpg");
+    background-size: cover;
+    h3 {
+      color: $blue-color;
+    }
+    .wp-block-separator {
+      margin: 5px 0 1rem 0 !important;
+      width: 100% !important;
+      color: $blue-color;
+      max-width: 100% !important;
+    }
+    .wp-block-image {
+      img {
+        max-height: 200px;
+      }
+    }
+    &--platinum {
+      .wp-block-image img {
+        max-width: 300px;
+        width: auto;
+      }
+    }
+    &--silver {
+      .wp-block-image img {
+        max-width: 200px;
+        width: auto;
+      }
+    }
+  }
+  &--leadership {
+    background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/24123535/leadership-bg-1.jpg");
+    background-size: cover;
+    h4 {
+      font-size: 1.5rem;
+    }
+    ul {
+      line-height: 1.2;
+    }
+    .wp-block-column.left {
+      h4,
+      ul li {
+        text-align: right;
+      }
+    }
+  }
+}
+
+#footer,
+#donation-panel {
+  display: none;
 }
