@@ -317,6 +317,10 @@ li.gfield.gfield_error {
   max-height: 200px;
 }
 
+.signature--sponsors .wp-block-image figure.aligncenter {
+  margin: auto;
+}
+
 .signature--sponsors--platinum .wp-block-image img {
   max-width: 300px;
   width: auto;
