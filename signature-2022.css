@@ -1,4 +1,8 @@
 @import url("https://use.typekit.net/ium3jpl.css");
+#main {
+  padding: 0 !important;
+}
+
 #main .entry-content {
   margin: 0;
   max-width: 100%;
@@ -6,15 +10,6 @@
 
 .site-content {
   overflow-x: hidden;
-}
-
-#post-65342 .entry-content .limit-900 {
-  max-width: 920px;
-  margin: auto;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .ainsdale,
@@ -290,10 +285,14 @@ li.gfield.gfield_error {
 .signature--registration {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/23132950/registration-bg-scaled.jpg");
   background-size: cover;
+  max-width: 100%;
 }
 
 .signature--registration #gform_wrapper_770 {
   padding-bottom: 6rem;
+  max-width: 100vw;
+  left: 0;
+  margin: auto;
   margin-bottom: 0;
 }
 
@@ -304,6 +303,7 @@ li.gfield.gfield_error {
 
 .signature--sponsors h3 {
   color: #3f4050;
+  text-align: center;
 }
 
 .signature--sponsors .wp-block-separator {
@@ -319,9 +319,20 @@ li.gfield.gfield_error {
 
 .signature--sponsors .wp-block-image figure.aligncenter {
   margin: auto;
+  width: 100%;
+}
+
+.signature--sponsors .wp-block-image figure.aligncenter img {
+  width: 100%;
+  height: auto;
 }
 
 .signature--sponsors--platinum .wp-block-image img {
+  max-width: 300px;
+  width: auto;
+}
+
+.signature--sponsors--gold .wp-block-image img {
   max-width: 300px;
   width: auto;
 }
@@ -331,6 +342,28 @@ li.gfield.gfield_error {
   width: auto;
 }
 
+.signature--sponsors--bronze .wp-block-image img {
+  max-width: 200px;
+  width: auto;
+}
+
+.signature--sponsors--copper .wp-block-group__inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.signature--sponsors--copper .wp-block-image img {
+  width: 150px;
+  height: auto;
+}
+
 .signature--leadership {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/24123535/leadership-bg-1.jpg");
   background-size: cover;
@@ -338,10 +371,12 @@ li.gfield.gfield_error {
 
 .signature--leadership h4 {
   font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .signature--leadership ul {
   line-height: 1.2;
+  text-align: center;
 }
 
 .signature--leadership .wp-block-column.left h4,
