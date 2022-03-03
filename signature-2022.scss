@@ -300,6 +300,15 @@ li.gfield.gfield_error {
         }
       }
     }
+    &--presenting,
+    &--diamond,
+    &--platinum,
+    &--gold,
+    &--bronze {
+      .wp-block-image figure {
+        margin: auto !important;
+      }
+    }
     &--platinum {
       .wp-block-image img {
         max-width: 300px;
@@ -367,6 +376,6 @@ li.gfield.gfield_error {
 #rotter-stone {
   max-width: 100px;
 }
-#bradleyco {
+#bradleyco img {
   min-width: 230px;
 }

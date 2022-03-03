@@ -327,6 +327,10 @@ li.gfield.gfield_error {
   height: auto;
 }
 
+.signature--sponsors--presenting .wp-block-image figure, .signature--sponsors--diamond .wp-block-image figure, .signature--sponsors--platinum .wp-block-image figure, .signature--sponsors--gold .wp-block-image figure, .signature--sponsors--bronze .wp-block-image figure {
+  margin: auto !important;
+}
+
 .signature--sponsors--platinum .wp-block-image img {
   max-width: 300px;
   width: auto;
@@ -393,7 +397,7 @@ li.gfield.gfield_error {
   max-width: 100px;
 }
 
-#bradleyco {
+#bradleyco img {
   min-width: 230px;
 }
 /*# sourceMappingURL=signature-2022.css.map */
