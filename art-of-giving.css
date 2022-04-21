@@ -26,11 +26,11 @@
 #primary {
   background: rgb(212, 154, 179);
   background: linear-gradient(
-    130deg,
-    rgba(212, 154, 179, 1) 0%,
-    rgba(233, 207, 220, 1) 100%
-  );
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21100445/splash-statue.png");
+      130deg,
+      rgba(212, 154, 179, 1) 0%,
+      rgba(233, 207, 220, 1) 100%
+    ),
+    url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21100445/splash-statue.png");
 }
 
 p,
