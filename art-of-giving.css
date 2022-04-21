@@ -86,19 +86,62 @@ ul.event-info li:last-child a {
 .sponsors--tier-two .sponsor-grid a img {
   max-width: 350px !important;
 }
-/* -- Brian: Remove if unneccesary
-.distilled--leadership {
-  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18163551/barrels-2.jpg");
-  background-position: center top;
-  background-size: cover;
-}
-*/
 
-.wp-block-image.giving--splash--img {
-  margin-bottom: 0;
+section.giving--splash {
+  display: flex;
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21100445/splash-statue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% 0%;
+  justify-content: center;
 }
-.wp-block-image.giving--splash--img figure {
-  margin: auto;
+
+@media only screen and (min-width: 1086px) {
+  section.giving--splash {
+    background-size: contain;
+  }
+}
+.giving--splash--logo {
+  margin-left: 50vw;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.funky-button-1 a {
+  background: linear-gradient(
+    130deg,
+    rgba(251, 142, 107, 1) 0%,
+    rgba(238, 87, 210, 1) 100%
+  );
+}
+.funky-button-1 a:hover {
+  background: linear-gradient(
+    130deg,
+    rgba(38, 220, 248, 1) 0%,
+    rgba(207, 39, 251, 1) 100%
+  ) !important;
+}
+.funky-button-2 a {
+  max-width: 15rem !important;
+  background: linear-gradient(
+    130deg,
+    rgba(38, 220, 248, 1) 0%,
+    rgba(207, 39, 251, 1) 100%
+  );
+}
+.funky-button-2 a:hover {
+  background: linear-gradient(
+    130deg,
+    rgba(251, 142, 107, 1) 0%,
+    rgba(238, 87, 210, 1) 100%
+  ) !important;
+}
+
+.event-info {
+  border: #000 solid 3px;
+  padding: 1rem 0;
+  color: #163860;
 }
 
 .giving--intro {
@@ -121,7 +164,7 @@ ul.event-info li:last-child a {
     rgba(212, 154, 179, 1) 0%,
     rgba(233, 207, 220, 1) 100%
   );
-  padding-bottom: 10vw;
+  padding-bottom: 2rem;
 }
 
 .leadership-list li {
@@ -135,34 +178,19 @@ ul.event-info li:last-child a {
   line-height: 1.2;
 }
 
-.staff-list {
-  text-align: center;
+.giving--sponsors {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21142102/sponsors-bg.jpg");
+  background-size: cover;
 }
 
-.staff-list li {
-  color: #fbae48;
-  font-family: "Roboto Condensed";
-}
-
-.divider img {
-  max-width: 500px;
-  margin: auto;
+@media only screen and (max-width: 586px) {
+  .giving--footer .wp-block-columns {
+    flex-direction: column-reverse;
+  }
 }
 
 #donation-panel,
 #footer {
   display: none;
-}
-
-.wp-block-post-featured-image {
-  margin-bottom: 2rem;
-}
-
-.wp-block-post-featured-image img.attachment-post-thumbnail {
-  max-height: 40vh;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center 80%;
-  object-position: center 80%;
 }
 /*# sourceMappingURL=distilled-and-chilled.css.map */
