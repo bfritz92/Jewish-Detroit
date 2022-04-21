@@ -76,83 +76,11 @@ ul.event-info li:last-child a {
   color: #163860;
 }
 
-article.covid-block {
-  border: 5px solid #fff;
-}
-
-article.covid-block h3 {
-  color: #fff;
-  padding-top: 1rem;
-}
-
-article.covid-block svg {
-  fill: #fff;
-  height: 75px;
-  width: 75px;
-}
-
-article.covid-block ul.covid-icons {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border-top: 5px solid #fff;
-  padding-left: 0;
-  width: 100%;
-}
-
-article.covid-block ul.covid-icons li {
-  color: #fff;
-  padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  line-height: 1;
-  gap: 1rem;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-article.covid-block ul.covid-icons li label {
-  font-size: 0.8rem;
-  margin: 0 10px;
-}
-
 .wp-block-buttons .wp-block-button.is-style-fill a.wp-block-button__link {
   font-family: "Roboto Condensed";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.5rem;
-}
-
-.wp-block-buttons
-  .wp-block-button.is-style-fill.btn-yellow
-  a.wp-block-button__link {
-  background-color: #fbae48;
-}
-
-.wp-block-buttons
-  .wp-block-button.is-style-fill.btn-red
-  a.wp-block-button__link {
-  background-color: #f0515f;
-}
-
-.distilled--sponsors {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/10155113/GettyImages-8773484201.jpg");
-  background-position: 20% center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 10vw;
 }
 
 .sponsors--tier-two .sponsor-grid a img {
@@ -166,8 +94,33 @@ article.covid-block ul.covid-icons li label {
 }
 */
 
+.wp-block-image.giving--splash--img {
+  margin-bottom: 0;
+}
+.wp-block-image.giving--splash--img figure {
+  margin: auto;
+}
+
+.giving--intro {
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21104719/white-brick-wall-bg.jpg");
+}
+
+.giving--info {
+  background: rgb(251, 142, 107);
+  background: linear-gradient(
+    130deg,
+    rgba(251, 142, 107, 1) 0%,
+    rgba(238, 87, 210, 1) 100%
+  );
+  color: #fff;
+}
+
 .giving--leadership {
-  background-color: #dbadc2;
+  background: linear-gradient(
+    130deg,
+    rgba(212, 154, 179, 1) 0%,
+    rgba(233, 207, 220, 1) 100%
+  );
   padding-bottom: 10vw;
 }
 
