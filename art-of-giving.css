@@ -1,0 +1,245 @@
+@import url("https://use.typekit.net/tuj7ffx.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+#main {
+  padding: 0;
+}
+
+#main .entry-content {
+  margin: 0;
+  max-width: 100%;
+}
+
+.site-content {
+  overflow-x: hidden;
+}
+
+#post-66390 .entry-content .limit-900 {
+  max-width: 920px;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#franklin-cider-mill a,
+#keith-tara-schonberger {
+  color: #161b1e;
+}
+
+.wp-image-64613 {
+  max-height: 630px;
+}
+
+.new-spirit {
+  font-family: "new-spirit", serif;
+}
+
+.title.new-spirit {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .title.new-spirit {
+    font-size: 3.5rem;
+  }
+}
+
+.yellow {
+  color: #fbae48 !important;
+}
+
+.red {
+  color: #f0515f !important;
+}
+
+.teal {
+  color: #62b39d !important;
+}
+
+.black {
+  color: #575757 !important;
+}
+
+#primary {
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"), 100%, repeat-y;
+  background-color: #151412;
+}
+
+p,
+label,
+ul li,
+a {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #163860;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #163860;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-left: 0;
+}
+
+ul.event-info {
+  text-align: center;
+}
+
+ul.event-info li h4 {
+  color: #163860;
+}
+
+ul.event-info li:first-child h4 {
+  color: #163860;
+}
+
+ul.event-info li:last-child a {
+  color: #163860;
+}
+
+article.covid-block {
+  border: 5px solid #fff;
+}
+
+article.covid-block h3 {
+  color: #fff;
+  padding-top: 1rem;
+}
+
+article.covid-block svg {
+  fill: #fff;
+  height: 75px;
+  width: 75px;
+}
+
+article.covid-block ul.covid-icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 5px solid #fff;
+  padding-left: 0;
+  width: 100%;
+}
+
+article.covid-block ul.covid-icons li {
+  color: #fff;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1;
+  gap: 1rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+article.covid-block ul.covid-icons li label {
+  font-size: 0.8rem;
+  margin: 0 10px;
+}
+
+.wp-block-buttons .wp-block-button.is-style-fill a.wp-block-button__link {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.wp-block-buttons .wp-block-button.is-style-fill.btn-yellow a.wp-block-button__link {
+  background-color: #fbae48;
+}
+
+.wp-block-buttons .wp-block-button.is-style-fill.btn-red a.wp-block-button__link {
+  background-color: #f0515f;
+}
+
+.distilled--sponsors {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/02/10155113/GettyImages-8773484201.jpg");
+  background-position: 20% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10vw;
+}
+
+.sponsors--tier-two .sponsor-grid a img {
+  max-width: 350px !important;
+}
+/* -- Brian: Remove if unneccesary
+.distilled--leadership {
+  background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/18163551/barrels-2.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+*/
+
+.giving--leadership {
+  background-color: #dbadc2;
+  padding-bottom: 10vw;
+}
+
+.leadership-list li {
+  color: #fff;
+  font-family: "Roboto Condensed";
+}
+
+.leadership-list li:first-child {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  line-height: 1.2;
+}
+
+.staff-list {
+  text-align: center;
+}
+
+.staff-list li {
+  color: #fbae48;
+  font-family: "Roboto Condensed";
+}
+
+.divider img {
+  max-width: 500px;
+  margin: auto;
+}
+
+#donation-panel,
+#footer {
+  display: none;
+}
+
+.wp-block-post-featured-image {
+  margin-bottom: 2rem;
+}
+
+.wp-block-post-featured-image img.attachment-post-thumbnail {
+  max-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 80%;
+     object-position: center 80%;
+}
+/*# sourceMappingURL=distilled-and-chilled.css.map */
