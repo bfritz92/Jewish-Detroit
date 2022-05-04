@@ -101,6 +101,15 @@ section.giving--splash {
     background-size: contain;
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  section.giving--splash {
+    background-position: 25% 0%;
+  }
+  .giving--splash--logo {
+    margin-left: 20vw;
+  }
+}
 .giving--splash--logo {
   margin-left: 50vw;
   margin-right: 2rem;
@@ -109,6 +118,7 @@ section.giving--splash {
 }
 
 .funky-button-1 a {
+  padding: 1rem 0 !important;
   background: linear-gradient(
     130deg,
     rgba(251, 142, 107, 1) 0%,
@@ -123,6 +133,7 @@ section.giving--splash {
   ) !important;
 }
 .funky-button-2 a {
+  padding: 3rem 0 !important;
   max-width: 15rem !important;
   background: linear-gradient(
     130deg,
@@ -179,7 +190,7 @@ section.giving--splash {
 }
 
 .giving--sponsors {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21142102/sponsors-bg.jpg");
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21104719/white-brick-wall-bg.jpg");
   background-size: cover;
 }
 

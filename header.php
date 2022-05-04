@@ -24,8 +24,43 @@
 		$header_logo		= get_field('header_logo', 'option');
 		$header_logo_mobile	= get_field('header_logo_mobile', 'option');
 	?>
-</head>
+	<?php
+		$stylesheet_url	= get_field('stylesheet_url');
+	?>
+	<?php if ($stylesheet_url) : ?>
+		<link href="<?php echo $stylesheet_url; ?>" media="screen" rel="stylesheet" type="text/css" />
+	<?php endif; ?>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '442352042998271');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=442352042998271&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
+<meta name="facebook-domain-verification" content="2n9xt4hj40d3h4cxqmvgk133absq15" />
+<!-- Hotjar Tracking Code for https://www.jewishdetroit.org -->
+	<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2954841,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 		<nav id="masthead" class="main-nav" tabindex="0" role="navigation">
