@@ -25,19 +25,39 @@
 	$date_tba = get_field( "date_tba" );
 	$eventloc	= tribe_get_venue( $venue_id );
 	$featured = get_field('multi_day_featured'); 
+	$recurring = get_field('recurring_event_dates'); 
+	$custom_event_location = get_field('custom_event_location'); 
  ?>
 <?php // $use_gf = get_field('use_gf'); echo $use_gf; ?>
 <ul class="individual-event--info">			
+	<?php if ($custom_event_location) : ?>
+		<li class="location"><?php echo $custom_event_location; ?></li>	
+	<?php endif; ?>
 	<?php if (strpos($eventloc, 'Virtual Event') !== false) : ?>
-		<li class="location"><?php echo tribe_get_venue( $venue_id ); ?></li>	
+		<?php if ($custom_event_location) : ?>
+			<li class="location" style="display:none;"><?php echo tribe_get_venue( $venue_id ); ?></li>
+		<?php else : ?>
+			<li class="location"><?php echo tribe_get_venue( $venue_id ); ?></li>
+		<?php endif; ?>
 	<?php else : ?>
-		<li class="location"><?php echo tribe_get_venue( $venue_id ); ?>, <?php echo tribe_get_address( $venue_id ); ?>, <?php echo tribe_get_city( $venue_id ); ?> <?php echo tribe_get_state( $venue_id ); ?> <?php echo tribe_get_zip( $venue_id ); ?></li>	
+		<?php if ($custom_event_location) : ?>
+			<li class="location" style="display:none;"><?php echo tribe_get_venue( $venue_id ); ?>, <?php echo tribe_get_address( $venue_id ); ?>, <?php echo tribe_get_city( $venue_id ); ?> <?php echo tribe_get_state( $venue_id ); ?> <?php echo tribe_get_zip( $venue_id ); ?></li>
+		<?php else : ?>
+			<li class="location"><?php echo tribe_get_venue( $venue_id ); ?>, <?php echo tribe_get_address( $venue_id ); ?>, <?php echo tribe_get_city( $venue_id ); ?> <?php echo tribe_get_state( $venue_id ); ?> <?php echo tribe_get_zip( $venue_id ); ?></li>
+		<?php endif; ?>
 	<?php endif; ?>
  <li class="date">
+	 <span class="hide-date">
 	 <?php if ($date_tba) : ?>
 	 	Event Postponed - Date TBD
 	 <?php else : ?>
-		<?php echo tribe_get_start_date( $post->ID, false, 'l' ); ?>, <?php echo tribe_get_start_date( $post->ID, false, 'F' ); ?> <?php echo tribe_get_start_date( $post->ID, false, 'jS' ); ?>
+		<?php $curr_date = date('Y-m-d', time()); ?>
+		<?php $event_date = tribe_get_start_date( $post->ID, false, 'Y' ) .'-'. tribe_get_start_date( $post->ID, false, 'm' ) .'-'. tribe_get_start_date( $post->ID, false, 'd' ); ?>
+		<?php if ($curr_date > $event_date) : ?>
+			Now
+		<?php else : ?>
+			<?php echo tribe_get_start_date( $post->ID, false, 'l' ); ?>, <?php echo tribe_get_start_date( $post->ID, false, 'F' ); ?> <?php echo tribe_get_start_date( $post->ID, false, 'jS' ); ?>
+		<?php endif; ?>
 	 	<?php if ($featured) : ?>
 	 	<?php else : ?>
 	 		at <?php echo tribe_get_start_date(null, false, 'g:i a'); ?>
@@ -48,6 +68,16 @@
 	 	<?php else : ?>
 		<?php endif; ?>
 	<?php endif; ?>
+	</span>
+	<?php if( have_rows('recurring_event_dates') ): ?>
+	 		<hr />
+		<?php while( have_rows('recurring_event_dates') ): the_row(); ?>
+	 		
+	 		<?php the_sub_field('date_and_time'); ?>
+	 <br />
+	 	<?php endwhile; ?>
+	<?php endif;?>
+
 	</li>
 	<?php if ($special_pr) : ?>
 		<li class="price"><?php echo $special_pr ?></li>

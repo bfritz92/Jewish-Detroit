@@ -950,17 +950,13 @@ a.picture-caption {
 
 .info-block {
   background-color: $color__light-teal;
-  div.limit-1200 {
+  div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     padding: 2rem 10px;
-    @media only screen and (min-width: $tablet) {
-      flex-direction: row;
-    }
-
     h2 {
       color: $color__jfmd-blue;
     }
@@ -972,23 +968,6 @@ a.picture-caption {
       color: $color__jfmd-cyan;
       align-self: flex-end;
     }
-  }
-  &--img {
-    max-width: 400px;
-    margin: auto;
-    height: auto;
-    padding-bottom: 15px;
-    object-fit: contain;
-    @media only screen and (min-width: $tablet) {
-      max-width: 30%;
-      margin: 0;
-      padding-right: 15px;
-      padding-bottom: 0;
-    }
-  }
-  &--copy {
-    display: flex;
-    flex-direction: column;
   }
   &.emergency {
     background-color: $color__jfmd-cyan;

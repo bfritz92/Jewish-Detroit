@@ -26,14 +26,15 @@ if( !empty($block['align']) ) {
 	setlocale(LC_MONETARY, 'en_US');
 	$user_ID = get_current_user_id();
 	$staff_name = $current_user->display_name;
+	$staff_email = $current_user->user_email;
 	$campaign_total	= $wpdb->get_var( "SELECT SUM(meta_value) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 156 AND meta_key = 7" );
 	$submission_count = do_shortcode( '[gravityforms action="entry_count" id="156"]');	 
-	$swat_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 156 AND meta_key LIKE 27.1 AND meta_value LIKE 'Yes'" );
+	//$swat_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 156 AND meta_key LIKE 27.1 AND meta_value LIKE 'Yes'" );
 	/* Individual Numbers */
-	$closed_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 156 AND meta_key =26 AND meta_value LIKE '$staff_name'" );	
+	$closed_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 156 AND meta_key =41 AND meta_value LIKE '$staff_email'" );	
 	$letter_count = get_user_meta($user_ID, 'campaign2019_letters_points', true);
-	$caller_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 707 AND meta_key =41 AND meta_value LIKE '%$staff_name%'" );
-	$data_entry_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 706 AND meta_key =41 AND meta_value LIKE '%$staff_name%'" );
+	$caller_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 707 AND meta_key =41 AND meta_value LIKE '%$staff_email%'" );
+	$data_entry_count = $wpdb->get_var( "SELECT COUNT(*) FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 706 AND meta_key =41 AND meta_value LIKE '%$staff_email%'" );
 	$caller_points = $caller_count * 3;	
 	$data_entry_points = $data_entry_count * 5;
 	$in_swat = get_user_meta($user_ID, 'in_swat', true);
@@ -66,9 +67,11 @@ if( !empty($block['align']) ) {
 <!--Markup for Recent Posts -->
 <section class="<?php echo $className ?>">
 	<section class="<?php echo $prizeclass ?>">
-		<?php if ($showprizes) : ?><h3 class="camp_subhead">Your Prizes</h3><?php endif; ?>
+		<h2 class="center blue">Welcome Back <?php echo $staff_name; ?>!</h2>
+		<h3 class="center">Closed Gifts: <strong><?php echo $closed_count ?></strong></h3>
+		<?php if ($showprizes) : ?><h3 class="camp_subhead blue">Your Incentive Totals</h3><?php endif; ?>
 		<?php if ($prizetitleone) : ?>
-			<section class="camp_title"><h4><?php echo $prizetitleone; ?></h4></section><section class="camp_points"><h4><?php echo $total_points ?>/<?php echo $goalprizeone ?></h4></section>
+			<section class="camp_title normal"><h4 style="font-weight:400;"><?php echo $prizetitleone; ?></h4></section><section class="camp_points"><h4><?php echo $closed_count ?>/<?php echo $goalprizeone ?></h4></section>
 		<?php endif; ?>
 		<?php if ($prizetitletwo) : ?>
 				<section class="camp_title"><h4><?php echo $prizetitletwo; ?></h4></section><section class="camp_points"><h4><?php echo $money_points ?>/<?php echo $goalprizetwo ?></h4></section>
@@ -77,5 +80,12 @@ if( !empty($block['align']) ) {
 			<section class="camp_title"><h4><?php echo $prizetitlethree; ?></h4></section><section class="camp_points"><h4><?php echo $pto_points ?>/<?php echo $goalprizethree ?></h4></section>
 		<?php endif; ?>	
 		<h5><?php echo $prizes_explain; ?></h5>
+		<?php
+			$n = (int) ($closed_count / $goalprizeone);
+			$t = $n * 50;
+		?>
+		<?php if ($t > 49) : ?>
+			<h3 class="center">Total Amount Earned: <span style="color:green;">$<strong><?php echo $t ?></strong></span>.</h3>
+		<?php endif; ?>
 	</section>		
 </section>

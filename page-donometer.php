@@ -2,7 +2,10 @@
 	/* Template Name: Campaign Donometer */
 	/*$url1=$_SERVER['REQUEST_URI'];
 	header("Refresh: 60; URL=$url1");*/
-	get_header(); 	
+	get_header(); 
+	global $wpdb;
+	$updated_donototal = $wpdb->get_var( "SELECT meta_value FROM ".$wpdb->prefix."gf_entry_meta WHERE form_id = 967 AND meta_key = 1 ORDER BY entry_id DESC LIMIT 1;" );	
+	$gf_goal = 3000;
 ?>
 
 <style>
@@ -83,14 +86,6 @@
 }
 
 </style>
-<?php 
-	global $wpdb;
-	/* Campaign Numbers */
-	$gf_gifts = do_shortcode('[gravityforms action="entry_count" id="156"]');
-	$gf_goal = 3000;
-	$donototal = 1750; 
-	$english_format_donototal = number_format($donototal);
-?>
 <section id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div id="content">
@@ -100,7 +95,7 @@
 							<h2 class="amount gold"><?php echo $gf_goal; ?></h2>
 						</div>
 						<div class="progress"><img src="https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/11/02093404/carousel-horse-cutout.png" height="150px" style="">
-							<h3 class="amount"><span style="display:none;"><?php echo $donototal; ?></span></h3>
+							<h3 class="amount"><span style="display:none;"><?php echo $updated_donototal; ?></span></h3>
 						</div>
 						<div class="stop1">
 							<h4 class="amount">$0 </h4>

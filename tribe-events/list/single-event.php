@@ -28,10 +28,13 @@ $featured = get_field('multi_day_featured');
 ?>
 	<div class="events-list--item">
 
-	<a class="events-list--item--image" href="<?php echo esc_url( tribe_get_event_link() ); ?>">
+	<a class="events-list--item--image" href="<?php echo esc_url( tribe_get_event_link() ); ?>" style="position:relative;">
 		<?php if (has_post_thumbnail( $post->ID ) ): ?>
 			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
             <img src="<?php echo $image[0]; ?>">
+			<?php if ( get_field( 'sold_out' ) == "yes" ): ?>
+				<div class="ribbon <?php echo get_field( 'sold_out_color'); ?> ribbon-top-right"><span><?php echo get_field( 'sold_out_lang'); ?></span></div>
+			<?php endif; ?>
     	<?php endif; ?>
 	</a>
 		<ul class="events-list--item--info">
@@ -39,13 +42,23 @@ $featured = get_field('multi_day_featured');
 				<?php 
     				echo strip_tags(tribe_get_event_taxonomy($event_id, 'before=&sep= and &after'));
     			?>
-			Presents:</li>
+			<?php if (strpos(tribe_get_event_taxonomy($event_id), ' and ') !== false) :
+    echo 'Present:';
+	else :
+	echo 'Presents:';
+endif; ?></li>
 			<li class="title"><a class="" href="<?php echo esc_url( tribe_get_event_link() ); ?>"><h2><?php the_title() ?></h2></a></li>
  			<li class="time">
 				<?php if ($date_tba) : ?>
 					Event Postponed - Date TBD
-				<?php else : ?>				
-					<?php echo tribe_get_start_date(null, false, 'l'); ?>, <?php echo tribe_get_start_date(null, false, 'F'); ?> <?php echo tribe_get_start_date(null, false, 'j'); ?>
+				<?php else : ?>	
+					<?php $curr_date = date('Y-m-d', time()); ?>
+					<?php $event_date = tribe_get_start_date( $post->ID, false, 'Y' ) .'-'. tribe_get_start_date( $post->ID, false, 'm' ) .'-'. tribe_get_start_date( $post->ID, false, 'd' ); ?>
+					<?php if ($curr_date > $event_date) : ?>
+						Now
+					<?php else : ?>
+						<?php echo tribe_get_start_date(null, false, 'l'); ?>, <?php echo tribe_get_start_date(null, false, 'F'); ?> <?php echo tribe_get_start_date(null, false, 'j'); ?>
+					<?php endif; ?>
 					<?php if ($featured) : ?>
 					<?php else : ?>
 						at <?php echo tribe_get_start_date(null, false, 'g:i a'); ?>

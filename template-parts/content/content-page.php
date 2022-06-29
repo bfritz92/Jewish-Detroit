@@ -10,15 +10,33 @@
  */
 
 ?>
-
+<?php 
+    $show_header = get_field( "show_header" );
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
+	<?php /*
+	<?php if ( $show_header ) : ?>
 	<header class="entry-header">
 		<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 	</header>
+	
 	<?php endif; ?>
-
+    */ ?>
 	<div class="entry-content">
+	    <?php if ( $show_header ) : ?>
+    	    <?php // ACF Conditional Check on Header Image and Title 
+                $hide_image	= get_field('hide_image');
+                $hide_title	= get_field('hide_title');
+            ?>
+            <?php if($hide_image) : ?>
+            <?php else : ?>
+            	<img class="individual-event--img" src="<?php the_post_thumbnail_url('full')?>">
+            <?php endif; ?>
+            <?php if($hide_title) : ?>
+            <?php else : ?>
+            	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php endif; ?>
+        <?php endif; ?>
 		<?php
 		the_content();
 

@@ -43,7 +43,7 @@ $fpip = get_field('block_info_content');
 		$link = get_sub_field('link'); 
 	?>	
 		<section class="<?php the_sub_field('section_css');?> fade fade-in">
-			<div class="<?php the_sub_field('panel_css');?> fade fade-in" style="order: <?php echo $intro_panel_order?>;">
+			<div class="<?php the_sub_field('panel_css');?>">
 				<h2 class=" <?php the_sub_field('heading_css');?>"><?php the_sub_field('heading');?></h2>
 				<div class="<?php the_sub_field('copy_css');?>"><?php the_sub_field('copy');?></div>
 				<?php if ( get_sub_field('link_text')) :  ?>

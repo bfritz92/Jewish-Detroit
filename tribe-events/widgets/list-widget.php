@@ -48,7 +48,7 @@ if ( $posts ) : ?>
 	</a>		
 	<ul class="events-list--item--info">
 		<a class="events-list--item--image" href="<?php echo esc_url( tribe_get_event_link() ); ?>">
-			<li class="department">El  NEXTGen Detroit Presents:</li>
+			<li class="department">NEXTGen Detroit Presents:</li>
 			<li class="title"><h2><?php the_title() ?></h2></li>
 			<li class="time"><?php echo tribe_get_start_date(null, false, 'g:i a'); ?></li>
 			<li class="date"><?php echo tribe_get_start_date( $post->ID, false, 'l' ); ?>, <?php echo tribe_get_start_date( $post->ID, false, 'F' ); ?> <?php echo tribe_get_start_date( $post->ID, false, 'j' ); ?></li>

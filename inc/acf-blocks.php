@@ -209,6 +209,26 @@ function register_acf_block_types() {
 	  'mode'			  => 'edit',
       'keywords'          => array( 'product', 'shop', 'commerce' )
    ));
+	acf_register_block_type(array(
+      'name'              => 'page-title',
+      'title'             => __('Page Title Block'),
+      'description'       => __('A block to show the page title wherever you want in a page.'),
+      'render_template'   => get_template_directory() . '/template-parts/blocks/page-title/page-title.php',
+      'category'          => 'common',
+      'icon'              => 'megaphone',
+	  'mode'			  => 'edit',
+      'keywords'          => array( 'page', 'title' )
+   ));
+	acf_register_block_type(array(
+      'name'              => 'mission-info',
+      'title'             => __('Mission Info Block'),
+      'description'       => __('A block that contains mission name, dates and costs'),
+      'render_template'   => get_template_directory() . '/template-parts/blocks/mission-info/mission-info.php',
+      'category'          => 'common',
+      'icon'              => 'portfolio',
+	  'mode'			  => 'edit',
+      'keywords'          => array( 'mission' )
+   ));	
 }
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {

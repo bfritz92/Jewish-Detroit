@@ -522,7 +522,7 @@ function add_specific_menu_location_atts( $atts, $item, $args ) {
 }
 add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
 
-/* Import Events from Event Calendar (https://jewishdetroitcalendar.org) | Begin */
+/* Hide Until Sorted Import Events from Event Calendar (https://jewishdetroitcalendar.org) | Begin 
 add_action( 'wp_enqueue_scripts', 'rest_api_enqueue_styles' );
  function rest_api_enqueue_styles() {    
     // enqueue the theme script...

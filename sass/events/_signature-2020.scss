@@ -1,0 +1,286 @@
+//Signature 2020
+
+//Template reset to full width
+.page-id-52386 {
+  overflow-x: hidden;
+  .site-content .content-area #main {
+    padding: 0;
+    margin: 0;
+  }
+  #donation-panel,
+  #footer,
+  #masthead,
+  #sideNav {
+    display: none;
+  }
+  #primary {
+    margin-top: 0;
+  }
+}
+
+#post-52386 {
+  .entry-content {
+    max-width: inherit;
+    margin: inherit;
+  }
+  .entry-header {
+    display: none;
+  }
+}
+#post-52386 .entry-content section {
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+//colors
+.gold {
+  background: -webkit-linear-gradient(#eccc9b, #b88c4a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin gold-text {
+  background: -webkit-linear-gradient(#eccc9b, #b88c4a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin gold-price {
+  font-family: "agency-fb-extended", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-left: 10px;
+  @include gold-text;
+}
+.purple {
+  color: #483492;
+}
+.magenta {
+  color: #ec008c;
+}
+.charcoal {
+  color: #3c3d41;
+}
+$color__purple: #483492;
+$color__magenta: #ec008c;
+$color__charcoal: #3c3d41;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700,700i&display=swap");
+.roboto {
+  font-family: "Roboto Condensed", sans-serif;
+}
+$roboto: "Roboto Condensed", sans-serif;
+
+//Actual Page
+.signature2020 {
+  &--splash {
+    .small-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      padding: 1rem 20px 0 0;
+      list-style-type: none;
+      align-self: flex-end;
+      justify-self: end;
+
+      @media only screen and (min-width: $tablet) {
+        flex-direction: row;
+      }
+      li a {
+        padding-left: 30px;
+        font-family: $roboto;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        min-height: 50px;
+        color: #3d3d3d;
+      }
+    }
+    @include responsive-bg(
+      "/wp-content/uploads/2020/02/signature2020-splash-sm-bw-768x1940.jpg",
+      "/wp-content/uploads/2020/02/signature2020-splash-sm-bw-920x2324.jpg",
+      "/wp-content/uploads/2020/02/signature2020-splash-bw-1300x1138.jpg",
+      "/wp-content/uploads/2020/02/signature2020-splash-bw-1800x1576.jpg",
+      "/wp-content/uploads/2020/02/signature2020-splash-bw-2000x1751.jpg",
+      "/wp-content/uploads/2020/02/signature2020-splash-bw-2500x2189.jpg"
+    );
+    background-size: 100%;
+    background-position: center top;
+    background-color: #000;
+    background-repeat: no-repeat;
+    &--info {
+      margin-top: 2rem;
+      @media only screen and (min-width: $tablet) {
+        margin-top: 4rem;
+      }
+      @media only screen and (min-width: $laptop) {
+        margin-top: 7rem;
+      }
+      .evening {
+      }
+      .eyebrow {
+        @include fluid-type(320px, 900px, 24px, 50px);
+      }
+      .fran {
+        @include fluid-type(320px, 900px, 40px, 60px);
+      }
+      .venue,
+      .pricing {
+        list-style-type: none;
+        line-height: 1;
+        padding: 0 0 3rem 0;
+        li {
+          @include fluid-type(320px, 900px, 30px, 40px);
+        }
+      }
+      .ehim {
+        max-width: 400px !important;
+        margin: auto;
+        padding-bottom: 2rem;
+      }
+      .ajm {
+        max-width: 200px !important;
+        margin: auto;
+        padding-bottom: 2rem;
+      }
+    }
+    &--logo img {
+      width: 100%;
+    }
+  }
+  &--talent {
+    @include responsive-bg(
+      "/wp-content/uploads/2020/02/signature2020-talent-768x479.jpg",
+      "/wp-content/uploads/2020/02/signature2020-talent-920x574.jpg",
+      "/wp-content/uploads/2020/02/signature2020-talent-1300x811.jpg",
+      "/wp-content/uploads/2020/02/signature2020-talent-1800x1123.jpg",
+      "/wp-content/uploads/2020/02/signature2020-talent-2000x1248.jpg",
+      "/wp-content/uploads/2020/02/signature2020-talent-2500x1560.jpg"
+    );
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $large-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &--copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 750px;
+      order: 1;
+      padding: 10px;
+      margin: auto;
+      @media only screen and (min-width: $large-tablet) {
+        order: 2;
+        padding: 0;
+        margin: 0;
+        max-width: 500px;
+      }
+      .title {
+        @include fluid-type(320px, 900px, 30px, 50px);
+        margin-top: 1rem;
+      }
+    }
+    .fran {
+      justify-self: end;
+      margin-bottom: 0;
+      order: 2;
+      margin: auto;
+      @media only screen and (min-width: $large-tablet) {
+        order: 1;
+        margin-right: 2rem;
+        margin: 0;
+      }
+    }
+  }
+  &--intro {
+    background-color: $color__magenta;
+    background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/18152133/gold-dots.svg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 300% 90%;
+    @media only screen and (min-width: $large-tablet) {
+      background-size: 70%;
+      background-position: 170% 80%;
+      padding: 2rem 0;
+    }
+  }
+  &--impact {
+    background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/19131811/repeated-square-gray.png");
+    padding-top: 2rem;
+    @media only screen and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    &--copy {
+      padding: 0 10px;
+      @media only screen and (min-width: $tablet) {
+        max-width: 460px;
+        padding: 0;
+      }
+    }
+    &--3up {
+      display: block;
+      padding: 1rem 0 2rem 0;
+      margin: auto;
+      @media only screen and (min-width: $tablet) {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        grid-gap: 20px;
+      }
+      .wp-block-image img {
+        margin: auto;
+      }
+    }
+    .impact-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (min-width: $tablet) {
+        align-items: flex-end;
+      }
+    }
+  }
+  &--registration {
+    background-color: $color__charcoal;
+    background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/18152133/gold-dots.svg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 300% 10%;
+    @media only screen and (min-width: $large-tablet) {
+      background-size: 70%;
+      background-position: 170% 20%;
+      padding: 2rem 0;
+    }
+    .gform_wrapper {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(42, 44, 44, 0.8);
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+      form .gform_body {
+        color: #fff;
+      }
+    }
+  }
+  &--leadership {
+    @include responsive-bg(
+      "/wp-content/uploads/2020/02/signature2020-leadership-768x564.jpg",
+      "/wp-content/uploads/2020/02/signature2020-leadership-920x675.jpg",
+      "/wp-content/uploads/2020/02/signature2020-leadership-1300x954.jpg",
+      "/wp-content/uploads/2020/02/signature2020-leadership-1800x1321.jpg",
+      "/wp-content/uploads/2020/02/signature2020-leadership-2000x1468.jpg",
+      "/wp-content/uploads/2020/02/signature2020-leadership-2500x1835.jpg"
+    );
+  }
+  &--sponsors {
+    background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/19134003/triangle-mosaic.png");
+  }
+}

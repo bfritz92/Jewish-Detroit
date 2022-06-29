@@ -8,13 +8,23 @@
  */
 
 $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentynineteen_get_discussion_data() : null; ?>
-
-<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<?php // ACF Conditional Check on Header Image and Title 
+$hide_image	= get_field('hide_image');
+$hide_title	= get_field('hide_title');
+?>
+<?php if($hide_image) : ?>
+<?php else : ?>
+	<img class="individual-event--img" src="<?php the_post_thumbnail_url('full')?>">
+<?php endif; ?>
+<?php if($hide_title) : ?>
+<?php else : ?>
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<?php endif; ?>
 
 <?php if ( ! is_page() ) : ?>
 <div class="entry-meta">
-	<?php twentynineteen_posted_by(); ?>
-	<?php twentynineteen_posted_on(); ?>
+	<?php // twentynineteen_posted_by(); ?>
+	<?php // twentynineteen_posted_on(); ?>
 	<span class="comment-count">
 		<?php
 		if ( ! empty( $discussion ) ) {
@@ -43,6 +53,6 @@ $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentyni
 		);
 	?>
 	<br />
-	<a href="/news/">&laquo; Return to all posts</a>
+	<a href="javascript:history.go(-1)">&laquo; Click here to go back</a>
 </div><!-- .meta-info -->
 <?php endif; ?>

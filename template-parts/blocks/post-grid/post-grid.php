@@ -39,35 +39,58 @@ $standalone = get_field('standalone_page');
 					$headshot 		= get_the_post_thumbnail_url($post_id); 
         			$full_name		= get_field( 'full_name', $post_id );	
 					$position		= get_field( 'position', $post_id );
+					$email			= get_field( 'email', $post_id );
+					$facebook		= get_field( 'facebook', $post_id );
+					$instagram		= get_field( 'instagram', $post_id );
+					$instagram_cln	= preg_replace('/[^A-Za-z0-9\-]/', '', $instagram); // Removes special chars.
 					$occupation		= get_field( 'occupation', $post_id );	
 					$favorites		= get_field( 'favorites', $post_id );	
 					$favfood		= get_field( 'favfood', $post_id );	
 					$dreamjob		= get_field( 'dreamjob', $post_id );	
-					$favorite_show	= get_field( 'favorite_show', $post_id );	
+					$favorite_show	= get_field( 'favorite_show', $post_id );
+					$vacationing	= get_field( 'vacationing', $post_id );
+					$best_hidden_gem = get_field( 'best_hidden_gem', $post_id );
+					$meal			= get_field( 'meal', $post_id );
 					$summary		= get_field( 'summary', $post_id );	
 					$count			= 0;
 					$count++;						
 				?>	
-				<section class="post-grid--item">
+				<?php if ($headshot) : ?>
+					<section class="post-grid--item">
+				<?php else : ?>
+					<section>
+				<?php endif ?>
 					<?php if( in_array('yes', $standalone) ) : ?>
 					<!-- Featured Image -->
+					<?php if ($headshot) : ?>
 					<a href="<?php echo $link ?>">
 						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
-					</a>					
+					</a>
+					<?php endif; ?>
 					<?php else : ?>
+					<?php if ($headshot) : ?>
 					<!-- Featured Image -->
 					<a href="#fancyboxID-<?php echo $post_id ?>" class="fancybox-inline">
 						<img class="post-grid--item--img" src="<?php echo $headshot; ?>" alt="<?php echo $headshot; ?>" />
 					</a>
+					<?php endif; ?>
 					<?php endif; ?>
 					<ul class="post-grid--item--info">
 						<?php if ($full_name) : ?>
 							<li class="post-grid--item--info--title">
 								<h3>
 									<?php if( in_array('yes', $standalone) ) : ?>
-									<a href="<?php echo $link ?>"><?php echo $full_name ?></a>
+										<?php if ($headshot) : ?>
+											<a href="<?php echo $link ?>"><?php echo $full_name ?></a>
+										<?php else : ?>
+											<h3><a href="<?php echo $link ?>"><?php echo $full_name ?></a></h3>
+										<?php endif; ?>
 									<?php else : ?>
-										<?php echo $full_name ?>
+										<?php if ($headshot) : ?>
+											<?php echo $full_name ?>
+										<?php else : ?>
+											<h3><?php echo $full_name ?></h3>
+										<?php endif; ?>
 									<?php endif; ?>
 									<?php if ($position) : ?>
 										<br /><span class="cyan" style="font-size:0.875em;"><?php echo $position ?></span>
@@ -82,11 +105,33 @@ $standalone = get_field('standalone_page');
 							<?php if ($full_name) : ?>
 							<li class="post-grid--item--title"><h3><?php echo $full_name ?></h3></li>
 							<?php endif; ?>
+							<?php if ($email || $facebook || $instagram) : ?>
+								<li class="post-grid--item--excerpt">
+									<?php if ($email) : ?>
+										<a href="mailto:<?php echo $email ?>" target="_blank"><i class="fas fa-envelope-square" aria-hidden="true"></i></a>
+									<?php endif; ?>
+									<?php if ($facebook) : ?>
+										<a href="https://<?php echo $facebook ?>" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+									<?php endif; ?>
+									<?php if ($instagram) : ?>
+										<a href="https://instagram.com/<?php echo $instagram_cln ?>" target="_blank"><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+									<?php endif; ?>
+								</li>
+							<?php endif; ?>
 							<?php if ($position) : ?>
 							<li class="post-grid--item--excerpt"><h3><?php echo $position ?></h3></li>
 							<?php endif; ?>
 							<?php if ($occupation) : ?>
 							<li class="post-grid--item--excerpt"><p><strong>Occupation and Employer:</strong> <span style="font-style: normal;"><?php echo $occupation ?></span></p></li>
+							<?php endif; ?>
+							<?php if ($best_hidden_gem) : ?>
+							<li class="post-grid--item--excerpt"><p><strong>What’s the best hidden gem in metro Detroit (it doesn’t have to be a restaurant)?</strong> <span style="font-style: normal;"><?php echo $best_hidden_gem ?></span></p></li>
+							<?php endif; ?>
+							<?php if ($vacationing) : ?>
+							<li class="post-grid--item--excerpt"><p><strong>Where do you dream of vacationing post-COVID?</strong> <span style="font-style: normal;"><?php echo $vacationing ?></span></p></li>
+							<?php endif; ?>
+							<?php if ($meal) : ?>
+							<li class="post-grid--item--excerpt"><p><strong>What’s your all-time favorite meal? </strong> <span style="font-style: normal;"><?php echo $meal ?></span></p></li>
 							<?php endif; ?>
 							<?php if ($summary) : ?>
 							<li class="post-grid--item--title"><p><?php echo $summary ?></p></li>

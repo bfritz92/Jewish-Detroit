@@ -46,7 +46,7 @@
 	
 	<footer class="entry-footer">
 		<br />
-	<a href="/news/">&laquo; Return to all posts</a>
+	<a href="javascript:history.go(-1)">&laquo; Click here to go back</a>
 		<?php // twentynineteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 

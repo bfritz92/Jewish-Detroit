@@ -35,7 +35,10 @@ $fpip = get_field('block_accordion_tabs');
 <?php else : ?>
 	<div class="narrow fade">		
 <?php endif;?>
+<?php $accordion_header = get_field('accordion_header'); ?>
+<?php if ($have_image) : ?>
 	<h1 class="limit-1200 accordion-tabs--headline blue mt1 mb1 <?php echo $className ?>"><?php the_field('accordion_header',$post_id); ?></h1>
+<?php endif; ?>		
 	<section class="accordion-tabs limit-1200 fade <?php echo $className ?>">		
 		<ul data-tabs class="accordion-tabs--nav">
 			<?php
@@ -53,7 +56,13 @@ $fpip = get_field('block_accordion_tabs');
 			<?php if ($a == 1) : ?>
 				<li><a data-tabby-default href="#<?php echo $title; ?>" aria-selected="true"><?php the_sub_field('header');?></a></li>
 			<?php else : ?>
-				<li><a href="#<?php echo $title; ?>"><?php the_sub_field('header');?></a></li>
+				<li>
+				    <?php if ($link) : ?>
+				    <a id="#<?php echo $title; ?>" href="#<?php echo $title; ?>"><?php the_sub_field('header');?></a>
+				    <?php else : ?>
+				    <a href="#<?php echo $title; ?>"><?php the_sub_field('header');?></a>
+				    <?php endif; ?>
+				</li>
 			<?php endif; ?>
 			<?php
 			endwhile;
