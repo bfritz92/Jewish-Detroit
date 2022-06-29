@@ -358,29 +358,13 @@ article.covid-block ul.covid-icons li label {
 }
 
 body.page-template-page-donometer {
-  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/11/01144234/GettyImages-886541926-scaled.jpg");
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
   background-size: cover;
-  background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-}
-
-body.page-template-page-donometer #masthead,
-body.page-template-page-donometer #sideNav {
-  display: none;
+  background-position: center top;
 }
 
 body.page-template-page-donometer .site-content {
   min-height: 100vh;
-  padding-left: 7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,49 +380,26 @@ body.page-template-page-donometer #thermometer {
   background: #ddd;
   border: 1px solid #aaa;
   border-radius: 12px;
-  color: #fff;
   -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
   -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
   -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
   box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
-  font-family: "rosewood-std-fill", serif;
 }
 
 body.page-template-page-donometer #thermometer .track {
   border: 1px solid #aaa;
   position: relative;
   margin: 0 auto;
-  background: #1b1b1b;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, white));
+  background: linear-gradient(to bottom, black 0%, white 10%);
+  background-position: 0 -1px;
+  background-size: 100% 5%;
 }
 
-body.page-template-page-donometer #thermometer .track .progress {
+body.page-template-page-donometer #thermometer .track .goal .progress {
   background: -webkit-gradient(linear, left top, left bottom, from(#bf953f), color-stop(#fcf6ba), color-stop(#b38728), color-stop(#fbf5b7), to(#aa771c));
   background: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
   height: 100%;
-}
-
-body.page-template-page-donometer #thermometer .track .progress .amount {
-  color: #fff;
-}
-
-body.page-template-page-donometer #thermometer .track .stop1 h2,
-body.page-template-page-donometer #thermometer .track .stop1 h3,
-body.page-template-page-donometer #thermometer .track .stop1 h4,
-body.page-template-page-donometer #thermometer .track .stop2 h2,
-body.page-template-page-donometer #thermometer .track .stop2 h3,
-body.page-template-page-donometer #thermometer .track .stop2 h4,
-body.page-template-page-donometer #thermometer .track .stop3 h2,
-body.page-template-page-donometer #thermometer .track .stop3 h3,
-body.page-template-page-donometer #thermometer .track .stop3 h4,
-body.page-template-page-donometer #thermometer .track .stop4 h2,
-body.page-template-page-donometer #thermometer .track .stop4 h3,
-body.page-template-page-donometer #thermometer .track .stop4 h4,
-body.page-template-page-donometer #thermometer .track .goal h2,
-body.page-template-page-donometer #thermometer .track .goal h3,
-body.page-template-page-donometer #thermometer .track .goal h4,
-body.page-template-page-donometer #thermometer .track .progress h2,
-body.page-template-page-donometer #thermometer .track .progress h3,
-body.page-template-page-donometer #thermometer .track .progress h4 {
-  font-family: "rosewood-std-fill", serif;
 }
 /*# sourceMappingURL=epic-2021.css.map */

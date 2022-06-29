@@ -136,50 +136,37 @@ li.gfield.gfield_error {
   background-color: rgba(255, 223, 224, 0.75) !important;
 }
 
-.signature--splash--headline.wp-block-group
-  .wp-block-group__inner-container
-  .eyebrow {
+.signature--splash--headline.wp-block-group .wp-block-group__inner-container .eyebrow {
   font-size: clamp(1rem, 5.15vw, 2.47rem);
   line-height: 1;
   margin-bottom: -2%;
 }
 
-.signature--splash--headline.wp-block-group
-  .wp-block-group__inner-container
-  .title {
+.signature--splash--headline.wp-block-group .wp-block-group__inner-container .title {
   font-size: clamp(4.2rem, 25vw, 12.7rem);
   line-height: 1;
   letter-spacing: -0.09rem;
 }
 
-.signature--splash--headline.wp-block-group
-  .wp-block-group__inner-container
-  .an-evening-with {
+.signature--splash--headline.wp-block-group .wp-block-group__inner-container .an-evening-with {
   font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 1;
   letter-spacing: 3px;
 }
 
-.signature--splash--headline.wp-block-group
-  .wp-block-group__inner-container
-  .monica {
+.signature--splash--headline.wp-block-group .wp-block-group__inner-container .monica {
   font-size: clamp(1rem, 5vw, 3rem);
   line-height: 1;
 }
 
-.signature--splash--headline.wp-block-group
-  .wp-block-group__inner-container
-  .event-title {
+.signature--splash--headline.wp-block-group .wp-block-group__inner-container .event-title {
   font-size: clamp(1rem, 5vw, 1.8rem);
   line-height: 1;
   letter-spacing: 3px;
   margin-top: 10px;
 }
 
-.signature--splash--presented-by
-  .wp-block-columns
-  .wp-block-column
-  .wp-block-image {
+.signature--splash--presented-by .wp-block-columns .wp-block-column .wp-block-image {
   max-width: 300px;
 }
 
@@ -194,8 +181,8 @@ li.gfield.gfield_error {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .signature--splash--schedule li .right-side {
@@ -215,8 +202,8 @@ li.gfield.gfield_error {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .signature--splash--schedule .reception .left-side span.smaller {
@@ -231,18 +218,14 @@ li.gfield.gfield_error {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 0.8rem;
   margin-left: 15px;
   margin-top: 5px;
 }
 
-.signature--splash--schedule
-  .reception
-  .left-side
-  .reception-info
-  .sponsored-by {
+.signature--splash--schedule .reception .left-side .reception-info .sponsored-by {
   padding-bottom: 20px;
 }
 
@@ -267,11 +250,9 @@ li.gfield.gfield_error {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 3fr 2rem 3fr;
-    grid-template-columns: 3fr 2rem 3fr;
+        grid-template-columns: 3fr 2rem 3fr;
   }
-  .signature--splash--talent
-    .wp-block-group__inner-container
-    .signature--splash--talent--info {
+  .signature--splash--talent .wp-block-group__inner-container .signature--splash--talent--info {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / span 2;
@@ -280,12 +261,9 @@ li.gfield.gfield_error {
     grid-row: 1;
     max-width: 700px;
     -ms-grid-column-align: end;
-    justify-self: end;
+        justify-self: end;
   }
-  .signature--splash--talent
-    .wp-block-group__inner-container
-    .signature--splash--talent--info
-    .wp-block-group__inner-container {
+  .signature--splash--talent .wp-block-group__inner-container .signature--splash--talent--info .wp-block-group__inner-container {
     display: block;
   }
   .signature--splash--talent .wp-block-group__inner-container .wp-block-image {
@@ -349,11 +327,7 @@ li.gfield.gfield_error {
   height: auto;
 }
 
-.signature--sponsors--presenting .wp-block-image figure,
-.signature--sponsors--diamond .wp-block-image figure,
-.signature--sponsors--platinum .wp-block-image figure,
-.signature--sponsors--gold .wp-block-image figure,
-.signature--sponsors--bronze .wp-block-image figure {
+.signature--sponsors--presenting .wp-block-image figure, .signature--sponsors--diamond .wp-block-image figure, .signature--sponsors--platinum .wp-block-image figure, .signature--sponsors--gold .wp-block-image figure, .signature--sponsors--bronze .wp-block-image figure {
   margin: auto !important;
 }
 
@@ -382,11 +356,11 @@ li.gfield.gfield_error {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .signature--sponsors--copper .wp-block-image img {
@@ -433,11 +407,5 @@ li.gfield.gfield_error {
 
 #input_770_212 label {
   color: #dabf74;
-}
-
-.pre-glow--monica {
-  display: flex;
-  justify-content: center;
-  padding-top: 2rem;
 }
 /*# sourceMappingURL=signature-2022.css.map */
