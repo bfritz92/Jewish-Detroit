@@ -3229,10 +3229,10 @@ a[href$=".ppt"]:after {
 }
 
 #masthead {
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 .main-nav {
@@ -3245,7 +3245,7 @@ a[href$=".ppt"]:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #0094d0;
+  background-color: #004b7a;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -3305,10 +3305,10 @@ a[href$=".ppt"]:after {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 50px;
-  -webkit-transition: -webkit-transform .25s ease-in-out;
-  transition: -webkit-transform .25s ease-in-out;
-  transition: transform .25s ease-in-out;
-  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 .main-nav .nav-list li {
@@ -3318,14 +3318,14 @@ a[href$=".ppt"]:after {
 
 .main-nav .nav-list li.top-level-nav a {
   color: #fff;
-  padding: 10px .8rem 10px .8rem;
-  font-size: .65rem;
+  padding: 10px 0.8rem 10px 0.8rem;
+  font-size: 0.65rem;
   font-weight: 700;
   font-family: gotham-bold;
 }
 
 .main-nav .nav-list li.top-level-nav a .fa-search {
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding-top: 12px;
 }
 
@@ -3341,8 +3341,8 @@ a[href$=".ppt"]:after {
   border-radius: 5px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: .25s linear;
-  transition: .25s linear;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
 .main-nav .nav-list li.top-level-nav > a:hover:before,
@@ -3397,32 +3397,29 @@ a[href$=".ppt"]:after {
   }
 }
 
-.donate {
-  background-color: #FA4B06;
+.donate a {
+  background-color: #fa4b06;
   padding: 2px 20px 6px 20px;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   font-family: gotham-bold;
-}
-
-.donate a {
   color: #fff;
   font-weight: 700;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
-.donate:hover, .donate:focus {
+.donate a:hover, .donate a:focus {
   background-color: #fff;
-  -webkit-box-shadow: inset 3px #FA4B06;
-          box-shadow: inset 3px #FA4B06;
+  -webkit-box-shadow: inset 3px #fa4b06;
+          box-shadow: inset 3px #fa4b06;
 }
 
-.donate:hover a, .donate:focus a {
-  color: #FA4B06;
+.donate a:hover a, .donate a:focus a {
+  color: #fa4b06;
 }
 
 @media only screen and (max-width: 1230px) {
-  .donate {
+  .donate a {
     padding: 3px 25px 6px 25px;
   }
 }
@@ -3463,8 +3460,8 @@ a[href$=".ppt"]:after {
   padding-left: 0;
   list-style-type: none;
   opacity: 0;
-  -webkit-transition: opacity .25s ease-in-out;
-  transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .main-nav ul li .second-level-nav .second-level-nav--item {
@@ -3475,8 +3472,8 @@ a[href$=".ppt"]:after {
   display: list-item;
   position: relative;
   line-height: 1;
-  -webkit-transition: background-color .25s ease-in-out;
-  transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3502,7 +3499,7 @@ a[href$=".ppt"]:after {
 }
 
 .main-nav ul li .second-level-nav .second-level-nav--item .second-level-nav--link {
-  font-size: .55rem;
+  font-size: 0.55rem;
   font-weight: 700;
   color: #303030;
   font-family: gotham;
@@ -3559,7 +3556,7 @@ a[href$=".ppt"]:after {
 }
 
 /* Style the search field */
-.overlay input[type=text] {
+.overlay input[type="text"] {
   padding: 15px;
   font-size: 17px;
   border: none;
@@ -3568,7 +3565,7 @@ a[href$=".ppt"]:after {
   background: white;
 }
 
-.overlay input[type=text]:hover {
+.overlay input[type="text"]:hover {
   background: #f1f1f1;
 }
 
@@ -3636,10 +3633,11 @@ a[href$=".ppt"]:after {
   }
 }
 
-.sidenav a, .sidenav span {
+.sidenav a,
+.sidenav span {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-family: gotham-bold;
   display: block;
   -webkit-transition: 0.3s;
@@ -3648,7 +3646,9 @@ a[href$=".ppt"]:after {
   font-weight: 700;
 }
 
-.sidenav a:hover, .sidenav a:focus, .sidenav span:hover, .sidenav span:focus {
+.sidenav a:hover, .sidenav a:focus,
+.sidenav span:hover,
+.sidenav span:focus {
   color: #0094d0;
 }
 
@@ -3659,11 +3659,11 @@ a[href$=".ppt"]:after {
 .sidenav .donate a {
   color: #fff;
   font-family: gotham-bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .sidenav .donate:hover a, .sidenav .donate:focus a {
-  color: #FA4B06;
+  color: #fa4b06;
 }
 
 .sidenav .sidenav-dropdown:after {
@@ -3714,8 +3714,8 @@ a[href$=".ppt"]:after {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  -webkit-transition: margin-left .5s;
-  transition: margin-left .5s;
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
