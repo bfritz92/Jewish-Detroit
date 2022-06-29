@@ -1,0 +1,176 @@
+[29-Jun-2022 13:41:10 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:41:16 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:41:59 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:43:43 UTC] PHP Warning:  unlink(/tmp/bfritz92-jewish-detroit-8006dc9.zip): No such file or directory in /home/jewish2019/public_html/wp-admin/includes/class-wp-upgrader.php on line 333
+[29-Jun-2022 13:43:54 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:43:56 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:48:42 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/page.php(12): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:48:42 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/page.php(12): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:54:42 UTC] PHP Warning:  Undefined variable $terms in /home/jewish2019/public_html/wp-content/plugins/events-calendar-pro/src/functions/template-tags/widgets.php on line 232
+[29-Jun-2022 13:54:54 UTC] PHP Deprecated:  File tribe-events/list/ is <strong>deprecated</strong> since version 5.13.0 with no alternative available. On version 6.0.0 this file will be removed. Please refer to <a href="https://evnt.is/v1-removal">https://evnt.is/v1-removal</a> for template customization assistance. in /home/jewish2019/public_html/wp-includes/functions.php on line 5579
+[29-Jun-2022 13:54:54 UTC] PHP Deprecated:  File tribe-events/list.php is <strong>deprecated</strong> since version 5.13.0 with no alternative available. On version 6.0.0 this file will be removed. Please refer to <a href="https://evnt.is/v1-removal">https://evnt.is/v1-removal</a> for template customization assistance. in /home/jewish2019/public_html/wp-includes/functions.php on line 5579
+[29-Jun-2022 13:54:54 UTC] PHP Deprecated:  File tribe-events/widgets/ is <strong>deprecated</strong> since version 5.13.0 with no alternative available. On version 6.0.0 this file will be removed. Please refer to <a href="https://evnt.is/v1-removal">https://evnt.is/v1-removal</a> for template customization assistance. in /home/jewish2019/public_html/wp-includes/functions.php on line 5579
+[29-Jun-2022 13:54:58 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
+[29-Jun-2022 13:55:41 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "twentynineteen_scripts" not found or invalid function name in /home/jewish2019/public_html/wp-includes/class-wp-hook.php:307
+Stack trace:
+#0 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#1 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#2 /home/jewish2019/public_html/wp-includes/script-loader.php(2156): do_action('wp_enqueue_scri...')
+#3 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(307): wp_enqueue_scripts('')
+#4 /home/jewish2019/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/jewish2019/public_html/wp-includes/plugin.php(476): WP_Hook->do_action(Array)
+#6 /home/jewish2019/public_html/wp-includes/general-template.php(3042): do_action('wp_head')
+#7 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/header.php(22): wp_head()
+#8 /home/jewish2019/public_html/wp-includes/template.php(770): require_once('/home/jewish201...')
+#9 /home/jewish2019/public_html/wp-includes/template.php(716): load_template('/home/jewish201...', true, Array)
+#10 /home/jewish2019/public_html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#11 /home/jewish2019/public_html/wp-content/themes/Jewish-Detroit/homepage.php(15): get_header()
+#12 /home/jewish2019/public_html/wp-includes/template-loader.php(106): include('/home/jewish201...')
+#13 /home/jewish2019/public_html/wp-blog-header.php(19): require_once('/home/jewish201...')
+#14 /home/jewish2019/public_html/index.php(17): require('/home/jewish201...')
+#15 {main}
+  thrown in /home/jewish2019/public_html/wp-includes/class-wp-hook.php on line 307
