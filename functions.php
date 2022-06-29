@@ -253,6 +253,10 @@ function load_event_css() {
 		$post_slug = $post->post_name;
 		wp_enqueue_style( 'twentynineteen-print-style', get_template_directory_uri() . '/'.$post_slug.'.css', array(), wp_get_theme()->get( 'Version' ) );
 	endif;
+	if( get_field('stylesheet_url', $post->ID) ):
+		$stylesheet_url = get_field('stylesheet_url');
+		wp_enqueue_style( 'twentynineteen-print-style', $stylesheet_url, array(), wp_get_theme()->get( 'Version' ) );
+	endif;
 	/* Addition of event/donor and/or special event CSS - End */
 	
 	if ( has_nav_menu( 'menu-1' ) ) {
@@ -407,3 +411,29 @@ function my_walker_nav_menu_start_el( $item_output, $item, $depth, $args ) {
     }
     return $item_output;
 }
+
+function wpse28145_add_custom_types( $query ) {
+    if( is_tag() && $query->is_main_query() ) {
+
+        // this gets all post types:
+        $post_types = get_post_types();
+
+        // alternately, you can add just specific post types using this line instead of the above:
+        // $post_types = array( 'post', 'your_custom_type' );
+
+        $query->set( 'post_type', $post_types );
+    }
+}
+add_filter( 'pre_get_posts', 'wpse28145_add_custom_types' );
+
+function hide_wordpress_admin_bar($hide){
+
+if ( !current_user_can( 'administrator' ) || !current_user_can('editor')) {
+
+return false;
+}
+
+return $hide;
+
+}
+add_filter( 'show_admin_bar' , 'hide_wordpress_admin_bar');
