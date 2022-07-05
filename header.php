@@ -64,6 +64,7 @@ src="https://www.facebook.com/tr?id=442352042998271&ev=PageView&noscript=1"
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 		<nav id="masthead" class="main-nav" tabindex="0" role="navigation">
+			<?php wp_nav_menu( array( 'theme_location' => 'social','container' => '','menu_id'=> 'social','menu_class'=> 'nav-list hide-for-mobile' ) ); ?>
 			<a id="navLogo" class="nav-logo" href="/" aria-label="<?php echo $header_logo['alt']; ?>"><img src="<?php echo $header_logo['url']; ?>" alt="<?php echo $header_logo['alt']; ?>"></a>
 			<a id="navLogo" class="nav-logo-mobile" href="/" aria-label="<?php echo $header_logo_mobile['alt']; ?>"><img src="<?php echo $header_logo_mobile['url']; ?>" alt="<?php echo $header_logo_mobile['alt']; ?>"></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'header-mainnav','container' => '','menu_id'=> 'navList','menu_class'=> 'nav-list hide-for-mobile' ) ); ?>
