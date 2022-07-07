@@ -24,13 +24,15 @@ $mobile: 430px;
   list-style: none;
   gap: 25px;
   background-color: #0094d0;
-  li a {
-    font-size: 0.6rem;
-    color: #fff;
-    line-height: 1.2;
-  }
-  li span i {
-    font-size: 15px;
+  li {
+    line-height: 0.8;
+    a {
+      font-size: 0.6rem;
+      color: #fff;
+    }
+    span i {
+      font-size: 15px;
+    }
   }
 }
 .main-nav {

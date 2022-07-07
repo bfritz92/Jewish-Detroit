@@ -3266,10 +3266,13 @@ a[href$=".ppt"]:after {
   background-color: #0094d0;
 }
 
+.social-nav li {
+  line-height: 0.8;
+}
+
 .social-nav li a {
   font-size: 0.6rem;
   color: #fff;
-  line-height: 1.2;
 }
 
 .social-nav li span i {
