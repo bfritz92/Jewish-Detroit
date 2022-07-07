@@ -3273,6 +3273,7 @@ a[href$=".ppt"]:after {
 .social-nav li a {
   font-size: 0.6rem;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .social-nav li span i {
@@ -3389,6 +3390,7 @@ a[href$=".ppt"]:after {
           transform: scaleX(0);
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
+  margin-bottom: 15px;
 }
 
 .main-nav .nav-list li.top-level-nav > a:hover:before,
