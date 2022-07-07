@@ -7,13 +7,14 @@ $mobile: 430px;
 }
 #masthead {
   transition: transform 0.25s ease-in-out;
+  flex-direction: column;
   .nav--container {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
 }
-#social {
+.social-nav {
   width: 100%;
   flex-basis: 100vw;
   display: flex;

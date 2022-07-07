@@ -3233,6 +3233,10 @@ a[href$=".ppt"]:after {
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #masthead .nav--container {
@@ -3245,7 +3249,7 @@ a[href$=".ppt"]:after {
           justify-content: space-between;
 }
 
-#social {
+.social-nav {
   width: 100%;
   -ms-flex-preferred-size: 100vw;
       flex-basis: 100vw;
@@ -3262,7 +3266,7 @@ a[href$=".ppt"]:after {
   background-color: #0094d0;
 }
 
-#social ul li a {
+.social-nav ul li a {
   font-size: 0.6rem;
   color: #fff;
 }
