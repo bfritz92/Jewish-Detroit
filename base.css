@@ -3271,6 +3271,10 @@ a[href$=".ppt"]:after {
   color: #fff;
 }
 
+.social-nav li a span i {
+  font-size: 15px;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
