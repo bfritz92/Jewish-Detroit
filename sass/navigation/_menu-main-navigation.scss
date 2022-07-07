@@ -7,6 +7,26 @@ $mobile: 430px;
 }
 #masthead {
   transition: transform 0.25s ease-in-out;
+  .nav--container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+#social {
+  width: 100%;
+  flex-basis: 100vw;
+  display: flex;
+  justify-content: end;
+  color: #fff;
+  margin: 0;
+  list-style: none;
+  gap: 25px;
+  background-color: #0094d0;
+  ul li a {
+    font-size: 0.6rem;
+    color: #fff;
+  }
 }
 .main-nav {
   display: flex;
