@@ -3273,7 +3273,7 @@ a[href$=".ppt"]:after {
           justify-content: space-between;
 }
 
-.social-nav {
+ul.social-nav {
   width: 100%;
   -ms-flex-preferred-size: 100vw;
       flex-basis: 100vw;
@@ -3290,7 +3290,7 @@ a[href$=".ppt"]:after {
   background-color: #0094d0;
 }
 
-.social-nav ul li a {
+ul.social-nav li a {
   font-size: 0.6rem;
   color: #fff;
 }

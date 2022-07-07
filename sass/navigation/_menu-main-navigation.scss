@@ -14,7 +14,7 @@ $mobile: 430px;
     justify-content: space-between;
   }
 }
-.social-nav {
+ul.social-nav {
   width: 100%;
   flex-basis: 100vw;
   display: flex;
@@ -24,7 +24,7 @@ $mobile: 430px;
   list-style: none;
   gap: 25px;
   background-color: #0094d0;
-  ul li a {
+  li a {
     font-size: 0.6rem;
     color: #fff;
   }
