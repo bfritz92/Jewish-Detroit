@@ -3373,7 +3373,6 @@ a[href$=".ppt"]:after {
 .main-nav .nav-list li.top-level-nav a .fa-search {
   font-size: 0.8rem;
   padding-top: 12px;
-  display: none;
 }
 
 .main-nav .nav-list li.top-level-nav > a:before {
@@ -3673,25 +3672,6 @@ a[href$=".ppt"]:after {
   /* 0.5 second transition effect to slide in the sidenav */
   list-style-type: none;
   border-left: #004b7a 7px solid;
-  /*.sidenav-dropdown {
-    &:after {
-      font-family: "Font Awesome 5 Pro";
-      content: "\f101";
-      font-weight: 900;
-      padding-left: 10px;
-      color: $color__jfmd-blue;
-      display: inline;
-    }
-    + ul {
-      display: none;
-      &.show-menu {
-        display: block;
-        ~ .sidenav-dropdown:after {
-          transform: rotate(90deg);
-        }
-      }
-    }
-  } */
 }
 
 @media only screen and (min-width: 430px) {
@@ -3731,6 +3711,28 @@ a[href$=".ppt"]:after {
 
 .sidenav .donate:hover a, .sidenav .donate:focus a {
   color: #fa4b06;
+}
+
+.sidenav .sidenav-dropdown:after {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f101";
+  font-weight: 900;
+  padding-left: 10px;
+  color: #004b7a;
+  display: inline;
+}
+
+.sidenav .sidenav-dropdown + ul {
+  display: none;
+}
+
+.sidenav .sidenav-dropdown + ul.show-menu {
+  display: block;
+}
+
+.sidenav .sidenav-dropdown + ul.show-menu ~ .sidenav-dropdown:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .sidenav li ul {

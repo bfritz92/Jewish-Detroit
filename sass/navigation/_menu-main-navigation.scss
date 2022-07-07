@@ -98,7 +98,6 @@ $mobile: 430px;
       & .fa-search {
         font-size: 0.8rem;
         padding-top: 12px;
-        display: none;
       }
     }
     & li.top-level-nav > a:before {
@@ -377,7 +376,7 @@ $mobile: 430px;
       }
     }
   }
-  /*.sidenav-dropdown {
+  .sidenav-dropdown {
     &:after {
       font-family: "Font Awesome 5 Pro";
       content: "\f101";
@@ -395,7 +394,7 @@ $mobile: 430px;
         }
       }
     }
-  } */
+  }
   li ul {
     list-style: none;
     li {
