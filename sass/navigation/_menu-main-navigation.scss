@@ -77,7 +77,7 @@ $mobile: 430px;
   & .nav-list {
     display: flex;
     justify-content: flex-end;
-    margin-right: 50px;
+    //margin-right: 50px;
     transition: transform 0.25s ease-in-out;
 
     & li {
@@ -86,13 +86,14 @@ $mobile: 430px;
     }
     & li.top-level-nav a {
       color: #fff;
-      padding: 10px 0.8rem 10px 0.8rem;
+      //padding: 10px 0.8rem 10px 0.8rem;
       font-size: 0.65rem;
       font-weight: 700;
       font-family: gotham-bold;
       & .fa-search {
         font-size: 0.8rem;
         padding-top: 12px;
+        display: none;
       }
     }
     & li.top-level-nav > a:before {

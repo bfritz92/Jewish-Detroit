@@ -3345,7 +3345,6 @@ a[href$=".ppt"]:after {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 50px;
   -webkit-transition: -webkit-transform 0.25s ease-in-out;
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
@@ -3359,7 +3358,6 @@ a[href$=".ppt"]:after {
 
 .main-nav .nav-list li.top-level-nav a {
   color: #fff;
-  padding: 10px 0.8rem 10px 0.8rem;
   font-size: 0.65rem;
   font-weight: 700;
   font-family: gotham-bold;
@@ -3368,6 +3366,7 @@ a[href$=".ppt"]:after {
 .main-nav .nav-list li.top-level-nav a .fa-search {
   font-size: 0.8rem;
   padding-top: 12px;
+  display: none;
 }
 
 .main-nav .nav-list li.top-level-nav > a:before {
