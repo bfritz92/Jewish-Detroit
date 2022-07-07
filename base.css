@@ -73,13 +73,13 @@
 
 @font-face {
   font-family: Gotham-Bold;
-  src: url("/fonts/Gotham-Bold.otf");
+  src: url("fonts/Gotham-Bold.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: Gotham-Book;
-  src: url("/fonts/Gotham-Book.otf");
+  src: url("fonts/Gotham-Book.otf");
   font-display: swap;
 }
 
@@ -3269,6 +3269,7 @@ a[href$=".ppt"]:after {
 .social-nav li a {
   font-size: 0.6rem;
   color: #fff;
+  line-height: 1.2;
 }
 
 .social-nav li span i {
