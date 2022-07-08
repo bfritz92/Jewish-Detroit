@@ -76,7 +76,7 @@ src="https://www.facebook.com/tr?id=442352042998271&ev=PageView&noscript=1"
 		<?php wp_nav_menu( array( 'theme_location' => 'header-sidenav','container' => '','menu_id'=> 'sideNav','menu_class'=> 'sidenav' ) ); ?>		
 	<div id="content" class="site-content">
 	<div id="searchOverlay" class="overlay">
-  		<span class="closebtn mt2" onclick="closeSearch()" title="Close Overlay"><i class="fas fa-window-close"></i></span>
+  		<span class="closebtn mt2" onclick="closeSearch()" title="Close Overlay"><i class="fas fa-xs fa-close"></i></span>
   		<div class="overlay-content">
 			  <h3 class="white">Search</h3>
 		  <?php get_search_form(); ?>
