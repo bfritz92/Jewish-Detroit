@@ -3281,6 +3281,10 @@ a[href$=".ppt"]:after {
   font-size: 15px;
 }
 
+.social-nav li:last-child {
+  margin-right: 20px;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3377,6 +3381,7 @@ a[href$=".ppt"]:after {
   font-size: 0.65rem;
   font-weight: 700;
   font-family: gotham-bold;
+  height: 100%;
 }
 
 .main-nav .nav-list li.top-level-nav a .fa-search {
@@ -3518,7 +3523,7 @@ a[href$=".ppt"]:after {
 .main-nav ul li ul {
   display: none;
   position: absolute;
-  top: 43px;
+  top: 38px;
   /* the height of the main nav */
   margin-top: 0;
   padding-left: 0;
