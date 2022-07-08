@@ -3264,6 +3264,7 @@ a[href$=".ppt"]:after {
   list-style: none;
   gap: 25px;
   background-color: #0094d0;
+  max-height: 17px;
 }
 
 .social-nav li {
