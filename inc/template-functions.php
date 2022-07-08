@@ -461,7 +461,7 @@ add_filter( 'wp_nav_menu_items', 'addCloseMenuLink', 10, 2 );
 
 function addSearchMenuLink($menuItems, $args)
 {
-    if('header-mainnav' == $args->theme_location)
+    if('social' == $args->theme_location)
     { 
         $homeMenuItem = '<li class="top-level-nav">' .
                         $args->before .
