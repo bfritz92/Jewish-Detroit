@@ -3477,6 +3477,10 @@ a[href$=".ppt"]:after {
   }
 }
 
+.donate {
+  height: 100%;
+}
+
 .donate a {
   background-color: #fa4b06;
   -webkit-transition: background-color 150ms ease-in-out;

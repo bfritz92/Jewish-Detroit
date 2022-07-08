@@ -153,7 +153,9 @@ $mobile: 430px;
     }
   }
 }
-.donate a {
+.donate {
+  height:100%;
+a {
   background-color: #fa4b06;
   transition: background-color $button_transition ease-in-out;
   font-family: gotham-bold;
@@ -175,7 +177,7 @@ $mobile: 430px;
     padding: 3px 25px 6px 25px;
   }
 }
-
+}
 .scrolled-nav {
   background-color: $color__jfmd-blue;
   height: 60px;
