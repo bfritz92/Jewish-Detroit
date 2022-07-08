@@ -3422,7 +3422,6 @@ a[href$=".ppt"]:after {
           transform: scaleX(0);
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
-  margin-bottom: 15px;
 }
 
 .main-nav .nav-list li.top-level-nav > a:hover:before,
