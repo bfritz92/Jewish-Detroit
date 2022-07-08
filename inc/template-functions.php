@@ -472,7 +472,7 @@ function addSearchMenuLink($menuItems, $args)
                         '</a>' .
                         $args->after .
                         '</li>';
-        $menuItems = $menuItems . $homeMenuItem;
+        $menuItems = $homeMenuItem . $menuItems;
     }
     return $menuItems;
 }
