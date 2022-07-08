@@ -3296,7 +3296,7 @@ a[href$=".ppt"]:after {
   top: 0;
   z-index: 99;
   width: 100%;
-  height: 75px;
+  height: 76px;
   -webkit-transition: background-color 150ms ease-in-out, height 150ms ease-in-out;
   transition: background-color 150ms ease-in-out, height 150ms ease-in-out;
 }
@@ -3356,6 +3356,14 @@ a[href$=".ppt"]:after {
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
   gap: 1.5rem;
   margin: 0;
+  padding: 0;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-nav .nav-list li {
@@ -3447,22 +3455,27 @@ a[href$=".ppt"]:after {
 
 .donate a {
   background-color: #fa4b06;
-  padding: 2px 20px 6px 20px;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   font-family: gotham-bold;
   color: #fff;
   font-weight: 700;
   font-size: 0.7rem;
+  padding: 0px 25px 0px 25px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 58px;
 }
 
 .donate a:hover, .donate a:focus {
   background-color: #fff;
   -webkit-box-shadow: inset 3px #fa4b06;
           box-shadow: inset 3px #fa4b06;
-}
-
-.donate a:hover a, .donate a:focus a {
   color: #fa4b06;
 }
 
