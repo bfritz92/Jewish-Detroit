@@ -50,7 +50,8 @@ src="https://www.facebook.com/tr?id=442352042998271&ev=PageView&noscript=1"
 
 <meta name="facebook-domain-verification" content="2n9xt4hj40d3h4cxqmvgk133absq15" />
 <!-- Hotjar Tracking Code for https://www.jewishdetroit.org -->
-	<script>
+	<!-- REMOVE THIS COMMENTING BEFORE PUSH TO LIVE SITE 
+		<script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:2954841,hjsv:6};
@@ -59,7 +60,7 @@ src="https://www.facebook.com/tr?id=442352042998271&ev=PageView&noscript=1"
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+</script> -->
 </head>
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
