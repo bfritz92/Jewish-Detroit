@@ -3529,8 +3529,8 @@ a[href$=".ppt"]:after {
 .main-nav ul li ul {
   display: none;
   position: absolute;
-  top: 38px;
-  /* the height of the main nav */
+  top: 41px;
+  /* the height of the main nav. ish. */
   margin-top: 0;
   padding-left: 0;
   list-style-type: none;
