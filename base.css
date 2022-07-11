@@ -3300,7 +3300,7 @@ a[href$=".ppt"]:after {
   top: 0;
   z-index: 99;
   width: 100%;
-  height: 76px;
+  height: 75px;
   -webkit-transition: background-color 150ms ease-in-out, height 150ms ease-in-out;
   transition: background-color 150ms ease-in-out, height 150ms ease-in-out;
 }
@@ -3317,7 +3317,7 @@ a[href$=".ppt"]:after {
   height: auto;
   width: 200px;
   position: relative;
-  top: 6px;
+  top: 5px;
 }
 
 @media only screen and (max-width: 1230px) {
@@ -3368,6 +3368,8 @@ a[href$=".ppt"]:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: -4px;
+  position: relative;
 }
 
 .main-nav .nav-list li {
@@ -3410,6 +3412,10 @@ a[href$=".ppt"]:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.main-nav .nav-list .donate {
+  top: 4px;
 }
 
 @media only screen and (max-width: 1230px) {
