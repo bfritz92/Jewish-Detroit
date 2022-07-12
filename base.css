@@ -3568,7 +3568,6 @@ a[href$=".ppt"]:after {
   font-size: 0.55rem;
   font-weight: 700;
   color: #303030;
-  font-family: gotham;
 }
 
 /* Display Dropdowns on Hover */
