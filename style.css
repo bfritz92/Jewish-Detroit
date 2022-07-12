@@ -3978,7 +3978,7 @@ a[href$=".ppt"]:after {
   display: inline-block;
   font-weight: bold;
   line-height: 1;
-  padding: .25rem;
+  padding: 0.25rem;
   position: absolute;
   text-transform: uppercase;
   top: -1rem;
@@ -3995,7 +3995,7 @@ a[href$=".ppt"]:after {
 }
 
 .content-area {
-  margin-top: 60px;
+  margin-top: 75px;
 }
 
 .entry {
@@ -4319,7 +4319,7 @@ a[href$=".ppt"]:after {
   padding-left: 10px;
 }
 
-.striped-list li:nth-child(2n+1) {
+.striped-list li:nth-child(2n + 1) {
   background-color: #f4f4f4;
 }
 
