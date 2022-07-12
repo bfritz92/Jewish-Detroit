@@ -3250,12 +3250,10 @@ a[href$=".ppt"]:after {
 }
 
 .social-nav {
+  display: none;
   width: 100%;
   -ms-flex-preferred-size: 100vw;
       flex-basis: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -3265,6 +3263,14 @@ a[href$=".ppt"]:after {
   gap: 25px;
   background-color: #0094d0;
   max-height: 17px;
+}
+
+@media only screen and (min-width: 420px) {
+  .social-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .social-nav li {
