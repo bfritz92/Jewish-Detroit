@@ -3392,7 +3392,6 @@ a[href$=".ppt"]:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: -4px;
   position: relative;
 }
 
@@ -3408,11 +3407,7 @@ a[href$=".ppt"]:after {
   font-weight: 700;
   font-family: gotham-bold;
   height: 100%;
-}
-
-.main-nav .nav-list li.top-level-nav a .fa-search {
-  font-size: 0.8rem;
-  padding-top: 12px;
+  display: inline-block;
 }
 
 .main-nav .nav-list li.top-level-nav > a:before {
@@ -3436,10 +3431,6 @@ a[href$=".ppt"]:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-}
-
-.main-nav .nav-list .donate {
-  top: 4px;
 }
 
 @media only screen and (max-width: 1230px) {

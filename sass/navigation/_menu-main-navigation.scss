@@ -24,7 +24,7 @@ $mobile: 430px;
   list-style: none;
   gap: 25px;
   background-color: #0094d0;
-  max-height:17px;
+  max-height: 17px;
   li {
     line-height: 0.8;
     a {
@@ -35,8 +35,8 @@ $mobile: 430px;
     span i {
       font-size: 15px;
     }
-    &:last-child{
-      margin-right:20px;
+    &:last-child {
+      margin-right: 20px;
     }
   }
 }
@@ -92,7 +92,6 @@ $mobile: 430px;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -4px;
     position: relative;
 
     & li {
@@ -105,11 +104,8 @@ $mobile: 430px;
       font-size: 0.65rem;
       font-weight: 700;
       font-family: gotham-bold;
-      height:100%;
-      & .fa-search {
-        font-size: 0.8rem;
-        padding-top: 12px;
-      }
+      height: 100%;
+      display: inline-block;
     }
     & li.top-level-nav > a:before {
       content: "";
@@ -128,9 +124,6 @@ $mobile: 430px;
     & li.top-level-nav > a:focus:before {
       visibility: visible;
       transform: scaleX(1);
-    }
-    .donate{
-      top:4px;
     }
     @media only screen and (max-width: $nav-break) {
       display: none;
@@ -162,29 +155,29 @@ $mobile: 430px;
   }
 }
 .donate {
-  height:100%;
-a {
-  background-color: #fa4b06;
-  transition: background-color $button_transition ease-in-out;
-  font-family: gotham-bold;
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.7rem;
-  padding: 0px 25px 0px 25px;
   height: 100%;
-  display: flex;
-  align-items: center;
-  max-height: 58px;
-  &:hover,
-  &:focus {
-    background-color: #fff;
-    box-shadow: inset 3px #fa4b06;
-    color:#fa4b06;
+  a {
+    background-color: #fa4b06;
+    transition: background-color $button_transition ease-in-out;
+    font-family: gotham-bold;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding: 0px 25px 0px 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-height: 58px;
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      box-shadow: inset 3px #fa4b06;
+      color: #fa4b06;
+    }
+    @media only screen and (max-width: $nav-break) {
+      padding: 3px 25px 6px 25px;
+    }
   }
-  @media only screen and (max-width: $nav-break) {
-    padding: 3px 25px 6px 25px;
-  }
-}
 }
 .scrolled-nav {
   background-color: $color__jfmd-blue;
