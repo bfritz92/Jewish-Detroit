@@ -3552,6 +3552,10 @@ a[href$=".ppt"]:after {
           justify-content: center;
 }
 
+.main-nav ul li .second-level-nav .second-level-nav--item a {
+  font-family: gotham-bold;
+}
+
 .main-nav ul li .second-level-nav .second-level-nav--item:first-child {
   margin-top: 10px;
 }
