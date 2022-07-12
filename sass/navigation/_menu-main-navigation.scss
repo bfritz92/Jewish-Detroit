@@ -171,7 +171,7 @@ $mobile: 430px;
     &:hover,
     &:focus {
       background-color: #fff;
-      box-shadow: inset 3px #fa4b06;
+      //box-shadow: inset 3px #fa4b06;
       color: #fa4b06;
     }
     @media only screen and (max-width: $nav-break) {

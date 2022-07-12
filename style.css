@@ -3503,8 +3503,6 @@ a[href$=".ppt"]:after {
 
 .donate a:hover, .donate a:focus {
   background-color: #fff;
-  -webkit-box-shadow: inset 3px #fa4b06;
-          box-shadow: inset 3px #fa4b06;
   color: #fa4b06;
 }
 
