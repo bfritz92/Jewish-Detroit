@@ -3743,6 +3743,7 @@ a[href$=".ppt"]:after {
 
 .sidenav .donate {
   padding: 0;
+  max-height: 50px;
 }
 
 .sidenav .donate a {
