@@ -3970,6 +3970,1235 @@ a[href$=".ppt"]:after {
 }
 
 /* Layout */
+/*************************
+DIRECTORIES
+	Leadership/Partner Agencies
+	Brand Guide
+	About Page
+	404 Page
+	Search Results
+	Timeline
+	Missions
+	FedRadioDetroit
+	Sponsors
+*************************/
+.directory-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  /* a[href*="jdc.org"]{
+          width:80%;
+          margin:auto;
+      } */
+}
+
+@media only screen and (min-width: 700px) {
+  .directory-item {
+    padding: 15px;
+    grid-gap: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.directory-item img {
+  width: 100%;
+  -ms-flex-item-align: start;
+  align-self: start;
+  margin: auto;
+  min-width: 250px;
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.directory-item--info {
+  list-style-type: none;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .directory-item--info {
+    padding-left: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+.directory-item--info--name {
+  color: #004b7a;
+  size: 1.5rem;
+  font-family: gotham-bold;
+}
+
+.directory-item--info--title {
+  color: #004b7a;
+  font-family: gotham-bold;
+}
+
+.directory-item--info--title h3 {
+  font-size: 1rem;
+}
+
+.directory-item--info--excerpt p,
+.directory-item--info--full-text p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+/*************************
+  BRAND GUIDE
+  *************************/
+.brand-guide {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.brand-guide--nav-container {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.brand-guide--nav {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 920px) {
+  .brand-guide--nav {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 250px;
+    top: 40vh;
+    border-right: #004b7a 3px solid;
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
+
+.brand-guide--main {
+  padding-top: 20vh;
+}
+
+@media only screen and (min-width: 920px) {
+  .brand-guide--main {
+    grid-column: 5/-1;
+  }
+}
+
+.brand-guide--logo {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.brand-guide--section h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .brand-guide--section h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .brand-guide--section h1 {
+    font-size: 4rem;
+  }
+}
+
+.brand-guide--section h2 {
+  color: #004b7a;
+  margin-top: 4rem;
+}
+
+.brand-guide--section h3 {
+  font-size: 1.3rem;
+  color: #0094d0;
+}
+
+.brand-guide--section p {
+  line-height: 1.5;
+}
+
+.brand-guide--section ul {
+  list-style-type: disc;
+}
+
+.brand-guide--section ul li {
+  line-height: 1.3;
+  padding-bottom: 15px;
+}
+
+.brand-guide--section .pullquote {
+  margin: 10px;
+  border: #004b7a 2px solid;
+  padding: 15px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 700px) {
+  .brand-guide--section .pullquote {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+.brand-guide--section.intro h2 {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .brand-guide--dos-donts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+  }
+}
+
+.logo-limit {
+  max-width: 600px;
+  padding-top: 2rem;
+}
+
+/*************************
+ABOUT PAGE
+*************************/
+.about-page--splash {
+  background-color: #004b7a;
+  color: #fff;
+}
+
+.about-page--splash h2 {
+  font-size: 50px;
+}
+
+@media screen and (min-width: 400px) {
+  .about-page--splash h2 {
+    font-size: calc(50px + 16 * ((100vw - 400px) / 600));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about-page--splash h2 {
+    font-size: 66px;
+  }
+}
+
+.about-page--support {
+  background-color: #c4e5f4;
+}
+
+@media only screen and (min-width: 920px) {
+  .about-page--support .wp-block-group .wp-block-group__inner-container {
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+  }
+  .about-page--support .wp-block-group .wp-block-group__inner-container p:first-child {
+    margin-top: 0;
+  }
+}
+
+.about-page--support strong {
+  color: #004b7a;
+}
+
+.about-page--people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #004b7a;
+}
+
+@media only screen and (min-width: 920px) {
+  .about-page--people {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 40vh;
+    grid-template-rows: auto 40vh;
+    -ms-grid-columns: 1fr 700px 1fr;
+    grid-template-columns: 1fr 700px 1fr;
+    color: #fff;
+  }
+}
+
+.about-page--people .wp-block-group {
+  z-index: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 1rem 10px 10px 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-page--people .wp-block-group {
+    padding: 2rem 0 0 0;
+  }
+}
+
+.about-page--people figure.wp-block-image {
+  margin-bottom: 0;
+  grid-row: 1 / -1;
+  grid-column: 1/ -1;
+}
+
+.about-page--people figure.wp-block-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-page--people figure.wp-block-image img {
+    -o-object-position: 80% bottom;
+    object-position: 80% bottom;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .about-page--people figure.wp-block-image img {
+    -o-object-position: right bottom;
+    object-position: right bottom;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .about-page--people figure.wp-block-image {
+    z-index: -1;
+  }
+}
+
+.about-page--future,
+.about-page--partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 920px) {
+  .about-page--future,
+  .about-page--partners {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+  .about-page--future .wp-block-group,
+  .about-page--partners .wp-block-group {
+    max-width: 600px;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+  .about-page--future figure img,
+  .about-page--partners figure img {
+    height: 100%;
+  }
+}
+
+.about-page--future figure,
+.about-page--partners figure {
+  margin-bottom: 0;
+}
+
+.about-page--future figure img,
+.about-page--partners figure img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.about-page--get-involved figure {
+  margin-bottom: 0;
+}
+
+.about-page--get-involved figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top center;
+  object-position: top center;
+}
+
+/*iframe{
+          //width:900px; 
+          //height:506px;
+          width:100%;
+          height:50vw;
+          @media only screen and (min-width:$tablet){
+              height:40vh;
+          }
+          @media only screen and (min-width:$laptop){
+              height:506px;
+          }
+      } */
+/*************************
+  404 PAGE
+  *************************/
+.page-404 {
+  background-image: url(/wp-content/uploads/2019/09/404-bg-920x504.jpg);
+  background-color: #476280;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 90vh;
+}
+
+@media only screen and (min-width: 700px) {
+  .page-404 {
+    background-image: url(/wp-content/uploads/2019/09/404-bg-1024x561.jpg);
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .page-404 {
+    background-image: url(/wp-content/uploads/2019/09/404-bg-1600x877.jpg);
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .page-404 {
+    background-image: url(/wp-content/uploads/2019/09/404-bg-1800x987.jpg);
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .page-404 {
+    background-image: url(/wp-content/uploads/2019/09/404-bg-2500x1371.jpg);
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .page-404 {
+    background-image: url(/wp-content/uploads/2019/09/404-bg.jpg);
+  }
+}
+
+.page-404 .site-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-404 .site-main .page-header {
+  padding-top: 4rem;
+}
+
+.page-404 .site-main .page-header .page-title {
+  color: #fff;
+}
+
+.page-404 .site-main .page-content p {
+  color: #fff;
+  font-weight: 700;
+}
+
+/*************************
+SEARCH RESULTS
+*************************/
+.search-results .site-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.search-results .site-content .content-area .site-main article .entry-header .entry-title {
+  font-size: 1.5rem;
+}
+
+.search-results .site-content .content-area .site-main article .entry-header .entry-title a {
+  color: #004b7a;
+}
+
+.search-results .site-content .content-area .site-main article .entry-header .entry-title a:hover,
+.search-results .site-content .content-area .site-main article .entry-header .entry-title a:focus {
+  color: #0094d0;
+}
+
+/*************************
+BOARD DIRECTORY
+*************************/
+.post-grid .wp-block-group__inner-container {
+  padding-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+
+.post-grid .wp-block-group__inner-container:before {
+  display: none;
+}
+
+.post-grid .wp-block-group__inner-container .post-grid--item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 250px auto;
+  grid-template-rows: 250px auto;
+}
+
+.post-grid .wp-block-group__inner-container .post-grid--item a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.post-grid .wp-block-group__inner-container .post-grid--item--info {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#fancybox-wrap {
+  max-height: 70vh;
+  max-width: 50vw;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  #fancybox-wrap {
+    max-height: 400px;
+    max-width: 40vw;
+  }
+}
+
+#fancybox-wrap #fancybox-outer {
+  min-width: calc(100vw - 60px);
+}
+
+@media only screen and (min-width: 700px) {
+  #fancybox-wrap #fancybox-outer {
+    min-width: 770px;
+  }
+}
+
+#fancybox-wrap #fancybox-content .hentry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 700px) {
+  #fancybox-wrap #fancybox-content .hentry {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
+
+#fancybox-wrap #fancybox-content .hentry img {
+  max-height: 400px;
+  width: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding-top: 1rem;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+#fancybox-wrap #fancybox-content .hentry ul.post-grid--item--info li p {
+  padding-left: 0;
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+#fancybox-wrap #fancybox-content .hentry .post-grid--item--info {
+  list-style-type: none;
+}
+
+.page-template-homepage #fancybox-wrap #fancybox-outer {
+  min-width: 160%;
+}
+
+@media only screen and (min-width: 700px) {
+  .page-template-homepage #fancybox-wrap #fancybox-outer {
+    min-width: 720px;
+  }
+}
+
+/*************************
+TIMELINE
+*************************/
+.timeline {
+  margin-top: 4rem;
+  padding: 0 10px;
+  max-width: 900px;
+  margin: 4rem auto;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 700px) {
+  .timeline {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    padding: 0;
+  }
+}
+
+.timeline--nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1rem;
+  height: 600px;
+  list-style: none;
+  font-weight: 900;
+  font-family: gotham-bold;
+  padding: 0 10px;
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .timeline--nav {
+    top: 20%;
+    display: block;
+  }
+}
+
+.timeline--year h2 {
+  border-bottom: 5px #004b7a solid;
+}
+
+.timeline .butzel {
+  max-width: 250px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .timeline .butzel {
+    max-width: 400px;
+  }
+}
+
+/*************************
+MISSIONS STYLING
+*************************/
+.mission {
+  max-width: 900px;
+  margin: 5rem auto 2rem auto;
+}
+
+.mission--heading {
+  display: block;
+}
+
+@media only screen and (min-width: 700px) {
+  .mission--heading {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.mission--heading--date h2,
+.mission--heading--questions {
+  color: #004b7a;
+  font-size: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px 1fr;
+  grid-template-columns: 40px 1fr;
+}
+
+.mission--heading--date h2:before,
+.mission--heading--questions:before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f133";
+  font-weight: 900;
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+.mission--heading--contact {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.mission--heading--questions:before {
+  content: "\f059";
+}
+
+.mission--heading--cost {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.mission--heading--name {
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-bottom: 2rem;
+}
+
+.mission--heading--img {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+.mission--container .gform_wrapper form .gf_page_steps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(200px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/*************************
+  GET INVOLVED
+  *************************/
+.get-involved {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(300px, 60vh) auto;
+  grid-template-rows: minmax(300px, 60vh) auto;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 1600px) {
+  .get-involved {
+    -ms-grid-rows: minmax(750px, 40vh) auto;
+    grid-template-rows: minmax(750px, 40vh) auto;
+  }
+}
+
+.get-involved h1.white {
+  z-index: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
+  margin-bottom: 2rem;
+}
+
+.get-involved .attachment-post-thumbnail {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  z-index: 1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  grid-column: 1/-1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.get-involved .site-main {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  z-index: 2;
+}
+
+.get-involved .site-main .entry-content {
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+  .get-involved .site-main .entry-content {
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
+    padding: 0 25px;
+  }
+}
+
+.get-involved .site-main .page .entry-content .gform_wrapper form .gform_heading {
+  display: none;
+}
+
+.page-template-get-involved {
+  overflow-x: hidden;
+}
+
+/*************************
+FEDRADIODETROIT STYLING
+*************************/
+.fedradiodetroit--splash {
+  display: block;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+  .fedradiodetroit--splash {
+    background-color: #000;
+    background-image: url("/wp-content/uploads/2020/02/Artboard-2-80-copy.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 150%;
+    background-size: 100%;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .fedradiodetroit--splash {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr [14];
+    grid-template-columns: repeat(14, 1fr);
+    grid-column-gap: 15px;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    background-position: 50% 50%;
+  }
+}
+
+.fedradiodetroit--splash .attachment-post-thumbnail {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  max-height: 500px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 920px) {
+  .fedradiodetroit--splash .attachment-post-thumbnail {
+    max-height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .fedradiodetroit--splash .attachment-post-thumbnail {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-column: 1/10;
+  }
+}
+
+.fedradiodetroit--splash--background {
+  background-color: #004b7a;
+  z-index: 1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+@media only screen and (min-width: 700px) {
+  .fedradiodetroit--intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 20px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .fedradiodetroit--intro {
+    z-index: 2;
+    grid-column: 8/-1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .fedradiodetroit--intro {
+    grid-column: 10/-1;
+  }
+}
+
+.fedradiodetroit--intro article {
+  max-width: 900px;
+  margin: auto;
+}
+
+.fedradiodetroit--intro article .entry-content {
+  display: block;
+}
+
+@media only screen and (min-width: 700px) {
+  .fedradiodetroit--intro article .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .fedradiodetroit--intro article .entry-content {
+    max-width: 550px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.fedradiodetroit--intro article .entry-content h2 {
+  color: #004b7a;
+  padding-top: 15px;
+}
+
+.fedradiodetroit--intro article .entry-content h2 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .fedradiodetroit--intro article .entry-content h2 {
+    font-size: calc(18px + 5 * ((100vw - 320px) / 580));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .fedradiodetroit--intro article .entry-content h2 {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .fedradiodetroit--intro article .entry-content h2 {
+    color: #fff;
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .fedradiodetroit--intro article .entry-content h2 {
+    padding-left: 0;
+  }
+}
+
+.fedradiodetroit--intro article .entry-content .wp-block-image {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .fedradiodetroit--intro article .entry-content .wp-block-image {
+    display: block;
+    min-height: 200px;
+    min-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .fedradiodetroit--intro article .entry-content .wp-block-image {
+    max-width: 70%;
+    margin: auto;
+    min-height: 300px;
+    min-width: 300px;
+  }
+}
+
+.fedradiodetroit--intro article .entry-footer {
+  display: none;
+}
+
+.fedradiodetroit--grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 15px;
+}
+
+.fedradiodetroit--episode {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 2rem auto minmax(min-content, 1fr) auto;
+  grid-template-rows: 2rem auto minmax(-webkit-min-content, 1fr) auto;
+  grid-template-rows: 2rem auto minmax(min-content, 1fr) auto;
+  overflow-y: hidden;
+  margin-bottom: 2rem;
+  padding: 10px;
+}
+
+.fedradiodetroit--episode--date {
+  color: #0094d0;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  float: left;
+  font-family: gotham-bold;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.fedradiodetroit--episode--number {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-family: gotham-bold;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.fedradiodetroit--episode--title {
+  grid-column: 1/-1;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  text-decoration: underline;
+}
+
+.fedradiodetroit--episode--title:hover,
+.fedradiodetroit--episode--title:focus {
+  text-decoration: none;
+}
+
+.fedradiodetroit--episode--title h3 {
+  color: #004b7a;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.fedradiodetroit--episode--description {
+  grid-column: 1/-1;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+.fedradiodetroit--episode--description p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #303030;
+}
+
+.fedradiodetroit--episode--image {
+  display: block;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  grid-column: 1/-1;
+}
+
+.fedradiodetroit--episode--image img {
+  max-height: 300px;
+  margin: auto;
+  display: block;
+}
+
+.fedradio--intro {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #004b7a;
+}
+
+.fedradio--intro--episode-number {
+  color: #fff;
+  max-width: 920px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  font-size: 0.8rem;
+}
+
+.fedradio--intro--episode-number .white-link {
+  float: right;
+}
+
+.fedradio--intro--title {
+  max-width: 900px;
+  margin: auto;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.fedradio--intro--title {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .fedradio--intro--title {
+    font-size: calc(25px + 23 * ((100vw - 320px) / 580));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .fedradio--intro--title {
+    font-size: 48px;
+  }
+}
+
+.fedradio--intro--subtitle {
+  max-width: 900px;
+  margin: auto;
+  color: #fff;
+  font-family: gotham-book;
+}
+
+.fedradio--intro--subtitle {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .fedradio--intro--subtitle {
+    font-size: calc(15px + 6 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fedradio--intro--subtitle {
+    font-size: 21px;
+  }
+}
+
+.fedradio--content {
+  max-width: 900px;
+  margin: -4rem auto 2rem auto;
+}
+
+.fedradio--content .spreaker-player {
+  height: 200px;
+}
+
+/*************************
+SPONSORS PAGE
+*************************/
+.sponsors-page .title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.sponsors-page .sponsor-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  padding-bottom: 2rem;
+}
+
+.sponsors-page .sponsor-grid a h4 {
+  display: none;
+}
+
+.sponsors-page:nth-child(1) .sponsor-grid {
+  -ms-grid-columns: minmax(300px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.sponsors-page:nth-child(1) .sponsor-grid:nth-child(4) {
+  margin-left: 20px;
+}
+
+.sponsors-page:nth-child(2) .sponsor-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.sponsors-page:nth-child(2) .sponsor-grid a {
+  height: 100px;
+}
+
+.sponsors-page:nth-child(2) .sponsor-grid a img {
+  height: 100%;
+}
+
+.sponsors-page:nth-child(3) .sponsor-grid {
+  -ms-grid-columns: minmax(200px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.sponsors-page:nth-child(4) .sponsor-grid {
+  -ms-grid-columns: minmax(150px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.sponsors-page:nth-child(5) .sponsor-grid {
+  -ms-grid-columns: minmax(125px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  padding-bottom: 0;
+}
+
+.sponsor-grid.events {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  padding-bottom: 2rem;
+  -ms-grid-columns: minmax(250px, 1fr) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 /* Content */
 /*--------------------------------------------------------------
 ## Posts and pages
