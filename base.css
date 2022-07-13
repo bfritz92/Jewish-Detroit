@@ -3976,7 +3976,7 @@ a[href$=".ppt"]:after {
 }
 
 .content-area {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .entry {
@@ -4091,42 +4091,6 @@ a[href$=".ppt"]:after {
   position: relative;
   display: block;
   width: 100%;
-}
-
-.image-filters-enabled .entry .post-thumbnail {
-  position: relative;
-  display: block;
-  /*&:before,
-			&:after, {
-				position: absolute;
-				display: block;
-				width: 100%;
-				height: 100%;
-				top: 0; left: 0;
-				content: "\020";
-				pointer-events: none;
-			}*/
-  /*@include filter-duotone;*/
-}
-
-.image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner {
-  /*filter: grayscale(100%);*/
-  /* &:after {
-					background: rgba(0, 0, 0, 0.35);
-					content: "";
-					display: block;
-					height: 100%;
-					opacity: .5;
-					pointer-events: none;
-					position: absolute;
-					top: 0;
-					width: 100%;
-					z-index: 4;
-
-					@supports (mix-blend-mode: multiply) {
-						display: none;
-					}
-				}*/
 }
 
 .entry .entry-content,
