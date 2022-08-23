@@ -1,4 +1,4 @@
-.donate-page {
+/* .donate-page {
   .page {
     .entry-header {
       .entry-title {
@@ -171,11 +171,11 @@
   margin: auto;
   max-width: 900px;
 }
-
+*/
 /* Steps */
-.donation-form {
-  /* Donation Type Descriptions and Decorations */
-  &--donation-type .ginput_container_radio {
+// .donation-form {
+/* Donation Type Descriptions and Decorations */
+/*&--donation-type .ginput_container_radio {
     .gfield_radio {
       margin: auto;
       max-width: 100%;
@@ -183,7 +183,7 @@
       transition: height 250ms ease-in-out;
       li input[type="radio"] {
         /* Hide the checkbox */
-        display: none;
+/*display: none;
 
         + label {
           font-family: gotham-bold;
@@ -228,8 +228,8 @@
 					display: inline-block;
 					transform-origin:40% 55%;
 				  }*/
-        /* Blue BG when checked */
-        &:checked + label {
+/* Blue BG when checked */
+/*&:checked + label {
           background-color: $color__jfmd-blue;
           color: #fff;
           font-weight: 700;
@@ -243,7 +243,7 @@
 					transition: transform 200ms ease-in;
 					transition-delay: 0;
 				  }*/
-        /* Description Text Styling 
+/* Description Text Styling 
 				  &:checked + label:after {
 					font-family: gotham-book;
 					font-size: 0.6rem;
@@ -253,7 +253,7 @@
 					margin-top: 5px;
 					height: 100%;
 				  }*/
-      }
+/*}
       ul.gfield_radio {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -317,7 +317,7 @@
 }
 
 /* Misc. Gravtiy Forms Tweaks */
-div.ginput_complex.ginput_container.gf_name_has_3 span {
+/*div.ginput_complex.ginput_container.gf_name_has_3 span {
   width: 100%;
 }
 .gchoice_456_135_6 {
@@ -341,7 +341,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 }
 
 /* FRIDAY AUG 9 */
-.gfield.donation-form--amount .ginput_container_radio {
+/*.gfield.donation-form--amount .ginput_container_radio {
   max-width: 80%;
   margin: auto;
 }
@@ -418,7 +418,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 	background-color:$color__jfmd-blue;
 } */
 
-.total-donation .ginput_container_number {
+/*.total-donation .ginput_container_number {
   font-size: 3rem;
   font-family: gotham-bold;
   margin-left: auto !important;
@@ -464,7 +464,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 */
 
 /* Make the checkbox to add a donor into a +/- */
-#field_456_31,
+/*#field_456_31,
 #field_456_47,
 #field_456_48 {
   .ginput_container_checkbox input {
@@ -484,7 +484,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   }
 }
 /* Full-width additional donor forms */
-#field_456_33,
+/*#field_456_33,
 #field_456_34,
 #field_456_35 {
   .ginput_complex {
@@ -493,3 +493,6 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
     }
   }
 }
+*/
+
+/* BEGIN 2022 DONOR FORM REDESIGN */
