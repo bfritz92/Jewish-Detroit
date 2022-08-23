@@ -748,7 +748,6 @@ FEDRADIODETROIT STYLING
   .fedradiodetroit--splash {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [14];
     grid-template-columns: repeat(14, 1fr);
     grid-column-gap: 15px;
     -ms-grid-rows: auto;

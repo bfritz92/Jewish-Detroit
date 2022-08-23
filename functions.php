@@ -426,7 +426,7 @@ function wpse28145_add_custom_types( $query ) {
 }
 add_filter( 'pre_get_posts', 'wpse28145_add_custom_types' );
 
-function hide_wordpress_admin_bar($hide){
+/*function hide_wordpress_admin_bar($hide){
 
 if ( !current_user_can( 'administrator' ) || !current_user_can('editor')) {
 
@@ -436,4 +436,4 @@ return false;
 return $hide;
 
 }
-add_filter( 'show_admin_bar' , 'hide_wordpress_admin_bar');
+add_filter( 'show_admin_bar' , 'hide_wordpress_admin_bar');*/

@@ -55,8 +55,8 @@
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-        <script src="/wp-content/themes/twentynineteen/js/tabby.min.js"></script>
-
+		
+<script src="<?php echo get_template_directory_uri(); ?>/js/tabby.min.js"></script>
         <script>
 	var tabs = new Tabby('[data-tabs]');
 </script>
