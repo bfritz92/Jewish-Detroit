@@ -536,7 +536,7 @@
 
       &:checked+label{
         background-color:$color__jfmd-blue;
-        color:#fff;
+        color:#fff !important;
       }
       label{
         width: 100%;
