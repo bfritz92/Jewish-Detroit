@@ -506,23 +506,29 @@
   form.donation-form{
     
     .ginput_container_radio{
-  
-      #input_215_97{
+      width:100%;
+      #input_215_97{ // one time or monthly 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
         .gchoice {
           border: none;
           padding: 0;
           margin: 0;
+          width:min-content;
           label{
-            padding: 1rem 0;
-              border: 2px $color__jfmd-blue solid;
-              border-radius: 2px;
-              width: 100%;
-              font-weight:700;
+            padding: .5rem 1rem;
+            border: 2px $color__jfmd-blue solid;
+            border-radius: 2px;
+            min-width: 250px;
+            font-weight:700;
+            color:$color__jfmd-blue;
           }
         }
       }
     }
-    .gfield-choice-input[type="radio"]{
+    .gfield-choice-input[type="radio"]{ //remove radio buttons
       visibility:hidden;
       position:absolute;
       left:-9999px;

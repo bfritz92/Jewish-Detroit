@@ -1477,18 +1477,37 @@ label.gfield_label {
   background-color: #F8F8F8;
 }
 
+#gform_wrapper_215 form.donation-form .ginput_container_radio {
+  width: 100%;
+}
+
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
 #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice {
   border: none;
   padding: 0;
   margin: 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label {
-  padding: 1rem 0;
+  padding: .5rem 1rem;
   border: 2px #004b7a solid;
   border-radius: 2px;
-  width: 100%;
+  min-width: 250px;
   font-weight: 700;
+  color: #004b7a;
 }
 
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] {
