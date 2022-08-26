@@ -530,6 +530,14 @@
                   color:#fff;
                   background-color:$color__jfmd-blue;
               }
+              &#label_215_97_2{
+                &:hover,
+                  &:focus {
+                    color: #fff;
+                    background-color: #fa4b06;
+                    border: 2px #fa4b06 solid;
+                  }
+              }
            
           }
           input:checked label{

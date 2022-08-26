@@ -1517,6 +1517,12 @@ label.gfield_label {
   background-color: #004b7a;
 }
 
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label#label_215_97_2:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label#label_215_97_2:focus {
+  color: #fff;
+  background-color: #fa4b06;
+  border: 2px #fa4b06 solid;
+}
+
 #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked label {
   color: #fff;
   background-color: #004b7a;
