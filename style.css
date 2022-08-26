@@ -12293,5 +12293,29 @@ label.gfield_label {
   margin-top: 0;
 }
 
+#gform_wrapper_215 input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#gform_wrapper_215 input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+#gform_wrapper_215 input:-moz-placeholder {
+  color: transparent;
+}
+
+#gform_wrapper_215 input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+#gform_wrapper_215 input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+#gform_wrapper_215 input:-moz-placeholder {
+  opacity: 0;
+}
+
 /* Media */
 /*# sourceMappingURL=style.css.map */
