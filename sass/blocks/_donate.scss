@@ -577,8 +577,8 @@
     }
   }
   .donation-form--amount {
-    .one-time,
-    .monthly {
+    &.one-time,
+    &.monthly {
       .ginput_container_radio .gfield_radio {
         padding: 0 0.5rem;
         .gchoice {
