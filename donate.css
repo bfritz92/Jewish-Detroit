@@ -1502,6 +1502,7 @@ label.gfield_label {
 }
 
 #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label {
+  display: inline-block;
   padding: 0.5rem 1rem;
   border: 2px #004b7a solid;
   border-radius: 2px;
@@ -1544,6 +1545,7 @@ label.gfield_label {
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label {
   background-color: #004b7a;
   color: #fff !important;
+  display: inline-block;
 }
 
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label {

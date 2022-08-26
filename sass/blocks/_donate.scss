@@ -519,6 +519,7 @@
           margin: 0;
           width: clamp(200px, 45%, 250px);
           label {
+            display: inline-block;
             padding: 0.5rem 1rem;
             border: 2px $color__jfmd-blue solid;
             border-radius: 2px;
@@ -562,6 +563,7 @@
       &:checked + label {
         background-color: $color__jfmd-blue;
         color: #fff !important;
+        display: inline-block;
       }
 
       label {
