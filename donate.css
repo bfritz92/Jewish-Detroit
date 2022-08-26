@@ -1530,11 +1530,5 @@ label {
   padding: .5rem .25rem;
   border: 2px solid #004b7a;
   border-radius: 2px;
-  -webkit-transition: background-color 0.25s ease;
-  transition: background-color 0.25s ease;
-}
-
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus {
-  background-color: #004b7a;
 }
 /*# sourceMappingURL=donate.css.map */

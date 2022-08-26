@@ -546,10 +546,6 @@
         padding: .5rem .25rem;
         border: 2px solid #004b7a;
         border-radius: 2px;
-          transition: background-color 0.25s ease;
-        &:hover, &:focus {
-          background-color: #004b7a;
-        }
       }
     }
   }
