@@ -12197,18 +12197,26 @@ label.gfield_label {
   border: none;
   padding: 0;
   margin: 0;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: clamp(200px, 45%, 250px);
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice:checked label label {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input label {
   padding: .5rem 1rem;
   border: 2px #004b7a solid;
   border-radius: 2px;
   min-width: 250px;
   font-weight: 700;
   color: #004b7a;
+}
+
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input label:focus {
+  color: #fff;
+  background-color: #004b7a;
+}
+
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked label {
+  color: #fff;
+  background-color: #004b7a;
 }
 
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] {
@@ -12228,6 +12236,12 @@ label.gfield_label {
   padding: .5rem .25rem;
   border: 2px solid #004b7a;
   border-radius: 2px;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus {
+  background-color: #004b7a;
 }
 
 /* Media */

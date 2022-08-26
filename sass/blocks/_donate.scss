@@ -517,16 +517,23 @@
           border: none;
           padding: 0;
           margin: 0;
-          width:min-content;
-          &:checked label
-          label{
-            padding: .5rem 1rem;
-            border: 2px $color__jfmd-blue solid;
-            border-radius: 2px;
-            min-width: 250px;
-            font-weight:700;
-            color:$color__jfmd-blue;
+          width:clamp(200px, 45%, 250px);
+          input label{
+              padding: .5rem 1rem;
+              border: 2px $color__jfmd-blue solid;
+              border-radius: 2px;
+              min-width: 250px;
+              font-weight:700;
+              color:$color__jfmd-blue;
+                &:hover, &:focus{
+                  color:#fff;
+                  background-color:$color__jfmd-blue;
+              }
            
+          }
+          input:checked label{
+            color: #fff;
+              background-color: $color__jfmd-blue;
           }
         }
       }
@@ -546,6 +553,10 @@
         padding: .5rem .25rem;
         border: 2px solid #004b7a;
         border-radius: 2px;
+          transition: background-color 0.25s ease;
+        &:hover, &:focus {
+          background-color: #004b7a;
+        }
       }
     }
   }
