@@ -506,6 +506,10 @@
   form.donation-form{
     .gfield-choice-input[type="radio"]{
       visibility:hidden;
+      &:checked+label{
+        background-color:$color__jfmd-blue;
+        color:#fff;
+      }
     }
   }
 }

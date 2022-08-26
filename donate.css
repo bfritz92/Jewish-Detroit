@@ -1480,4 +1480,9 @@ label.gfield_label {
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] {
   visibility: hidden;
 }
+
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label {
+  background-color: #004b7a;
+  color: #fff;
+}
 /*# sourceMappingURL=donate.css.map */
