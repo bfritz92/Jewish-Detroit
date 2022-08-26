@@ -525,6 +525,7 @@
               width: 100%;
               font-weight:700;
               color:$color__jfmd-blue;
+              transition: background-color 150ms ease-in-out;
                 &:hover, &:focus{
                   color:#fff;
                   background-color:$color__jfmd-blue;
@@ -553,7 +554,7 @@
         padding: .5rem .25rem;
         border: 2px solid #004b7a;
         border-radius: 2px;
-          transition: background-color 0.25s ease;
+        transition: background-color 150ms ease-in-out;
         &:hover, &:focus {
           background-color: #004b7a;
         }
