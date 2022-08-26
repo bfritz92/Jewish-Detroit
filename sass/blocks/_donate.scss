@@ -504,11 +504,31 @@
 #gform_wrapper_215{
   background-color:#F8F8F8;
   form.donation-form{
+    
+    .ginput_container_radio{
+      .gfield_radio {
+          .gchoice {
+            border: none;
+            padding: 0;
+            margin: 0;
+          }
+        }
+    }
     .gfield-choice-input[type="radio"]{
       visibility:hidden;
+      position:absolute;
+      left:-9999px;
+      z-index:-99;
+
       &:checked+label{
         background-color:$color__jfmd-blue;
         color:#fff;
+      }
+      label{
+        width: 100%;
+        padding: .5rem .25rem;
+        border: 2px solid #004b7a;
+        border-radius: 2px;
       }
     }
   }
