@@ -1541,7 +1541,9 @@ label.gfield_label {
   z-index: -99;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label {
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label,
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover,
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus {
   background-color: #004b7a;
   color: #fff !important;
 }
@@ -1553,10 +1555,6 @@ label.gfield_label {
   border-radius: 2px;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
-}
-
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus {
-  background-color: #004b7a;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time, #gform_wrapper_215 .donation-form--amount.monthly {
