@@ -1581,6 +1581,11 @@ label.gfield_label {
   display: flex;
 }
 
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
+  color: #fff;
+  background-color: #004b7a;
+}
+
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;

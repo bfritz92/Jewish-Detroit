@@ -591,6 +591,10 @@
           label {
             width: 100%;
             display: flex;
+            &:hover {
+              color: #fff;
+              background-color: $color__jfmd-blue;
+            }
           }
         }
         .gchoice:last-child {
