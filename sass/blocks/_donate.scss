@@ -497,73 +497,80 @@
 
 /* BEGIN 2022 DONOR FORM REDESIGN */
 
-.donor-form{
-  background-color:$color__light-teal;
-  }
+.donor-form {
+  background-color: $color__light-teal;
+}
 
-#gform_wrapper_215{
-  background-color:#F8F8F8;
-  form.donation-form{
-    
-    .ginput_container_radio{
-      width:100%;
-      #input_215_97{ // one time or monthly 
+#gform_wrapper_215 {
+  background-color: #f8f8f8;
+  form.donation-form {
+    .ginput_container_radio {
+      width: 100%;
+      #input_215_97 {
+        // one time or monthly
         width: 100%;
         display: flex;
         justify-content: center;
         gap: 1rem;
-        flex-wrap:wrap;
-        .gchoice{
+        flex-wrap: wrap;
+        .gchoice {
           border: none;
           padding: 0;
           margin: 0;
-          width:clamp(200px, 45%, 250px);
-          label{
-              padding: .5rem 1rem;
-              border: 2px $color__jfmd-blue solid;
-              border-radius: 2px;
-              width: 100%;
-              font-weight:700;
-              color:$color__jfmd-blue;
-              transition: background-color 150ms ease-in-out;
-                &:hover, &:focus{
-                  color:#fff;
-                  background-color:$color__jfmd-blue;
-              }
-              &#label_215_97_2{
-                &:hover,
-                  &:focus {
-                    color: #fff;
-                    background-color: #fa4b06;
-                    border: 2px #fa4b06 solid;
-                  }
-              }
-           
-          }
-          input:checked label{
-            color: #fff;
+          width: clamp(200px, 45%, 250px);
+          label {
+            padding: 0.5rem 1rem;
+            border: 2px $color__jfmd-blue solid;
+            border-radius: 2px;
+            width: 100%;
+            font-weight: 700;
+            color: $color__jfmd-blue;
+            transition: background-color 150ms ease-in-out;
+            &:hover,
+            &:focus {
+              color: #fff;
               background-color: $color__jfmd-blue;
+            }
+            &#label_215_97_2 {
+              &:hover,
+              &:focus {
+                color: #fff;
+                background-color: #fa4b06;
+                border: 2px #fa4b06 solid;
+              }
+            }
+          }
+          input:checked label {
+            color: #fff;
+            background-color: $color__jfmd-blue;
+            &#label_215_97_2 {
+              color: #fff;
+              background-color: #fa4b06;
+              border: 2px #fa4b06 solid;
+            }
           }
         }
       }
     }
-    .gfield-choice-input[type="radio"]{ //remove radio buttons
-      visibility:hidden;
-      position:absolute; //takes element out of flow
-      left:-9999px; //hacky? moves it waaaay offscreen
-      z-index:-99; //no really, I don't want to see it
+    .gfield-choice-input[type="radio"] {
+      //remove radio buttons
+      visibility: hidden;
+      position: absolute; //takes element out of flow
+      left: -9999px; //hacky? moves it waaaay offscreen
+      z-index: -99; //no really, I don't want to see it
 
-      &:checked+label{
-        background-color:$color__jfmd-blue;
-        color:#fff !important;
+      &:checked + label {
+        background-color: $color__jfmd-blue;
+        color: #fff !important;
       }
-      label{
+      label {
         width: 100%;
-        padding: .5rem .25rem;
+        padding: 0.5rem 0.25rem;
         border: 2px solid #004b7a;
         border-radius: 2px;
         transition: background-color 150ms ease-in-out;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           background-color: #004b7a;
         }
       }
