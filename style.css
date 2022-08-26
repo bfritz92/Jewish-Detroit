@@ -12168,5 +12168,9 @@ label.gfield_label {
 }
 */
 /* BEGIN 2022 DONOR FORM REDESIGN */
+.donor-form {
+  background-color: var(#c4e5f4);
+}
+
 /* Media */
 /*# sourceMappingURL=style.css.map */
