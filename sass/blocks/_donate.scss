@@ -576,4 +576,19 @@
       }
     }
   }
+  .donation-form--amount {
+    .one-time,
+    .monthly {
+      .ginput_container_radio .gfield_radio {
+        padding: 0 0.5rem;
+        .gchoice {
+          width: 100%;
+          label {
+            width: 100%;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
 }

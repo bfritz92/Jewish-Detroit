@@ -1558,4 +1558,22 @@ label.gfield_label {
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus {
   background-color: #004b7a;
 }
+
+#gform_wrapper_215 .donation-form--amount .one-time .ginput_container_radio .gfield_radio,
+#gform_wrapper_215 .donation-form--amount .monthly .ginput_container_radio .gfield_radio {
+  padding: 0 0.5rem;
+}
+
+#gform_wrapper_215 .donation-form--amount .one-time .ginput_container_radio .gfield_radio .gchoice,
+#gform_wrapper_215 .donation-form--amount .monthly .ginput_container_radio .gfield_radio .gchoice {
+  width: 100%;
+}
+
+#gform_wrapper_215 .donation-form--amount .one-time .ginput_container_radio .gfield_radio .gchoice label,
+#gform_wrapper_215 .donation-form--amount .monthly .ginput_container_radio .gfield_radio .gchoice label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=donate.css.map */
