@@ -12176,10 +12176,16 @@ label.gfield_label {
   background-color: #F8F8F8;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio .gfield_radio .gchoice {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label {
+  padding: .5rem, .25rem;
+  border: 2px #004b7a solid;
+  border-radius: 2px;
 }
 
 #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] {
