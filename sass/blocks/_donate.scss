@@ -513,7 +513,7 @@
         justify-content: center;
         gap: 1rem;
         flex-wrap:wrap;
-        .gchoice {
+        .gchoice{
           border: none;
           padding: 0;
           margin: 0;
@@ -522,7 +522,7 @@
               padding: .5rem 1rem;
               border: 2px $color__jfmd-blue solid;
               border-radius: 2px;
-              min-width: 250px;
+              width: 100%;
               font-weight:700;
               color:$color__jfmd-blue;
                 &:hover, &:focus{
