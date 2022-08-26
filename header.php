@@ -61,6 +61,26 @@ Hotjar<!--  Tracking Code for https://www.jewishdetroit.org -->
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+	jQuery.fn.cleardefault = function() {
+	return this.focus(function() {
+		if( this.value == this.defaultValue ) {
+			this.value = "";
+		}
+	}).blur(function() {
+		if( !this.value.length ) {
+			this.value = this.defaultValue;
+		}
+	});
+};
+jQuery(".clearit input, .clearit textarea").cleardefault();
+
+});
+
+</script>
 </head>
 <body <?php body_class(); ?>>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
@@ -83,3 +103,4 @@ Hotjar<!--  Tracking Code for https://www.jewishdetroit.org -->
 		  <?php get_search_form(); ?>
   		</div>
 	</div> 
+
