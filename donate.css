@@ -1490,6 +1490,8 @@ label.gfield_label {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice {
@@ -1499,6 +1501,10 @@ label.gfield_label {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+}
+
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice:checked label, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus {
+  color: fff;
 }
 
 #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label {
