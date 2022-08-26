@@ -12172,5 +12172,13 @@ label.gfield_label {
   background-color: #c4e5f4;
 }
 
+#gform_wrapper_215 {
+  background-color: #F8F8F8;
+}
+
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] {
+  visibility: hidden;
+}
+
 /* Media */
 /*# sourceMappingURL=style.css.map */

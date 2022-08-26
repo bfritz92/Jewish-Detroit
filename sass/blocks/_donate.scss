@@ -499,7 +499,13 @@
 
 .donor-form{
   background-color:$color__light-teal;
-}
-#gform_wrapper_215{
+  }
 
+#gform_wrapper_215{
+  background-color:#F8F8F8;
+  form.donation-form{
+    .gfield-choice-input[type="radio"]{
+      visibility:hidden;
+    }
+  }
 }
