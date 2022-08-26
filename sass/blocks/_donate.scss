@@ -559,9 +559,7 @@
       left: -9999px; //hacky? moves it waaaay offscreen
       z-index: -99; //no really, I don't want to see it
 
-      &:checked + label,
-      label:hover,
-      label:focus {
+      &:checked + label {
         background-color: $color__jfmd-blue;
         color: #fff !important;
       }
@@ -572,6 +570,11 @@
         border: 2px solid #004b7a;
         border-radius: 2px;
         transition: background-color 150ms ease-in-out;
+        &:hover,
+        &:focus {
+          background-color: $color__jfmd-blue;
+          color: #fff !important;
+        }
       }
     }
   }
