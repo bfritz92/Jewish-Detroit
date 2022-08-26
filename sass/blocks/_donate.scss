@@ -591,6 +591,7 @@
           label {
             width: 100%;
             display: flex;
+            transition: background-color 150ms ease-in-out;
             &:hover {
               color: #fff;
               background-color: $color__jfmd-blue;
