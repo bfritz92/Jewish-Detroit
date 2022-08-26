@@ -12200,7 +12200,7 @@ label.gfield_label {
   width: clamp(200px, 45%, 250px);
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input label {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label {
   padding: .5rem 1rem;
   border: 2px #004b7a solid;
   border-radius: 2px;
@@ -12209,7 +12209,7 @@ label.gfield_label {
   color: #004b7a;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input label:focus {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus {
   color: #fff;
   background-color: #004b7a;
 }
