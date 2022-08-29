@@ -668,16 +668,14 @@
       }
     }
     .donor-form--monthly-ask {
+      .ginput_container_checkbox {
+        display: inline-block;
+        .gfield_checkbox .gchoice label {
+          width: 122px;
+        }
+      }
       .gfield_description {
-        .ginput_container_checkbox {
-          display: inline-block;
-          .gfield_checkbox .gchoice label {
-            width: 122px;
-          }
-        }
-        .gfield_description {
-          display: inline-block;
-        }
+        display: inline-block;
       }
     }
     #field_215_153 {
