@@ -12411,7 +12411,8 @@ label.gfield_label {
   font-size: 15px;
 }
 
-.gform_wrapper.gravity-theme fieldset.gray-bg {
+.gform_wrapper.gravity-theme fieldset.gray-bg,
+.gray-bg {
   background-color: #e8e8e8;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
