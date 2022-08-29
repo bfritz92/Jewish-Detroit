@@ -648,17 +648,30 @@
   display: none !important;
 }
 
+//SECOND PAGE
 #gform_page_215_2 {
   .gform_page_fields .gform_fields {
     .gfield_html {
       padding: 0 1.5rem;
-      .gwmpn-page-link {
-        display: inline;
+      text-align: center;
+      h4 {
+        font-size: 0.7rem;
       }
     }
     .donor-form--monthly-ask {
       .gfield_description {
         padding: 1rem 1.5rem 0 1.5rem;
+        .ginput_container_checkbox
+          .gfield_checkbox
+          .gchoice
+          .gfield-choice-input
+          span {
+          position: relative;
+          left: 100px;
+          display: block;
+          width: clamp(150px, 250px, 300px);
+          top: 9px;
+        }
       }
     }
     #field_215_153 {

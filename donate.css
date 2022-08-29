@@ -1648,14 +1648,27 @@ label.gfield_label {
 
 #gform_page_215_2 .gform_page_fields .gform_fields .gfield_html {
   padding: 0 1.5rem;
+  text-align: center;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link {
-  display: inline;
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html h4 {
+  font-size: 0.7rem;
 }
 
 #gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description {
   padding: 1rem 1.5rem 0 1.5rem;
+}
+
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description .ginput_container_checkbox
+.gfield_checkbox
+.gchoice
+.gfield-choice-input
+span {
+  position: relative;
+  left: 100px;
+  display: block;
+  width: clamp(150px, 250px, 300px);
+  top: 9px;
 }
 
 #gform_page_215_2 .gform_page_fields .gform_fields #field_215_153 {
