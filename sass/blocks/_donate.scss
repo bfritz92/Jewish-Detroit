@@ -561,6 +561,7 @@
         }
       }
     }
+    // GENERAL RADIO BUTTONS
     .gfield-choice-input[type="radio"] {
       //remove radio buttons
       visibility: hidden;
@@ -589,6 +590,7 @@
       }
     }
   }
+  // DONATION AMOUNT RADIO BUTTON ARRAY
   .donation-form--amount {
     &.one-time,
     &.monthly {
@@ -607,8 +609,8 @@
             }
           }
         }
+        // Other Amount Options
         .gchoice:last-child {
-          // Other Amount Options
           grid-column: 1/4;
           display: flex;
           align-items: start;
@@ -632,6 +634,9 @@
 }
 
 //More superficial styling
+#field_215_163 {
+  font-size: 15px;
+}
 .gform_wrapper.gravity-theme fieldset.gray-bg {
   background-color: #e8e8e8;
   padding-top: 0.5rem;
@@ -651,4 +656,16 @@
 }
 .gfield_checkbox {
   margin-left: 1.5rem;
+}
+.gform_page_footer {
+  margin: 0.5rem 1.5rem;
+  #gform_next_button_215_20 {
+    background-color: $color__jfmd-cyan;
+    color: #fff;
+    border: 2px $color__jfmd-cyan solid;
+    &:hover,
+    &:focus {
+      background-color: $color__jfmd-blue;
+    }
+  }
 }

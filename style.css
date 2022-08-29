@@ -12319,6 +12319,10 @@ label.gfield_label {
   display: none !important;
 }
 
+#field_215_163 {
+  font-size: 15px;
+}
+
 .gform_wrapper.gravity-theme fieldset.gray-bg {
   background-color: #e8e8e8;
   padding-top: 0.5rem;
@@ -12341,6 +12345,20 @@ label.gfield_label {
 
 .gfield_checkbox {
   margin-left: 1.5rem;
+}
+
+.gform_page_footer {
+  margin: 0.5rem 1.5rem;
+}
+
+.gform_page_footer #gform_next_button_215_20 {
+  background-color: #0094d0;
+  color: #fff;
+  border: 2px #0094d0 solid;
+}
+
+.gform_page_footer #gform_next_button_215_20:hover, .gform_page_footer #gform_next_button_215_20:focus {
+  background-color: #004b7a;
 }
 
 /* Media */
