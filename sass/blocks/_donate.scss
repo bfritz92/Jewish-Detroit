@@ -669,18 +669,15 @@
     }
     .donor-form--monthly-ask {
       .gfield_description {
-        padding: 1rem 1.5rem;
-        text-align: center;
+        
         .ginput_container_checkbox
-          .gfield_checkbox
-          .gchoice
-          .gfield-choice-input
-          span {
-          position: relative;
-          left: 100px;
-          display: block;
-          width: clamp(150px, 250px, 300px);
-          top: 9px;
+          display:inline-block;
+          .gfield_checkbox .gchoice label{
+            width:122px;
+          }
+        }
+        .gfield_description{
+          display:inline-block;
         }
       }
     }
@@ -692,7 +689,7 @@
     display: flex;
     flex-wrap: wrap;
     input {
-      width: clamp(150px, 50%, 300px);
+      width: clamp(150px, 48%, 300px);
       flex-grow: 1;
       &:last-child {
         background-color: $color__jfmd-cyan;
@@ -730,6 +727,7 @@
   color: #535252;
   padding: 0.5rem 1.5rem;
   text-align: right;
+  display: none;
 }
 .gfield_checkbox {
   margin-left: 1.5rem;

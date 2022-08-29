@@ -12432,6 +12432,7 @@ label.gfield_label {
   color: #535252;
   padding: 0.5rem 1.5rem;
   text-align: right;
+  display: none;
 }
 
 .gfield_checkbox {
