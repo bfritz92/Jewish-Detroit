@@ -1471,10 +1471,6 @@ label.gfield_label {
 /* BEGIN 2022 DONOR FORM REDESIGN */
 .donor-form {
   background-color: #c4e5f4;
-  background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2019/05/logo-solo-color.svg");
-  background-size: 50%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 
 .donor-form--content {

@@ -499,10 +499,10 @@
 
 .donor-form {
   background-color: $color__light-teal;
-  background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2019/05/logo-solo-color.svg");
-  background-size: 50%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  //background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2019/05/logo-solo-color.svg");
+  //background-size: 50%;
+  //background-position: 50% 50%;
+  //background-repeat: no-repeat;
   &--content {
     padding-top: 1.5rem;
     justify-content: center;
@@ -701,6 +701,9 @@
       }
     }
   }
+}
+#gform_page_215_3 {
+  //PAYMENT PAGE
 }
 
 //More superficial styling
