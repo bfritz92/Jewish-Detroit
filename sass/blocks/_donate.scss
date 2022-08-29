@@ -612,11 +612,11 @@
       }
     }
   }
-  // Hide Payment amount and transaction fee fields
-  #field_215_29, //one time
+}
+// Hide Payment amount and transaction fee fields
+#field_215_29, //one time
   #field_215_131, //transaction
   #field_215_96 {
-    //monthly
-    display: none;
-  }
+  //monthly
+  display: none;
 }

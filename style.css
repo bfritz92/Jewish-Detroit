@@ -12303,9 +12303,9 @@ label.gfield_label {
   margin-top: 0;
 }
 
-#gform_wrapper_215 #field_215_29,
-#gform_wrapper_215 #field_215_131,
-#gform_wrapper_215 #field_215_96 {
+#field_215_29,
+#field_215_131,
+#field_215_96 {
   display: none;
 }
 
