@@ -1674,7 +1674,8 @@ label.gfield_label {
 
 .gform_wrapper.gravity-theme fieldset.gray-text,
 .gform_wrapper.gravity-theme fieldset.gray-text label,
-.gform_wrapper.gravity-theme fieldset .gfield_description {
+.gform_wrapper.gravity-theme fieldset .gfield_description,
+.gray-text {
   color: #535252;
   font-weight: 700;
   line-height: 1.2;
