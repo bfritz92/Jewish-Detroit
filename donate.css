@@ -1609,4 +1609,13 @@ label.gfield_label {
 #field_215_96 {
   display: none !important;
 }
+
+.gray-bg {
+  background-color: #e8e8e8;
+}
+
+.gray-text {
+  color: #707070;
+  font-weight: 700;
+}
 /*# sourceMappingURL=donate.css.map */
