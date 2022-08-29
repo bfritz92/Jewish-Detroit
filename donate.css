@@ -1474,6 +1474,7 @@ label.gfield_label {
   background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2019/05/logo-solo-color.svg");
   background-size: 50%;
   background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .donor-form--content {
