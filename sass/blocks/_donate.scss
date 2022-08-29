@@ -500,8 +500,9 @@
 .donor-form {
   background-color: $color__light-teal;
   &--content {
+    justify-content: center;
     &--form {
-      width: clamp();
+      max-width: 500px;
     }
     &--headlines {
     }
@@ -521,11 +522,13 @@
         justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
+        padding: 0 1rem 0 1rem;
         .gchoice {
           border: none;
           padding: 0;
           margin: 0;
           width: clamp(200px, 45%, 250px);
+          flex-grow: 1;
           label {
             display: inline-block;
             padding: 0.5rem 1rem;
@@ -596,7 +599,7 @@
     &.monthly {
       padding: 0.5rem 1rem;
       .ginput_container_radio .gfield_radio {
-        padding: 0 0.5rem;
+        padding: 0;
         .gchoice {
           width: 100%;
           label {
@@ -660,6 +663,7 @@
 }
 .gform_page_footer {
   margin: 0.5rem 1.5rem !important;
+  padding: 0 0 1.5rem 0;
   #gform_next_button_215_20 {
     background-color: $color__jfmd-cyan;
     color: #fff;
