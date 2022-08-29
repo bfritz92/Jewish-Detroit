@@ -1564,7 +1564,7 @@ label.gfield_label {
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time, #gform_wrapper_215 .donation-form--amount.monthly {
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio {
