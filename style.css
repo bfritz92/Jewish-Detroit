@@ -12345,6 +12345,22 @@ label.gfield_label {
   display: none !important;
 }
 
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html {
+  padding: 0 1.5rem;
+}
+
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link {
+  display: inline;
+}
+
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description {
+  padding: 1rem 1.5rem 0 1.5rem;
+}
+
+#gform_page_215_2 #field_215_153 {
+  display: none;
+}
+
 #field_215_163 {
   font-size: 15px;
 }
@@ -12388,87 +12404,6 @@ label.gfield_label {
 .gform_page_footer #gform_next_button_215_20:hover, .gform_page_footer #gform_next_button_215_20:focus {
   background-color: #004b7a;
   border: 2px #004b7a solid;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input {
-  display: none;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input, .tgl .ginput_container .gfield_checkbox .gchoice input:after, .tgl .ginput_container .gfield_checkbox .gchoice input:before,
-.tgl .ginput_container .gfield_checkbox .gchoice input *,
-.tgl .ginput_container .gfield_checkbox .gchoice input *:after,
-.tgl .ginput_container .gfield_checkbox .gchoice input *:before,
-.tgl .ginput_container .gfield_checkbox .gchoice input + .tgl-btn {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input::-moz-selection, .tgl .ginput_container .gfield_checkbox .gchoice input:after::-moz-selection, .tgl .ginput_container .gfield_checkbox .gchoice input:before::-moz-selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input *::-moz-selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input *:after::-moz-selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input *:before::-moz-selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input + .tgl-btn::-moz-selection {
-  background: none;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input::selection, .tgl .ginput_container .gfield_checkbox .gchoice input:after::selection, .tgl .ginput_container .gfield_checkbox .gchoice input:before::selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input *::selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input *:after::selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input *:before::selection,
-.tgl .ginput_container .gfield_checkbox .gchoice input + .tgl-btn::selection {
-  background: none;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input + label {
-  outline: 0;
-  display: block;
-  width: 4em;
-  height: 2em;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input + label:after, .tgl .ginput_container .gfield_checkbox .gchoice input + label:before {
-  position: relative;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 100%;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input + label:after {
-  left: 0;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input + label:before {
-  display: none;
-}
-
-.tgl .ginput_container .gfield_checkbox .gchoice input:checked + .label:after {
-  left: 50%;
-}
-
-.tgl-light .ginput_container .gfield_checkbox .gchoice input + label {
-  background: #f0f0f0;
-  border-radius: 2em;
-  padding: 2px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.tgl-light .ginput_container .gfield_checkbox .gchoice input + label:after {
-  border-radius: 50%;
-  background: #fff;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.tgl-light .ginput_container .gfield_checkbox .gchoice input:checked + label {
-  background: #9fd6ae;
 }
 
 .m-toggle .gfield_checkbox input {

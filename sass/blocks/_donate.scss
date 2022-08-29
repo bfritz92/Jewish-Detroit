@@ -648,6 +648,25 @@
   display: none !important;
 }
 
+#gform_page_215_2 {
+  .gform_page_fields .gform_fields {
+    .gfield_html {
+      padding: 0 1.5rem;
+      .gwmpn-page-link {
+        display: inline;
+      }
+    }
+    .donor-form--monthly-ask {
+      .gfield_description {
+        padding: 1rem 1.5rem 0 1.5rem;
+      }
+    }
+  }
+  #field_215_153 {
+    display: none;
+  }
+}
+
 //More superficial styling
 #field_215_163 {
   font-size: 15px;
@@ -688,71 +707,6 @@
   }
 }
 
-// cute little toggle switch
-.tgl .ginput_container .gfield_checkbox .gchoice input {
-  display: none;
-
-  // add default box-sizing for this scope
-  &,
-  &:after,
-  &:before,
-  & *,
-  & *:after,
-  & *:before,
-  & + .tgl-btn {
-    box-sizing: border-box;
-    &::selection {
-      background: none;
-    }
-  }
-
-  + label {
-    outline: 0;
-    display: block;
-    width: 4em;
-    height: 2em;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-    &:after,
-    &:before {
-      position: relative;
-      display: block;
-      content: "";
-      width: 50%;
-      height: 100%;
-    }
-
-    &:after {
-      left: 0;
-    }
-
-    &:before {
-      display: none;
-    }
-  }
-
-  &:checked + .label:after {
-    left: 50%;
-  }
-}
-.tgl-light .ginput_container .gfield_checkbox .gchoice input {
-  + label {
-    background: #f0f0f0;
-    border-radius: 2em;
-    padding: 2px;
-    transition: all 0.4s ease;
-    &:after {
-      border-radius: 50%;
-      background: #fff;
-      transition: all 0.2s ease;
-    }
-  }
-
-  &:checked + label {
-    background: #9fd6ae;
-  }
-}
 // ==========================================================================
 // Gravity Forms checkbox switch
 // CSS Switches http://callmenick.com/2014/05/13/css-toggle-switch-examples/
