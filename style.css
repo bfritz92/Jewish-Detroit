@@ -12351,6 +12351,16 @@ label.gfield_label {
   text-align: center;
 }
 
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link {
+  display: inline;
+}
+
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link i {
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 6px;
+}
+
 #gform_page_215_2 .gform_page_fields .gform_fields .gfield_html h4 {
   font-size: 0.7rem;
 }
