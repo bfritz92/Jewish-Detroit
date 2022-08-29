@@ -753,3 +753,68 @@
     background: #9fd6ae;
   }
 }
+// ==========================================================================
+// Gravity Forms checkbox switch
+// CSS Switches http://callmenick.com/2014/05/13/css-toggle-switch-examples/
+// ==========================================================================
+
+.m-toggle .gfield_checkbox input {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.m-toggle .gfield_checkbox label {
+}
+.m-toggle .gfield_checkbox input + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+$m-toggle__height: 45px;
+$m-toggle__border: 2px;
+$m-toggle__radius: 2px;
+
+.m-toggle .gfield_checkbox {
+  input + label {
+    padding: $m-toggle__border;
+    width: $m-toggle__height * 2;
+    height: $m-toggle__height;
+    background-color: #dddddd;
+    border-radius: $m-toggle__radius;
+    transition: background 0.4s;
+  }
+  input + label:before,
+  input + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+  }
+  input + label:before {
+    top: $m-toggle__border;
+    left: $m-toggle__border;
+    bottom: $m-toggle__border;
+    right: $m-toggle__border;
+    background-color: #fff;
+    border-radius: $m-toggle__radius;
+    transition: background 0.4s;
+  }
+  input + label:after {
+    top: $m-toggle__border * 2;
+    left: $m-toggle__border * 2;
+    bottom: $m-toggle__border * 2;
+    width: $m-toggle__height - ($m-toggle__border * 4);
+    background-color: #dddddd;
+    border-radius: $m-toggle__radius;
+    transition: margin 0.4s, background 0.4s;
+  }
+  input:checked + label {
+    background-color: green;
+  }
+  input:checked + label:after {
+    margin-left: $m-toggle__height;
+    background-color: green;
+  }
+}

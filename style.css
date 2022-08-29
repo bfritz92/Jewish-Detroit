@@ -12471,5 +12471,70 @@ label.gfield_label {
   background: #9fd6ae;
 }
 
+.m-toggle .gfield_checkbox input {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.m-toggle .gfield_checkbox input + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.m-toggle .gfield_checkbox input + label {
+  padding: 2px;
+  width: 90px;
+  height: 45px;
+  background-color: #dddddd;
+  border-radius: 2px;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.m-toggle .gfield_checkbox input + label:before,
+.m-toggle .gfield_checkbox input + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.m-toggle .gfield_checkbox input + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.m-toggle .gfield_checkbox input + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 37px;
+  background-color: #dddddd;
+  border-radius: 2px;
+  -webkit-transition: margin 0.4s, background 0.4s;
+  transition: margin 0.4s, background 0.4s;
+}
+
+.m-toggle .gfield_checkbox input:checked + label {
+  background-color: green;
+}
+
+.m-toggle .gfield_checkbox input:checked + label:after {
+  margin-left: 45px;
+  background-color: green;
+}
+
 /* Media */
 /*# sourceMappingURL=style.css.map */
