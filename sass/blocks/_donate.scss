@@ -599,6 +599,7 @@
           }
         }
         .gchoice:last-child {
+          // Other Amount Options
           grid-column: 1/4;
           display: flex;
           align-items: start;
@@ -610,5 +611,12 @@
         }
       }
     }
+  }
+  // Hide Payment amount and transaction fee fields
+  #field_215_29, //one time
+  #field_215_131, //transaction
+  #field_215_96 {
+    //monthly
+    display: none;
   }
 }
