@@ -689,7 +689,7 @@
 }
 
 // cute little toggle switch
-.tgl input {
+.tgl .ginput_container .gfield_checkbox .gchoice input {
   display: none;
 
   // add default box-sizing for this scope
@@ -736,7 +736,7 @@
     left: 50%;
   }
 }
-.tgl-light input {
+.tgl-light .ginput_container .gfield_checkbox .gchoice input {
   + label {
     background: #f0f0f0;
     border-radius: 2em;
