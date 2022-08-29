@@ -622,10 +622,11 @@
 }
 
 //More superficial styling
-.gray-bg {
+.gform_wrapper.gravity-theme fieldset.gray-bg {
   background-color: #e8e8e8;
 }
-.gray-text {
+.gform_wrapper.gravity-theme fieldset.gray-text,
+.gform_wrapper.gravity-theme fieldset.gray-text label {
   color: #707070;
   font-weight: 700;
 }
