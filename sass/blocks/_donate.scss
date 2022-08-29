@@ -504,16 +504,16 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   &--content {
+    padding-top: 1.5rem;
     justify-content: center;
     &--form {
       max-width: 500px;
     }
     &--headlines {
-      padding-top: 0.5rem;
       max-width: 430px;
       &--copy {
         border-radius: 2px;
-        padding: 1rem 1rem 0.5rem 1rem;
+        padding: 1rem 0.5rem;
       }
     }
   }
@@ -669,15 +669,14 @@
     }
     .donor-form--monthly-ask {
       .gfield_description {
-        
-        .ginput_container_checkbox
-          display:inline-block;
-          .gfield_checkbox .gchoice label{
-            width:122px;
+        .ginput_container_checkbox {
+          display: inline-block;
+          .gfield_checkbox .gchoice label {
+            width: 122px;
           }
         }
-        .gfield_description{
-          display:inline-block;
+        .gfield_description {
+          display: inline-block;
         }
       }
     }

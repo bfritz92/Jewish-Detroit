@@ -12177,6 +12177,7 @@ label.gfield_label {
 }
 
 .donor-form--content {
+  padding-top: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -12187,13 +12188,12 @@ label.gfield_label {
 }
 
 .donor-form--content--headlines {
-  padding-top: 0.5rem;
   max-width: 430px;
 }
 
 .donor-form--content--headlines--copy {
   border-radius: 2px;
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1rem 0.5rem;
 }
 
 #gform_wrapper_215 {
@@ -12365,17 +12365,16 @@ label.gfield_label {
   font-size: 0.7rem;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description {
-  padding: 1rem 1.5rem;
-  text-align: center;
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description .ginput_container_checkbox {
+  display: inline-block;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description .ginput_container_checkbox .gfield_checkbox .gchoice .gfield-choice-input span {
-  position: relative;
-  left: 100px;
-  display: block;
-  width: clamp(150px, 250px, 300px);
-  top: 9px;
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description .ginput_container_checkbox .gfield_checkbox .gchoice label {
+  width: 122px;
+}
+
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description .gfield_description {
+  display: inline-block;
 }
 
 #gform_page_215_2 .gform_page_fields .gform_fields #field_215_153 {
@@ -12391,7 +12390,7 @@ label.gfield_label {
 }
 
 #gform_page_215_2 .gform_page_footer input {
-  width: clamp(150px, 50%, 300px);
+  width: clamp(150px, 48%, 300px);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
