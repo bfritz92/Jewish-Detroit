@@ -661,7 +661,8 @@
     }
     .donor-form--monthly-ask {
       .gfield_description {
-        padding: 1rem 1.5rem 0 1.5rem;
+        padding: 1rem 1.5rem;
+        text-align: center;
         .ginput_container_checkbox
           .gfield_checkbox
           .gchoice
@@ -677,6 +678,21 @@
     }
     #field_215_153 {
       display: none;
+    }
+  }
+  .gform_page_footer {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+      width: clamp(150px, 500%, 300px);
+      &:last-child {
+        background-color: $color__jfmd-cyan;
+        border: 2px solid $color__jfmd-cyan;
+        &:hover,
+        &:focus {
+          border: 2px solid $color__jfmd-blue;
+        }
+      }
     }
   }
 }
