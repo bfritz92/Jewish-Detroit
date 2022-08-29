@@ -657,9 +657,9 @@
 .gfield_checkbox {
   margin-left: 1.5rem;
 }
-.gform_wrapper.gravity-theme .gform_page_footer {
+.gform_body .gform_page .gform_page_fields .gform_page_footer {
+  margin: 0.5rem 1.5rem;
   #gform_next_button_215_20 {
-    margin: 0.5rem 1.5rem;
     background-color: $color__jfmd-cyan;
     color: #fff;
     border: 2px $color__jfmd-cyan solid;
