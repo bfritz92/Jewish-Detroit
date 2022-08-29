@@ -499,6 +499,13 @@
 
 .donor-form {
   background-color: $color__light-teal;
+  &--content {
+    &--form {
+      width: clamp();
+    }
+    &--headlines {
+    }
+  }
 }
 
 #gform_wrapper_215 {
@@ -634,4 +641,10 @@
 .gform_wrapper.gravity-theme fieldset .gfield_description {
   color: #535252;
   font-weight: 700;
+}
+.gform_required_legend {
+  font-size: 15px;
+  color: #535252;
+  padding-top: 0.5rem;
+  text-align: right;
 }

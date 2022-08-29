@@ -1473,6 +1473,10 @@ label.gfield_label {
   background-color: #c4e5f4;
 }
 
+.donor-form--content--form {
+  width: clamp();
+}
+
 #gform_wrapper_215 {
   background-color: #f8f8f8;
   border-radius: 2px;
@@ -1623,5 +1627,12 @@ label.gfield_label {
 .gform_wrapper.gravity-theme fieldset .gfield_description {
   color: #535252;
   font-weight: 700;
+}
+
+.gform_required_legend {
+  font-size: 15px;
+  color: #535252;
+  padding-top: 0.5rem;
+  text-align: right;
 }
 /*# sourceMappingURL=donate.css.map */
