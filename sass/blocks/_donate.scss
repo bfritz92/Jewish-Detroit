@@ -503,12 +503,13 @@
 
 #gform_wrapper_215 {
   background-color: #f8f8f8;
+  border-radius: 2px;
   form.donation-form {
     .ginput_container_radio {
       width: 100%;
       #input_215_97 {
         // one time or monthly
-        width: 100%;
+        min-width: 100%;
         display: flex;
         justify-content: center;
         gap: 1rem;
@@ -567,7 +568,7 @@
       }
 
       label {
-        width: 100%;
+        min-width: 100%;
         padding: 0.5rem 0.25rem;
         border: 2px solid #004b7a;
         color: #004b7a;
