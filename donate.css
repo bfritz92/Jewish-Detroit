@@ -1607,6 +1607,6 @@ label.gfield_label {
 #field_215_29,
 #field_215_131,
 #field_215_96 {
-  display: none;
+  display: none !important;
 }
 /*# sourceMappingURL=donate.css.map */
