@@ -12309,6 +12309,10 @@ label.gfield_label {
   margin-top: 0;
 }
 
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label {
+  display: none;
+}
+
 #field_215_29,
 #field_215_131,
 #field_215_96 {
@@ -12331,8 +12335,12 @@ label.gfield_label {
 .gform_required_legend {
   font-size: 15px;
   color: #535252;
-  padding-top: 0.5rem;
+  padding: 0.5rem 1.5rem;
   text-align: right;
+}
+
+.gfield_checkbox {
+  margin-left: 1.5rem;
 }
 
 /* Media */

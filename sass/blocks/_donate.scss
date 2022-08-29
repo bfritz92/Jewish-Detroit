@@ -616,6 +616,7 @@
             margin-top: 0;
           }
           label {
+            display: none;
           }
         }
       }
@@ -645,6 +646,9 @@
 .gform_required_legend {
   font-size: 15px;
   color: #535252;
-  padding-top: 0.5rem;
+  padding: 0.5rem 1.5rem;
   text-align: right;
+}
+.gfield_checkbox {
+  margin-left: 1.5rem;
 }
