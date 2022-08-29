@@ -524,7 +524,7 @@
             padding: 0.5rem 1rem;
             border: 2px $color__jfmd-blue solid;
             border-radius: 2px;
-            width: 100%;
+            min-width: 100%;
             font-weight: 700;
             color: $color__jfmd-blue;
             transition: background-color 150ms ease-in-out;

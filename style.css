@@ -12206,7 +12206,7 @@ label.gfield_label {
   padding: 0.5rem 1rem;
   border: 2px #004b7a solid;
   border-radius: 2px;
-  width: 100%;
+  min-width: 100%;
   font-weight: 700;
   color: #004b7a;
   -webkit-transition: background-color 150ms ease-in-out;
