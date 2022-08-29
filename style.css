@@ -12382,11 +12382,15 @@ label.gfield_label {
 
 #gform_page_215_2 .gform_page_footer input {
   width: clamp(150px, 50%, 300px);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #gform_page_215_2 .gform_page_footer input:last-child {
   background-color: #0094d0;
   border: 2px solid #0094d0;
+  color: #fff;
 }
 
 #gform_page_215_2 .gform_page_footer input:last-child:hover, #gform_page_215_2 .gform_page_footer input:last-child:focus {

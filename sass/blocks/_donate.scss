@@ -685,9 +685,11 @@
     flex-wrap: wrap;
     input {
       width: clamp(150px, 50%, 300px);
+      flex-grow: 1;
       &:last-child {
         background-color: $color__jfmd-cyan;
         border: 2px solid $color__jfmd-cyan;
+        color: #fff;
         &:hover,
         &:focus {
           border: 2px solid $color__jfmd-blue;
