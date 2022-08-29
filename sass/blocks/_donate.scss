@@ -509,8 +509,11 @@
       max-width: 500px;
     }
     &--headlines {
+      padding-top: 0.5rem;
       max-width: 430px;
       &--copy {
+        border-radius: 2px;
+        padding: 1rem 1rem 0.5rem 1rem;
       }
     }
   }
@@ -583,6 +586,7 @@
         background-color: $color__jfmd-blue;
         color: #fff !important;
         display: inline-block;
+        font-weight: 700;
       }
 
       label {
@@ -658,6 +662,7 @@
 .gform_wrapper.gravity-theme fieldset .gfield_description {
   color: #535252;
   font-weight: 700;
+  line-height: 1.2;
 }
 .gform_required_legend {
   font-size: 15px;
