@@ -12381,7 +12381,7 @@ label.gfield_label {
 }
 
 #gform_page_215_2 .gform_page_footer input {
-  width: clamp(150px, 500%, 300px);
+  width: clamp(150px, 50%, 300px);
 }
 
 #gform_page_215_2 .gform_page_footer input:last-child {

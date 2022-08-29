@@ -684,7 +684,7 @@
     display: flex;
     flex-wrap: wrap;
     input {
-      width: clamp(150px, 500%, 300px);
+      width: clamp(150px, 50%, 300px);
       &:last-child {
         background-color: $color__jfmd-cyan;
         border: 2px solid $color__jfmd-cyan;
