@@ -1690,4 +1690,85 @@ label.gfield_label {
   background-color: #004b7a;
   border: 2px #004b7a solid;
 }
+
+.tgl input {
+  display: none;
+}
+
+.tgl input, .tgl input:after, .tgl input:before,
+.tgl input *,
+.tgl input *:after,
+.tgl input *:before,
+.tgl input + .tgl-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tgl input::-moz-selection, .tgl input:after::-moz-selection, .tgl input:before::-moz-selection,
+.tgl input *::-moz-selection,
+.tgl input *:after::-moz-selection,
+.tgl input *:before::-moz-selection,
+.tgl input + .tgl-btn::-moz-selection {
+  background: none;
+}
+
+.tgl input::selection, .tgl input:after::selection, .tgl input:before::selection,
+.tgl input *::selection,
+.tgl input *:after::selection,
+.tgl input *:before::selection,
+.tgl input + .tgl-btn::selection {
+  background: none;
+}
+
+.tgl input + label {
+  outline: 0;
+  display: block;
+  width: 4em;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tgl input + label:after, .tgl input + label:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+
+.tgl input + label:after {
+  left: 0;
+}
+
+.tgl input + label:before {
+  display: none;
+}
+
+.tgl input:checked + .label:after {
+  left: 50%;
+}
+
+.tgl-light input + label {
+  background: #f0f0f0;
+  border-radius: 2em;
+  padding: 2px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tgl-light input + label:after {
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.tgl-light input:checked + label {
+  background: #9fd6ae;
+}
 /*# sourceMappingURL=donate.css.map */
