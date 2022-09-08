@@ -1608,6 +1608,7 @@ label.gfield_label {
   display: flex;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
+  color: #004b7a;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
@@ -1615,25 +1616,16 @@ label.gfield_label {
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio + .gfield .ginput_container .preinput, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio + .gfield .ginput_container .preinput {
+  width: 25px;
+  font-size: 1.2rem;
+  color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child input, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child input {
-  margin: 0 !important;
-  width: 100% !important;
-}
-
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label {
-  display: none;
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio + .gfield .ginput_container .otherinput, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio + .gfield .ginput_container .otherinput {
+  width: calc(100%-25px);
+  font-size: 1.2rem;
+  color: #004b7a;
 }
 
 #field_215_29,
