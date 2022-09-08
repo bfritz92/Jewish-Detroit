@@ -553,7 +553,7 @@
               color: #fff;
               background-color: $color__jfmd-blue;
             }
-            &#label_215_97_2 {
+            &#label_215_97_1 {
               &:hover,
               &:focus {
                 color: #fff;
@@ -626,7 +626,8 @@
                 background-color: $color__jfmd-blue;
               }
             }
-            &.gchoice_215_134_6 {
+            &.gchoice_215_134_6,
+            &.gchoice_215_98_6 {
               width: 100%;
               grid-column: 1/-1;
             }

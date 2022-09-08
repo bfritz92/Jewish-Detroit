@@ -1543,7 +1543,7 @@ label.gfield_label {
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label#label_215_97_2:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label#label_215_97_2:focus {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label#label_215_97_1:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label#label_215_97_1:focus {
   color: #fff;
   background-color: #fa4b06;
   border: 2px #fa4b06 solid;
@@ -1618,7 +1618,7 @@ label.gfield_label {
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6 {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6 {
   width: 100%;
   grid-column: 1/-1;
 }
