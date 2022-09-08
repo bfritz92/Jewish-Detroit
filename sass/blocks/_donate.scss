@@ -609,35 +609,41 @@
     &.one-time,
     &.monthly {
       padding: 0.5rem 1rem;
-      .ginput_container_radio .gfield_radio {
-        padding: 0;
-        .gchoice {
-          width: 100%;
-          label {
-            min-width: 100%;
-            display: flex;
-            transition: background-color 150ms ease-in-out;
-            color: $color__jfmd-blue;
-            &:hover {
-              color: #fff;
-              background-color: $color__jfmd-blue;
+      .ginput_container_radio {
+        .gfield_radio {
+          padding: 0;
+          .gchoice {
+            width: 100%;
+            label {
+              min-width: 100%;
+              display: flex;
+              transition: background-color 150ms ease-in-out;
+              color: $color__jfmd-blue;
+              &:hover {
+                color: #fff;
+                background-color: $color__jfmd-blue;
+              }
             }
           }
         }
-        // Other Amount Options
-        & + .gfield {
-          .ginput_container {
-            .preinput {
-              width: 25px;
-              font-size: 1.2rem;
-              color: $color__jfmd-blue;
-            }
-            .otherinput {
-              width: calc(100%-25px);
-              font-size: 1.2rem;
-              color: $color__jfmd-blue;
-            }
-          }
+        &.gchoice_215_134_6 {
+          width: 100%;
+          grid-column: 1/-1;
+        }
+      }
+    }
+    // Other Amount Options
+    & + .gfield {
+      .ginput_container {
+        .preinput {
+          width: 25px;
+          font-size: 1.2rem;
+          color: $color__jfmd-blue;
+        }
+        .otherinput {
+          width: calc(100%-25px);
+          font-size: 1.2rem;
+          color: $color__jfmd-blue;
         }
       }
     }

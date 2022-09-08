@@ -12315,13 +12315,18 @@ label.gfield_label {
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio + .gfield .ginput_container .preinput, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio + .gfield .ginput_container .preinput {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio.gchoice_215_134_6 {
+  width: 100%;
+  grid-column: 1/-1;
+}
+
+#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput {
   width: 25px;
   font-size: 1.2rem;
   color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio + .gfield .ginput_container .otherinput, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio + .gfield .ginput_container .otherinput {
+#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput {
   width: calc(100%-25px);
   font-size: 1.2rem;
   color: #004b7a;
