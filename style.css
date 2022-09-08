@@ -12315,7 +12315,7 @@ label.gfield_label {
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio.gchoice_215_134_6 {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6 {
   width: 100%;
   grid-column: 1/-1;
 }
