@@ -12419,6 +12419,12 @@ label.gfield_label {
   border: 2px solid #004b7a;
 }
 
+.credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
+  border-radius: 2px;
+  border: 1px solid #111;
+  background: #fff;
+}
+
 #field_215_163 {
   font-size: 15px;
 }

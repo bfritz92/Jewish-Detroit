@@ -726,6 +726,23 @@
     }
   }
 }
+
+//PAYMENT PAGE
+.credit-card {
+  legend.gfield_label {
+  }
+  .ginput_container_creditcard {
+    .ginput_cardextras {
+      .ginput_cardinfo_left {
+        span span select {
+          border-radius: 2px;
+          border: 1px solid #111;
+          background: #fff;
+        }
+      }
+    }
+  }
+}
 #gform_page_215_3 {
   //PAYMENT PAGE
 }
