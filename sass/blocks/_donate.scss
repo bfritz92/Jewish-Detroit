@@ -619,6 +619,8 @@
               display: flex;
               transition: background-color 150ms ease-in-out;
               color: $color__jfmd-blue;
+              font-family: gotham-bold;
+              font-weight: 700;
               &:hover {
                 color: #fff;
                 background-color: $color__jfmd-blue;
@@ -639,11 +641,15 @@
           width: 25px;
           font-size: 1.2rem;
           color: $color__jfmd-blue;
+          font-weight: 700;
         }
         .otherinput {
           width: calc(100%-25px);
-          font-size: 1.2rem;
-          color: $color__jfmd-blue;
+          input {
+            font-size: 1.2rem;
+            color: $color__jfmd-blue;
+            width: 100%;
+          }
         }
       }
     }

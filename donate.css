@@ -1609,6 +1609,8 @@ label.gfield_label {
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   color: #004b7a;
+  font-family: gotham-bold;
+  font-weight: 700;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
@@ -1625,12 +1627,17 @@ label.gfield_label {
   width: 25px;
   font-size: 1.2rem;
   color: #004b7a;
+  font-weight: 700;
 }
 
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput {
   width: calc(100%-25px);
+}
+
+#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput input {
   font-size: 1.2rem;
   color: #004b7a;
+  width: 100%;
 }
 
 #field_215_29,
