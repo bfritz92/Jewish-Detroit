@@ -1472,7 +1472,7 @@ label.gfield_label {
 .donor-form {
   background-color: #c4e5f4;
   background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2022/09/donor-form-bg.jpg");
-  background-position: center right;
+  background-position: 50% 45%;
   background-repeat: no-repeat;
 }
 
@@ -1592,8 +1592,38 @@ label.gfield_label {
   color: #fff !important;
 }
 
+#gform_wrapper_215 .donation-form--amount div.gfield_radio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#gform_wrapper_215 .donation-form--amount div.gfield_radio input {
+  display: none;
+}
+
+#gform_wrapper_215 .donation-form--amount div.gchoice label {
+  background-color: #fff;
+  max-width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #004b7a;
+  border: 3px solid #004b7a;
+}
+
 #gform_wrapper_215 .donation-form--amount.one-time, #gform_wrapper_215 .donation-form--amount.monthly {
   padding: 0.5rem 1rem;
+  text-align: center;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio {
@@ -1648,6 +1678,12 @@ label.gfield_label {
   -webkit-appearance: none;
   margin: 0;
   -moz-appearance: textfield;
+}
+
+#gform_next_button_215_20 {
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 #field_215_29,
@@ -1725,8 +1761,12 @@ label.gfield_label {
 
 .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
   border-radius: 2px;
-  border: 1px solid #111;
+  border: 1px solid #ccc;
   background: #fff;
+}
+
+.credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
+  width: 25%;
 }
 
 #field_215_163 {
