@@ -800,6 +800,14 @@
   }
   .gfield--width-half {
     padding: 0.5rem 1rem;
+    @include media(tablet) {
+      &.email-address {
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+      }
+      &.phone-number {
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+      }
+    }
     div div {
       @include legend-type;
     }

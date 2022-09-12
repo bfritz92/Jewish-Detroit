@@ -1791,6 +1791,15 @@ label.gfield_label {
   padding: 0.5rem 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half.email-address {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+  #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half.phone-number {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+
 #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half div div {
   text-transform: uppercase;
   font-size: 0.6rem;
