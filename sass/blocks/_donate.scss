@@ -778,11 +778,11 @@
 #gform_page_215_3 .gform_page_fields .gform_fields {
   grid-column-gap: 0;
   grid-row-gap: 0;
-  label,
-  legend {
-    @include legend-type;
-  }
   .credit-card {
+    label,
+    legend {
+      @include legend-type;
+    }
     .ginput_container_creditcard {
       .ginput_cardextras {
         .ginput_cardinfo_left {
@@ -793,9 +793,15 @@
           }
         }
         .ginput_cardinfo_right {
-          width: 25%;
+          max-width: 25%;
         }
       }
+    }
+  }
+  .gfield--width-half {
+    padding: 0.5rem 1rem;
+    div div {
+      @include legend-type;
     }
   }
 }
