@@ -12487,10 +12487,14 @@ label.gfield_label {
   font-family: gotham-bold;
   letter-spacing: 1px;
   padding-top: 5px;
+  line-height: 1.1;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras {
   gap: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left {
@@ -12503,13 +12507,28 @@ label.gfield_label {
   -webkit-box-flex: 0 !important;
       -ms-flex: 0 0 50% !important;
           flex: 0 0 50% !important;
+  height: 45px;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span {
+  height: -webkit-min-content !important;
+  height: -moz-min-content !important;
+  height: min-content !important;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
   border-radius: 2px;
   border: 1px solid #ccc;
   background: #fff;
-  height: 45px;
+  height: 48px;
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
+    height: 45px;
+    padding-bottom: 0;
+  }
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
@@ -12556,6 +12575,7 @@ label.gfield_label {
   font-family: gotham-bold;
   letter-spacing: 1px;
   padding-top: 5px;
+  line-height: 1.1;
 }
 
 #field_215_163 {

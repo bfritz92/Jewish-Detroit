@@ -508,6 +508,7 @@
   font-family: gotham-bold;
   letter-spacing: 1px;
   padding-top: 5px;
+  line-height: 1.1;
 }
 
 .donor-form {
@@ -790,15 +791,25 @@
     .ginput_container_creditcard {
       .ginput_cardextras {
         gap: 5px;
+        align-items: flex-start;
         .ginput_cardinfo_left {
           flex: 0 0 60%;
           span {
             flex: 0 0 50% !important;
-            span select {
-              border-radius: 2px;
-              border: 1px solid #ccc;
-              background: #fff;
-              height: 45px;
+            height: 45px;
+            span {
+              height: min-content !important;
+              select {
+                border-radius: 2px;
+                border: 1px solid #ccc;
+                background: #fff;
+                height: 48px;
+                padding-bottom: 0;
+                @include media(tablet) {
+                  height: 45px;
+                  padding-bottom: 0;
+                }
+              }
             }
           }
         }
