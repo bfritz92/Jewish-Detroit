@@ -1874,6 +1874,17 @@ label.gfield_label {
   line-height: 1.1;
 }
 
+#gform_page_215_3 .gform_page_fields .gform_fields label,
+#gform_page_215_3 .gform_page_fields .gform_fields legend {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #626262;
+  font-family: gotham-bold;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  line-height: 1.1;
+}
+
 #field_215_163 {
   font-size: 15px;
 }
@@ -1908,8 +1919,17 @@ label.gfield_label {
 }
 
 .gform_page_footer {
-  margin: 0.5rem 1.5rem !important;
+  margin: 0.5rem 1rem !important;
   padding: 0 0 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gform_page_footer input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .gform_page_footer #gform_next_button_215_20 {
@@ -1921,6 +1941,15 @@ label.gfield_label {
 .gform_page_footer #gform_next_button_215_20:hover, .gform_page_footer #gform_next_button_215_20:focus {
   background-color: #004b7a;
   border: 2px #004b7a solid;
+}
+
+.gform_wrapper .gfield_error [aria-invalid="true"] {
+  border: 3px solid #c02b0a;
+  border-radius: 2px;
+}
+
+.gfield_validation_message {
+  display: none;
 }
 
 .m-toggle .gfield_checkbox input {

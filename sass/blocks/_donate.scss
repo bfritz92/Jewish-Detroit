@@ -844,8 +844,13 @@
     }
   }
 }
-#gform_page_215_3 {
-  //PAYMENT PAGE
+
+//PERSONAL INFO
+#gform_page_215_3 .gform_page_fields .gform_fields {
+  label,
+  legend {
+    @include legend-type;
+  }
 }
 
 //More superficial styling
@@ -878,8 +883,12 @@
   margin-left: 1.5rem;
 }
 .gform_page_footer {
-  margin: 0.5rem 1.5rem !important;
+  margin: 0.5rem 1rem !important;
   padding: 0 0 1.5rem 0;
+  display: flex;
+  input {
+    flex: 0 0 50%;
+  }
   #gform_next_button_215_20 {
     background-color: $color__jfmd-cyan;
     color: #fff;
@@ -891,7 +900,14 @@
     }
   }
 }
-
+//error handling
+.gform_wrapper .gfield_error [aria-invalid="true"] {
+  border: 3px solid #c02b0a;
+  border-radius: 2px;
+}
+.gfield_validation_message {
+  display: none;
+}
 // ==========================================================================
 // Gravity Forms checkbox switch
 // CSS Switches http://callmenick.com/2014/05/13/css-toggle-switch-examples/
