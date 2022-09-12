@@ -5229,8 +5229,14 @@ SPONSORS PAGE
   margin: 0 0 calc(1.5 * 1rem);
 }
 
+@media only screen and (min-width: 768px) {
+  .content-area {
+    margin-top: 40px;
+  }
+}
+
 .content-area {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .entry {
@@ -12168,6 +12174,10 @@ label.gfield_label {
 }
 */
 /* BEGIN 2022 DONOR FORM REDESIGN */
+.page-id-40912 #donation-panel {
+  display: none;
+}
+
 .donor-form {
   background-color: #c4e5f4;
   background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2022/09/donor-form-bg.jpg");
@@ -12458,13 +12468,27 @@ label.gfield_label {
   border: 2px solid #004b7a;
 }
 
-.credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
+#gform_page_215_3 .gform_page_fields .gform_fields {
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card label,
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card legend {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #626262;
+  font-family: gotham-bold;
+  letter-spacing: 1px;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
   border-radius: 2px;
   border: 1px solid #ccc;
   background: #fff;
 }
 
-.credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
   width: 25%;
 }
 

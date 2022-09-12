@@ -23,8 +23,14 @@
   clear: both;
   margin: 0 0 calc(1.5 * #{$size__spacing-unit});
 }
+
+@include media(tablet) {
+  .content-area {
+    margin-top: 40px;
+  }
+}
 .content-area {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 .entry {
   margin-top: 0 15px;

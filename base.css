@@ -3975,8 +3975,14 @@ a[href$=".ppt"]:after {
   margin: 0 0 calc(1.5 * 1rem);
 }
 
+@media only screen and (min-width: 768px) {
+  .content-area {
+    margin-top: 40px;
+  }
+}
+
 .content-area {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .entry {

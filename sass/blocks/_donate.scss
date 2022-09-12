@@ -496,6 +496,18 @@
 */
 
 /* BEGIN 2022 DONOR FORM REDESIGN */
+.page-id-40912 #donation-panel {
+  display: none;
+}
+
+//styles
+@mixin legend-type {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #626262;
+  font-family: gotham-bold;
+  letter-spacing: 1px;
+}
 
 .donor-form {
   background-color: $color__light-teal;
@@ -763,20 +775,26 @@
 }
 
 //PAYMENT PAGE
-.credit-card {
-  legend.gfield_label {
-  }
-  .ginput_container_creditcard {
-    .ginput_cardextras {
-      .ginput_cardinfo_left {
-        span span select {
-          border-radius: 2px;
-          border: 1px solid #ccc;
-          background: #fff;
+#gform_page_215_3 .gform_page_fields .gform_fields {
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  .credit-card {
+    label,
+    legend {
+      @include legend-type;
+    }
+    .ginput_container_creditcard {
+      .ginput_cardextras {
+        .ginput_cardinfo_left {
+          span span select {
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            background: #fff;
+          }
         }
-      }
-      .ginput_cardinfo_right {
-        width: 25%;
+        .ginput_cardinfo_right {
+          width: 25%;
+        }
       }
     }
   }
