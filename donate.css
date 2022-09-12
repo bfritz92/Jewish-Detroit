@@ -1794,6 +1794,12 @@ label.gfield_label {
           flex: 0 0 60%;
 }
 
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
   border-radius: 2px;
   border: 1px solid #ccc;

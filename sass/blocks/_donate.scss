@@ -792,10 +792,13 @@
         gap: 5px;
         .ginput_cardinfo_left {
           flex: 0 0 60%;
-          span span select {
-            border-radius: 2px;
-            border: 1px solid #ccc;
-            background: #fff;
+          span {
+            flex: 0 0 50%;
+            span select {
+              border-radius: 2px;
+              border: 1px solid #ccc;
+              background: #fff;
+            }
           }
         }
         .ginput_cardinfo_right {
