@@ -808,7 +808,7 @@
         padding: 0.5rem 1rem 0.5rem 0.5rem;
       }
     }
-    div div {
+    div:last-child {
       @include legend-type;
     }
   }

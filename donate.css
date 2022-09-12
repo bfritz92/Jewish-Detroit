@@ -1800,7 +1800,7 @@ label.gfield_label {
   }
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half div div {
+#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half div:last-child {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
