@@ -12508,12 +12508,14 @@ label.gfield_label {
       -ms-flex: 0 0 50% !important;
           flex: 0 0 50% !important;
   height: 45px;
+  margin-bottom: 0;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span {
   height: -webkit-min-content !important;
   height: -moz-min-content !important;
   height: min-content !important;
+  margin-bottom: 0 !important;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
@@ -12521,13 +12523,12 @@ label.gfield_label {
   border: 1px solid #ccc;
   background: #fff;
   height: 48px;
-  padding-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 @media only screen and (min-width: 768px) {
   #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
     height: 45px;
-    padding-bottom: 0;
   }
 }
 

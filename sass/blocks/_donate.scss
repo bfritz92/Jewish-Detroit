@@ -797,17 +797,18 @@
           span {
             flex: 0 0 50% !important;
             height: 45px;
+            margin-bottom: 0;
             span {
               height: min-content !important;
+              margin-bottom: 0 !important;
               select {
                 border-radius: 2px;
                 border: 1px solid #ccc;
                 background: #fff;
                 height: 48px;
-                padding-bottom: 0;
+                margin-bottom: 0 !important;
                 @include media(tablet) {
                   height: 45px;
-                  padding-bottom: 0;
                 }
               }
             }
