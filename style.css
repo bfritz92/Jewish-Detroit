@@ -12473,6 +12473,12 @@ label.gfield_label {
   grid-row-gap: 0;
 }
 
+#gform_page_215_3 .gform_page_fields .gform_fields .gform_card_icon_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card label,
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card legend {
   text-transform: uppercase;
@@ -12480,6 +12486,17 @@ label.gfield_label {
   color: #626262;
   font-family: gotham-bold;
   letter-spacing: 1px;
+  padding-top: 5px;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras {
+  gap: 5px;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
@@ -12489,7 +12506,27 @@ label.gfield_label {
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
-  max-width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 38%;
+          flex: 0 0 38%;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right input.ginput_card_security_code {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 68%;
+          flex: 0 0 68%;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right span.ginput_card_security_code_icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right label {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half {
@@ -12511,6 +12548,7 @@ label.gfield_label {
   color: #626262;
   font-family: gotham-bold;
   letter-spacing: 1px;
+  padding-top: 5px;
 }
 
 #field_215_163 {

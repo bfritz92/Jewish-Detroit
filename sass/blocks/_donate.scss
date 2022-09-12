@@ -507,6 +507,7 @@
   color: #626262;
   font-family: gotham-bold;
   letter-spacing: 1px;
+  padding-top: 5px;
 }
 
 .donor-form {
@@ -778,6 +779,9 @@
 #gform_page_215_3 .gform_page_fields .gform_fields {
   grid-column-gap: 0;
   grid-row-gap: 0;
+  .gform_card_icon_container {
+    justify-content: center;
+  }
   .credit-card {
     label,
     legend {
@@ -785,7 +789,9 @@
     }
     .ginput_container_creditcard {
       .ginput_cardextras {
+        gap: 5px;
         .ginput_cardinfo_left {
+          flex: 0 0 60%;
           span span select {
             border-radius: 2px;
             border: 1px solid #ccc;
@@ -793,7 +799,16 @@
           }
         }
         .ginput_cardinfo_right {
-          max-width: 25%;
+          flex: 0 0 38%;
+          input.ginput_card_security_code {
+            flex: 0 0 68%;
+          }
+          span.ginput_card_security_code_icon {
+            flex: 0 0 25%;
+          }
+          label {
+            flex: 0 0 100%;
+          }
         }
       }
     }
