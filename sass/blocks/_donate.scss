@@ -512,6 +512,9 @@
 }
 .legend-type {
   @include legend-type;
+  &.blue {
+    color: $color__jfmd-blue;
+  }
 }
 @mixin small-text {
   font-family: gotham-bold;

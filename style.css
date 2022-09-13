@@ -12188,6 +12188,10 @@ label.gfield_label {
   line-height: 1.1;
 }
 
+.legend-type.blue {
+  color: #004b7a;
+}
+
 .small-text {
   font-family: gotham-bold;
   font-size: 0.6rem;
