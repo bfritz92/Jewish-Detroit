@@ -565,8 +565,8 @@
         display: flex;
         justify-content: center;
         gap: 1rem;
-        flex-wrap: wrap;
-        padding: 0 1rem 0 1rem;
+        //flex-wrap: wrap;
+        padding: 0 1.5rem;
         .gchoice {
           border: none;
           padding: 0;
@@ -580,6 +580,7 @@
             border-radius: 2px;
             min-width: 100%;
             font-weight: 700;
+            font-family: gotham-bold;
             color: $color__jfmd-blue;
             transition: background-color 150ms ease-in-out;
             &:hover,
@@ -754,6 +755,10 @@
         }
       }
     }
+  }
+
+  .gform_page_footer {
+    display: none;
   }
 }
 //first Donate button
