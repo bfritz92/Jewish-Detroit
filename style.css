@@ -12178,6 +12178,16 @@ label.gfield_label {
   display: none;
 }
 
+.legend-type {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #626262;
+  font-family: gotham-bold;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  line-height: 1.1;
+}
+
 .small-text {
   font-family: gotham-bold;
   font-size: 0.6rem;
