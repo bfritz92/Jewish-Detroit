@@ -12215,6 +12215,7 @@ label.gfield_label {
   gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 .donor-form--content {
@@ -12222,10 +12223,6 @@ label.gfield_label {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 !important;
-}
-
-.donor-form--content--form {
-  max-width: 500px;
 }
 
 .donor-form--content--headlines {

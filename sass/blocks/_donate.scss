@@ -536,11 +536,12 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  padding-top: 2rem;
   &--content {
     justify-content: center;
     margin: 0 !important;
     &--form {
-      max-width: 500px;
+      //max-width: 500px;
     }
     &--headlines {
       max-width: 430px;
