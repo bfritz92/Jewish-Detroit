@@ -1520,13 +1520,45 @@ label.gfield_label {
   margin: 0 !important;
 }
 
+.donor-form--content--form {
+  max-width: 550px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .donor-form--content--form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
 .donor-form--content--headlines {
-  max-width: 430px;
+  max-width: 475px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .donor-form--content--headlines {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
 }
 
 .donor-form--content--headlines--copy {
   border-radius: 2px;
   padding: 1rem 0.5rem;
+}
+
+.donor-form--content--headlines figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 #gform_wrapper_215 {

@@ -541,13 +541,25 @@
     justify-content: center;
     margin: 0 !important;
     &--form {
-      //max-width: 500px;
+      max-width: 550px;
+      flex: 0 0 100%;
+      @include media(tablet) {
+        flex: 0 0 50%;
+      }
     }
     &--headlines {
-      max-width: 430px;
+      max-width: 475px;
+      flex: 0 0 100%;
+      @include media(tablet) {
+        flex: 0 0 40%;
+      }
       &--copy {
         border-radius: 2px;
         padding: 1rem 0.5rem;
+      }
+      figure img {
+        object-fit: cover;
+        width: 100%;
       }
     }
   }
