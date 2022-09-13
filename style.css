@@ -12183,6 +12183,7 @@ label.gfield_label {
   background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2022/09/donor-form-bg.jpg");
   background-position: 50% 45%;
   background-repeat: no-repeat;
+  min-height: calc(100vh - 500px);
 }
 
 .donor-form--content {
@@ -12386,7 +12387,7 @@ label.gfield_label {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 1.2rem;
   float: left;
   text-align: right;
   width: 25px;
