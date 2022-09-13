@@ -663,9 +663,13 @@
               color: $color__jfmd-blue;
               font-family: gotham-bold;
               font-weight: 700;
+              margin-left: 0px;
               &:hover {
                 color: #fff;
                 background-color: $color__jfmd-blue;
+              }
+              &:before {
+                content: "$";
               }
             }
             &.gchoice_215_134_6,
@@ -690,14 +694,32 @@
     & + .gfield {
       .ginput_container {
         .preinput {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 10px 0;
+          font-size: 15px;
+          float: left;
+          text-align: right;
           width: 25px;
-          font-size: 1.2rem;
           color: $color__jfmd-blue;
           font-weight: 700;
+          font-family: gotham-bold;
         }
         .otherinput {
+          position: relative;
+          top: 10%;
+          border: 0px;
+          float: right;
+          text-align: left;
           width: calc(100% - 25px);
           input {
+            position: relative;
+            width: 55%;
+            top: 10%;
+            border: 0px;
+            float: right;
+            text-align: left;
             font-size: 1.2rem;
             color: $color__jfmd-blue;
             min-width: 100%;
@@ -716,9 +738,7 @@
 }
 //first Donate button
 #gform_next_button_215_20 {
-  max-width: 100%;
-  width: 100%;
-  margin: auto;
+  flex: 0 0 100%;
 }
 
 // Hide Payment amount and transaction fee fields

@@ -1648,11 +1648,16 @@ label.gfield_label {
   color: #004b7a;
   font-family: gotham-bold;
   font-weight: 700;
+  margin-left: 0px;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
   color: #fff;
   background-color: #004b7a;
+}
+
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:before {
+  content: "$";
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6 {
@@ -1671,17 +1676,36 @@ label.gfield_label {
 }
 
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 10px 0;
+  font-size: 15px;
+  float: left;
+  text-align: right;
   width: 25px;
-  font-size: 1.2rem;
   color: #004b7a;
   font-weight: 700;
+  font-family: gotham-bold;
 }
 
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput {
+  position: relative;
+  top: 10%;
+  border: 0px;
+  float: right;
+  text-align: left;
   width: calc(100% - 25px);
 }
 
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput input {
+  position: relative;
+  width: 55%;
+  top: 10%;
+  border: 0px;
+  float: right;
+  text-align: left;
   font-size: 1.2rem;
   color: #004b7a;
   min-width: 100%;
@@ -1695,9 +1719,9 @@ label.gfield_label {
 }
 
 #gform_next_button_215_20 {
-  max-width: 100%;
-  width: 100%;
-  margin: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 #field_215_29,
