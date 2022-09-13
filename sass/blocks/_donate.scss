@@ -812,8 +812,10 @@
         color: #fff;
         margin-left: 0 !important;
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
           border: 2px solid $color__jfmd-blue;
+          margin-left: 0 !important;
         }
       }
     }
@@ -945,13 +947,14 @@
   }
 }
 //error handling
+/*
 .gform_wrapper .gfield_error [aria-invalid="true"] {
   border: 3px solid #c02b0a;
   border-radius: 2px;
 }
 .gfield_validation_message {
   display: none;
-}
+} */
 
 //required
 .gfield_contains_required {

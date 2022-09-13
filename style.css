@@ -12519,8 +12519,9 @@ label.gfield_label {
   margin-left: 0 !important;
 }
 
-#gform_page_215_2 .gform_page_footer input:last-child:hover, #gform_page_215_2 .gform_page_footer input:last-child:focus {
+#gform_page_215_2 .gform_page_footer input:last-child:hover, #gform_page_215_2 .gform_page_footer input:last-child:focus, #gform_page_215_2 .gform_page_footer input:last-child:active {
   border: 2px solid #004b7a;
+  margin-left: 0 !important;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields {
@@ -12703,15 +12704,14 @@ label.gfield_label {
   border: 2px #004b7a solid;
 }
 
+/*
 .gform_wrapper .gfield_error [aria-invalid="true"] {
   border: 3px solid #c02b0a;
   border-radius: 2px;
 }
-
 .gfield_validation_message {
   display: none;
-}
-
+} */
 .gfield_contains_required .ginput_container span label:after {
   content: "*";
   color: #c02b0a;
