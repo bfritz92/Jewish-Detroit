@@ -886,7 +886,7 @@
 }
 
 //PERSONAL INFO
-#gform_page_215_3 .gform_page_fields .gform_fields {
+#gform_page_215_4 .gform_page_fields .gform_fields {
   label,
   legend {
     @include legend-type;
@@ -922,7 +922,7 @@
 .gfield_checkbox {
   margin-left: 1.5rem;
 }
-.gform_page_footer {
+.gform_page_footer.top_label {
   margin: 0.5rem 1rem !important;
   padding: 0 0 1.5rem 0;
   display: flex;
