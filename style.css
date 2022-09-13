@@ -12178,6 +12178,11 @@ label.gfield_label {
   display: none;
 }
 
+.small-text {
+  font-family: gotham-bold;
+  font-size: 0.6rem;
+}
+
 .donor-form {
   background-color: #c4e5f4;
   background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2022/09/donor-form-bg.jpg");
