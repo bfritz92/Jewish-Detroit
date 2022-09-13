@@ -12365,6 +12365,16 @@ label.gfield_label {
   grid-column: 1/-1;
 }
 
+#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div label:after {
+  content: " /mo";
+  font-size: 0.5em;
+  margin-left: 2px;
+  margin-top: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput {
   width: 25px;
   font-size: 1.2rem;
