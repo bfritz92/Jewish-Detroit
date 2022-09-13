@@ -799,14 +799,15 @@
   }
   .gform_page_footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 10px;
     input {
-      width: clamp(150px, 48%, 300px);
-      flex-grow: 1;
+      flex: 0 0 50%;
       &:last-child {
         background-color: $color__jfmd-cyan;
         border: 2px solid $color__jfmd-cyan;
         color: #fff;
+        margin-left: 0 !important;
         &:hover,
         &:focus {
           border: 2px solid $color__jfmd-blue;
