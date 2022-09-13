@@ -1498,6 +1498,18 @@ label.gfield_label {
   background-position: 50% 45%;
   background-repeat: no-repeat;
   min-height: calc(100vh - 500px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .donor-form--content {
