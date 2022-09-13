@@ -948,6 +948,17 @@
 .gfield_validation_message {
   display: none;
 }
+
+//required
+.gfield_contains_required {
+  .ginput_container {
+    span label:after {
+      content: "*";
+      color: #c02b0a;
+      font-family: gotham-bold;
+    }
+  }
+}
 // ==========================================================================
 // Gravity Forms checkbox switch
 // CSS Switches http://callmenick.com/2014/05/13/css-toggle-switch-examples/

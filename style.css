@@ -12707,6 +12707,12 @@ label.gfield_label {
   display: none;
 }
 
+.gfield_contains_required .ginput_container span label:after {
+  content: "*";
+  color: #c02b0a;
+  font-family: gotham-bold;
+}
+
 .m-toggle .gfield_checkbox input {
   position: absolute;
   margin-left: -9999px;
