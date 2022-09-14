@@ -1541,6 +1541,10 @@ label.gfield_label {
   }
 }
 
+.donor-form--content--headlines {
+  padding: 0;
+}
+
 .donor-form--content--headlines .wp-block-group__inner-container {
   max-width: 475px;
   -webkit-box-flex: 0;
@@ -1559,6 +1563,10 @@ label.gfield_label {
 .donor-form--content--headlines .wp-block-group__inner-container--copy {
   border-radius: 2px;
   padding: 1rem 0.5rem;
+}
+
+.donor-form--content--headlines .wp-block-group__inner-container figure {
+  width: 100%;
 }
 
 .donor-form--content--headlines .wp-block-group__inner-container figure img {
