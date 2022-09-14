@@ -524,7 +524,7 @@
   @include small-text;
 }
 .transaction-cost {
-  padding-top: 1rem;
+  padding-top: 1rem !important;
   label {
     font-family: $font__heading;
   }

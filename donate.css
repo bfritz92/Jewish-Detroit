@@ -1493,7 +1493,7 @@ label.gfield_label {
 }
 
 .transaction-cost {
-  padding-top: 1rem;
+  padding-top: 1rem !important;
 }
 
 .transaction-cost label {
