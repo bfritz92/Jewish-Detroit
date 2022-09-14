@@ -558,22 +558,20 @@
     }
     &--headlines {
       padding: 0;
-      .wp-block-group__inner-container {
-        max-width: 475px;
-        flex: 0 0 100%;
-        @include media(tablet) {
-          flex: 0 0 40%;
-        }
-        &--copy {
-          border-radius: 2px;
-          padding: 1rem 0.5rem;
-        }
-        figure {
+      max-width: 475px;
+      flex: 0 0 100%;
+      @include media(tablet) {
+        flex: 0 0 40%;
+      }
+      &--copy {
+        border-radius: 2px;
+        padding: 1rem 0.5rem;
+      }
+      figure {
+        width: 100%;
+        img {
+          object-fit: cover;
           width: 100%;
-          img {
-            object-fit: cover;
-            width: 100%;
-          }
         }
       }
     }
