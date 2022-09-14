@@ -12264,7 +12264,15 @@ label.gfield_label {
 
 .donor-form--content--headlines--copy {
   border-radius: 2px;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.donor-form--content--headlines--copy .wp-block-group__inner-container {
+  padding-top: 0;
+}
+
+.donor-form--content--headlines--copy .wp-block-group__inner-container p {
+  line-height: 1.3;
 }
 
 .donor-form--content--headlines figure {
@@ -12361,6 +12369,7 @@ label.gfield_label {
   min-width: 100%;
   padding: 0.5rem 0.25rem;
   border: 2px solid #004b7a;
+  border-radius: 2px;
   color: #004b7a;
   border-radius: 2px;
   -webkit-transition: background-color 150ms ease-in-out;
