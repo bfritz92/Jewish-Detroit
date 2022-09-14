@@ -542,10 +542,16 @@
       gap: 1rem;
       flex-wrap: wrap;
       padding-top: 2rem;
+      .donation-form_wrapper {
+        width: 100%;
+      }
     }
     &--form {
       max-width: 550px;
       flex: 0 0 100%;
+      .wp-block-group__inner-container .donation-form_wrapper {
+        width: 100%;
+      }
       @include media(tablet) {
         flex: 0 0 50%;
       }
