@@ -1477,7 +1477,7 @@ label.gfield_label {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
   line-height: 1.1;
@@ -1488,7 +1488,7 @@ label.gfield_label {
 }
 
 .small-text {
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
 }
 
@@ -1498,19 +1498,6 @@ label.gfield_label {
   background-position: 50% 45%;
   background-repeat: no-repeat;
   min-height: calc(100vh - 500px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 2rem;
 }
 
 .donor-form--content {
@@ -1518,6 +1505,17 @@ label.gfield_label {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 .donor-form--content--form {
@@ -1599,7 +1597,7 @@ label.gfield_label {
   border-radius: 2px;
   min-width: 100%;
   font-weight: 700;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   color: #004b7a;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
@@ -1706,7 +1704,7 @@ label.gfield_label {
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
   color: #004b7a;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   font-weight: 700;
   margin-left: 0px;
 }
@@ -1747,7 +1745,7 @@ label.gfield_label {
   width: 25px;
   color: #004b7a;
   font-weight: 700;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
 }
 
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput {
@@ -1883,7 +1881,7 @@ label.gfield_label {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
   line-height: 1.1;
@@ -1972,7 +1970,7 @@ label.gfield_label {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
   line-height: 1.1;
@@ -1983,7 +1981,7 @@ label.gfield_label {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
   line-height: 1.1;
@@ -1998,7 +1996,7 @@ label.gfield_label {
   border: none;
   background-color: transparent;
   color: #0094d0;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   font-size: 2.3rem;
   text-align: center;
 }
@@ -2015,7 +2013,7 @@ label.gfield_label {
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 label,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 label {
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
 }
 
@@ -2029,7 +2027,7 @@ label.gfield_label {
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 input {
   border: none;
   background-color: transparent;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
 }
 
@@ -2102,7 +2100,7 @@ label.gfield_label {
 .gfield_contains_required .ginput_container span label:after {
   content: "*";
   color: #c02b0a;
-  font-family: gotham-bold;
+  font-family: "gotham-bold", sans-serif;
 }
 
 .m-toggle .gfield_checkbox input {

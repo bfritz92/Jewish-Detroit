@@ -505,7 +505,7 @@
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
-  font-family: gotham-bold;
+  font-family: $font__heading;
   letter-spacing: 1px;
   padding-top: 5px;
   line-height: 1.1;
@@ -517,7 +517,7 @@
   }
 }
 @mixin small-text {
-  font-family: gotham-bold;
+  font-family: $font__heading;
   font-size: 0.6rem;
 }
 .small-text {
@@ -531,15 +531,16 @@
   background-position: 50% 45%;
   background-repeat: no-repeat;
   min-height: calc(100vh - 500px);
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding-top: 2rem;
+
   &--content {
     justify-content: center;
     margin: 0 !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
     &--form {
       max-width: 550px;
       flex: 0 0 100%;
@@ -592,7 +593,7 @@
             border-radius: 2px;
             min-width: 100%;
             font-weight: 700;
-            font-family: gotham-bold;
+            font-family: $font__heading;
             color: $color__jfmd-blue;
             transition: background-color 150ms ease-in-out;
             &:hover,
@@ -694,7 +695,7 @@
               display: flex;
               transition: background-color 150ms ease-in-out;
               color: $color__jfmd-blue;
-              font-family: gotham-bold;
+              font-family: $font__heading;
               font-weight: 700;
               margin-left: 0px;
               &:hover {
@@ -737,7 +738,7 @@
           width: 25px;
           color: $color__jfmd-blue;
           font-weight: 700;
-          font-family: gotham-bold;
+          font-family: $font__heading;
         }
         .otherinput {
           position: relative;
@@ -935,7 +936,7 @@
         border: none;
         background-color: transparent;
         color: $color__jfmd-cyan;
-        font-family: gotham-bold;
+        font-family: $font__heading;
         font-size: 2.3rem;
         text-align: center;
       }
@@ -1023,7 +1024,7 @@
     span label:after {
       content: "*";
       color: #c02b0a;
-      font-family: gotham-bold;
+      font-family: $font__heading;
     }
   }
 }
