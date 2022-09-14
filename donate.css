@@ -1500,7 +1500,7 @@ label.gfield_label {
   min-height: calc(100vh - 500px);
 }
 
-.donor-form--content {
+.donor-form--content .wp-block-group__inner-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

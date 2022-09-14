@@ -533,14 +533,16 @@
   min-height: calc(100vh - 500px);
 
   &--content {
-    justify-content: center;
-    margin: 0 !important;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding-top: 2rem;
+    .wp-block-group__inner-container {
+      justify-content: center;
+      margin: 0 !important;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+    }
     &--form {
       max-width: 550px;
       flex: 0 0 100%;
