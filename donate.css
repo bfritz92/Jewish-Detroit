@@ -1798,14 +1798,6 @@ label.gfield_label {
   -moz-appearance: textfield;
 }
 
-#gform_wrapper_215 .gform_page_footer {
-  display: none;
-}
-
-#gform_wrapper_215 .gform_page .gform_page_footer {
-  display: block;
-}
-
 #gform_next_button_215_20 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
