@@ -556,7 +556,7 @@
         flex: 0 0 50%;
       }
     }
-    &--headlines {
+    &--headlines .wp-block-group__inner-container {
       max-width: 475px;
       flex: 0 0 100%;
       @include media(tablet) {

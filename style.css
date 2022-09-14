@@ -12246,7 +12246,7 @@ label.gfield_label {
   }
 }
 
-.donor-form--content--headlines {
+.donor-form--content--headlines .wp-block-group__inner-container {
   max-width: 475px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -12254,19 +12254,19 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 768px) {
-  .donor-form--content--headlines {
+  .donor-form--content--headlines .wp-block-group__inner-container {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%;
   }
 }
 
-.donor-form--content--headlines--copy {
+.donor-form--content--headlines .wp-block-group__inner-container--copy {
   border-radius: 2px;
   padding: 1rem 0.5rem;
 }
 
-.donor-form--content--headlines figure img {
+.donor-form--content--headlines .wp-block-group__inner-container figure img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
