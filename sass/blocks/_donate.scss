@@ -591,6 +591,10 @@
   }
 }
 
+.gform_wrapper.gravity-theme .gform_fields {
+  grid-row-gap: 0;
+}
+
 #gform_wrapper_215 {
   background-color: #f8f8f8;
   border-radius: 2px;
@@ -793,6 +797,7 @@
             -webkit-appearance: none;
             margin: 0;
             -moz-appearance: textfield;
+            margin: -4px 0px;
           }
         }
       }
@@ -802,7 +807,7 @@
 .other-number {
   padding: 0 1rem;
   background-color: #e8e8e8;
-  margin-top: -90px;
+  margin-top: -71px;
 }
 //first Donate button
 #gform_next_button_215_20 {
