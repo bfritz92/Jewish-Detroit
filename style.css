@@ -12299,6 +12299,10 @@ label.gfield_label {
   border-radius: 2px;
 }
 
+#gform_wrapper_215 #gform_fields_215 {
+  grid-row-gap: 0;
+}
+
 #gform_wrapper_215 form.donation-form .ginput_container_radio {
   width: 100%;
 }

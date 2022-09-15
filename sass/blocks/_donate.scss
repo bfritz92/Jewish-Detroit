@@ -594,6 +594,9 @@
 #gform_wrapper_215 {
   background-color: #f8f8f8;
   border-radius: 2px;
+  #gform_fields_215 {
+    grid-row-gap: 0;
+  }
   form.donation-form {
     .ginput_container_radio {
       width: 100%;
