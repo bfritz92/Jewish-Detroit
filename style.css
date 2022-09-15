@@ -12295,7 +12295,7 @@ label.gfield_label {
 }
 
 .gform_wrapper.gravity-theme .gform_fields {
-  grid-row-gap: 0;
+  grid-row-gap: 0 !important;
 }
 
 #gform_wrapper_215 {
