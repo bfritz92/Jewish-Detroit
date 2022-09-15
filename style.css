@@ -12774,6 +12774,10 @@ label.gfield_label {
   font-size: 0.6rem;
 }
 
+.gform_confirmation_wrapper {
+  background-color: #f8f8f8;
+}
+
 #field_215_163 {
   font-size: 15px;
 }
