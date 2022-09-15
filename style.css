@@ -12719,12 +12719,12 @@ label.gfield_label {
   line-height: 1.1;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields #field_215_208 div.ginput_container {
+#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container {
   border: none;
   background-color: transparent;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields #field_215_208 div.ginput_container input {
+#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container input {
   border: none;
   background-color: transparent;
   color: #0094d0;
