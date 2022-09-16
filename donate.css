@@ -2148,6 +2148,25 @@ label.gfield_label {
 .gform_confirmation_wrapper {
   background-color: #f8f8f8;
   margin: 1rem 0.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.gform_confirmation_wrapper .gray-bg {
+  padding: 0.5rem;
+}
+
+.gform_confirmation_wrapper .amount {
+  font-size: 3rem;
+}
+
+.gform_confirmation_wrapper .social {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #field_215_163 {

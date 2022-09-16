@@ -1036,6 +1036,19 @@
 .gform_confirmation_wrapper {
   background-color: #f8f8f8;
   margin: 1rem 0.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  .gray-bg {
+    padding: 0.5rem;
+  }
+  .amount {
+    font-size: 3rem;
+  }
+  .social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 //More superficial styling
