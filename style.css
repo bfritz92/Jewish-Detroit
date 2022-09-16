@@ -12203,6 +12203,7 @@ label.gfield_label {
 
 .transaction-cost label {
   font-family: "gotham-bold", sans-serif;
+  padding-left: 8px;
 }
 
 .donor-form {
@@ -12763,6 +12764,7 @@ label.gfield_label {
           justify-content: center;
   padding-top: 0;
   color: #626262;
+  height: 20px;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 label,
@@ -12805,6 +12807,7 @@ label.gfield_label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: -25px;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 input,
@@ -12855,10 +12858,11 @@ label.gfield_label {
   margin: 1rem 0.5rem;
   text-align: center;
   padding-bottom: 1rem;
+  border-radius: 2px;
 }
 
 .gform_confirmation_wrapper .gray-bg {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .gform_confirmation_wrapper .amount {
@@ -12870,8 +12874,14 @@ label.gfield_label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.gform_confirmation_wrapper a.arrow-link {
+  font-size: 0.7rem;
 }
 
 #field_215_163 {

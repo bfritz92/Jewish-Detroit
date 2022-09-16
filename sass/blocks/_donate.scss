@@ -527,6 +527,7 @@
   padding-top: 1rem !important;
   label {
     font-family: $font__heading;
+    padding-left: 8px;
   }
 }
 
@@ -988,6 +989,7 @@
     justify-content: center;
     padding-top: 0;
     color: #626262;
+    height: 20px;
     label {
       @include small-text;
       flex: 0 0 50%;
@@ -1004,6 +1006,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      margin-bottom: -25px;
     }
     input {
       border: none;
@@ -1038,8 +1041,9 @@
   margin: 1rem 0.5rem;
   text-align: center;
   padding-bottom: 1rem;
+  border-radius: 2px;
   .gray-bg {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
   }
   .amount {
     font-size: 3rem;
@@ -1047,7 +1051,11 @@
   .social {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
+  }
+  a.arrow-link {
+    font-size: 0.7rem;
   }
 }
 
