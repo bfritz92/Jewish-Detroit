@@ -547,7 +547,7 @@
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
-      padding-top: 2rem;
+      padding: 2.5rem 0 1.5rem 0;
       .donation-form_wrapper {
         width: 100%;
       }
@@ -957,6 +957,9 @@
     @include legend-type;
   }
 }
+#field_215_1 {
+  padding: 1rem;
+}
 
 //PAYMENT SUMMARY
 #gform_page_215_5 .gform_page_fields .gform_fields {
@@ -971,6 +974,7 @@
         font-family: $font__heading;
         font-size: 2.3rem;
         text-align: center;
+        width: 100%;
       }
     }
   }
@@ -978,17 +982,37 @@
   #field_215_211 {
     display: flex;
     justify-content: center;
+    padding-top: 0;
     label {
       @include small-text;
+      flex: 0 0 50%;
+      text-align: right;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
     div.ginput_container {
       border: none;
       background-color: transparent;
+      flex: 0 0 40%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
     }
     input {
       border: none;
       background-color: transparent;
       @include small-text;
+    }
+  }
+  .donor-info {
+    display: flex;
+    flex-direction: column;
+    span.title {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
     }
   }
 }

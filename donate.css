@@ -1523,7 +1523,7 @@ label.gfield_label {
   gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 2rem;
+  padding: 2.5rem 0 1.5rem 0;
 }
 
 .donor-form--content .wp-block-group__inner-container .donation-form_wrapper {
@@ -2025,6 +2025,10 @@ label.gfield_label {
   line-height: 1.1;
 }
 
+#field_215_1 {
+  padding: 1rem;
+}
+
 #gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container {
   border: none;
   background-color: transparent;
@@ -2037,6 +2041,7 @@ label.gfield_label {
   font-family: "gotham-bold", sans-serif;
   font-size: 2.3rem;
   text-align: center;
+  width: 100%;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194,
@@ -2047,18 +2052,45 @@ label.gfield_label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 0;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 label,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 label {
   font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  text-align: right;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 div.ginput_container,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 div.ginput_container {
   border: none;
   background-color: transparent;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 input,
@@ -2067,6 +2099,26 @@ label.gfield_label {
   background-color: transparent;
   font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info span.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
 }
 
 .gform_confirmation_wrapper {
