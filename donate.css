@@ -2039,12 +2039,16 @@ label.gfield_label {
   background-color: transparent;
   color: #0094d0;
   font-family: "gotham-bold", sans-serif;
-  font-size: 2.3rem;
+  font-size: 3rem;
   text-align: center;
   width: 100%;
+  margin-top: -15px;
+  font-family: "gotham-bold", sans-serif;
 }
 
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_193,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_210,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2053,9 +2057,12 @@ label.gfield_label {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 0;
+  color: #626262;
 }
 
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 label,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 label,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_210 label,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 label {
   font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
@@ -2075,7 +2082,9 @@ label.gfield_label {
           align-items: center;
 }
 
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 div.ginput_container,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 div.ginput_container,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_210 div.ginput_container,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 div.ginput_container {
   border: none;
   background-color: transparent;
@@ -2093,12 +2102,18 @@ label.gfield_label {
           align-items: center;
 }
 
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 input,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 input,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_210 input,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 input {
   border: none;
   background-color: transparent;
   font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .gfield_calculation:last-child {
+  padding-bottom: 1rem;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields .donor-info {
@@ -2119,6 +2134,15 @@ label.gfield_label {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  color: #626262;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .name {
+  padding-bottom: 10px;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .phone {
+  padding-bottom: 15px;
 }
 
 .gform_confirmation_wrapper {

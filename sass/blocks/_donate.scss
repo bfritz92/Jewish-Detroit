@@ -972,17 +972,22 @@
         background-color: transparent;
         color: $color__jfmd-cyan;
         font-family: $font__heading;
-        font-size: 2.3rem;
+        font-size: 3rem;
         text-align: center;
         width: 100%;
+        margin-top: -15px;
+        font-family: $font__heading;
       }
     }
   }
+  #field_215_193,
   #field_215_194,
+  #field_215_210,
   #field_215_211 {
     display: flex;
     justify-content: center;
     padding-top: 0;
+    color: #626262;
     label {
       @include small-text;
       flex: 0 0 50%;
@@ -1006,6 +1011,9 @@
       @include small-text;
     }
   }
+  .gfield_calculation:last-child {
+    padding-bottom: 1rem;
+  }
   .donor-info {
     display: flex;
     flex-direction: column;
@@ -1013,6 +1021,13 @@
       display: flex;
       justify-content: center;
       gap: 10px;
+      color: #626262;
+    }
+    .name {
+      padding-bottom: 10px;
+    }
+    .phone {
+      padding-bottom: 15px;
     }
   }
 }
