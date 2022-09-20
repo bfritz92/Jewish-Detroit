@@ -12463,13 +12463,13 @@ label.gfield_label {
   content: "$";
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:last-child:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:last-child:before {
-  content: "";
-}
-
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6 {
   width: 100%;
   grid-column: 1/-1;
+}
+
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6:before, #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6:before {
+  content: none;
 }
 
 #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div label:after {
