@@ -740,8 +740,7 @@
                 content: "$";
               }
             }
-            &.gchoice_215_134_6,
-            &.gchoice_215_98_6 {
+            &:last-child {
               width: 100%;
               grid-column: 1/-1;
               label:before {
@@ -753,12 +752,17 @@
       }
     }
     &.monthly {
-      .ginput_container_radio div.gfield_radio div label:after {
-        content: " /mo";
-        font-size: 0.8em;
-        margin-left: 2px;
-        margin-top: 0.9em;
-        display: flex;
+      .ginput_container_radio div.gfield_radio div {
+        label:after {
+          content: " /mo";
+          font-size: 0.8em;
+          margin-left: 2px;
+          margin-top: 0.9em;
+          display: flex;
+        }
+        &:last-child:after {
+          content: none;
+        }
       }
     }
     // Other Amount Options

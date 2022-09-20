@@ -12463,12 +12463,12 @@ label.gfield_label {
   content: "$";
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6 {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child {
   width: 100%;
   grid-column: 1/-1;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6 label:before, #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6 label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_134_6 label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice.gchoice_215_98_6 label:before {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:before {
   content: none;
 }
 
@@ -12480,6 +12480,10 @@ label.gfield_label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div:last-child:after {
+  content: none;
 }
 
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput {
