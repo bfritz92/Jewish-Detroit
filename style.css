@@ -12468,7 +12468,9 @@ label.gfield_label {
   grid-column: 1/-1;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:before {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:before,
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:after, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:before,
+#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:after {
   content: none;
 }
 
