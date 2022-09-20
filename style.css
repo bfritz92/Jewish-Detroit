@@ -12484,10 +12484,6 @@ label.gfield_label {
   display: flex;
 }
 
-#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div:last-child:after {
-  content: none;
-}
-
 #gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput {
   position: relative;
   top: 50%;
