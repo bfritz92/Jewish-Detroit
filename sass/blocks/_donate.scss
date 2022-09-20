@@ -739,6 +739,9 @@
               &:before {
                 content: "$";
               }
+              &:last-child:before {
+                content: "";
+              }
             }
             &.gchoice_215_134_6,
             &.gchoice_215_98_6 {
@@ -752,7 +755,7 @@
     &.monthly {
       .ginput_container_radio div.gfield_radio div label:after {
         content: " /mo";
-        font-size: 0.5em;
+        font-size: 0.8em;
         margin-left: 2px;
         margin-top: 0.9em;
         display: flex;
