@@ -12288,6 +12288,7 @@ label.gfield_label {
 
 .donor-form--content--headlines figure {
   width: 100%;
+  border-radius: 2px;
 }
 
 .donor-form--content--headlines figure img {
