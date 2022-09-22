@@ -12207,8 +12207,9 @@ label.gfield_label {
 }
 
 .donor-form {
-  background-color: #c4e5f4;
+  background-color: #c0ccda;
   background-image: url("https://2019.jewishdetroit.org/wp-content/uploads/2022/09/donate-bg.jpg");
+  background-size: cover;
   background-position: 50% 45%;
   background-repeat: no-repeat;
   min-height: calc(100vh - 500px);
