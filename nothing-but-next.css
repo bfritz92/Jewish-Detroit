@@ -1,0 +1,145 @@
+@import url("https://use.typekit.net/sup7lgm.css");
+@font-face{
+  font-family: DS-Digital;
+  src: url(/wp-content/themes/twentynineteen/fonts/DS-DIGIB.TTF);
+}
+
+#main {
+  padding: 0;
+}
+
+#main .entry-content {
+  margin: 0;
+  max-width: 100%;
+}
+
+.site-content {
+  overflow-x: hidden;
+}
+
+#post-67329 .entry-content .limit-900 {
+  max-width: 920px;
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#primary {
+background-color:rgb(10, 10, 10) ;
+
+}
+
+p,
+label,
+ul li,
+a {
+  font-family: "franklin-gothic-urw-comp", sans-serif;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: "franklin-gothic-urw-comp", sans-serif;
+  
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-left: 0;
+}
+
+ul.event-info {
+  text-align: center;
+}
+
+.wp-block-buttons .wp-block-button.is-style-fill a.wp-block-button__link {
+  font-family: "franklin-gothic-urw-comp";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.sponsors--tier-two .sponsor-grid a img {
+  max-width: 350px !important;
+}
+
+.shotclock .wp-block-kadence-countdown-timer span.kb-countdown-number{
+  font-family: DS-Digital;
+  color: #bd0101;
+}
+.shotclock .wp-block-kadence-countdown-timer span.kb-countdown-label{
+color: #bd0101;
+}
+
+section.nothinbut--splash {
+  
+}
+
+.funky-button-1 a {
+  font-family: DS-Digital !important;
+
+}
+.funky-button-1 a:hover {
+
+}
+.funky-button-2 a {
+
+}
+.funky-button-2 a:hover {
+
+}
+
+.event-info {
+  border: #fff solid 3px;
+  padding: 1rem 0;
+}
+.event-info a {
+  color:#fe4373;
+}
+
+.nothinbut--info {
+  background-image:url('https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/10/03135120/GettyImages-918375156-1.jpg');
+  background-size:cover;
+}
+
+.nothinbut--leadership {
+
+}
+
+.leadership-list li {
+
+  font-family: "Roboto Condensed";
+}
+
+.leadership-list li:first-child {
+ 
+  border-bottom: 3px solid #fff;
+  line-height: 1.2;
+}
+
+.nothinbut--sponsors {
+  background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/04/21104719/white-brick-wall-bg.jpg");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 586px) {
+  .nothinbut--footer .wp-block-columns {
+    flex-direction: column-reverse;
+  }
+}
+
+#donation-panel,
+#footer {
+  display: none;
+}
+/*# sourceMappingURL=distilled-and-chilled.css.map */
