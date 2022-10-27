@@ -1,0 +1,70 @@
+//breakpoints
+$mobile: 430px;
+$tablet: 700px;
+$large-tablet: 920px;
+$laptop: 1300px;
+$large: 1600px;
+$x-large: 1800px;
+$widescreen: 2000px;
+
+//fonts
+@import url("https://use.typekit.net/wvn5lzt.css");
+p,
+ul li,
+a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+//colors
+$blue: #1071b2;
+$navy: #032e49;
+$orange: #fc9226;
+$teal: #75c3c9;
+$purple: #dc97de;
+$cream: #ffcc98;
+$eggshell: #ffefdf;
+
+//Executive board
+.executive-table table tr td {
+  border: none;
+  line-height: 1;
+  font-weight: 400;
+}
+
+//Allocations Tables
+.allocations-table {
+  border-radius: 0px 40px 0px 40px;
+  padding: 0 10px;
+  &.israel {
+    border: solid 8px $blue;
+  }
+  &.national {
+    border: solid 8px $orange;
+  }
+  &.local {
+    border: solid 8px $purple;
+  }
+  &.community {
+    border: solid 8px $navy;
+  }
+  &.additional {
+    border: solid 8px $teal;
+  }
+  &.additional {
+    border: solid 8px $cream;
+  }
+  td {
+    border: none;
+  }
+}
