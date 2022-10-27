@@ -1,0 +1,59 @@
+@import url("https://use.typekit.net/wvn5lzt.css");
+p,
+ul li,
+a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.executive-table table tr td {
+  border: none;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.allocations-table {
+  border-radius: 0px 40px 0px 40px;
+  padding: 0 10px;
+}
+
+.allocations-table.israel {
+  border: solid 8px #1071b2;
+}
+
+.allocations-table.national {
+  border: solid 8px #fc9226;
+}
+
+.allocations-table.local {
+  border: solid 8px #dc97de;
+}
+
+.allocations-table.community {
+  border: solid 8px #032e49;
+}
+
+.allocations-table.additional {
+  border: solid 8px #75c3c9;
+}
+
+.allocations-table.additional {
+  border: solid 8px #ffcc98;
+}
+
+.allocations-table td {
+  border: none;
+}
+/*# sourceMappingURL=ap2022.css.map */
