@@ -53,6 +53,14 @@ strong {
   border: solid 8px #ffcc98;
 }
 
+.allocations-table.campaign {
+  border: solid 8px #ffcc98;
+}
+
+.allocations-table table {
+  line-height: 1;
+}
+
 .allocations-table td {
   border: none;
 }

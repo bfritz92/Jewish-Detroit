@@ -64,6 +64,12 @@ $eggshell: #ffefdf;
   &.additional {
     border: solid 8px $cream;
   }
+  &.campaign {
+    border: solid 8px $cream;
+  }
+  table {
+    line-height: 1;
+  }
   td {
     border: none;
   }
