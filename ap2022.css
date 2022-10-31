@@ -18,6 +18,33 @@ strong {
   font-style: normal;
 }
 
+#toc ul {
+  list-style: none;
+  line-height: 1.5;
+  -webkit-columns: 2;
+          columns: 2;
+  max-width: 900px;
+  margin: auto;
+  padding-left: 0;
+}
+
+#toc ul li {
+  font-family: "korolev-condensed";
+}
+
+.title-corners .kt-inside-inner-col,
+.title-corners.wp-block-group {
+  border-radius: 0px 40px 0px 40px;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5rem;
+}
+
 .executive-table table tr td {
   border: none;
   line-height: 1;
@@ -27,30 +54,55 @@ strong {
 .allocations-table {
   border-radius: 0px 40px 0px 40px;
   padding: 0 10px;
+  margin-bottom: 1.5rem;
+}
+
+.allocations-table strong {
+  font-size: 1.2rem;
+}
+
+.allocations-table table {
+  line-height: 0.8;
 }
 
 .allocations-table.israel {
   border: solid 8px #1071b2;
 }
 
+.allocations-table.israel strong {
+  color: #1071b2;
+}
+
 .allocations-table.national {
   border: solid 8px #fc9226;
+}
+
+.allocations-table.national strong {
+  color: #fc9226;
 }
 
 .allocations-table.local {
   border: solid 8px #dc97de;
 }
 
+.allocations-table.local strong {
+  color: #dc97de;
+}
+
 .allocations-table.community {
   border: solid 8px #032e49;
+}
+
+.allocations-table.community strong {
+  color: #032e49;
 }
 
 .allocations-table.additional {
   border: solid 8px #75c3c9;
 }
 
-.allocations-table.additional {
-  border: solid 8px #ffcc98;
+.allocations-table.additional strong {
+  color: #75c3c9;
 }
 
 .allocations-table.campaign {
@@ -63,5 +115,10 @@ strong {
 
 .allocations-table td {
   border: none;
+}
+
+.wp-block-kadence-tabs .kt-tabs-content-wrap .kt-tab-inner-content {
+  border-radius: 0px 40px 0px 40px;
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=ap2022.css.map */

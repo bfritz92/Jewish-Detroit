@@ -35,6 +35,29 @@ $purple: #dc97de;
 $cream: #ffcc98;
 $eggshell: #ffefdf;
 
+//Table of Contents
+#toc ul {
+  list-style: none;
+  line-height: 1.5;
+  columns: 2;
+  max-width: 900px;
+  margin: auto;
+  padding-left: 0;
+  li {
+    font-family: "korolev-condensed";
+  }
+}
+
+//Title corners
+.title-corners .kt-inside-inner-col,
+.title-corners.wp-block-group {
+  border-radius: 0px 40px 0px 40px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
 //Executive board
 .executive-table table tr td {
   border: none;
@@ -46,23 +69,44 @@ $eggshell: #ffefdf;
 .allocations-table {
   border-radius: 0px 40px 0px 40px;
   padding: 0 10px;
+  margin-bottom: 1.5rem;
+  strong {
+    font-size: 1.2rem;
+  }
+  table {
+    line-height: 0.8;
+    tbody tr:nth-child(2n + 1) {
+    }
+  }
   &.israel {
     border: solid 8px $blue;
+    strong {
+      color: $blue;
+    }
   }
   &.national {
     border: solid 8px $orange;
+    strong {
+      color: $orange;
+    }
   }
   &.local {
     border: solid 8px $purple;
+    strong {
+      color: $purple;
+    }
   }
   &.community {
     border: solid 8px $navy;
+    strong {
+      color: $navy;
+    }
   }
   &.additional {
     border: solid 8px $teal;
-  }
-  &.additional {
-    border: solid 8px $cream;
+    strong {
+      color: $teal;
+    }
   }
   &.campaign {
     border: solid 8px $cream;
@@ -72,5 +116,15 @@ $eggshell: #ffefdf;
   }
   td {
     border: none;
+  }
+}
+
+//tabs
+.wp-block-kadence-tabs {
+  .kt-tabs-title-list {
+  }
+  .kt-tabs-content-wrap .kt-tab-inner-content {
+    border-radius: 0px 40px 0px 40px;
+    margin-bottom: 1.5rem;
   }
 }
