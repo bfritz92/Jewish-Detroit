@@ -597,16 +597,19 @@
   grid-row-gap: 0 !important;
 }
 
-#gform_wrapper_215 {
+#gform_wrapper_215,
+#gform_wrapper_1010 {
   background-color: #f8f8f8;
   border-radius: 2px;
-  #gform_fields_215 {
+  #gform_fields_215,
+  #gform_fields_1010 {
     grid-row-gap: 0;
   }
   form.donation-form {
     .ginput_container_radio {
       width: 100%;
-      #input_215_97 {
+      #input_215_97,
+      #input_1010_97 {
         // one time or monthly
         min-width: 100%;
         display: flex;
@@ -630,6 +633,7 @@
             font-family: $font__heading;
             color: $color__jfmd-blue;
             transition: background-color 150ms ease-in-out;
+            text-align: center;
             &:hover,
             &:focus {
               color: #fff;

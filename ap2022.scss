@@ -75,13 +75,14 @@ $eggshell: #ffefdf;
   }
   table {
     line-height: 0.8;
-    tbody tr:nth-child(2n + 1) {
-    }
   }
   &.israel {
     border: solid 8px $blue;
     strong {
       color: $blue;
+    }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: #1071b23b;
     }
   }
   &.national {
@@ -89,11 +90,17 @@ $eggshell: #ffefdf;
     strong {
       color: $orange;
     }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: #fc922666;
+    }
   }
   &.local {
     border: solid 8px $purple;
     strong {
-      color: $purple;
+      color: #b323b7;
+    }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: #dc97de59;
     }
   }
   &.community {
@@ -101,15 +108,27 @@ $eggshell: #ffefdf;
     strong {
       color: $navy;
     }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: #032e4936;
+    }
   }
   &.additional {
     border: solid 8px $teal;
     strong {
-      color: $teal;
+      color: #178c95;
+    }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: #75c3c970;
     }
   }
   &.campaign {
     border: solid 8px $cream;
+    strong {
+      color: $orange;
+    }
+    table tbody tr:nth-child(2n + 1) {
+      background-color: #ffcc9887;
+    }
   }
   table {
     line-height: 1;
@@ -127,4 +146,7 @@ $eggshell: #ffefdf;
     border-radius: 0px 40px 0px 40px;
     margin-bottom: 1.5rem;
   }
+}
+
+.agencies-tabs {
 }

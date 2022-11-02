@@ -1596,20 +1596,28 @@ label.gfield_label {
   grid-row-gap: 0 !important;
 }
 
-#gform_wrapper_215 {
+#gform_wrapper_215,
+#gform_wrapper_1010 {
   background-color: #f8f8f8;
   border-radius: 2px;
 }
 
-#gform_wrapper_215 #gform_fields_215 {
+#gform_wrapper_215 #gform_fields_215,
+#gform_wrapper_215 #gform_fields_1010,
+#gform_wrapper_1010 #gform_fields_215,
+#gform_wrapper_1010 #gform_fields_1010 {
   grid-row-gap: 0;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio {
+#gform_wrapper_215 form.donation-form .ginput_container_radio,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio {
   width: 100%;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97,
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 {
   min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1621,7 +1629,10 @@ label.gfield_label {
   padding: 0 1.5rem;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice,
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice {
   border: none;
   padding: 0;
   margin: 0;
@@ -1631,7 +1642,10 @@ label.gfield_label {
           flex-grow: 1;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label,
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice label,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label {
   display: inline-block;
   padding: 0.5rem 1rem;
   border: 2px #004b7a solid;
@@ -1642,33 +1656,46 @@ label.gfield_label {
   color: #004b7a;
   -webkit-transition: background-color 150ms ease-in-out;
   transition: background-color 150ms ease-in-out;
+  text-align: center;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus,
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:hover,
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:focus,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:hover,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:focus {
   color: #fff;
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked + label {
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked + label,
+#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice input:checked + label,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked + label,
+#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice input:checked + label {
   color: #fff;
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] {
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"],
+#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] {
   visibility: hidden;
   position: absolute;
   left: -9999px;
   z-index: -99;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label {
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label,
+#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"]:checked + label {
   background-color: #004b7a;
   color: #fff !important;
   display: inline-block;
   font-weight: 700;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label {
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label,
+#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] label {
   min-width: 100%;
   padding: 0.5rem 0.25rem;
   border: 2px solid #004b7a;
@@ -1679,12 +1706,15 @@ label.gfield_label {
   transition: background-color 150ms ease-in-out;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus {
+#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus,
+#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] label:hover,
+#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] label:focus {
   background-color: #004b7a;
   color: #fff !important;
 }
 
-#gform_wrapper_215 .donation-form--amount div.gfield_radio {
+#gform_wrapper_215 .donation-form--amount div.gfield_radio,
+#gform_wrapper_1010 .donation-form--amount div.gfield_radio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3;
@@ -1692,11 +1722,13 @@ label.gfield_label {
   grid-gap: 10px;
 }
 
-#gform_wrapper_215 .donation-form--amount div.gfield_radio input {
+#gform_wrapper_215 .donation-form--amount div.gfield_radio input,
+#gform_wrapper_1010 .donation-form--amount div.gfield_radio input {
   display: none;
 }
 
-#gform_wrapper_215 .donation-form--amount div.gchoice label {
+#gform_wrapper_215 .donation-form--amount div.gchoice label,
+#gform_wrapper_1010 .donation-form--amount div.gchoice label {
   background-color: #fff;
   max-width: 100%;
   height: 60px;
@@ -1713,20 +1745,28 @@ label.gfield_label {
   border: 3px solid #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time, #gform_wrapper_215 .donation-form--amount.monthly {
+#gform_wrapper_215 .donation-form--amount.one-time, #gform_wrapper_215 .donation-form--amount.monthly,
+#gform_wrapper_1010 .donation-form--amount.one-time,
+#gform_wrapper_1010 .donation-form--amount.monthly {
   padding: 0.5rem 1rem;
   text-align: center;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio {
   padding: 0;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice {
   width: 100%;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label {
   min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1739,27 +1779,38 @@ label.gfield_label {
   margin-left: 0px;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:hover,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:hover {
   color: #fff;
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:before {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:before, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:before,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice label:before,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice label:before {
   content: "$";
 }
 
-#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child {
+#gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child {
   width: 100%;
   grid-column: 1/-1;
 }
 
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:before,
 #gform_wrapper_215 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:after, #gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:before,
-#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:after {
+#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:after,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:before,
+#gform_wrapper_1010 .donation-form--amount.one-time .ginput_container_radio .gfield_radio .gchoice:last-child label:after,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:before,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio .gfield_radio .gchoice:last-child label:after {
   content: none;
 }
 
-#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div label:after {
+#gform_wrapper_215 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div label:after,
+#gform_wrapper_1010 .donation-form--amount.monthly .ginput_container_radio div.gfield_radio div label:after {
   content: " /mo";
   font-size: 0.8em;
   margin-left: 2px;
@@ -1769,7 +1820,8 @@ label.gfield_label {
   display: flex;
 }
 
-#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput {
+#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .preinput,
+#gform_wrapper_1010 .donation-form--amount + .gfield .ginput_container .preinput {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1784,7 +1836,8 @@ label.gfield_label {
   font-family: "gotham-bold", sans-serif;
 }
 
-#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput {
+#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput,
+#gform_wrapper_1010 .donation-form--amount + .gfield .ginput_container .otherinput {
   position: relative;
   top: 10%;
   border: 0px;
@@ -1793,7 +1846,8 @@ label.gfield_label {
   width: calc(100% - 25px);
 }
 
-#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput input {
+#gform_wrapper_215 .donation-form--amount + .gfield .ginput_container .otherinput input,
+#gform_wrapper_1010 .donation-form--amount + .gfield .ginput_container .otherinput input {
   position: relative;
   width: 55%;
   top: 10%;

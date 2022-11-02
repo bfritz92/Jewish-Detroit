@@ -73,6 +73,10 @@ strong {
   color: #1071b2;
 }
 
+.allocations-table.israel table tbody tr:nth-child(2n + 1) {
+  background-color: #1071b23b;
+}
+
 .allocations-table.national {
   border: solid 8px #fc9226;
 }
@@ -81,12 +85,20 @@ strong {
   color: #fc9226;
 }
 
+.allocations-table.national table tbody tr:nth-child(2n + 1) {
+  background-color: #fc922666;
+}
+
 .allocations-table.local {
   border: solid 8px #dc97de;
 }
 
 .allocations-table.local strong {
-  color: #dc97de;
+  color: #b323b7;
+}
+
+.allocations-table.local table tbody tr:nth-child(2n + 1) {
+  background-color: #dc97de59;
 }
 
 .allocations-table.community {
@@ -97,16 +109,32 @@ strong {
   color: #032e49;
 }
 
+.allocations-table.community table tbody tr:nth-child(2n + 1) {
+  background-color: #032e4936;
+}
+
 .allocations-table.additional {
   border: solid 8px #75c3c9;
 }
 
 .allocations-table.additional strong {
-  color: #75c3c9;
+  color: #178c95;
+}
+
+.allocations-table.additional table tbody tr:nth-child(2n + 1) {
+  background-color: #75c3c970;
 }
 
 .allocations-table.campaign {
   border: solid 8px #ffcc98;
+}
+
+.allocations-table.campaign strong {
+  color: #fc9226;
+}
+
+.allocations-table.campaign table tbody tr:nth-child(2n + 1) {
+  background-color: #ffcc9887;
 }
 
 .allocations-table table {
