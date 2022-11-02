@@ -1,4 +1,4 @@
-/* .donate-page {
+.donate-page {
   .page {
     .entry-header {
       .entry-title {
@@ -171,11 +171,11 @@
   margin: auto;
   max-width: 900px;
 }
-*/
+
 /* Steps */
-// .donation-form {
-/* Donation Type Descriptions and Decorations */
-/*&--donation-type .ginput_container_radio {
+.donation-form {
+  /* Donation Type Descriptions and Decorations */
+  &--donation-type .ginput_container_radio {
     .gfield_radio {
       margin: auto;
       max-width: 100%;
@@ -183,7 +183,7 @@
       transition: height 250ms ease-in-out;
       li input[type="radio"] {
         /* Hide the checkbox */
-/*display: none;
+        display: none;
 
         + label {
           font-family: gotham-bold;
@@ -219,17 +219,16 @@
           }
         }
 
-        /*
-				+ label:before {
-					font-family: "Font Awesome 5 Pro";
-					content: "";
-					font-weight: 900;
-					margin-right: 10px;
-					display: inline-block;
-					transform-origin:40% 55%;
-				  }*/
-/* Blue BG when checked */
-/*&:checked + label {
+        + label:before {
+          font-family: "Font Awesome 5 Pro";
+          content: "";
+          font-weight: 900;
+          margin-right: 10px;
+          display: inline-block;
+          transform-origin: 40% 55%;
+        }
+        /* Blue BG when checked */
+        &:checked + label {
           background-color: $color__jfmd-blue;
           color: #fff;
           font-weight: 700;
@@ -237,23 +236,23 @@
             color: #fff;
           }
         }
-        /* Turn the arrows 
-				  &:checked + label:before {
-					transform: rotate(90deg);
-					transition: transform 200ms ease-in;
-					transition-delay: 0;
-				  }*/
-/* Description Text Styling 
-				  &:checked + label:after {
-					font-family: gotham-book;
-					font-size: 0.6rem;
-					display: block;
-					border-top: 2px solid #fff;
-					padding: 5px 0 0 25px;
-					margin-top: 5px;
-					height: 100%;
-				  }*/
-/*}
+        /* Turn the arrows */
+        &:checked + label:before {
+          transform: rotate(90deg);
+          transition: transform 200ms ease-in;
+          transition-delay: 0;
+        }
+        /* Description Text Styling */
+        &:checked + label:after {
+          font-family: gotham-book;
+          font-size: 0.6rem;
+          display: block;
+          border-top: 2px solid #fff;
+          padding: 5px 0 0 25px;
+          margin-top: 5px;
+          height: 100%;
+        }
+      }
       ul.gfield_radio {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -317,7 +316,7 @@
 }
 
 /* Misc. Gravtiy Forms Tweaks */
-/*div.ginput_complex.ginput_container.gf_name_has_3 span {
+div.ginput_complex.ginput_container.gf_name_has_3 span {
   width: 100%;
 }
 .gchoice_456_135_6 {
@@ -341,7 +340,7 @@
 }
 
 /* FRIDAY AUG 9 */
-/*.gfield.donation-form--amount .ginput_container_radio {
+.gfield.donation-form--amount .ginput_container_radio {
   max-width: 80%;
   margin: auto;
 }
@@ -414,11 +413,12 @@
   margin: 0;
 }
 
-/* .gform_fields .pricing-preview.gfield_visibility_visible:not([style='display:none']):last-of-type{
-	background-color:$color__jfmd-blue;
-} */
+.gform_fields
+  .pricing-preview.gfield_visibility_visible:not([style="display:none"]):last-of-type {
+  background-color: $color__jfmd-blue;
+}
 
-/*.total-donation .ginput_container_number {
+.total-donation .ginput_container_number {
   font-size: 3rem;
   font-family: gotham-bold;
   margin-left: auto !important;
@@ -447,24 +447,29 @@
 #field_456_100 label {
   font-size: 1rem;
 }
-/*
-#field_12_31 .ginput_container_checkbox input{
-	display:none;
-}
-#field_12_31 .ginput_container_checkbox input[type=checkbox]:not(:checked) + label:before {
-	content:"+ ";
-	color:$color__jfmd-cyan;
-	font-family:gotham-bold;
-}
-#field_12_31 .ginput_container_checkbox input[type=checkbox]:checked + label:before {
-	content:"- ";
-	color:$color__jfmd-cyan;
-	font-family:gotham-bold;
-}
-*/
 
-/* Make the checkbox to add a donor into a +/- */
-/*#field_456_31,
+#field_12_31 .ginput_container_checkbox input {
+  display: none;
+}
+#field_12_31
+  .ginput_container_checkbox
+  input[type="checkbox"]:not(:checked)
+  + label:before {
+  content: "+ ";
+  color: $color__jfmd-cyan;
+  font-family: gotham-bold;
+}
+#field_12_31
+  .ginput_container_checkbox
+  input[type="checkbox"]:checked
+  + label:before {
+  content: "- ";
+  color: $color__jfmd-cyan;
+  font-family: gotham-bold;
+}
+
+/* Make the checkbox to add a donor into a + /- */
+#field_456_31,
 #field_456_47,
 #field_456_48 {
   .ginput_container_checkbox input {
@@ -484,7 +489,7 @@
   }
 }
 /* Full-width additional donor forms */
-/*#field_456_33,
+#field_456_33,
 #field_456_34,
 #field_456_35 {
   .ginput_complex {
@@ -493,12 +498,11 @@
     }
   }
 }
-*/
 
 /* BEGIN 2022 DONOR FORM REDESIGN */
-.page-id-40912 #donation-panel {
+/* .page-id-40912 #donation-panel {
   display: none;
-}
+} */
 
 //styles
 @mixin legend-type {
