@@ -1788,15 +1788,15 @@ input[type="checkbox"]:not(:checked)
   grid-row-gap: 0;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio {
+#gform_wrapper_215 form .ginput_container_radio,
+#gform_wrapper_1010 form .ginput_container_radio {
   width: 100%;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97,
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 {
+#gform_wrapper_215 form .ginput_container_radio #input_215_97,
+#gform_wrapper_215 form .ginput_container_radio #input_1010_97,
+#gform_wrapper_1010 form .ginput_container_radio #input_215_97,
+#gform_wrapper_1010 form .ginput_container_radio #input_1010_97 {
   min-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1808,10 +1808,10 @@ input[type="checkbox"]:not(:checked)
   padding: 0 1.5rem;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice,
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice {
+#gform_wrapper_215 form .ginput_container_radio #input_215_97 .gchoice,
+#gform_wrapper_215 form .ginput_container_radio #input_1010_97 .gchoice,
+#gform_wrapper_1010 form .ginput_container_radio #input_215_97 .gchoice,
+#gform_wrapper_1010 form .ginput_container_radio #input_1010_97 .gchoice {
   border: none;
   padding: 0;
   margin: 0;
@@ -1821,10 +1821,10 @@ input[type="checkbox"]:not(:checked)
           flex-grow: 1;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label,
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice label,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label {
+#gform_wrapper_215 form .ginput_container_radio #input_215_97 .gchoice label,
+#gform_wrapper_215 form .ginput_container_radio #input_1010_97 .gchoice label,
+#gform_wrapper_1010 form .ginput_container_radio #input_215_97 .gchoice label,
+#gform_wrapper_1010 form .ginput_container_radio #input_1010_97 .gchoice label {
   display: inline-block;
   padding: 0.5rem 1rem;
   border: 2px #004b7a solid;
@@ -1838,43 +1838,43 @@ input[type="checkbox"]:not(:checked)
   text-align: center;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover, #gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus,
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:hover,
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:focus,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:hover,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice label:focus,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:hover,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice label:focus {
+#gform_wrapper_215 form .ginput_container_radio #input_215_97 .gchoice label:hover, #gform_wrapper_215 form .ginput_container_radio #input_215_97 .gchoice label:focus,
+#gform_wrapper_215 form .ginput_container_radio #input_1010_97 .gchoice label:hover,
+#gform_wrapper_215 form .ginput_container_radio #input_1010_97 .gchoice label:focus,
+#gform_wrapper_1010 form .ginput_container_radio #input_215_97 .gchoice label:hover,
+#gform_wrapper_1010 form .ginput_container_radio #input_215_97 .gchoice label:focus,
+#gform_wrapper_1010 form .ginput_container_radio #input_1010_97 .gchoice label:hover,
+#gform_wrapper_1010 form .ginput_container_radio #input_1010_97 .gchoice label:focus {
   color: #fff;
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked + label,
-#gform_wrapper_215 form.donation-form .ginput_container_radio #input_1010_97 .gchoice input:checked + label,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_215_97 .gchoice input:checked + label,
-#gform_wrapper_1010 form.donation-form .ginput_container_radio #input_1010_97 .gchoice input:checked + label {
+#gform_wrapper_215 form .ginput_container_radio #input_215_97 .gchoice input:checked + label,
+#gform_wrapper_215 form .ginput_container_radio #input_1010_97 .gchoice input:checked + label,
+#gform_wrapper_1010 form .ginput_container_radio #input_215_97 .gchoice input:checked + label,
+#gform_wrapper_1010 form .ginput_container_radio #input_1010_97 .gchoice input:checked + label {
   color: #fff;
   background-color: #004b7a;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"],
-#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] {
+#gform_wrapper_215 form .gfield-choice-input[type="radio"],
+#gform_wrapper_1010 form .gfield-choice-input[type="radio"] {
   visibility: hidden;
   position: absolute;
   left: -9999px;
   z-index: -99;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"]:checked + label,
-#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"]:checked + label {
+#gform_wrapper_215 form .gfield-choice-input[type="radio"]:checked + label,
+#gform_wrapper_1010 form .gfield-choice-input[type="radio"]:checked + label {
   background-color: #004b7a;
   color: #fff !important;
   display: inline-block;
   font-weight: 700;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label,
-#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] label {
+#gform_wrapper_215 form .gfield-choice-input[type="radio"] label,
+#gform_wrapper_1010 form .gfield-choice-input[type="radio"] label {
   min-width: 100%;
   padding: 0.5rem 0.25rem;
   border: 2px solid #004b7a;
@@ -1885,9 +1885,9 @@ input[type="checkbox"]:not(:checked)
   transition: background-color 150ms ease-in-out;
 }
 
-#gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form.donation-form .gfield-choice-input[type="radio"] label:focus,
-#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] label:hover,
-#gform_wrapper_1010 form.donation-form .gfield-choice-input[type="radio"] label:focus {
+#gform_wrapper_215 form .gfield-choice-input[type="radio"] label:hover, #gform_wrapper_215 form .gfield-choice-input[type="radio"] label:focus,
+#gform_wrapper_1010 form .gfield-choice-input[type="radio"] label:hover,
+#gform_wrapper_1010 form .gfield-choice-input[type="radio"] label:focus {
   background-color: #004b7a;
   color: #fff !important;
 }
