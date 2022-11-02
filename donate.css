@@ -2052,61 +2052,79 @@ input[type="checkbox"]:not(:checked)
   margin-top: -71px;
 }
 
-#gform_next_button_215_20 {
+#gform_next_button_215_20,
+#gform_next_button_1010_20 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
 }
 
 #field_215_29,
+#field_1010_29,
 #field_215_131,
+#field_1010_131,
 #field_215_96,
+#field_1010_96,
 #field_215_153,
-#field_215_214, #field_215_172 {
+#field_1010_153,
+#field_215_214,
+#field_1010_214,
+#field_215_172,
+#field_1010_172 {
   display: none !important;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields {
+#gform_page_215_2 .gform_page_fields .gform_fields,
+#gform_page_1010_2 .gform_page_fields .gform_fields {
   grid-row-gap: 0;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html {
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html,
+#gform_page_1010_2 .gform_page_fields .gform_fields .gfield_html {
   padding: 0 1.5rem;
   text-align: center;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link {
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link,
+#gform_page_1010_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link {
   display: inline;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link i {
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link i,
+#gform_page_1010_2 .gform_page_fields .gform_fields .gfield_html .gwmpn-page-link i {
   font-size: 0.8rem;
   position: relative;
   bottom: 6px;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html h4 {
+#gform_page_215_2 .gform_page_fields .gform_fields .gfield_html h4,
+#gform_page_1010_2 .gform_page_fields .gform_fields .gfield_html h4 {
   font-size: 0.7rem;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .ginput_container_checkbox {
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .ginput_container_checkbox,
+#gform_page_1010_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .ginput_container_checkbox {
   display: inline-block;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .ginput_container_checkbox .gfield_checkbox .gchoice label {
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .ginput_container_checkbox .gfield_checkbox .gchoice label,
+#gform_page_1010_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .ginput_container_checkbox .gfield_checkbox .gchoice label {
   width: 122px;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description {
+#gform_page_215_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description,
+#gform_page_1010_2 .gform_page_fields .gform_fields .donor-form--monthly-ask .gfield_description {
   display: inline-block;
   width: 190px;
 }
 
-#gform_page_215_2 .gform_page_fields .gform_fields #field_215_153 {
+#gform_page_215_2 .gform_page_fields .gform_fields #field_215_153,
+#gform_page_1010_2 .gform_page_fields .gform_fields #field_215_153 {
   display: none;
 }
 
-#gform_page_215_2 .gform_page_footer {
+#gform_page_215_2 .gform_page_footer,
+#gform_page_1010_2 .gform_page_footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2115,37 +2133,46 @@ input[type="checkbox"]:not(:checked)
   gap: 10px;
 }
 
-#gform_page_215_2 .gform_page_footer input {
+#gform_page_215_2 .gform_page_footer input,
+#gform_page_1010_2 .gform_page_footer input {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
 
-#gform_page_215_2 .gform_page_footer input:last-child {
+#gform_page_215_2 .gform_page_footer input:last-child,
+#gform_page_1010_2 .gform_page_footer input:last-child {
   background-color: #0094d0;
   border: 2px solid #0094d0;
   color: #fff;
   margin-left: 0 !important;
 }
 
-#gform_page_215_2 .gform_page_footer input:last-child:hover, #gform_page_215_2 .gform_page_footer input:last-child:focus, #gform_page_215_2 .gform_page_footer input:last-child:active {
+#gform_page_215_2 .gform_page_footer input:last-child:hover, #gform_page_215_2 .gform_page_footer input:last-child:focus, #gform_page_215_2 .gform_page_footer input:last-child:active,
+#gform_page_1010_2 .gform_page_footer input:last-child:hover,
+#gform_page_1010_2 .gform_page_footer input:last-child:focus,
+#gform_page_1010_2 .gform_page_footer input:last-child:active {
   border: 2px solid #004b7a;
   margin-left: 0 !important;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields {
+#gform_page_215_3 .gform_page_fields .gform_fields,
+#gform_page_1010_3 .gform_page_fields .gform_fields {
   grid-column-gap: 0;
   grid-row-gap: 0;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .gform_card_icon_container {
+#gform_page_215_3 .gform_page_fields .gform_fields .gform_card_icon_container,
+#gform_page_1010_3 .gform_page_fields .gform_fields .gform_card_icon_container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card label,
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card legend {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card legend,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card label,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card legend {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
@@ -2155,20 +2182,23 @@ input[type="checkbox"]:not(:checked)
   line-height: 1.1;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras {
   gap: 5px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span {
   -webkit-box-flex: 0 !important;
       -ms-flex: 0 0 50% !important;
           flex: 0 0 50% !important;
@@ -2176,14 +2206,16 @@ input[type="checkbox"]:not(:checked)
   margin-bottom: 0;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span {
   height: -webkit-min-content !important;
   height: -moz-min-content !important;
   height: min-content !important;
   margin-bottom: 0 !important;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
   border-radius: 2px;
   border: 1px solid #ccc;
   background: #fff;
@@ -2192,49 +2224,58 @@ input[type="checkbox"]:not(:checked)
 }
 
 @media only screen and (min-width: 768px) {
-  #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
+  #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select,
+  #gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_left span span select {
     height: 45px;
   }
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 38%;
           flex: 0 0 38%;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right input.ginput_card_security_code {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right input.ginput_card_security_code,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right input.ginput_card_security_code {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 68%;
           flex: 0 0 68%;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right span.ginput_card_security_code_icon {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right span.ginput_card_security_code_icon,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right span.ginput_card_security_code_icon {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right label {
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right label,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras .ginput_cardinfo_right label {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half {
+#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half,
+#gform_page_1010_3 .gform_page_fields .gform_fields .gfield--width-half {
   padding: 0.5rem 1rem;
 }
 
 @media only screen and (min-width: 768px) {
-  #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half.email-address {
+  #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half.email-address,
+  #gform_page_1010_3 .gform_page_fields .gform_fields .gfield--width-half.email-address {
     padding: 0.5rem 0.5rem 0.5rem 1rem;
   }
-  #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half.phone-number {
+  #gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half.phone-number,
+  #gform_page_1010_3 .gform_page_fields .gform_fields .gfield--width-half.phone-number {
     padding: 0.5rem 1rem 0.5rem 0.5rem;
   }
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half div:last-child {
+#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half div:last-child,
+#gform_page_1010_3 .gform_page_fields .gform_fields .gfield--width-half div:last-child {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
@@ -2245,7 +2286,9 @@ input[type="checkbox"]:not(:checked)
 }
 
 #gform_page_215_4 .gform_page_fields .gform_fields label,
-#gform_page_215_4 .gform_page_fields .gform_fields legend {
+#gform_page_215_4 .gform_page_fields .gform_fields legend,
+#gform_page_1010_4 .gform_page_fields .gform_fields label,
+#gform_page_1010_4 .gform_page_fields .gform_fields legend {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
@@ -2255,16 +2298,19 @@ input[type="checkbox"]:not(:checked)
   line-height: 1.1;
 }
 
-#field_215_1 {
+#field_215_1,
+#field_1010_1 {
   padding: 1rem;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container {
+#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container {
   border: none;
   background-color: transparent;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container input {
+#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container input,
+#gform_page_1010_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container input {
   border: none;
   background-color: transparent;
   color: #0094d0;
@@ -2279,7 +2325,19 @@ input[type="checkbox"]:not(:checked)
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_210,
-#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 {
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_193,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_194,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_210,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_211,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_193,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_194,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_210,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_211,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_193,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_194,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_210,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_211 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2294,7 +2352,19 @@ input[type="checkbox"]:not(:checked)
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 label,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 label,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_210 label,
-#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 label {
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 label,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_193 label,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_194 label,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_210 label,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_211 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_193 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_194 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_210 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_211 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_193 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_194 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_210 label,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_211 label {
   font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
   -webkit-box-flex: 0;
@@ -2316,7 +2386,19 @@ input[type="checkbox"]:not(:checked)
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 div.ginput_container,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 div.ginput_container,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_210 div.ginput_container,
-#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 div.ginput_container {
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 div.ginput_container,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_193 div.ginput_container,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_194 div.ginput_container,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_210 div.ginput_container,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_211 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_193 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_194 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_210 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_211 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_193 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_194 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_210 div.ginput_container,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_211 div.ginput_container {
   border: none;
   background-color: transparent;
   -webkit-box-flex: 0;
@@ -2337,18 +2419,32 @@ input[type="checkbox"]:not(:checked)
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 input,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_194 input,
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_210 input,
-#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 input {
+#gform_page_215_5 .gform_page_fields .gform_fields #field_215_211 input,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_193 input,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_194 input,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_210 input,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_211 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_193 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_194 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_210 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_215_211 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_193 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_194 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_210 input,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_211 input {
   border: none;
   background-color: transparent;
   font-family: "gotham-bold", sans-serif;
   font-size: 0.6rem;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .gfield_calculation:last-child {
+#gform_page_215_5 .gform_page_fields .gform_fields .gfield_calculation:last-child,
+#gform_page_1010_5 .gform_page_fields .gform_fields .gfield_calculation:last-child {
   padding-bottom: 1rem;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .donor-info {
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info,
+#gform_page_1010_5 .gform_page_fields .gform_fields .donor-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2358,7 +2454,8 @@ input[type="checkbox"]:not(:checked)
           flex-direction: column;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .donor-info span.title {
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info span.title,
+#gform_page_1010_5 .gform_page_fields .gform_fields .donor-info span.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2371,18 +2468,21 @@ input[type="checkbox"]:not(:checked)
   font-family: "gotham-bold", sans-serif;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .name {
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .name,
+#gform_page_1010_5 .gform_page_fields .gform_fields .donor-info .name {
   padding-bottom: 10px;
   font-size: 1rem;
   padding-top: 10px;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .phone {
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .phone,
+#gform_page_1010_5 .gform_page_fields .gform_fields .donor-info .phone {
   padding-bottom: 15px;
   color: #6f6f6f;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .email {
+#gform_page_215_5 .gform_page_fields .gform_fields .donor-info .email,
+#gform_page_1010_5 .gform_page_fields .gform_fields .donor-info .email {
   color: #6f6f6f;
 }
 
@@ -2417,7 +2517,8 @@ input[type="checkbox"]:not(:checked)
   font-size: 0.7rem;
 }
 
-#field_215_163 {
+#field_215_163,
+#field_1010_163 {
   font-size: 15px;
 }
 
@@ -2464,13 +2565,16 @@ input[type="checkbox"]:not(:checked)
           flex: 0 0 50%;
 }
 
-.gform_page_footer.top_label #gform_next_button_215_20 {
+.gform_page_footer.top_label #gform_next_button_215_20,
+.gform_page_footer.top_label #gform_next_button_1010_20 {
   background-color: #0094d0;
   color: #fff;
   border: 2px #0094d0 solid;
 }
 
-.gform_page_footer.top_label #gform_next_button_215_20:hover, .gform_page_footer.top_label #gform_next_button_215_20:focus {
+.gform_page_footer.top_label #gform_next_button_215_20:hover, .gform_page_footer.top_label #gform_next_button_215_20:focus,
+.gform_page_footer.top_label #gform_next_button_1010_20:hover,
+.gform_page_footer.top_label #gform_next_button_1010_20:focus {
   background-color: #004b7a;
   border: 2px #004b7a solid;
 }

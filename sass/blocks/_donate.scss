@@ -644,7 +644,8 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
               color: #fff;
               background-color: $color__jfmd-blue;
             }
-            &#label_215_97_1 {
+            &#label_215_97_1,
+            &#label_1010_97_1 {
               &:hover,
               &:focus {
                 //color: #fff;
@@ -826,22 +827,31 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   margin-top: -71px;
 }
 //first Donate button
-#gform_next_button_215_20 {
+#gform_next_button_215_20,
+#gform_next_button_1010_20 {
   flex: 0 0 100%;
 }
 
 // Hide Payment amount and transaction fee fields
-#field_215_29, //one time
-  #field_215_131, //transaction
-  #field_215_96, //monthly
+#field_215_29,
+#field_1010_29, //one time
+  #field_215_131,
+  #field_1010_131, //transaction
+  #field_215_96,
+  #field_1010_96, //monthly
   #field_215_153,
-  #field_215_214, #field_215_172 {
+  #field_1010_153,
+  #field_215_214,
+  #field_1010_214, 
+  #field_215_172,
+  #field_1010_172 {
   //2nd page monthly ask
   display: none !important;
 }
 
 //SECOND PAGE
-#gform_page_215_2 {
+#gform_page_215_2,
+#gform_page_1010_2 {
   .gform_page_fields .gform_fields {
     grid-row-gap: 0;
     .gfield_html {
@@ -898,7 +908,8 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 }
 
 //PAYMENT PAGE
-#gform_page_215_3 .gform_page_fields .gform_fields {
+#gform_page_215_3 .gform_page_fields .gform_fields,
+#gform_page_1010_3 .gform_page_fields .gform_fields {
   grid-column-gap: 0;
   grid-row-gap: 0;
   .gform_card_icon_container {
@@ -967,18 +978,21 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 }
 
 //PERSONAL INFO
-#gform_page_215_4 .gform_page_fields .gform_fields {
+#gform_page_215_4 .gform_page_fields .gform_fields,
+#gform_page_1010_4 .gform_page_fields .gform_fields {
   label,
   legend {
     @include legend-type;
   }
 }
-#field_215_1 {
+#field_215_1,
+#field_1010_1 {
   padding: 1rem;
 }
 
 //PAYMENT SUMMARY
-#gform_page_215_5 .gform_page_fields .gform_fields {
+#gform_page_215_5 .gform_page_fields .gform_fields,
+#gform_page_1010_5 .gform_page_fields .gform_fields {
   .pricing-preview {
     div.ginput_container {
       border: none;
@@ -999,7 +1013,11 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   #field_215_193,
   #field_215_194,
   #field_215_210,
-  #field_215_211 {
+  #field_215_211,
+  #field_1010_193,
+  #field_1010_194,
+  #field_1010_210,
+  #field_1010_211 {
     display: flex;
     justify-content: center;
     padding-top: 0;
@@ -1083,7 +1101,8 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 }
 
 //More superficial styling
-#field_215_163 {
+#field_215_163,
+#field_1010_163 {
   font-size: 15px;
 }
 .gform_wrapper.gravity-theme fieldset.gray-bg,
@@ -1118,7 +1137,8 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   input {
     flex: 0 0 50%;
   }
-  #gform_next_button_215_20 {
+  #gform_next_button_215_20,
+  #gform_next_button_1010_20 {
     background-color: $color__jfmd-cyan;
     color: #fff;
     border: 2px $color__jfmd-cyan solid;
