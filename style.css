@@ -12081,7 +12081,6 @@ label.gfield_label {
 }
 
 .donation-form--amount .ginput_container_radio {
-  max-width: 80%;
   margin: auto;
 }
 
@@ -12165,7 +12164,6 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 
 /* FRIDAY AUG 9 */
 #gform_wrapper_456 .gfield.donation-form--amount .ginput_container_radio {
-  max-width: 80%;
   margin: auto;
 }
 
