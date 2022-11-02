@@ -1,4 +1,4 @@
-.donate-page {
+.page-id-40912 .donate-page {
   .page {
     .entry-header {
       .entry-title {
@@ -116,7 +116,7 @@
   }
 }
 
-.gform_wrapper form .gf_page_steps {
+.page-id-40912 .gform_wrapper form .gf_page_steps {
   display: flex;
   flex-direction: column;
   @media only screen and (min-width: 500px) {
@@ -148,17 +148,17 @@
   }
 }
 
-.gform_body {
+.page-id-40912 .gform_body {
   color: $color__jfmd-blue;
   @media only screen and (min-width: $mobile) {
     padding: 0 10px;
   }
 }
-.donation-form_wrapper {
+.page-id-40912 .donation-form_wrapper {
   background-color: #fff;
 }
-.donate-page--form page .entry-content,
-.donate-page--form page .entry-header {
+.page-id-40912 .donate-page--form page .entry-content,
+.page-id-40912 .donate-page--form page .entry-header {
   margin: 0;
   max-width: 100%;
   @media only screen and (min-width: $mobile) {
@@ -166,7 +166,7 @@
   }
 }
 
-.gform_confirmation_message {
+.page-id-40912 .gform_confirmation_message {
   padding: 1rem 10px 2rem 10px;
   margin: auto;
   max-width: 900px;

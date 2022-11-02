@@ -975,21 +975,21 @@ label.gfield_label {
   font-size: 0.8rem;
 }
 
-.donate-page .page .entry-header .entry-title {
+.page-id-40912 .donate-page .page .entry-header .entry-title {
   display: none;
 }
 
-.donate-page .page .entry-content {
+.page-id-40912 .donate-page .page .entry-content {
   max-width: 100%;
   display: block;
 }
 
-.donate-page--splash {
+.page-id-40912 .donate-page--splash {
   display: block;
 }
 
 @media only screen and (min-width: 920px) {
-  .donate-page--splash {
+  .page-id-40912 .donate-page--splash {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[14];
@@ -998,7 +998,7 @@ label.gfield_label {
   }
 }
 
-.donate-page--splash .wp-block-image {
+.page-id-40912 .donate-page--splash .wp-block-image {
   width: 100%;
   z-index: 1;
   height: auto;
@@ -1006,7 +1006,7 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 920px) {
-  .donate-page--splash .wp-block-image {
+  .page-id-40912 .donate-page--splash .wp-block-image {
     grid-column: 1/-1;
     -ms-grid-row: 1;
     grid-row: 1;
@@ -1014,17 +1014,17 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 1800px) {
-  .donate-page--splash .wp-block-image {
+  .page-id-40912 .donate-page--splash .wp-block-image {
     grid-column: 7/-1;
   }
 }
 
-.donate-page--splash .wp-block-image img {
+.page-id-40912 .donate-page--splash .wp-block-image img {
   width: 100%;
 }
 
 @media only screen and (min-width: 920px) {
-  .donate-page--splash .wp-block-image img {
+  .page-id-40912 .donate-page--splash .wp-block-image img {
     height: 35vw;
     max-height: 100vh;
     min-height: 700px;
@@ -1036,51 +1036,51 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 1800px) {
-  .donate-page--splash .wp-block-image img {
+  .page-id-40912 .donate-page--splash .wp-block-image img {
     -o-object-position: top-right;
        object-position: top-right;
     height: 35vh;
   }
 }
 
-.donate-page--splash .wp-block-image .wp-image-42732 {
+.page-id-40912 .donate-page--splash .wp-block-image .wp-image-42732 {
   -o-object-position: 100% 50%;
      object-position: 100% 50%;
 }
 
 @media only screen and (min-width: 1800px) {
-  .donate-page--splash .wp-block-image .wp-image-42732 {
+  .page-id-40912 .donate-page--splash .wp-block-image .wp-image-42732 {
     -o-object-position: top-right;
        object-position: top-right;
   }
 }
 
-.donate-page--intro {
+.page-id-40912 .donate-page--intro {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px;
 }
 
-.donate-page--intro h2 {
+.page-id-40912 .donate-page--intro h2 {
   color: #004b7a;
 }
 
-.donate-page--intro h2 {
+.page-id-40912 .donate-page--intro h2 {
   font-size: 25px;
 }
 
 @media screen and (min-width: 320px) {
-  .donate-page--intro h2 {
+  .page-id-40912 .donate-page--intro h2 {
     font-size: calc( 25px + 23 * ((100vw - 320px) / 330));
   }
 }
 
 @media screen and (min-width: 650px) {
-  .donate-page--intro h2 {
+  .page-id-40912 .donate-page--intro h2 {
     font-size: 48px;
   }
 }
 
-.donate-page--intro p {
+.page-id-40912 .donate-page--intro p {
   color: #303030;
   margin-top: 0;
   line-height: 1.2;
@@ -1088,7 +1088,7 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 920px) {
-  .donate-page--intro {
+  .page-id-40912 .donate-page--intro {
     -ms-grid-column: 1;
     -ms-grid-column-span: 7;
     grid-column: 1/8;
@@ -1103,14 +1103,14 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 1800px) {
-  .donate-page--intro {
+  .page-id-40912 .donate-page--intro {
     -ms-grid-column: 2;
     -ms-grid-column-span: 5;
     grid-column: 2/7;
   }
 }
 
-.donate-page .gform_wrapper {
+.page-id-40912 .donate-page .gform_wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 10px;
@@ -1120,49 +1120,49 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 920px) {
-  .donate-page .gform_wrapper {
+  .page-id-40912 .donate-page .gform_wrapper {
     -webkit-transform: translateY(-5rem);
             transform: translateY(-5rem);
   }
 }
 
-.donate-page .gform_wrapper h2,
-.donate-page .gform_wrapper p {
+.page-id-40912 .donate-page .gform_wrapper h2,
+.page-id-40912 .donate-page .gform_wrapper p {
   color: #004b7a;
 }
 
-.donate-page .gform_wrapper .entry-header,
-.donate-page .gform_wrapper .entry-content {
+.page-id-40912 .donate-page .gform_wrapper .entry-header,
+.page-id-40912 .donate-page .gform_wrapper .entry-content {
   margin: auto;
   padding: 5px;
 }
 
-.donate-page .gform_wrapper .entry-header .gform_wrapper,
-.donate-page .gform_wrapper .entry-content .gform_wrapper {
+.page-id-40912 .donate-page .gform_wrapper .entry-header .gform_wrapper,
+.page-id-40912 .donate-page .gform_wrapper .entry-content .gform_wrapper {
   background-color: #fff;
 }
 
-.donate-page .gform_wrapper .gform_wrapper p,
-.donate-page .gform_wrapper .gform_wrapper h1,
-.donate-page .gform_wrapper .gform_wrapper h2,
-.donate-page .gform_wrapper .gform_wrapper h3 {
+.page-id-40912 .donate-page .gform_wrapper .gform_wrapper p,
+.page-id-40912 .donate-page .gform_wrapper .gform_wrapper h1,
+.page-id-40912 .donate-page .gform_wrapper .gform_wrapper h2,
+.page-id-40912 .donate-page .gform_wrapper .gform_wrapper h3 {
   color: #004b7a;
 }
 
-.donate-page .gform_wrapper .gform_wrapper p {
+.page-id-40912 .donate-page .gform_wrapper .gform_wrapper p {
   font-size: 0.8rem;
 }
 
-.donate-page .gform_wrapper .gform_wrapper .gform_page_footer {
+.page-id-40912 .donate-page .gform_wrapper .gform_wrapper .gform_page_footer {
   height: 100px;
 }
 
-.donate-page .gform_wrapper .gfield_label {
+.page-id-40912 .donate-page .gform_wrapper .gfield_label {
   font-family: gotham-bold;
   font-size: 1.3rem;
 }
 
-.gform_wrapper form .gf_page_steps {
+.page-id-40912 .gform_wrapper form .gf_page_steps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1173,7 +1173,7 @@ label.gfield_label {
 }
 
 @media only screen and (min-width: 500px) {
-  .gform_wrapper form .gf_page_steps {
+  .page-id-40912 .gform_wrapper form .gf_page_steps {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1187,7 +1187,7 @@ label.gfield_label {
   }
 }
 
-.gform_wrapper form .gf_page_steps .gf_step {
+.page-id-40912 .gform_wrapper form .gf_page_steps .gf_step {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -1206,44 +1206,44 @@ label.gfield_label {
   padding: 10px 5px;
 }
 
-.gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
+.page-id-40912 .gform_wrapper form .gf_page_steps .gf_step .gf_step_number {
   font-family: gotham-bold;
   font-size: 0.875rem;
 }
 
-.gform_wrapper form .gf_page_steps .gf_step_active {
+.page-id-40912 .gform_wrapper form .gf_page_steps .gf_step_active {
   color: #fff;
   background-color: #004b7a;
 }
 
-.gform_body {
+.page-id-40912 .gform_body {
   color: #004b7a;
 }
 
 @media only screen and (min-width: 430px) {
-  .gform_body {
+  .page-id-40912 .gform_body {
     padding: 0 10px;
   }
 }
 
-.donation-form_wrapper {
+.page-id-40912 .donation-form_wrapper {
   background-color: #fff;
 }
 
-.donate-page--form page .entry-content,
-.donate-page--form page .entry-header {
+.page-id-40912 .donate-page--form page .entry-content,
+.page-id-40912 .donate-page--form page .entry-header {
   margin: 0;
   max-width: 100%;
 }
 
 @media only screen and (min-width: 430px) {
-  .donate-page--form page .entry-content,
-  .donate-page--form page .entry-header {
+  .page-id-40912 .donate-page--form page .entry-content,
+  .page-id-40912 .donate-page--form page .entry-header {
     padding: 10px;
   }
 }
 
-.gform_confirmation_message {
+.page-id-40912 .gform_confirmation_message {
   padding: 1rem 10px 2rem 10px;
   margin: auto;
   max-width: 900px;
