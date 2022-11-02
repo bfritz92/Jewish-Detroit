@@ -340,134 +340,135 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 }
 
 /* FRIDAY AUG 9 */
-.page-id-40912 .gfield.donation-form--amount .ginput_container_radio {
-  max-width: 80%;
-  margin: auto;
-}
+.page-id-40912 {
+  .gfield.donation-form--amount .ginput_container_radio {
+    max-width: 80%;
+    margin: auto;
+  }
 
-.donation-form {
-  &--donor-name {
-    & div.ginput_container_name.ginput_complex.gf_name_has_3 {
-      display: flex;
-      flex-direction: column;
-      @media only screen and (min-width: 600px) and (max-width: $laptop) {
-        flex-direction: row;
-        .name_prefix {
-          width: 350px;
+  .donation-form {
+    &--donor-name {
+      & div.ginput_container_name.ginput_complex.gf_name_has_3 {
+        display: flex;
+        flex-direction: column;
+        @media only screen and (min-width: 600px) and (max-width: $laptop) {
+          flex-direction: row;
+          .name_prefix {
+            width: 350px;
+          }
+        }
+        & span {
+          width: 100%;
         }
       }
-      & span {
+    }
+  }
+
+  .gchoice_456_31_1.gform_wrapper li.hidden_label input {
+    margin-top: 0;
+  }
+
+  .pricing-preview {
+    width: 80%;
+    margin: auto;
+    & .ginput_container.ginput_container_number {
+      font-size: 2rem;
+      font-family: gotham-bold;
+      & input[type="text"] {
+        border: none;
+        color: $color__jfmd-cyan;
+        background-color: transparent;
         width: 100%;
       }
     }
   }
-}
+  #field_456_100,
+  #field_456_136 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 
-.gchoice_456_31_1.gform_wrapper li.hidden_label input {
-  margin-top: 0;
-}
-
-.pricing-preview {
-  width: 80%;
-  margin: auto;
-  & .ginput_container.ginput_container_number {
-    font-size: 2rem;
+  .gform_fields
+    .pricing-preview:not([style="display:none"]):last-of-type
+    .ginput_container_number {
+    font-size: 3rem;
     font-family: gotham-bold;
+    margin-left: auto !important;
     & input[type="text"] {
       border: none;
-      color: $color__jfmd-cyan;
+      color: $color__jfmd-blue;
       background-color: transparent;
       width: 100%;
+      text-align: center;
     }
   }
-}
-#field_456_100,
-#field_456_136 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-
-.gform_fields
-  .pricing-preview:not([style="display:none"]):last-of-type
-  .ginput_container_number {
-  font-size: 3rem;
-  font-family: gotham-bold;
-  margin-left: auto !important;
-  & input[type="text"] {
-    border: none;
-    color: $color__jfmd-blue;
-    background-color: transparent;
+  .gform_wrapper
+    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+    font-size: inherit;
+    font-family: inherit;
+    padding: 5px 4px;
+    letter-spacing: normal;
     width: 100%;
-    text-align: center;
+    margin: 0;
+  }
+
+  .gform_fields
+    .pricing-preview.gfield_visibility_visible:not([style="display:none"]):last-of-type {
+    background-color: $color__jfmd-blue;
+  }
+
+  .total-donation .ginput_container_number {
+    font-size: 3rem;
+    font-family: gotham-bold;
+    margin-left: auto !important;
+    & input[type="text"] {
+      border: none;
+      color: $color__jfmd-blue;
+      background-color: transparent;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .gchoice_456_133_6,
+  .gchoice_456_98_6 {
+    grid-column: 1/-1;
+  }
+  .entry .entry-content hr {
+    background-color: $color__jfmd-blue;
+    border: 0;
+    height: 2px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 80%;
+    text-align: left;
+  }
+  #field_456_100 label {
+    font-size: 1rem;
+  }
+
+  #field_12_31 .ginput_container_checkbox input {
+    display: none;
+  }
+  #field_12_31
+    .ginput_container_checkbox
+    input[type="checkbox"]:not(:checked)
+    + label:before {
+    content: "+ ";
+    color: $color__jfmd-cyan;
+    font-family: gotham-bold;
+  }
+  #field_12_31
+    .ginput_container_checkbox
+    input[type="checkbox"]:checked
+    + label:before {
+    content: "- ";
+    color: $color__jfmd-cyan;
+    font-family: gotham-bold;
   }
 }
-.gform_wrapper
-  input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
-  font-size: inherit;
-  font-family: inherit;
-  padding: 5px 4px;
-  letter-spacing: normal;
-  width: 100%;
-  margin: 0;
-}
-
-.gform_fields
-  .pricing-preview.gfield_visibility_visible:not([style="display:none"]):last-of-type {
-  background-color: $color__jfmd-blue;
-}
-
-.total-donation .ginput_container_number {
-  font-size: 3rem;
-  font-family: gotham-bold;
-  margin-left: auto !important;
-  & input[type="text"] {
-    border: none;
-    color: $color__jfmd-blue;
-    background-color: transparent;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.gchoice_456_133_6,
-.gchoice_456_98_6 {
-  grid-column: 1/-1;
-}
-.entry .entry-content hr {
-  background-color: $color__jfmd-blue;
-  border: 0;
-  height: 2px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  max-width: 80%;
-  text-align: left;
-}
-#field_456_100 label {
-  font-size: 1rem;
-}
-
-#field_12_31 .ginput_container_checkbox input {
-  display: none;
-}
-#field_12_31
-  .ginput_container_checkbox
-  input[type="checkbox"]:not(:checked)
-  + label:before {
-  content: "+ ";
-  color: $color__jfmd-cyan;
-  font-family: gotham-bold;
-}
-#field_12_31
-  .ginput_container_checkbox
-  input[type="checkbox"]:checked
-  + label:before {
-  content: "- ";
-  color: $color__jfmd-cyan;
-  font-family: gotham-bold;
-}
-
 /* Make the checkbox to add a donor into a + /- */
 #field_456_31,
 #field_456_47,
