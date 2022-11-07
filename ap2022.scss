@@ -35,6 +35,20 @@ $purple: #dc97de;
 $cream: #ffcc98;
 $eggshell: #ffefdf;
 
+//Table styles mixin
+@mixin table-styles($color, $background, $fontsize) {
+  tbody {
+    color: $color;
+    font-size: $fontsize;
+    tr:nth-child(2n + 1) {
+      background-color: $background;
+      color: $color;
+    }
+  }
+  tr td {
+    border: none;
+  }
+}
 //Table of Contents
 #toc ul {
   list-style: none;
@@ -149,4 +163,7 @@ $eggshell: #ffefdf;
 }
 
 .agencies-tabs {
+  table {
+    @include table-styles($orange, $cream, 0.8rem);
+  }
 }
