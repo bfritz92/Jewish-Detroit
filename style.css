@@ -13279,7 +13279,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 .gfield_validation_message {
   display: none;
 } */
-.gform_wrapper .gform_validation_errors {
+#gform_1010_validation_container {
   border: none;
   border-radius: 0;
   background-color: #c02b0a;
@@ -13287,7 +13287,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   margin: 0;
 }
 
-.gform_wrapper .gform_validation_errors h2 {
+#gform_1010_validation_container h2 {
   margin: 0;
   color: #fff;
 }
