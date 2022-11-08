@@ -2592,10 +2592,16 @@ input[type="checkbox"]:not(:checked)
 .gfield_validation_message {
   display: none;
 } */
-.gform_validation_errors {
+.gform_wrapper .gform_validation_errors {
   border: none;
   border-radius: 0;
-  background-color: #004b7a;
+  background-color: #c02b0a;
+  color: #fff;
+  margin: 0;
+}
+
+.gform_wrapper .gform_validation_errors h2 {
+  margin: 0;
   color: #fff;
 }
 
