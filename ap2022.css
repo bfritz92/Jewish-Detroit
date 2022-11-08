@@ -57,6 +57,10 @@ strong {
   margin-bottom: 1.5rem;
 }
 
+.allocations-table table {
+  font-family: "korolev-condensed", sans-serif;
+}
+
 .allocations-table strong {
   font-size: 1.2rem;
 }
@@ -150,17 +154,47 @@ strong {
   margin-bottom: 1.5rem;
 }
 
+.agencies-tabs table {
+  font-family: "korolev-condensed", sans-serif;
+}
+
 .agencies-tabs table tbody {
-  color: #fc9226;
+  color: #032e49;
   font-size: 0.8rem;
 }
 
 .agencies-tabs table tbody tr:nth-child(2n + 1) {
-  background-color: #ffcc98;
-  color: #fc9226;
+  background-color: #ffefdf;
+  color: #032e49;
 }
 
 .agencies-tabs table tr td {
+  border: none;
+}
+
+.agencies-tabs h3 {
+  color: #fff;
+  background-color: #032e49;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.agency-impact-tabs table {
+  font-family: "korolev-condensed", sans-serif;
+}
+
+.agency-impact-tabs table tbody {
+  color: #032e49;
+  font-size: 0.8rem;
+}
+
+.agency-impact-tabs table tbody tr:nth-child(2n + 1) {
+  background-color: #75c3c970;
+  color: #032e49;
+}
+
+.agency-impact-tabs table tr td {
   border: none;
 }
 /*# sourceMappingURL=ap2022.css.map */
