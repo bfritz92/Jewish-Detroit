@@ -992,8 +992,11 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   padding: 1rem;
 }
 #field_1010_3,
+#field_215_3,
 #field_1010_142,
-#field_1010_90 {
+#field_215_142,
+#field_1010_90,
+#field_215_90 {
   padding: 0rem 1rem;
 }
 
@@ -1001,6 +1004,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 #gform_page_215_5 .gform_page_fields .gform_fields,
 #gform_page_1010_5 .gform_page_fields .gform_fields {
   .pricing-preview {
+    padding-bottom: 0;
     div.ginput_container {
       border: none;
       background-color: transparent;
@@ -1014,8 +1018,13 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
         width: 100%;
         margin-top: -15px;
         font-family: $font__heading;
+        max-height: 4rem;
       }
     }
+  }
+  #field_1010_180,
+  #field_1010_179 {
+    padding-top: 0;
   }
   #field_215_193,
   #field_215_194,
@@ -1046,7 +1055,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding-bottom: 2.25rem;
+      //padding-bottom: 2.25rem;
     }
     input {
       border: none;
@@ -1054,8 +1063,12 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
       @include small-text;
     }
   }
-  .gfield_calculation:last-child {
+  .gfield_html_formatted:last-child {
     padding-bottom: 1rem;
+  }
+  .gfield_html_formatted:first-child {
+    padding-top: 0;
+    line-height: 1;
   }
   .donor-info {
     display: flex;

@@ -2313,9 +2313,17 @@ input[type="checkbox"]:not(:checked)
 }
 
 #field_1010_3,
+#field_215_3,
 #field_1010_142,
-#field_1010_90 {
+#field_215_142,
+#field_1010_90,
+#field_215_90 {
   padding: 0rem 1rem;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview,
+#gform_page_1010_5 .gform_page_fields .gform_fields .pricing-preview {
+  padding-bottom: 0;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container,
@@ -2335,6 +2343,14 @@ input[type="checkbox"]:not(:checked)
   width: 100%;
   margin-top: -15px;
   font-family: "gotham-bold", sans-serif;
+  max-height: 4rem;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_180,
+#gform_page_215_5 .gform_page_fields .gform_fields #field_1010_179,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_180,
+#gform_page_1010_5 .gform_page_fields .gform_fields #field_1010_179 {
+  padding-top: 0;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193,
@@ -2428,7 +2444,6 @@ input[type="checkbox"]:not(:checked)
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 2.25rem;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields #field_215_193 input,
@@ -2453,9 +2468,15 @@ input[type="checkbox"]:not(:checked)
   font-size: 0.6rem;
 }
 
-#gform_page_215_5 .gform_page_fields .gform_fields .gfield_calculation:last-child,
-#gform_page_1010_5 .gform_page_fields .gform_fields .gfield_calculation:last-child {
+#gform_page_215_5 .gform_page_fields .gform_fields .gfield_html_formatted:last-child,
+#gform_page_1010_5 .gform_page_fields .gform_fields .gfield_html_formatted:last-child {
   padding-bottom: 1rem;
+}
+
+#gform_page_215_5 .gform_page_fields .gform_fields .gfield_html_formatted:first-child,
+#gform_page_1010_5 .gform_page_fields .gform_fields .gfield_html_formatted:first-child {
+  padding-top: 0;
+  line-height: 1;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields .donor-info,
