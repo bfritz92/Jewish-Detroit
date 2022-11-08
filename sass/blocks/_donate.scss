@@ -921,6 +921,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
       @include legend-type;
     }
     .ginput_container_creditcard {
+      padding: 0 1rem;
       .ginput_cardextras {
         gap: 5px;
         align-items: flex-start;
@@ -1159,6 +1160,15 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   display: none;
 } */
 
+.gform_validation_errors {
+  border: none;
+  border-radius: 0;
+  background-color: #004b7a;
+  color: #fff;
+}
+.gfield_validation_message {
+  background-color: transparent;
+}
 //required
 .gfield_contains_required {
   .ginput_container {

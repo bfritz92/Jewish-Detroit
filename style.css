@@ -12869,6 +12869,11 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   line-height: 1.1;
 }
 
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard {
+  padding: 0 1rem;
+}
+
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras,
 #gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras {
   gap: 5px;
@@ -13274,6 +13279,17 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 .gfield_validation_message {
   display: none;
 } */
+.gform_validation_errors {
+  border: none;
+  border-radius: 0;
+  background-color: #004b7a;
+  color: #fff;
+}
+
+.gfield_validation_message {
+  background-color: transparent;
+}
+
 .gfield_contains_required .ginput_container span label:after {
   content: "*";
   color: #c02b0a;
