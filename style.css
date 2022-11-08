@@ -12346,6 +12346,7 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
+  padding-bottom: 0;
   line-height: 1.1;
 }
 
@@ -12856,6 +12857,11 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
           justify-content: center;
 }
 
+#gform_page_215_3 .gform_page_fields .gform_fields .credit-card,
+#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card {
+  padding: 0 1rem;
+}
+
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card label,
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card legend,
 #gform_page_1010_3 .gform_page_fields .gform_fields .credit-card label,
@@ -12866,12 +12872,8 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
+  padding-bottom: 0;
   line-height: 1.1;
-}
-
-#gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard,
-#gform_page_1010_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard {
-  padding: 0 1rem;
 }
 
 #gform_page_215_3 .gform_page_fields .gform_fields .credit-card .ginput_container_creditcard .ginput_cardextras,
@@ -12966,14 +12968,15 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   }
 }
 
-#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half div:last-child,
-#gform_page_1010_3 .gform_page_fields .gform_fields .gfield--width-half div:last-child {
+#gform_page_215_3 .gform_page_fields .gform_fields .gfield--width-half .gfield_description,
+#gform_page_1010_3 .gform_page_fields .gform_fields .gfield--width-half .gfield_description {
   text-transform: uppercase;
   font-size: 0.6rem;
   color: #626262;
   font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
+  padding-bottom: 0;
   line-height: 1.1;
 }
 
@@ -12987,12 +12990,17 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   font-family: "gotham-bold", sans-serif;
   letter-spacing: 1px;
   padding-top: 5px;
+  padding-bottom: 0;
   line-height: 1.1;
 }
 
 #field_215_1,
 #field_1010_1 {
   padding: 1rem;
+}
+
+#field_1010_3 {
+  padding: 0rem 1rem;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview div.ginput_container,
@@ -13290,10 +13298,30 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 #gform_1010_validation_container h2 {
   margin: 0;
   color: #fff;
+  font-family: gotham-bold;
 }
 
-.gfield_validation_message {
+#gform_1010 .gform_wrapper .gfield_validation_message,
+#gform_1010 .gform_wrapper .instruction .gfield_validation_message {
+  padding: 10px 1rem;
   background-color: transparent;
+  border: none;
+  color: #c02b0a;
+  font-family: gotham-bold;
+}
+
+#gform_1010 .gfield_error .ginput_container input {
+  border: 2px solid #c02b0a;
+}
+
+#gform_1010 .gfield_error .validation_message,
+#gform_1010 .gfield_error .instruction {
+  background-color: transparent;
+  border: none;
+  font-size: 0.6rem;
+  font-family: gotham-bold;
+  color: #c02b0a;
+  margin: 0;
 }
 
 .gfield_contains_required .ginput_container span label:after {
