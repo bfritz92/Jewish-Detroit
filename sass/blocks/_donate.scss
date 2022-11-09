@@ -907,7 +907,9 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
     }
   }
 }
-
+#gform_next_button_1010_49 {
+  margin-left: 0 !important;
+}
 //PAYMENT PAGE
 #gform_page_215_3 .gform_page_fields .gform_fields,
 #gform_page_1010_3 .gform_page_fields .gform_fields {
@@ -999,7 +1001,24 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 #field_215_90 {
   padding: 0rem 1rem;
 }
-
+#input_1010_3.ginput_container_address,
+#input_1010_142.ginput_container_address {
+  padding-bottom: 1rem;
+  .ginput_address_city {
+    max-width: 35%;
+  }
+  .ginput_address_state {
+    margin-bottom: 8px;
+    max-width: 35%;
+  }
+  .ginput_address_zip {
+    margin-bottom: 8px;
+    max-width: 30%;
+  }
+}
+#input_1010_3_4_container {
+  margin-bottom: 8px;
+}
 //PAYMENT SUMMARY
 #gform_page_215_5 .gform_page_fields .gform_fields,
 #gform_page_1010_5 .gform_page_fields .gform_fields {
@@ -1190,6 +1209,16 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
     color: #fff;
     font-family: gotham-bold;
   }
+  ol {
+    list-style-type: none;
+    line-height: 1;
+    padding-top: 10px;
+    li a {
+      color: #fff;
+      line-height: 1;
+      font-family: gotham-book;
+    }
+  }
 }
 #gform_1010 {
   .gform_wrapper .gfield_validation_message,
@@ -1227,6 +1256,11 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
       font-family: $font__heading;
     }
   }
+}
+
+//hide You Matter panel
+.page-id-68240 #donation-panel {
+  display: none;
 }
 // ==========================================================================
 // Gravity Forms checkbox switch

@@ -12844,6 +12844,10 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   margin-left: 0 !important;
 }
 
+#gform_next_button_1010_49 {
+  margin-left: 0 !important;
+}
+
 #gform_page_215_3 .gform_page_fields .gform_fields,
 #gform_page_1010_3 .gform_page_fields .gform_fields {
   grid-column-gap: 0;
@@ -13006,6 +13010,32 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
 #field_1010_90,
 #field_215_90 {
   padding: 0rem 1rem;
+}
+
+#input_1010_3.ginput_container_address,
+#input_1010_142.ginput_container_address {
+  padding-bottom: 1rem;
+}
+
+#input_1010_3.ginput_container_address .ginput_address_city,
+#input_1010_142.ginput_container_address .ginput_address_city {
+  max-width: 35%;
+}
+
+#input_1010_3.ginput_container_address .ginput_address_state,
+#input_1010_142.ginput_container_address .ginput_address_state {
+  margin-bottom: 8px;
+  max-width: 35%;
+}
+
+#input_1010_3.ginput_container_address .ginput_address_zip,
+#input_1010_142.ginput_container_address .ginput_address_zip {
+  margin-bottom: 8px;
+  max-width: 30%;
+}
+
+#input_1010_3_4_container {
+  margin-bottom: 8px;
 }
 
 #gform_page_215_5 .gform_page_fields .gform_fields .pricing-preview,
@@ -13324,6 +13354,18 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   font-family: gotham-bold;
 }
 
+#gform_1010_validation_container ol {
+  list-style-type: none;
+  line-height: 1;
+  padding-top: 10px;
+}
+
+#gform_1010_validation_container ol li a {
+  color: #fff;
+  line-height: 1;
+  font-family: gotham-book;
+}
+
 #gform_1010 .gform_wrapper .gfield_validation_message,
 #gform_1010 .gform_wrapper .instruction .gfield_validation_message {
   padding: 10px 1rem;
@@ -13351,6 +13393,10 @@ div.ginput_complex.ginput_container.gf_name_has_3 span {
   content: "*";
   color: #c02b0a;
   font-family: "gotham-bold", sans-serif;
+}
+
+.page-id-68240 #donation-panel {
+  display: none;
 }
 
 .m-toggle .gfield_checkbox input {
