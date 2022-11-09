@@ -2657,7 +2657,7 @@ input[type="checkbox"]:not(:checked)
   font-size: 0.6rem;
   font-family: gotham-bold;
   color: #c02b0a;
-  margin: 0;
+  padding: 0;
 }
 
 .gfield_contains_required .ginput_container span label:after {
