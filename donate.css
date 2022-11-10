@@ -1705,7 +1705,7 @@ input[type="checkbox"]:not(:checked)
   gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2.5rem 0 1.5rem 0;
+  padding: 1rem 0 1.5rem 0;
 }
 
 .donor-form--content .wp-block-group__inner-container .donation-form_wrapper {
