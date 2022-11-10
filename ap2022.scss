@@ -27,6 +27,8 @@ strong {
   font-style: normal;
 }
 $title-font: "korolev-condensed", sans-serif;
+$secondary-font: "roboto-condensed", sans-serif;
+
 //colors
 $blue: #1071b2;
 $navy: #032e49;
@@ -41,6 +43,7 @@ $eggshell: #ffefdf;
   tbody {
     color: $color;
     font-size: $fontsize;
+    font-family: $title-font;
     tr:nth-child(2n + 1) {
       background-color: $background;
       color: $color;
@@ -78,6 +81,7 @@ $eggshell: #ffefdf;
   border: none;
   line-height: 1;
   font-weight: 400;
+  font-family: $secondary-font;
 }
 
 //Allocations Tables
@@ -163,6 +167,9 @@ $eggshell: #ffefdf;
   .kt-tabs-content-wrap .kt-tab-inner-content {
     border-radius: 0px 40px 0px 40px;
     margin-bottom: 1.5rem;
+  }
+  h5 {
+    font-size: 1.3rem;
   }
 }
 

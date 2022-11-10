@@ -49,6 +49,7 @@ strong {
   border: none;
   line-height: 1;
   font-weight: 400;
+  font-family: "roboto-condensed", sans-serif;
 }
 
 .allocations-table {
@@ -154,6 +155,10 @@ strong {
   margin-bottom: 1.5rem;
 }
 
+.wp-block-kadence-tabs h5 {
+  font-size: 1.3rem;
+}
+
 .agencies-tabs table {
   font-family: "korolev-condensed", sans-serif;
 }
@@ -161,6 +166,7 @@ strong {
 .agencies-tabs table tbody {
   color: #032e49;
   font-size: 0.8rem;
+  font-family: "korolev-condensed", sans-serif;
 }
 
 .agencies-tabs table tbody tr:nth-child(2n + 1) {
@@ -187,6 +193,7 @@ strong {
 .agency-impact-tabs table tbody {
   color: #032e49;
   font-size: 0.8rem;
+  font-family: "korolev-condensed", sans-serif;
 }
 
 .agency-impact-tabs table tbody tr:nth-child(2n + 1) {
