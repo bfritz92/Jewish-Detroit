@@ -204,4 +204,9 @@ strong {
 .agency-impact-tabs table tr td {
   border: none;
 }
+
+.agency-impact-tabs table tbody tr td:first-child {
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
 /*# sourceMappingURL=ap2022.css.map */
