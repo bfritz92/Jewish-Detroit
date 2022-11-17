@@ -190,5 +190,9 @@ $eggshell: #ffefdf;
   table {
     @include table-styles($navy, #75c3c970, 0.8rem);
     font-family: $title-font;
+    tbody tr td:first-child {
+      font-size: 1.5rem;
+      padding: 0 10px;
+    }
   }
 }

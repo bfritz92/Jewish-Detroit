@@ -49,7 +49,7 @@ src="https://www.facebook.com/tr?id=442352042998271&ev=PageView&noscript=1"
 <!-- End Facebook Pixel Code -->
 
 <meta name="facebook-domain-verification" content="2n9xt4hj40d3h4cxqmvgk133absq15" />
-Hotjar<!--  Tracking Code for https://www.jewishdetroit.org -->
+<!--  Tracking Code for https://www.jewishdetroit.org -->
 	
 		<script>
     (function(h,o,t,j,a,r){
@@ -60,26 +60,6 @@ Hotjar<!--  Tracking Code for https://www.jewishdetroit.org -->
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<script type="text/javascript">
-
-jQuery(document).ready(function() {
-
-	jQuery.fn.cleardefault = function() {
-	return this.focus(function() {
-		if( this.value == this.defaultValue ) {
-			this.value = "";
-		}
-	}).blur(function() {
-		if( !this.value.length ) {
-			this.value = this.defaultValue;
-		}
-	});
-};
-jQuery(".clearit input, .clearit textarea").cleardefault();
-
-});
-
 </script>
 </head>
 <body <?php body_class(); ?>>
@@ -103,4 +83,3 @@ jQuery(".clearit input, .clearit textarea").cleardefault();
 		  <?php get_search_form(); ?>
   		</div>
 	</div> 
-
