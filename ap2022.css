@@ -28,8 +28,9 @@ strong {
   padding-left: 0;
 }
 
-#toc ul li {
+#toc ul li a {
   font-family: "korolev-condensed";
+  color: #fff;
 }
 
 .title-corners .kt-inside-inner-col,
