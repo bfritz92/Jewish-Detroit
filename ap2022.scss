@@ -64,6 +64,12 @@ $eggshell: #ffefdf;
   li a {
     font-family: "korolev-condensed";
     color: #fff;
+    text-decoration: underline;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
   }
 }
 
