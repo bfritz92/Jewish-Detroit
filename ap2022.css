@@ -223,6 +223,10 @@ li a {
   padding: 20px 15px;
 }
 
+.agency-impact-tabs p {
+  font-size: 0.8rem;
+}
+
 .up-btn {
   position: -webkit-sticky;
   position: sticky;
