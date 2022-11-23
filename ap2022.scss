@@ -21,13 +21,16 @@ h2,
 h3,
 h4,
 h5,
-strong {
+strong,
+table,
+li,
+li a {
   font-family: "korolev-condensed", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 $title-font: "korolev-condensed", sans-serif;
-$secondary-font: "roboto-condensed", sans-serif;
+$secondary-font: "roboto condensed", sans-serif;
 
 //colors
 $blue: #1071b2;
@@ -53,6 +56,7 @@ $eggshell: #ffefdf;
     border: none;
   }
 }
+
 //Table of Contents
 #toc ul {
   list-style: none;
@@ -88,7 +92,7 @@ $eggshell: #ffefdf;
   border: none;
   line-height: 1;
   font-weight: 400;
-  font-family: $secondary-font;
+  font-family: $title-font;
 }
 
 //Allocations Tables
@@ -205,4 +209,12 @@ $eggshell: #ffefdf;
   .is-layout-flow.wp-block-group.has-background {
     padding: 20px 15px;
   }
+}
+
+.up-btn {
+  position: sticky;
+  bottom: 10px;
+  z-index: 50;
+  text-align: right;
+  padding-right: 20px;
 }
