@@ -32,6 +32,15 @@ li a {
 $title-font: "korolev-condensed", sans-serif;
 $secondary-font: "roboto condensed", sans-serif;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-weight: 900;
+}
+
 //colors
 $blue: #1071b2;
 $navy: #032e49;
@@ -87,6 +96,12 @@ $eggshell: #ffefdf;
   padding-left: 1.5rem;
 }
 
+//executive signatures fix
+.executive-signatures .wp-block-column {
+  display: grid;
+  grid-template-rows: 85px 1rem auto;
+}
+
 //Executive board
 .executive-table table tr td {
   border: none;
@@ -103,64 +118,96 @@ $eggshell: #ffefdf;
   table {
     font-family: $title-font;
   }
-  strong {
-    font-size: 1.2rem;
+  h3 {
+    font-weight: 900;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
   }
   table {
     line-height: 0.8;
   }
   &.israel {
     border: solid 8px $blue;
-    strong {
+    h3 {
       color: $blue;
     }
     table tbody tr:nth-child(2n + 1) {
       background-color: #1071b23b;
     }
+    figure:last-child table tfoot td {
+      color: #1071b2;
+      font-weight: 900;
+      font-size: 1rem;
+    }
   }
   &.national {
     border: solid 8px $orange;
-    strong {
+    h3 {
       color: $orange;
     }
     table tbody tr:nth-child(2n + 1) {
       background-color: #fc922666;
     }
+    figure:last-child table tfoot td {
+      color: #fc9226;
+      font-weight: 900;
+      font-size: 1rem;
+    }
   }
   &.local {
     border: solid 8px $purple;
-    strong {
+    h3 {
       color: #b323b7;
     }
     table tbody tr:nth-child(2n + 1) {
       background-color: #dc97de59;
     }
+    figure:last-child table tfoot td {
+      color: #b323b7;
+      font-weight: 900;
+      font-size: 1rem;
+    }
   }
   &.community {
     border: solid 8px $navy;
-    strong {
+    h3 {
       color: $navy;
     }
     table tbody tr:nth-child(2n + 1) {
       background-color: #032e4936;
     }
+    figure:last-child table tfoot td {
+      color: $navy;
+      font-weight: 900;
+      font-size: 1rem;
+    }
   }
   &.additional {
     border: solid 8px $teal;
-    strong {
+    h3 {
       color: #178c95;
     }
     table tbody tr:nth-child(2n + 1) {
       background-color: #75c3c970;
     }
+    figure:last-child table tfoot td {
+      color: $teal;
+      font-weight: 900;
+      font-size: 1rem;
+    }
   }
   &.campaign {
     border: solid 8px $cream;
-    strong {
+    h3 {
       color: $orange;
     }
     table tbody tr:nth-child(2n + 1) {
       background-color: #ffcc9887;
+    }
+    figure:last-child table tfoot td {
+      color: $orange;
+      font-weight: 900;
+      font-size: 1rem;
     }
   }
   table {

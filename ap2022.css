@@ -21,6 +21,15 @@ li a {
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-weight: 900;
+}
+
 #toc ul {
   list-style: none;
   line-height: 1.5;
@@ -54,6 +63,13 @@ li a {
   padding-left: 1.5rem;
 }
 
+.executive-signatures .wp-block-column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 85px 1rem auto;
+      grid-template-rows: 85px 1rem auto;
+}
+
 .executive-table table tr td {
   border: none;
   line-height: 1;
@@ -71,8 +87,10 @@ li a {
   font-family: "korolev-condensed", sans-serif;
 }
 
-.allocations-table strong {
-  font-size: 1.2rem;
+.allocations-table h3 {
+  font-weight: 900;
+  padding-top: 1.2rem;
+  padding-bottom: 0.8rem;
 }
 
 .allocations-table table {
@@ -83,7 +101,7 @@ li a {
   border: solid 8px #1071b2;
 }
 
-.allocations-table.israel strong {
+.allocations-table.israel h3 {
   color: #1071b2;
 }
 
@@ -91,11 +109,17 @@ li a {
   background-color: #1071b23b;
 }
 
+.allocations-table.israel figure:last-child table tfoot td {
+  color: #1071b2;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 .allocations-table.national {
   border: solid 8px #fc9226;
 }
 
-.allocations-table.national strong {
+.allocations-table.national h3 {
   color: #fc9226;
 }
 
@@ -103,11 +127,17 @@ li a {
   background-color: #fc922666;
 }
 
+.allocations-table.national figure:last-child table tfoot td {
+  color: #fc9226;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 .allocations-table.local {
   border: solid 8px #dc97de;
 }
 
-.allocations-table.local strong {
+.allocations-table.local h3 {
   color: #b323b7;
 }
 
@@ -115,11 +145,17 @@ li a {
   background-color: #dc97de59;
 }
 
+.allocations-table.local figure:last-child table tfoot td {
+  color: #b323b7;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 .allocations-table.community {
   border: solid 8px #032e49;
 }
 
-.allocations-table.community strong {
+.allocations-table.community h3 {
   color: #032e49;
 }
 
@@ -127,11 +163,17 @@ li a {
   background-color: #032e4936;
 }
 
+.allocations-table.community figure:last-child table tfoot td {
+  color: #032e49;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 .allocations-table.additional {
   border: solid 8px #75c3c9;
 }
 
-.allocations-table.additional strong {
+.allocations-table.additional h3 {
   color: #178c95;
 }
 
@@ -139,16 +181,28 @@ li a {
   background-color: #75c3c970;
 }
 
+.allocations-table.additional figure:last-child table tfoot td {
+  color: #75c3c9;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 .allocations-table.campaign {
   border: solid 8px #ffcc98;
 }
 
-.allocations-table.campaign strong {
+.allocations-table.campaign h3 {
   color: #fc9226;
 }
 
 .allocations-table.campaign table tbody tr:nth-child(2n + 1) {
   background-color: #ffcc9887;
+}
+
+.allocations-table.campaign figure:last-child table tfoot td {
+  color: #fc9226;
+  font-weight: 900;
+  font-size: 1rem;
 }
 
 .allocations-table table {
