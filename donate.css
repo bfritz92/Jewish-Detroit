@@ -851,7 +851,8 @@ body.single-tribe_events .tribe-events-cal-links a.tribe-events-ical {
   display: none !important;
 }
 
-.gfield_label {
+.gfield_label,
+legend.gfield_label {
   font-weight: 700;
   font-family: gotham-bold;
 }

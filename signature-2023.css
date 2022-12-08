@@ -1,0 +1,30 @@
+/* SIGNATURE 2023 */
+
+@import url("https://use.typekit.net/uln2hqp.css");
+.georgia {
+  font-family: georgia, serif;
+  letter-spacing: 4px;
+  transform: scaleY(1.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong,
+legend,
+li,
+a {
+  font-family: "alegreya-sans", sans-serif;
+  font-weight: 700;
+  word-spacing: 0.23rem;
+}
+p {
+  font-family: "alegreya-sans", sans-serif;
+  font: weight 400;
+  word-spacing: 1px;
+}
+.stretched {
+  transform: scaleY(1.2);
+}
