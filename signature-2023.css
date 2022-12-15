@@ -45,17 +45,21 @@ ul li {
   font-size: 2rem !important;
   font-weight: 700;
   font-family: "alegreya-sans";
+  color: #e93181;
 }
-
+.gfield_required,
+.gfield_required_asterisk {
+  color: #e93181;
+}
 .gfield_description:not(.validation_message) {
   color: #fff !important;
 }
-.gchoice_770_165_2 {
+#input_770_165 .gchoice {
   display: flex;
   gap: 15px;
   align-items: start;
 }
 
-.gchoice_770_165_2 input {
+#input_770_165 .gchoice input {
   margin-top: 6px;
 }
