@@ -25,6 +25,37 @@ p {
   font: weight 400;
   word-spacing: 1px;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+ul li {
+  text-align: center;
+}
 .stretched {
   transform: scaleY(1.2);
+}
+#donation-panel,
+#footer {
+  display: none;
+}
+
+.ginput_product_price {
+  font-size: 2rem !important;
+  font-weight: 700;
+  font-family: "alegreya-sans";
+}
+
+.gfield_description:not(.validation_message) {
+  color: #fff !important;
+}
+.gchoice_770_165_2 {
+  display: flex;
+  gap: 15px;
+  align-items: start;
+}
+
+.gchoice_770_165_2 input {
+  margin-top: 6px;
 }
