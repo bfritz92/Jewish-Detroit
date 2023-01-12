@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/lvm5yyo.css");
+
+:root {
+  --dark-green: #094030;
+  --green: #115945;
+  --dark-gold: #bf8c4e;
+  --med-gold: #d9b166;
+  --light-gold: #f2d399;
+  --body-font: "brandon-grotesque", sans-serif;
+  --display-font: "brilon", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--display-font);
+  color: var(--light-gold);
+}
+p,
+a {
+  font-family: var(--body-font);
+}
+.panel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
