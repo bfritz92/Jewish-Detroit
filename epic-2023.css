@@ -18,9 +18,22 @@
   color: var(--light-gold);
 }
 
+#main h1 .has-text-align-center,
+#main h2 .has-text-align-center,
+#main h3 .has-text-align-center,
+#main h4 .has-text-align-center,
+#main h5 .has-text-align-center {
+  text-align: center;
+  width: 100%;
+}
+
 #main p,
 #main a {
   font-family: var(--body-font);
+}
+
+.has-text-align-center {
+  text-align: center;
 }
 
 .panel {
@@ -35,5 +48,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.royal-flush {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25%;
 }
 /*# sourceMappingURL=epic-2023.css.map */

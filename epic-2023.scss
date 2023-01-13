@@ -17,15 +17,29 @@
   h5 {
     font-family: var(--display-font);
     color: var(--light-gold);
+    .has-text-align-center {
+      text-align: center;
+      width: 100%;
+    }
   }
   p,
   a {
     font-family: var(--body-font);
   }
 }
+.has-text-align-center {
+  text-align: center;
+}
+
 .panel {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+//lottie player
+.royal-flush {
+  position: sticky;
+  top: 25%;
 }
