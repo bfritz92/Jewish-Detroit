@@ -4,7 +4,9 @@
   font-weight: 900;
   src: url("https://jewishdetroit.org/wp-content/themes/twentynineteen/fonts/Brilon-Regular.otf") format("opentype");
 }
-
+ html {
+   scroll-behavior: smooth;
+ }
 :root {
   --dark-green: #094030;
   --green: #115945;
@@ -19,9 +21,10 @@
 #main h2,
 #main h3,
 #main h4,
-#main h5 {
+#main h5,
+#main h5 a {
   font-family: var(--display-font);
-  color: var(--light-gold);
+  color: #fff;
 }
 
 #main h1 .has-text-align-center,
@@ -38,6 +41,7 @@
 #main li,
 #main strong {
   font-family: var(--body-font);
+  var(--light-gold);
 }
 
 .has-text-align-center {
@@ -122,18 +126,24 @@
 #gform_wrapper_586 label,
 #gform_wrapper_586 h2,
 #gform_wrapper_586 h3,
-#gform_wrapper_586 input {
+#gform_wrapper_586 input,
+#gform_wrapper_586 legend
+ {
   font-family: var(--body-font);
 }
 
-#gform_wrapper_586 .ginput_product_price {
+#gform_wrapper_586 .ginput_product_price,
+#gform_wrapper_586 .pricing-preview input {
   font-size: 2rem;
   border: none;
   height: 45px;
   color: var(--light-gold);
+  width:100%;
+  min-height:50px;
 }
 
-#gform_wrapper_586 .gfield_label {
+#gform_wrapper_586 .gfield_label
+{
   padding-top: 1rem;
   margin-bottom: 0;
   font-family: var(--body-font);
@@ -141,11 +151,20 @@
 }
 
 #gform_wrapper_586 .gfield_description {
-  color: #8c8c8c;
+  color: var(--light-gold);
 }
 
 #gform_wrapper_586 .gsection_title {
   padding-top: 1rem;
+}
+
+.gchoice input[type="radio"]:checked + label{
+color:var(--light-gold);
+}
+
+.validation_message,
+.validation_container{
+  background-color:#c02b0a;
 }
 
 #sponsors .wp-block-group {
@@ -177,4 +196,3 @@ ul li {
 #primary {
   margin-top: 0 !important;
 }
-/*# sourceMappingURL=epic-2023.css.map */
