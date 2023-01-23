@@ -1,4 +1,10 @@
 @import url("https://use.typekit.net/lvm5yyo.css");
+@font-face {
+  font-family: "Brilon-Regular";
+  font-weight: 900;
+  src: url("https://jewishdetroit.org/wp-content/themes/twentynineteen/fonts/Brilon-Regular.otf") format("opentype");
+}
+
 :root {
   --dark-green: #094030;
   --green: #115945;
@@ -6,7 +12,7 @@
   --med-gold: #d9b166;
   --light-gold: #f2d399;
   --body-font: "brandon-grotesque", sans-serif;
-  --display-font: "brilon", sans-serif;
+  --display-font: "Brilon-Regular", sans-serif;
 }
 
 #main h1,
@@ -28,16 +34,19 @@
 }
 
 #main p,
-#main a {
+#main a,
+#main li,
+#main strong {
   font-family: var(--body-font);
 }
 
 .has-text-align-center {
   text-align: center;
+  width: 100%;
 }
 
 .panel {
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,9 +59,122 @@
           justify-content: center;
 }
 
+@media screen and (min-width: 780px) {
+  .panel {
+    height: 100vh;
+  }
+}
+
 .royal-flush {
   position: -webkit-sticky;
   position: sticky;
   top: 25%;
+}
+
+@media screen and (max-width: 780px) {
+  .hide-for-mobile-only {
+    display: none;
+  }
+}
+
+#splash {
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 780px) {
+  #splash {
+    padding-top: 0;
+  }
+}
+
+#gform_586 .gf_coupon_discount_container {
+  display: none;
+}
+
+.page-id-69785 #masthead,
+.page-id-69785 #donation-panel,
+.page-id-69785 #footer,
+.page-id-69886 #masthead,
+.page-id-69886 #donation-panel,
+.page-id-69886 #footer {
+  display: none;
+}
+
+.page-id-69785 #content,
+.page-id-69886 #content {
+  background-color: #082e30;
+  color: #f2d399;
+}
+
+#gform_586 input,
+#gform_586 select,
+#gform_1028 input,
+#gform_1028 select {
+  border: 2px solid #f2d399;
+  background-color: #082e30;
+  color: #f2d399;
+}
+
+#gform_wrapper_586 {
+  font-family: var(--body-font);
+}
+
+#gform_wrapper_586 label,
+#gform_wrapper_586 h2,
+#gform_wrapper_586 h3,
+#gform_wrapper_586 input {
+  font-family: var(--body-font);
+}
+
+#gform_wrapper_586 .ginput_product_price {
+  font-size: 2rem;
+  border: none;
+  height: 45px;
+  color: var(--light-gold);
+}
+
+#gform_wrapper_586 .gfield_label {
+  padding-top: 1rem;
+  margin-bottom: 0;
+  font-family: var(--body-font);
+  font-size: 1rem;
+}
+
+#gform_wrapper_586 .gfield_description {
+  color: #8c8c8c;
+}
+
+#gform_wrapper_586 .gsection_title {
+  padding-top: 1rem;
+}
+
+#sponsors .wp-block-group {
+  -o-border-image: url(https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/01/17105403/border.svg);
+     border-image: url(https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/01/17105403/border.svg);
+  border-image-slice: 10%;
+  border-width: 50px;
+  border-style: solid;
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+#donation-panel,
+#footer.footer {
+  display: none;
+}
+
+#masthead {
+  display: none;
+}
+
+#primary {
+  margin-top: 0 !important;
 }
 /*# sourceMappingURL=epic-2023.css.map */
