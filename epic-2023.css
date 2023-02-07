@@ -202,6 +202,10 @@ input[type="checkbox"] {
   accent-color: var(--light-gold);
 }
 
+#gform_confirmation_wrapper_586{
+  background-color: transparent;
+}
+
 #sponsors .wp-block-group {
   -o-border-image: url(https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/01/17105403/border.svg);
      border-image: url(https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/01/17105403/border.svg);
