@@ -10,9 +10,8 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-
 .tk-goodlife-sans-condensed {
-  font-family: "goodlife-sans-condensed",sans-serif;
+  font-family: "goodlife-sans-condensed", sans-serif;
 }
 
 p {
@@ -20,13 +19,12 @@ p {
 }
 
 label {
-  font-family: 'gotham-bold';
+  font-family: "gotham-bold";
 }
 
 #content {
   background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/wp-content/uploads/2020/05/08111455/purple_textured_paper.jpg");
 }
-
 #content h1, #content h2, #content h3, #content h4, #content strong, #content li, #content a, #content .gfield_label_before_complex {
   font-family: "goodlife-sans-condensed";
   color: #fff;
@@ -47,16 +45,11 @@ a:hover {
 .sunshine-header {
   margin: auto;
 }
-
 @media only screen and (min-width: 700px) {
   .sunshine-header {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 
@@ -64,24 +57,18 @@ a:hover {
   display: block;
   padding-top: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .sunshine-step {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .sunshine-step {
-    -ms-grid-columns: 2fr 3fr;
-        grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 3fr;
   }
 }
-
 @media only screen and (max-width: 700px) {
   .sunshine-step figure img {
     max-width: 300px;
@@ -89,66 +76,45 @@ a:hover {
     padding-bottom: 2rem;
   }
 }
-
 @media only screen and (min-width: 700px) {
   .sunshine-step.step-2 {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .sunshine-step.step-2 {
-    -ms-grid-columns: 3fr 2fr;
-        grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 2fr;
   }
 }
-
 .sunshine-step.step-2 figure {
-  -ms-grid-column: 2;
   grid-column: 2;
 }
-
 .sunshine-step.step-2 .sunshine-step--copy {
-  -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 1;
   grid-row: 1;
 }
-
 .sunshine-step ul {
   list-style: none;
 }
-
 .sunshine-step ul li {
   font-size: 1.5rem;
   line-height: 1;
 }
 
 .sunshine-logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   max-width: 600px;
   margin: auto;
 }
-
 .sunshine-logos figure {
   padding: 10px;
 }
-
 .sunshine-logos figure img {
   width: 240px;
 }
-
 .sunshine-logos figure img:last-child {
   width: 140px;
-}
-/*# sourceMappingURL=sunshine-for-a-senior.css.map */
+}/*# sourceMappingURL=sunshine-for-a-senior.css.map */

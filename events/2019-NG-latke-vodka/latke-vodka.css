@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'RumbleBrave';
+  font-family: "RumbleBrave";
   font-weight: 900;
   src: url("https://2019.jewishdetroit.org/wp-content/themes/twentynineteen/fonts/RumbleBrave.woff") format("woff"), url("https://2019.jewishdetroit.org/wp-content/themes/twentynineteen/fonts/RumbleBrave.ttf") format("truetype"), url("https://2019.jewishdetroit.org/wp-content/themes/twentynineteen/fonts/RumbleBrave.otf") format("opentype");
 }
-
 /* Page Sizes */
 .rumble {
   font-family: RumbleBrave;
@@ -28,16 +27,13 @@
 .white {
   color: #fff;
 }
-
 .white a {
   color: #fff;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[14];
-      grid-template-columns: repeat(14, 1fr);
+  grid-template-columns: repeat(14, 1fr);
 }
 
 .lv-splash {
@@ -45,36 +41,24 @@
   background-color: #A30F4F;
   text-align: center;
 }
-
 @media only screen and (min-width: 920px) {
   .lv-splash {
     height: 80vw;
     background-image: url("/wp-content/uploads/2019/10/splash-xl.jpg");
     background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     background-size: 110%;
     background-position: 60% 0%;
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-splash {
     max-height: 70vw;
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-splash {
     max-height: 63vh;
@@ -83,78 +67,62 @@
     background-position: 60% 10%;
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-splash {
     max-height: 48rem;
   }
 }
-
 @media only screen and (min-width: 2000px) {
   .lv-splash {
     max-height: 50rem;
   }
 }
-
 .lv-splash--img {
   display: block;
   margin-top: 85px;
 }
-
 @media only screen and (min-width: 430px) {
   .lv-splash--img {
     margin-top: 0;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-splash--img {
     display: none;
   }
 }
-
 .lv-splash--info--date {
   font-size: 1.2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-splash--info--date {
     font-size: 1.8rem;
   }
 }
-
 .lv-splash--info--location {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-splash--info--location {
     font-size: 3rem;
   }
 }
-
 .lv-splash--info--copy {
   font-size: 1.2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-splash--info--copy {
     font-size: 1.8rem;
   }
 }
-
 .lv-splash--info--options {
   display: block;
   padding: 1rem 0;
 }
-
 @media only screen and (min-width: 430px) {
   .lv-splash--info--options {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
 
@@ -163,27 +131,19 @@
   background: #f9f9f9;
   background-color: #010005;
 }
-
 @media only screen and (min-width: 920px) {
   .lv-intro {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: auto 60vw;
-        grid-template-rows: auto 60vw;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-rows: auto 60vw;
+    grid-template-columns: 1fr;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-intro {
-    -ms-grid-rows: auto 40vw;
-        grid-template-rows: auto 40vw;
+    grid-template-rows: auto 40vw;
   }
 }
-
 .lv-intro--copy {
-  -ms-grid-row: 1;
   grid-row: 1;
   padding: 10px;
   grid-column: 1/-1;
@@ -191,54 +151,40 @@
   z-index: 2;
   max-width: 900px;
   margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-intro--copy {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
     grid-column: 1/7;
     padding: 2rem 10px 1rem 10px;
   }
 }
-
 .lv-intro--copy h2 {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-intro--copy h2 {
     font-size: 3rem;
   }
 }
-
 .lv-intro--img {
   grid-row: 1/-1;
   grid-column: 1/-1;
   z-index: 0;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: end;
+  justify-self: center;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   grid-column: 1/-1;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-intro--img {
     grid-row: 1/-1;
     grid-column: 1/-1;
   }
 }
-
 .lv-intro--img img {
   height: 100%;
   width: 100%;
@@ -253,60 +199,46 @@
   background-position: center bottom;
   background-color: #010005;
   background-repeat: no-repeat;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 45vw;
-      grid-template-rows: auto 45vw;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-rows: auto 45vw;
+  grid-template-columns: 1fr;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/ridiculous-twenty-768x896.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/ridiculous-twenty-1300x1517.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/ridiculous-twenty-1600x1867.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/ridiculous-twenty-2000x2334.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/ridiculous-twenty.jpg);
   }
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information {
-    -ms-grid-rows: auto 50vw;
-        grid-template-rows: auto 50vw;
+    grid-template-rows: auto 50vw;
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-information {
-    -ms-grid-rows: auto 50vw;
-        grid-template-rows: auto 50vw;
+    grid-template-rows: auto 50vw;
   }
 }
-
 .lv-information--copy {
-  -ms-grid-row: 1;
   grid-row: 1;
   padding: 10px;
   grid-column: 1/-1;
@@ -314,57 +246,43 @@
   z-index: 2;
   max-width: 900px;
   margin: 0 auto 2rem auto;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  background: #13131b;
+  align-self: start;
+  background: rgb(19, 19, 27);
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information--copy {
     background: rgba(19, 19, 27, 0.6);
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
     grid-column: 1/7;
     padding: 2rem 10px 1rem 10px;
     margin: 2rem auto;
   }
 }
-
 .lv-information--copy h2 {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information--copy h2 {
     font-size: 3rem;
   }
 }
-
 .lv-information--img {
   grid-row: 1/-1;
   grid-column: 1/-1;
   z-index: 0;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: end;
+  justify-self: center;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   grid-column: 1/-1;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information--img {
     grid-row: 1/-1;
     grid-column: 1/-1;
   }
 }
-
 .lv-information--img img {
   height: 100%;
   width: 100%;
@@ -377,57 +295,47 @@
   background-image: url(/wp-content/uploads/2019/10/information-700x922.jpg);
   background-size: cover;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/information-768x1011.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/information-large-1300x856.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/information-large-1600x1054.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/information-large-2000x1317.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/information-large.jpg);
   }
 }
-
 .lv-parking--heading {
   width: 100%;
   padding: 15px 0 15px 20px;
   text-align: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-parking--heading {
     padding: 1rem 0 15px 1rem;
   }
 }
-
 .lv-parking--heading h2 {
   font-size: 3rem;
 }
-
 .lv-parking--map {
   width: 100%;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-parking--map {
     max-width: 1000px;
@@ -435,7 +343,6 @@
     margin: auto;
   }
 }
-
 .lv-parking--map iframe {
   width: 100%;
 }
@@ -446,53 +353,44 @@
   background-attachment: fixed;
   padding-bottom: 60px;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/parking-bg-768x1024.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/parking-bg-1300x1733.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/parking-bg-1600x2133.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/parking-bg-2000x2667.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/parking-bg.jpg);
   }
 }
-
 .lv-registration--title {
   width: 100%;
   padding: 15px 0 15px 20px;
   text-align: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-registration--title {
     padding: 1rem 0 15px 1rem;
   }
 }
-
 .lv-registration--title h2 {
   font-size: 3rem;
 }
-
 .lv-registration--form {
   max-width: 900px;
   margin: 1rem auto;
@@ -503,7 +401,6 @@
 .gform_body {
   padding: 0 10px 80px 10px;
 }
-
 @media only screen and (min-width: 700px) {
   .gform_body {
     padding: 0 1rem 60px 1rem;
@@ -511,28 +408,17 @@
 }
 
 .gform_wrapper .gf_page_steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 700;
   font-family: gotham-bold;
   font-size: 1.2rem;
   padding-bottom: 1rem;
 }
-
 @media only screen and (min-width: 700px) {
   .gform_wrapper .gf_page_steps {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -543,7 +429,6 @@
 .gfield_description {
   margin-top: 10px;
 }
-
 .gfield_description a {
   font-weight: 700;
   font-family: gotham-bold;
@@ -585,154 +470,123 @@
   background-repeat: no-repeat;
   padding: 2rem 0;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-sm-768x1024.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg-1300x900.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg-1600x1108.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg-2000x1385.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg.jpg);
   }
 }
-
 .lv-leadership--board {
   max-width: 1200px;
   margin: auto;
   padding-bottom: 2rem;
   text-align: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-leadership--board {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .lv-leadership--board--title {
   width: 100%;
   padding: 15px 0 15px 20px;
   padding: 0 !important;
   text-align: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-leadership--board--title {
     padding: 1rem 0 15px 1rem;
   }
 }
-
 .lv-leadership--board--title h2 {
   font-size: 3rem;
 }
-
 .lv-leadership--board--committee {
   margin-left: 0;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-leadership--board--committee {
-    -webkit-column-count: 2;
-            column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }
-
 .lv-leadership--board ul {
   margin-left: 0;
   padding-left: 0;
 }
-
 .lv-leadership--board ul li {
   color: #fff;
   list-style-type: none;
-  -webkit-column-count: 1;
-          column-count: 1;
+  -moz-column-count: 1;
+       column-count: 1;
 }
 
 .lv-sponsors {
   background-image: url(/wp-content/uploads/2019/10/sponsors-sm-700x864.jpg);
 }
-
 @media only screen and (min-width: 700px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-sm-768x948.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg-1300x975.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg-1600x1200.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg-2000x1500.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg.jpg);
   }
 }
-
 .lv-sponsors--title {
   width: 100%;
   padding: 15px 0 15px 20px;
   text-align: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-sponsors--title {
     padding: 1rem 0 15px 1rem;
   }
 }
-
 .lv-sponsors--title h2 {
   font-size: 3rem;
 }
-
 .lv-sponsors--inner {
   max-width: 700px;
   margin: auto;
 }
-
 .lv-footer {
   background-image: url(/wp-content/uploads/2019/10/bricks-dark-bg-700x426.jpg);
   background-position: center bottom;
@@ -741,38 +595,31 @@
   background-color: #010103;
   padding: 2rem 10px 5rem 1rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/bricks-dark-bg-768x467.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/bricks-dark-bg-1300x791.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/bricks-dark-bg-1600x973.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/bricks-dark-bg-2000x1217.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/bricks-dark-bg.jpg);
   }
 }
-
 .lv-footer--info--copy {
   font-size: 1rem;
-}
-/*# sourceMappingURL=latke-vodka.css.map */
+}/*# sourceMappingURL=latke-vodka.css.map */

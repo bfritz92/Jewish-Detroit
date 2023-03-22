@@ -2,19 +2,16 @@
 .page-id-52386 {
   overflow-x: hidden;
 }
-
 .page-id-52386 .site-content .content-area #main {
   padding: 0;
   margin: 0;
 }
-
 .page-id-52386 #donation-panel,
 .page-id-52386 #footer,
 .page-id-52386 #masthead,
 .page-id-52386 #sideNav {
   display: none;
 }
-
 .page-id-52386 #primary {
   margin-top: 0;
 }
@@ -23,7 +20,6 @@
   max-width: inherit;
   margin: inherit;
 }
-
 #post-52386 .entry-header {
   display: none;
 }
@@ -63,34 +59,20 @@
   background-color: #000;
   background-repeat: no-repeat;
 }
-
 .signature2020--splash .small-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  flex-direction: column;
+  justify-content: right;
   padding: 1rem 20px 0 0;
   list-style-type: none;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   justify-self: end;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--splash .small-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
-
 .signature2020--splash .small-nav li a {
   padding-left: 30px;
   font-family: "Roboto Condensed", sans-serif;
@@ -100,260 +82,210 @@
   min-height: 50px;
   color: #3d3d3d;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--splash {
     background-image: url(/wp-content/uploads/2020/02/signature2020-splash-sm-bw-920x2324.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--splash {
     background-image: url(/wp-content/uploads/2020/02/signature2020-splash-bw-1300x1138.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .signature2020--splash {
     background-image: url(/wp-content/uploads/2020/02/signature2020-splash-bw-1800x1576.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .signature2020--splash {
     background-image: url(/wp-content/uploads/2020/02/signature2020-splash-bw-2000x1751.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .signature2020--splash {
     background-image: url(/wp-content/uploads/2020/02/signature2020-splash-bw-2500x2189.jpg);
   }
 }
-
 .signature2020--splash--info {
   margin-top: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--splash--info {
     margin-top: 4rem;
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .signature2020--splash--info {
     margin-top: 7rem;
   }
 }
-
 .signature2020--splash--info .eyebrow {
   font-size: 24px;
 }
-
 @media screen and (min-width: 320px) {
   .signature2020--splash--info .eyebrow {
-    font-size: calc( 24px + 26 * ((100vw - 320px) / 580));
+    font-size: calc(
+          24px + 26 *
+            ((100vw - 320px) / 580)
+        );
   }
 }
-
 @media screen and (min-width: 900px) {
   .signature2020--splash--info .eyebrow {
     font-size: 50px;
   }
 }
-
 .signature2020--splash--info .fran {
   font-size: 40px;
 }
-
 @media screen and (min-width: 320px) {
   .signature2020--splash--info .fran {
-    font-size: calc( 40px + 20 * ((100vw - 320px) / 580));
+    font-size: calc(
+          40px + 20 *
+            ((100vw - 320px) / 580)
+        );
   }
 }
-
 @media screen and (min-width: 900px) {
   .signature2020--splash--info .fran {
     font-size: 60px;
   }
 }
-
 .signature2020--splash--info .venue,
 .signature2020--splash--info .pricing {
   list-style-type: none;
   line-height: 1;
   padding: 0 0 3rem 0;
 }
-
 .signature2020--splash--info .venue li,
 .signature2020--splash--info .pricing li {
   font-size: 30px;
 }
-
 @media screen and (min-width: 320px) {
   .signature2020--splash--info .venue li,
   .signature2020--splash--info .pricing li {
-    font-size: calc( 30px + 10 * ((100vw - 320px) / 580));
+    font-size: calc(
+          30px + 10 *
+            ((100vw - 320px) / 580)
+        );
   }
 }
-
 @media screen and (min-width: 900px) {
   .signature2020--splash--info .venue li,
   .signature2020--splash--info .pricing li {
     font-size: 40px;
   }
 }
-
 .signature2020--splash--info .ehim {
   height: 400px;
   padding-bottom: 2rem;
 }
-
 .signature2020--splash--info .ehim a {
   width: 100%;
   height: 100%;
   display: block;
 }
-
 .signature2020--splash--info .ajm {
   min-width: 300px;
   margin: auto;
   padding-bottom: 2rem;
 }
-
 .signature2020--splash--info .ajm a {
   min-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 .signature2020--splash--logo img {
   width: 100%;
 }
-
 .signature2020--talent {
   background-image: url(/wp-content/uploads/2020/02/signature2020-talent-768x479.jpg);
   background-size: 100%;
   background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--talent {
     background-image: url(/wp-content/uploads/2020/02/signature2020-talent-920x574.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--talent {
     background-image: url(/wp-content/uploads/2020/02/signature2020-talent-1300x811.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .signature2020--talent {
     background-image: url(/wp-content/uploads/2020/02/signature2020-talent-1800x1123.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .signature2020--talent {
     background-image: url(/wp-content/uploads/2020/02/signature2020-talent-2000x1248.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .signature2020--talent {
     background-image: url(/wp-content/uploads/2020/02/signature2020-talent-2500x1560.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--talent {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 .signature2020--talent--copy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   max-width: 750px;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
   padding: 10px;
   margin: auto;
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--talent--copy {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
     padding: 0;
     margin: 0;
     max-width: 500px;
   }
 }
-
 .signature2020--talent--copy .title {
   margin-top: 1rem;
 }
-
 .signature2020--talent--copy .title {
   font-size: 30px;
 }
-
 @media screen and (min-width: 320px) {
   .signature2020--talent--copy .title {
-    font-size: calc( 30px + 20 * ((100vw - 320px) / 580));
+    font-size: calc(
+          30px + 20 *
+            ((100vw - 320px) / 580)
+        );
   }
 }
-
 @media screen and (min-width: 900px) {
   .signature2020--talent--copy .title {
     font-size: 50px;
   }
 }
-
 .signature2020--talent .fran {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   margin-bottom: 0;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
   margin: auto;
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--talent .fran {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     margin-right: 2rem;
     margin: 0;
   }
 }
-
 .signature2020--intro {
   background-color: #ec008c;
   background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/18152133/gold-dots.svg");
@@ -361,7 +293,6 @@
   background-size: 120%;
   background-position: 300% 90%;
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--intro {
     background-size: 70%;
@@ -369,79 +300,54 @@
     padding: 2rem 0;
   }
 }
-
 .signature2020--impact {
   background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/19131811/repeated-square-gray.png");
   padding-top: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--impact {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
 }
-
 .signature2020--impact--copy {
   padding: 0 10px;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--impact--copy {
     max-width: 460px;
     padding: 0;
   }
 }
-
 .signature2020--impact--3up {
   display: block;
   padding: 1rem 0 2rem 0;
   margin: auto;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--impact--3up {
     grid-column: 1/-1;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
     grid-gap: 20px;
   }
 }
-
 .signature2020--impact--3up .wp-block-image img {
   margin: auto;
 }
-
 .signature2020--impact .impact-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--impact .impact-logo {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
   }
 }
-
 .signature2020--registration {
   background-color: #3c3d41;
   background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/18152133/gold-dots.svg");
@@ -449,7 +355,6 @@
   background-size: 120%;
   background-position: 300% 10%;
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--registration {
     background-size: 70%;
@@ -457,7 +362,6 @@
     padding: 2rem 0;
   }
 }
-
 .signature2020--registration .gform_wrapper {
   max-width: 900px;
   margin: auto;
@@ -465,64 +369,50 @@
   padding-top: 1rem;
   padding-bottom: 3rem;
 }
-
 .signature2020--registration .gform_wrapper form .gform_body {
   color: #fff;
 }
-
 .signature2020--leadership {
   background-image: url(/wp-content/uploads/2020/02/signature2020-leadership-768x564.jpg);
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--leadership {
     background-image: url(/wp-content/uploads/2020/02/signature2020-leadership-920x675.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .signature2020--leadership {
     background-image: url(/wp-content/uploads/2020/02/signature2020-leadership-1300x954.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .signature2020--leadership {
     background-image: url(/wp-content/uploads/2020/02/signature2020-leadership-1800x1321.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .signature2020--leadership {
     background-image: url(/wp-content/uploads/2020/02/signature2020-leadership-2000x1468.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .signature2020--leadership {
     background-image: url(/wp-content/uploads/2020/02/signature2020-leadership-2500x1835.jpg);
   }
 }
-
 .signature2020--sponsors {
   background-image: url("https://s3-us-west-2.amazonaws.com/jfmdorg/~jfmd2016/wp-content/uploads/2020/02/19134003/triangle-mosaic.png");
 }
-
 .signature2020--sponsors .tier-2 {
   max-width: 900px;
 }
-
 .signature2020--sponsors .tier-2 .sponsor-grid {
   display: block;
 }
-
 @media only screen and (min-width: 700px) {
   .signature2020--sponsors .tier-2 .sponsor-grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
-}
-/*# sourceMappingURL=signature-2020.css.map */
+}/*# sourceMappingURL=signature-2020.css.map */

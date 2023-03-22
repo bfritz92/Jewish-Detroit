@@ -37,7 +37,6 @@
 .title.new-spirit {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .title.new-spirit {
     font-size: 3.5rem;
@@ -64,7 +63,6 @@
   background: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/01/14144227/wood-background-scaled.jpg"), 100%, repeat-y;
   background-color: #151412;
 }
-
 p,
 label,
 ul li,
@@ -87,7 +85,6 @@ ul {
   list-style: none;
   padding-left: 0;
 }
-
 ul li {
   margin-left: 0;
 }
@@ -95,15 +92,12 @@ ul li {
 ul.event-info {
   text-align: center;
 }
-
 ul.event-info li h4 {
   color: #f0515f;
 }
-
 ul.event-info li:first-child h4 {
   color: #fbae48;
 }
-
 ul.event-info li:last-child a {
   color: #62b39d;
 }
@@ -111,50 +105,34 @@ ul.event-info li:last-child a {
 article.covid-block {
   border: 5px solid #fff;
 }
-
 article.covid-block h3 {
   color: #fff;
   padding-top: 1rem;
 }
-
 article.covid-block svg {
   fill: #fff;
   height: 75px;
   width: 75px;
 }
-
 article.covid-block ul.covid-icons {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   border-top: 5px solid #fff;
   padding-left: 0;
   width: 100%;
 }
-
 article.covid-block ul.covid-icons li {
   color: #fff;
   padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   line-height: 1;
   gap: 1rem;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 article.covid-block ul.covid-icons li label {
   font-size: 0.8rem;
   margin: 0 10px;
@@ -166,11 +144,9 @@ article.covid-block ul.covid-icons li label {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-
 .wp-block-buttons .wp-block-button.is-style-fill.btn-yellow a.wp-block-button__link {
   background-color: #fbae48;
 }
-
 .wp-block-buttons .wp-block-button.is-style-fill.btn-red a.wp-block-button__link {
   background-color: #f0515f;
 }
@@ -204,7 +180,6 @@ article.covid-block ul.covid-icons li label {
   color: #fbae48;
   font-family: "new-spirit-condensed";
 }
-
 .leadership-list li:first-child {
   color: #f0515f;
   border-bottom: 3px solid #f0515f;
@@ -214,7 +189,6 @@ article.covid-block ul.covid-icons li label {
 .staff-list {
   text-align: center;
 }
-
 .staff-list li {
   color: #fbae48;
   font-family: "new-spirit-condensed";
@@ -233,12 +207,10 @@ article.covid-block ul.covid-icons li label {
 .wp-block-post-featured-image {
   margin-bottom: 2rem;
 }
-
 .wp-block-post-featured-image img.attachment-post-thumbnail {
   max-height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 80%;
      object-position: center 80%;
-}
-/*# sourceMappingURL=distilled-and-chilled.css.map */
+}/*# sourceMappingURL=distilled-and-chilled.css.map */

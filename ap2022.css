@@ -33,19 +33,17 @@ strong {
 #toc ul {
   list-style: none;
   line-height: 1.5;
-  -webkit-columns: 2;
-          columns: 2;
+  -moz-columns: 2;
+       columns: 2;
   max-width: 900px;
   margin: auto;
   padding-left: 0;
 }
-
 #toc ul li a {
   font-family: "korolev-condensed";
   color: #fff;
   text-decoration: underline;
 }
-
 #toc ul li a:hover, #toc ul li a:focus, #toc ul li a:active {
   text-decoration: none;
 }
@@ -54,20 +52,14 @@ strong {
 .title-corners.wp-block-group {
   border-radius: 0px 40px 0px 40px;
   min-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 1.5rem;
 }
 
 .executive-signatures .wp-block-column {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 85px 1rem auto;
-      grid-template-rows: 85px 1rem auto;
+  grid-template-rows: 85px 1rem auto;
 }
 
 .executive-table table tr td {
@@ -82,133 +74,104 @@ strong {
   padding: 0 10px;
   margin-bottom: 1.5rem;
 }
-
 .allocations-table table {
   font-family: "korolev-condensed", sans-serif;
 }
-
 .allocations-table h3 {
   font-weight: 900;
   padding-top: 1.2rem;
   padding-bottom: 0.8rem;
 }
-
 .allocations-table table {
   line-height: 0.8;
 }
-
 .allocations-table.israel {
   border: solid 8px #1071b2;
 }
-
 .allocations-table.israel h3 {
   color: #1071b2;
 }
-
-.allocations-table.israel table tbody tr:nth-child(2n + 1) {
-  background-color: #1071b23b;
+.allocations-table.israel table tbody tr:nth-child(2n+1) {
+  background-color: rgba(16, 113, 178, 0.231372549);
 }
-
 .allocations-table.israel figure:last-child table tfoot td {
   color: #1071b2;
   font-weight: 900;
   font-size: 1rem;
 }
-
 .allocations-table.national {
   border: solid 8px #fc9226;
 }
-
 .allocations-table.national h3 {
   color: #fc9226;
 }
-
-.allocations-table.national table tbody tr:nth-child(2n + 1) {
-  background-color: #fc922666;
+.allocations-table.national table tbody tr:nth-child(2n+1) {
+  background-color: rgba(252, 146, 38, 0.4);
 }
-
 .allocations-table.national figure:last-child table tfoot td {
   color: #fc9226;
   font-weight: 900;
   font-size: 1rem;
 }
-
 .allocations-table.local {
   border: solid 8px #dc97de;
 }
-
 .allocations-table.local h3 {
   color: #b323b7;
 }
-
-.allocations-table.local table tbody tr:nth-child(2n + 1) {
-  background-color: #dc97de59;
+.allocations-table.local table tbody tr:nth-child(2n+1) {
+  background-color: rgba(220, 151, 222, 0.3490196078);
 }
-
 .allocations-table.local figure:last-child table tfoot td {
   color: #b323b7;
   font-weight: 900;
   font-size: 1rem;
 }
-
 .allocations-table.community {
   border: solid 8px #032e49;
 }
-
 .allocations-table.community h3 {
   color: #032e49;
 }
-
-.allocations-table.community table tbody tr:nth-child(2n + 1) {
-  background-color: #032e4936;
+.allocations-table.community table tbody tr:nth-child(2n+1) {
+  background-color: rgba(3, 46, 73, 0.2117647059);
 }
-
 .allocations-table.community figure:last-child table tfoot td {
   color: #032e49;
   font-weight: 900;
   font-size: 1rem;
 }
-
 .allocations-table.additional {
   border: solid 8px #75c3c9;
 }
-
 .allocations-table.additional h3 {
   color: #178c95;
 }
-
-.allocations-table.additional table tbody tr:nth-child(2n + 1) {
-  background-color: #75c3c970;
+.allocations-table.additional table tbody tr:nth-child(2n+1) {
+  background-color: rgba(117, 195, 201, 0.4392156863);
 }
-
 .allocations-table.additional figure:last-child table tfoot td {
   color: #75c3c9;
   font-weight: 900;
   font-size: 1rem;
 }
-
 .allocations-table.campaign {
   border: solid 8px #ffcc98;
 }
-
 .allocations-table.campaign h3 {
   color: #fc9226;
 }
-
-.allocations-table.campaign table tbody tr:nth-child(2n + 1) {
-  background-color: #ffcc9887;
+.allocations-table.campaign table tbody tr:nth-child(2n+1) {
+  background-color: rgba(255, 204, 152, 0.5294117647);
 }
-
 .allocations-table.campaign figure:last-child table tfoot td {
   color: #fc9226;
   font-weight: 900;
   font-size: 1rem;
 }
-
 .allocations-table table {
   line-height: 1;
 }
-
 .allocations-table td {
   border: none;
 }
@@ -217,7 +180,6 @@ strong {
   border-radius: 0px 40px 0px 40px;
   margin-bottom: 1.5rem;
 }
-
 .wp-block-kadence-tabs h5 {
   font-size: 1.3rem;
 }
@@ -225,22 +187,18 @@ strong {
 .agencies-tabs table {
   font-family: "korolev-condensed", sans-serif;
 }
-
 .agencies-tabs table tbody {
   color: #032e49;
   font-size: 0.8rem;
   font-family: "korolev-condensed", sans-serif;
 }
-
-.agencies-tabs table tbody tr:nth-child(2n + 1) {
+.agencies-tabs table tbody tr:nth-child(2n+1) {
   background-color: #ffefdf;
   color: #032e49;
 }
-
 .agencies-tabs table tr td {
   border: none;
 }
-
 .agencies-tabs h3 {
   color: #fff;
   background-color: #032e49;
@@ -252,41 +210,33 @@ strong {
 .agency-impact-tabs table {
   font-family: "korolev-condensed", sans-serif;
 }
-
 .agency-impact-tabs table tbody {
   color: #032e49;
   font-size: 0.8rem;
   font-family: "korolev-condensed", sans-serif;
 }
-
-.agency-impact-tabs table tbody tr:nth-child(2n + 1) {
-  background-color: #75c3c970;
+.agency-impact-tabs table tbody tr:nth-child(2n+1) {
+  background-color: rgba(117, 195, 201, 0.4392156863);
   color: #032e49;
 }
-
 .agency-impact-tabs table tr td {
   border: none;
 }
-
 .agency-impact-tabs table tbody tr td:first-child {
   font-size: 1.5rem;
   padding: 0 10px;
 }
-
 .agency-impact-tabs .is-layout-flow.wp-block-group.has-background {
   padding: 20px 15px;
 }
-
 .agency-impact-tabs p {
   font-size: 0.8rem;
 }
 
 .up-btn {
-  position: -webkit-sticky;
   position: sticky;
   bottom: 10px;
   z-index: 50;
   text-align: right;
   padding-right: 20px;
-}
-/*# sourceMappingURL=ap2022.css.map */
+}/*# sourceMappingURL=ap2022.css.map */

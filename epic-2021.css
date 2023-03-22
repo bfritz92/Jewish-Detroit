@@ -6,7 +6,6 @@
 .title.rosewood {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .title.rosewood {
     font-size: 3.5rem;
@@ -16,7 +15,6 @@
 #main {
   padding: 0;
 }
-
 #main .entry-content {
   margin: 0;
   max-width: 100%;
@@ -48,7 +46,6 @@ ul li {
   background-repeat: no-repeat;
   padding-bottom: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .epic2021--splash {
     background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13143021/splash-bg-scaled.jpg");
@@ -56,7 +53,6 @@ ul li {
     background-position: top right;
   }
 }
-
 .epic2021--splash--img {
   max-width: 100%;
   margin: auto;
@@ -65,7 +61,6 @@ ul li {
   padding-right: 15px;
   padding-left: 15px;
 }
-
 @media only screen and (min-width: 700px) {
   .epic2021--splash--img {
     max-width: 50vw !important;
@@ -73,11 +68,9 @@ ul li {
     margin-right: 5vw;
   }
 }
-
 .epic2021--splash--img figcaption {
   display: none;
 }
-
 .epic2021--impact {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/13151109/impact-bg-scaled.jpg");
   background-color: #0f1318;
@@ -87,52 +80,39 @@ ul li {
   color: #fff;
   padding-bottom: 2rem;
 }
-
 .epic2021--impact--img {
   max-width: 510px !important;
   margin: auto;
   padding: 4rem 10px 2rem 10px;
 }
-
 .epic2021--impact--img figcaption {
   display: none;
 }
-
 .epic2021--impact--pics .wp-block-group__inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 .epic2021--impact--pics .wp-block-group__inner-container figure {
   max-width: 270px !important;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 3/2;
 }
-
 .epic2021--impact--pics .wp-block-group__inner-container figure img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .epic2021--impact--pics .wp-block-group__inner-container figure figcaption {
   display: none;
 }
-
 .epic2021--registration {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/10/04125858/red-paint-wall-background-texture-WEB-copy-scaled.jpg");
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
 }
-
 .epic2021--registration label,
 .epic2021--registration .gfield_description,
 .epic2021--registration strong,
@@ -145,68 +125,54 @@ ul li {
 .epic2021--registration .gform_body {
   color: #fff;
 }
-
 .epic2021--registration .gform_legacy_markup_wrapper div.validation_error,
 .epic2021--registration .gform_validation_errors,
 .epic2021--registration .gform_legacy_markup_wrapper .gfield_error .gfield_label,
 .epic2021--registration .gform_legacy_markup_wrapper .validation_message {
   color: #fff;
 }
-
 .epic2021--registration .gform_legacy_markup_wrapper input.ginput_product_price,
 .epic2021--registration .gform_legacy_markup_wrapper span.ginput_product_price {
   font-family: "rosewood-std-fill", serif !important;
   color: #f8e2a9;
   font-size: 2.3rem !important;
 }
-
 .epic2021--registration label em a {
   color: #f8e2a9;
 }
-
-.epic2021--registration .pricing-preview
-.ginput_container.ginput_container_number
-input[type="text"] {
+.epic2021--registration .pricing-preview .ginput_container.ginput_container_number input[type=text] {
   font-family: "rosewood-std-fill", serif;
   color: #f8e2a9;
 }
-
 .epic2021--sponsors {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14104623/GettyImages-1083383864-scaled.jpg");
   background-size: cover;
 }
-
 .epic2021--leadership {
   background-image: url("https://jfmdorg.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14110741/leadership-bg-scaled.jpg");
   background-size: cover;
   background-position: center top;
   text-align: center;
 }
-
 .epic2021--leadership ul {
   list-style-type: none;
   padding-left: 0;
 }
-
 .epic2021--leadership strong {
   color: #f8e2a9;
 }
-
 .epic2021--footer {
   background-color: #000;
 }
-
 .epic2021--footer--carousel {
   height: 100%;
 }
-
 .epic2021--footer--carousel img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .epic2021--footer--logo {
   width: 80%;
   margin: auto;
@@ -220,50 +186,34 @@ input[type="text"] {
 article.covid-block {
   border: 5px solid #fff;
 }
-
 article.covid-block h3 {
   color: #fff;
   padding-top: 1rem;
 }
-
 article.covid-block svg {
   fill: #fff;
   height: 75px;
   width: 75px;
 }
-
 article.covid-block ul.covid-icons {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   border-top: 5px solid #fff;
   padding-left: 0;
   width: 100%;
 }
-
 article.covid-block ul.covid-icons li {
   color: #fff;
   padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   line-height: 1;
   gap: 1rem;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 article.covid-block ul.covid-icons li label {
   font-size: 0.8rem;
   margin: 0 10px;
@@ -272,87 +222,54 @@ article.covid-block ul.covid-icons li label {
 .sponsors--tier-one h2 {
   display: none;
 }
-
 .sponsors--tier-one .sponsor-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
-
 .sponsors--tier-one .sponsor-grid a {
   width: clamp(200px, 50%, 400px);
 }
-
 .sponsors--tier-two h2 {
   display: none;
 }
-
 .sponsors--tier-two .sponsor-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
-
 .sponsors--tier-two .sponsor-grid a {
   width: clamp(150px, 25%, 200px);
 }
-
 .sponsors--tier-three h2 {
   display: none;
 }
-
 .sponsors--tier-three .sponsor-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
-
 .sponsors--tier-three .sponsor-grid a {
   width: clamp(100px, 20%, 150px);
 }
-
 .sponsors--tier-four h2 {
   display: none;
 }
-
 .sponsors--tier-four .sponsor-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
-
 .sponsors--tier-four .sponsor-grid a {
   width: clamp(100px, 20%, 150px);
 }
-
 .sponsors--tier-four .sponsor-grid a[href="https://www.theforbescompany.com/"], .sponsors--tier-four .sponsor-grid a[href="https://www.shaareyzedek.org/"], .sponsors--tier-four .sponsor-grid a[href="https://maddinhauser.com/"] {
   width: clamp(100px, 25%, 200px);
 }
-
 .sponsors--tier-four .sponsor-grid a[href="https://adatshalom.org/"], .sponsors--tier-four .sponsor-grid a[href="https://www.civiccompanies.com/"] {
   width: clamp(100px, 15%, 150px);
 }
@@ -362,44 +279,30 @@ body.page-template-page-donometer {
   background-size: cover;
   background-position: center top;
 }
-
 body.page-template-page-donometer .site-content {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 body.page-template-page-donometer #thermometer {
   background: #ddd;
   border: 1px solid #aaa;
   border-radius: 12px;
-  -webkit-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
   -ms-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
   -o-box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
   box-shadow: 1px 1px 4px #999, 5px 0 20px #999;
 }
-
 body.page-template-page-donometer #thermometer .track {
   border: 1px solid #aaa;
   position: relative;
   margin: 0 auto;
-  background: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(10%, white));
-  background: linear-gradient(to bottom, black 0%, white 10%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 10%);
   background-position: 0 -1px;
   background-size: 100% 5%;
 }
-
 body.page-template-page-donometer #thermometer .track .goal .progress {
-  background: -webkit-gradient(linear, left top, left bottom, from(#bf953f), color-stop(#fcf6ba), color-stop(#b38728), color-stop(#fbf5b7), to(#aa771c));
   background: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
   height: 100%;
-}
-/*# sourceMappingURL=epic-2021.css.map */
+}/*# sourceMappingURL=epic-2021.css.map */

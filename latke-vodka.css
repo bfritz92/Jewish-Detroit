@@ -1,16 +1,14 @@
 @font-face {
-  font-family: 'RumbleBrave';
+  font-family: "RumbleBrave";
   font-weight: 900;
   src: url("https://2019.jewishdetroit.org/wp-content/themes/twentynineteen/fonts/RumbleBrave.woff") format("woff"), url("https://2019.jewishdetroit.org/wp-content/themes/twentynineteen/fonts/RumbleBrave.ttf") format("truetype"), url("https://2019.jewishdetroit.org/wp-content/themes/twentynineteen/fonts/RumbleBrave.otf") format("opentype");
 }
-
 /* Page Sizes */
 .rumble {
   font-family: RumbleBrave;
   font-weight: 700;
   text-shadow: 4px 3px #005f82;
 }
-
 .rumble a:hover, .rumble a:focus {
   text-shadow: 4px 3px #f0588e;
 }
@@ -22,16 +20,13 @@
 .white {
   color: #fff;
 }
-
 .white a {
   color: #fff;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[14];
-      grid-template-columns: repeat(14, 1fr);
+  grid-template-columns: repeat(14, 1fr);
 }
 
 .lv-splash {
@@ -39,88 +34,64 @@
   background-color: #A30F4F;
   text-align: center;
 }
-
 @media only screen and (min-width: 920px) {
   .lv-splash {
     height: 60vw;
     background-image: url("/wp-content/uploads/2019/10/splash-xl.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-splash {
     max-height: 100vh;
     background-position: center;
   }
 }
-
 .lv-splash--img {
   display: block;
 }
-
 @media only screen and (min-width: 920px) {
   .lv-splash--img {
     display: none;
   }
 }
-
 .lv-splash--info--date {
   font-size: 1.2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-splash--info--date {
     font-size: 1.8rem;
   }
 }
-
 .lv-splash--info--location {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-splash--info--location {
     font-size: 3rem;
   }
 }
-
 .lv-splash--info--copy {
   font-size: 1.2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-splash--info--copy {
     font-size: 1.8rem;
   }
 }
-
 .lv-splash--info--options {
   display: block;
   padding: 1rem 0;
 }
-
 @media only screen and (min-width: 430px) {
   .lv-splash--info--options {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
 
@@ -129,27 +100,19 @@
   background: #f9f9f9;
   background-color: #010005;
 }
-
 @media only screen and (min-width: 920px) {
   .lv-intro {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-rows: auto 60vw;
-        grid-template-rows: auto 60vw;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-rows: auto 60vw;
+    grid-template-columns: 1fr;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-intro {
-    -ms-grid-rows: auto 40vw;
-        grid-template-rows: auto 40vw;
+    grid-template-rows: auto 40vw;
   }
 }
-
 .lv-intro--copy {
-  -ms-grid-row: 1;
   grid-row: 1;
   padding: 10px;
   grid-column: 1/-1;
@@ -157,54 +120,40 @@
   z-index: 2;
   max-width: 900px;
   margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-intro--copy {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
     grid-column: 1/7;
     padding: 2rem 10px 1rem 10px;
   }
 }
-
 .lv-intro--copy h2 {
   font-size: 2rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-intro--copy h2 {
     font-size: 3rem;
   }
 }
-
 .lv-intro--img {
   grid-row: 1/-1;
   grid-column: 1/-1;
   z-index: 0;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  align-self: end;
+  justify-self: center;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
   grid-column: 1/-1;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-intro--img {
     grid-row: 1/-1;
     grid-column: 1/-1;
   }
 }
-
 .lv-intro--img img {
   height: 100%;
   width: 100%;
@@ -219,51 +168,42 @@
   display: block;
   padding: 2rem 0;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/information-768x1011.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/information-large-1300x856.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/information-large-1600x1054.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/information-large-2000x1317.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-information {
     background-image: url(/wp-content/uploads/2019/10/information-large.jpg);
   }
 }
-
 .lv-information--heading {
   width: 100%;
   padding: 15px 0 15px 20px;
 }
-
 .lv-information--heading h2 {
   font-size: 3rem;
 }
-
 .lv-information--copy {
   max-width: 900px;
   margin: 20px 10px;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-information--copy {
     padding: 1rem;
@@ -275,50 +215,41 @@
   background-image: url(/wp-content/uploads/2019/10/parking-sm-700x933.jpg);
   background-size: cover;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/parking-sm-768x1024.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/parking-lg-1300x854.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/parking-lg-1600x1051.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/parking-lg-2000x1314.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-parking {
     background-image: url(/wp-content/uploads/2019/10/parking-lg.jpg);
   }
 }
-
 .lv-parking--heading {
   width: 100%;
   padding: 15px 0 15px 20px;
 }
-
 .lv-parking--heading h2 {
   font-size: 3rem;
 }
-
 .lv-parking--map {
   width: 100%;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-parking--map {
     max-width: 1000px;
@@ -326,7 +257,6 @@
     margin: auto;
   }
 }
-
 .lv-parking--map iframe {
   width: 100%;
 }
@@ -336,71 +266,55 @@
   background-size: cover;
   display: block;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/registration-small-768x828.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/registration-large-1300x867.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/registration-large-1600x1067.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/registration-large-2000x1333.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-registration {
     background-image: url(/wp-content/uploads/2019/10/registration-large.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-registration {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 6fr 4fr;
-        grid-template-columns: 6fr 4fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: auto;
   }
 }
-
 .lv-registration--title {
   width: 100%;
   padding: 15px 0 15px 20px;
-  -ms-grid-column: 1;
   grid-column: 1;
 }
-
 .lv-registration--title h2 {
   font-size: 3rem;
 }
-
 .lv-registration--form {
   margin: 1rem 0;
-  -ms-grid-column: 1;
   grid-column: 1;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-registration--form {
     margin: 15px;
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-registration--form {
     margin: 1rem;
@@ -413,152 +327,121 @@
   background-repeat: no-repeat;
   padding: 2rem 0;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-sm-768x1024.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg-1300x900.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg-1600x1108.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg-2000x1385.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-leadership {
     background-image: url(/wp-content/uploads/2019/10/leadership-lg.jpg);
   }
 }
-
 .lv-leadership--board {
   max-width: 1200px;
   margin: auto;
   padding-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .lv-leadership--board--title {
   width: 100%;
   padding: 15px 0 15px 20px;
   padding: 0 !important;
   text-align: center;
 }
-
 .lv-leadership--board--title h2 {
   font-size: 3rem;
 }
-
 @media only screen and (min-width: 700px) {
   .lv-leadership--board--committee {
-    -webkit-column-count: 2;
-            column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
   }
 }
-
 .lv-leadership--board ul li {
   color: #fff;
   list-style-type: none;
-  -webkit-column-count: 1;
-          column-count: 1;
+  -moz-column-count: 1;
+       column-count: 1;
 }
 
 .lv-sponsors {
   background-image: url(/wp-content/uploads/2019/10/sponsors-sm-700x864.jpg);
 }
-
 @media only screen and (min-width: 700px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-sm-768x948.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg-1300x975.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg-1600x1200.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg-2000x1500.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-sponsors {
     background-image: url(/wp-content/uploads/2019/10/sponsors-lg.jpg);
   }
 }
-
 .lv-sponsors--title {
   width: 100%;
   padding: 15px 0 15px 20px;
 }
-
 .lv-sponsors--title h2 {
   font-size: 3rem;
 }
-
 .lv-footer {
   background-image: url(/wp-content/uploads/2019/10/footer-700x304.jpg);
 }
-
 @media only screen and (min-width: 700px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/footer-768x333.jpg);
   }
 }
-
 @media only screen and (min-width: 920px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/footer-1300x564.jpg);
   }
 }
-
 @media only screen and (min-width: 1300px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/footer-1600x694.jpg);
   }
 }
-
 @media only screen and (min-width: 1600px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/footer-2000x868.jpg);
   }
 }
-
 @media only screen and (min-width: 1800px) {
   .lv-footer {
     background-image: url(/wp-content/uploads/2019/10/footer.jpg);
   }
-}
-/*# sourceMappingURL=latke-vodka.css.map */
+}/*# sourceMappingURL=latke-vodka.css.map */
